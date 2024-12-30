@@ -24,7 +24,7 @@ author:
   avatar           : "profile.png"
   name             : "Yuan Yao(姚远)"
   pronouns         : # example: "she/her"
-  bio              : "I am a senior student at JLU. Nice to meet you!"
+  bio              : "I am a junior student at JLU. Nice to meet you!"
   location         : "Changchun, China"
   employer         : "Jilin University"
   uri              : # URL
@@ -83,7 +83,7 @@ publication_category:
 teaser                   :  # filename of teaser fallback teaser image placed in /images/, .e.g. "500x300.png"
 breadcrumbs              : false # true, false (default)
 words_per_minute         : 160
-future                   : true
+future                   : false
 read_more                : "disabled" # if enabled, adds "Read more" links to excerpts
 talkmap_link             : false      #change to true to add link to talkmap on talks page
 comments:

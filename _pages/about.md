@@ -7,7 +7,7 @@ redirect_from:
   - /about.html
 ---
 
-I am currently a senior student of Jilin University majored in Mechanical Engineering.
+I am currently a junior student of Jilin University majored in Mechanical Engineering.
 And Last year, I was an exchange student of Tohoku University.
 
 
