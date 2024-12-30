@@ -8,7 +8,7 @@
 
 # Basic Site Settings
 locale                   : "en-US"
-title                    : "姚远（Yao Yuan）的个人网站"
+title                    : "Yuan Yao(姚远)"
 title_separator          : "-"
 name                     : &name "Yuan Yao"
 description              : &description "personal description"
@@ -22,9 +22,9 @@ repository               : #"academicpages/academicpages.github.io"
 author:
   # Biographic information
   avatar           : "profile.png"
-  name             : "About me"
+  name             : "Yuan Yao(姚远)"
   pronouns         : # example: "she/her"
-  bio              : "一个机械工程专业的大三学生"
+  bio              : "I am a senior student at JLU. Nice to meet you!"
   location         : "Changchun, China"
   employer         : "Jilin University"
   uri              : # URL
