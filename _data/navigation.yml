@@ -12,10 +12,7 @@ main:
     url: /year-archive/
   
   - title: "CV(PDF)"
-    url: /http://YuanYao-git.github.io/files/cv_YuanYao.pdf/
+    url: /files/cv_YuanYao.pdf
+    download: true
     
-  - title: "CV"
-    url: /cv/
-    
-  - title: "Guide"
-    url: /markdown/
+ 
