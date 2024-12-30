@@ -2,10 +2,10 @@
 title: "Feasibility study of layer separation using 2D patterned internal laser damage in silicon"
 collection: publications
 category: manuscripts
-permalink: /publication/2010-10-01-paper-title-number-2
+permalink: /publication/JJAP
 excerpt: 'A extended paper for the MNC(2024).'
-date: 2024-11-21
-venue: '11-21'
+date: 2025-11-21
+venue: 'Japanese Journal of Applied Physics'
 paperurl: 'http://YuanYao-git.github.io/files/paper2.pdf'
 citation: 'Yuan, Y.; Vergara, A.; Tanaka, S. Feasibility study of layer separation using 2D patterned internal laser damage in silicon. Japanese Journal of Applied Physics'
 ---
