@@ -1,13 +1,14 @@
 ---
-title: "Paper Title Number 4"
+title: "Oral presentation on the 37th International Microprocesses and Nanotechnology Conference (MNC2024)"
 collection: publications
 category: conferences
 permalink: /publication/2024-02-17-paper-title-number-4
-excerpt: 'This paper is about fixing template issue #693.'
-date: 2024-02-17
-venue: 'GitHub Journal of Bugs'
-paperurl: 'http://academicpages.github.io/files/paper3.pdf'
-citation: 'Your Name, You. (2024). &quot;Paper Title Number 3.&quot; <i>GitHub Journal of Bugs</i>. 1(3).'
+excerpt: 'This is an oral presentation'
+date: 2024-11-15
+venue: 
+slidesurl: 'http://YuanYao-git.github.io/files/slides3.pdf'
+paperurl: 'http://YuanYao-git.github.io/files/paper3.pdf'
+citation: 'Y. Yao, A. Vergara, and S. Tanaka, “Feasibility Study of Layer Separation using 2D Patterned Internal Laser Damage in Silicon,” in 37th International Microprocesses and Nanotechnology Conference (MNC 2024) , Kyoto: The Japan Society of Applied Physics, Nov. 2024, 15D-2-3.'
 ---
 
 The contents above will be part of a list of publications, if the user clicks the link for the publication than the contents of section will be rendered as a full page, allowing you to provide more information about the paper for the reader. When publications are displayed as a single page, the contents of the above "citation" field will automatically be included below this section in a smaller font.
