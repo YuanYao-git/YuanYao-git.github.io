@@ -4,8 +4,8 @@ collection: publications
 category: manuscripts
 permalink: /publication/japanese journal of applied physics
 excerpt: 'Output of Individual Research Training of the JYPE exchange program at Tohoku University.(2023.10-2024.8)<br> And this is an extended paper manuscript for the presentation on MNC(2024).'
-date: 2024-11-21
-venue: (Submitted) Japanese Journal of Applied Physics
+date: 2025-02-12
+venue: (Excepted) Japanese Journal of Applied Physics
 paperurl: 'http://YuanYao-git.github.io/files/paper2.pdf'
 citation: 'Yuan, Y.; Vergara, A.; Tanaka, S. Feasibility study of layer separation using 2D patterned internal laser damage in silicon. Japanese Journal of Applied Physics'
 ---
