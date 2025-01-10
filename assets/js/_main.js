@@ -3,6 +3,8 @@
    ========================================================================== */
 
 $(document).ready(function(){
+  
+  
   // These should be the same as the settings in _variables.scss
   scssLarge = 925; // pixels
 
@@ -72,4 +74,17 @@ $(document).ready(function(){
     midClick: true // allow opening popup on middle mouse click. Always set it to true if you don't provide alternative source.
   });
 
+});
+// 动态生成邮箱链接
+document.addEventListener("DOMContentLoaded", function() {
+  const email = "a1393691489@gmail.com"; // 替换为您的邮箱地址
+  const emailLink = document.getElementById("dynamic-email"); // 获取HTML中的邮箱占位符
+
+  if (emailLink) {
+    emailLink.href = "mailto:" + email; // 设置 href 属性
+    emailLink.textContent = email; // 显示邮箱地址文本
+    console.log("Email link successfully updated!"); // 调试输出
+  } else {
+    console.log("Error: Email link not found in the DOM.");
+  }
 });
