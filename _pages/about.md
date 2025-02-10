@@ -22,13 +22,12 @@ Thank you for your interest!
 
 欢迎联系，或从[**我的简历(PDF)**](files/简历_姚远_20250209.pdf)获取更多信息。
 感谢您的关注！
+### If accessing via mobile phone, please rotate the phone to landscape mode for the best experience./若使用手机访问，为了获得最佳体验，请将手机横屏。
 
 # 📒 Academic acheivements/学术成果
-
-
 <table style="width: 100%; border: none; border-radius: 20px; overflow: hidden; background-color: #e0e0e0;">
   <tr>
-    <td style="width: 50%; vertical-align: middle; padding-right: 20px; border-radius: 20px; border: none;">
+    <td style="width: 50%; vertical-align: middle; padding-right: 20px; border-radius: 20px; font-size: 18px;border: none;">
       <div style="border-radius: 20px; overflow: hidden; position: relative; height: 100%; display: flex; justify-content: center; align-items: center;">
         <div class="badge" style="position: absolute; top: 10px; left: 10px;">IEEJ TEEE</div>
         <img src='assets/images/fig1.png' alt="sym" width="400px" style="display: block; margin: 0 auto; border-radius: 20px;">
@@ -54,7 +53,7 @@ Thank you for your interest!
 
 <table style="width: 100%; border: none; border-radius: 20px; overflow: hidden; background-color: #e0e0e0;">
   <tr>
-    <td style="width: 50%; vertical-align: middle; padding-right: 20px; border-radius: 20px; border: none;">
+    <td style="width: 50%; vertical-align: middle; padding-right: 20px; font-size: 18px;border-radius: 20px; border: none;">
       <div style="border-radius: 20px; overflow: hidden; position: relative; display: flex; justify-content: center; align-items: center; height: 100%;">
         <div class="badge" style="position: absolute; top: 10px; left: 10px;">Oral presentation on MNC2024</div>
         <img src='assets/images/fig2.png' alt="sym" width="400px" style="display: block; margin: 0 auto; border-radius: 20px;">
@@ -77,7 +76,7 @@ Thank you for your interest!
 
 <table style="width: 100%; border: none; border-radius: 20px; overflow: hidden; background-color: #e0e0e0;">
   <tr>
-    <td style="width: 50%; vertical-align: middle; padding-right: 20px; border-radius: 20px; border: none;">
+    <td style="width: 50%; vertical-align: middle; padding-right: 20px; font-size: 18px;border-radius: 20px; border: none;">
       <div style="border-radius: 20px; overflow: hidden; position: relative; height: 100%; display: flex; justify-content: center; align-items: center;">
         <div class="badge" style="position: absolute; top: 10px; left: 10px;">A paper published on Acatuators</div>
         <img src='assets/images/fig4.png' alt="sym" width="400px" style="display: block; margin: 0 auto; border-radius: 20px;">
@@ -99,7 +98,7 @@ Thank you for your interest!
 
 <table style="width: 100%; border: none; border-radius: 20px; overflow: hidden; background-color: #e0e0e0;">
   <tr>
-    <td style="width: 50%; vertical-align: middle; padding-right: 20px; border-radius: 20px; border: none;">
+    <td style="width: 50%; vertical-align: middle; font-size: 18px;padding-right: 20px; border-radius: 20px; border: none;">
       <div style="border-radius: 20px; overflow: hidden; position: relative; height: 100%; display: flex; justify-content: center; align-items: center;">
         <div class="badge" style="position: absolute; top: 10px; left: 10px;">An utility model patent</div>
         <img src='assets/images/fig3.png' alt="sym" width="400px" style="display: block; margin: 0 auto; border-radius: 20px;">
@@ -123,10 +122,10 @@ Thank you for your interest!
 
 # 🥇 Honors and Awards/荣誉和奖项
 
-<table style="width: 100%; border-collapse: separate; border-spacing: 0; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); border-radius: 0px; background-color: #e0e0e0;">
+<table style="width: 100%; border-collapse: separate; border-spacing: 0; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); border-radius: 20px; background-color: #e0e0e0;">
   <tbody>
     <tr>
-      <td style="padding: 20px; text-align: left; font-size: 18px; border-right: 1px solid #ddd; border-bottom: 1px solid #ddd; border-left: 1px solid #ddd; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); border-radius: 10px;">
+      <td style="padding: 20px; text-align: left; font-size: 18px; border-right: 1px solid #ddd; border-bottom: 1px solid #ddd; border-left: 1px solid #ddd; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); border-radius: 20px;">
         <ul>
           <li><strong>2024.06:</strong> National Undergraduate Training Program for Innovation and Entrepreneurship(NCSIETP)- National Excellent Conclusion</li>
           <li><strong>2022.08:</strong> National University Students’ Advanced Drawing Technology and Product Information Modeling Innovation Competition-National second prize</li>
@@ -166,23 +165,23 @@ Thank you for your interest!
 
 
 # 📚 Blogs/博客
-<table style="width: 100%; border-collapse: separate; border-spacing: 0; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); max-height: 1000px; overflow-y: auto; border-radius: 20px; background-color: #e0e0e0;">
+<table style="width: 100%; border-collapse: separate; border-spacing: 0; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); max-height: 1000px; overflow-y: auto;font-size: 18px;border-radius: 20px; background-color: #e0e0e0;">
   <thead>
     <tr style="background-color: #e0e0e0; font-weight: bold;">
-      <th style="padding: 15px; border-bottom: 1px solid #ddd; text-align: center; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); border-top-left-radius: 10px; border-top-right-radius: 10px;">English</th>
-      <th style="padding: 15px; border-bottom: 1px solid #ddd; text-align: center; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); border-top-left-radius: 10px; border-top-right-radius: 10px;">中文</th>
+      <th style="padding: 15px; border-bottom: 1px solid #ddd; text-align: center; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); font-size: 18px; border-top-left-radius: 20px; border-top-right-radius: 0px;">English</th>
+      <th style="padding: 15px; border-bottom: 1px solid #ddd; text-align: center; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); border-top-left-radius: 0px; border-top-right-radius: 20px;">中文</th>
     </tr>
   </thead>
   <tbody>
     <!-- First Blog Group (English and Chinese) -->
     <tr style="background-color: #e0e0e0;">
-      <td style="padding: 15px; text-align: center; border-right: 1px solid #ddd; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); transition: transform 0.3s ease; border-radius: 10px;">
+      <td style="padding: 15px; text-align: center; border-right: 1px solid #ddd; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); transition: transform 0.3s ease; border-radius: 0px;">
         <div class="badge">Exchange Life - Learning Chapter</div>
         <a href="/posts/2025/01/post/444">
           <img src='assets/images/MNC2024.jpg' alt="sym" style="width: 100%; max-width: 400px; height: auto; display: block; margin: 0 auto; border-radius: 15px; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); transition: transform 0.3s ease;">
         </a>
       </td>
-      <td style="padding: 15px; text-align: center; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); transition: transform 0.3s ease; border-radius: 10px;">
+      <td style="padding: 15px; text-align: center; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); transition: transform 0.3s ease; border-radius: 0px;">
         <div class="badge">交换生活-学习篇</div>
         <a href="/posts/2025/01/post/4">
           <img src='assets/images/JYPE合照1.jpg' alt="sym" style="width: 100%; max-width: 400px; height: auto; display: block; margin: 0 auto; border-radius: 15px; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); transition: transform 0.3s ease;">
@@ -192,13 +191,13 @@ Thank you for your interest!
 
     <!-- Second Blog Group (English and Chinese) -->
     <tr style="background-color: #e0e0e0;">
-      <td style="padding: 15px; text-align: center; border-right: 1px solid #ddd; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); transition: transform 0.3s ease; border-radius: 10px;">
+      <td style="padding: 15px; text-align: center; border-right: 1px solid #ddd; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); transition: transform 0.3s ease; border-radius: 0px;">
         <div class="badge">NCSIETP</div>
         <a href="/posts/2024/06/post/333">
           <img src='assets/images/ultrasonic vibration platform.png' alt="sym" style="width: 100%; max-width: 400px; height: auto; display: block; margin: 0 auto; border-radius: 15px; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); transition: transform 0.3s ease;">
         </a>
       </td>
-      <td style="padding: 15px; text-align: center; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); transition: transform 0.3s ease; border-radius: 10px;">
+      <td style="padding: 15px; text-align: center; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); transition: transform 0.3s ease; border-radius: 0px;">
         <div class="badge">大创</div>
         <a href="/posts/2024/06/post/3">
           <img src='assets/images/实测频率.png' alt="sym" style="width: 100%; max-width: 400px; height: auto; display: block; margin: 0 auto; border-radius: 15px; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); transition: transform 0.3s ease;">
@@ -208,13 +207,13 @@ Thank you for your interest!
 
     <!-- Third Blog Group -->
     <tr style="background-color: #e0e0e0;">
-      <td style="padding: 15px; text-align: center; border-right: 1px solid #ddd; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); transition: transform 0.3s ease; border-radius: 10px;">
+      <td style="padding: 15px; text-align: center; border-right: 1px solid #ddd; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); transition: transform 0.3s ease; border-radius: 0px;">
         <div class="badge">Engineering Innovation competition</div>
         <a href="/posts/2023/10/post/222">
           <img src='assets/images/小车模型.png' alt="sym" style="width: 100%; max-width: 400px; height: auto; display: block; margin: 0 auto; border-radius: 15px; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); transition: transform 0.3s ease;">
         </a>
       </td>
-      <td style="padding: 15px; text-align: center; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); transition: transform 0.3s ease; border-radius: 10px;">
+      <td style="padding: 15px; text-align: center; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); transition: transform 0.3s ease; border-radius: 0px;">
         <div class="badge">工创大赛</div>
         <a href="/posts/2023/10/post/2">
           <img src='assets/images/工创合照.jpg' alt="sym" style="width: 100%; max-width: 400px; height: auto; display: block; margin: 0 auto; border-radius: 15px; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); transition: transform 0.3s ease;">
@@ -224,13 +223,13 @@ Thank you for your interest!
 
     <!-- Fourth Blog Group: 成图大赛 -->
     <tr style="background-color: #e0e0e0;">
-      <td style="padding: 15px; text-align: center; border-right: 1px solid #ddd; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); transition: transform 0.3s ease; border-radius: 10px;">
+      <td style="padding: 15px; text-align: center; border-right: 1px solid #ddd; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); transition: transform 0.3s ease; border-radius: 0px;">
         <div class="badge">Engineering Drawing Competition</div>
         <a href="/posts/2022/08/post/111">
           <img src='assets/images/三维制图.png' alt="sym" style="width: 100%; max-width: 400px; height: auto; display: block; margin: 0 auto; border-radius: 15px; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); transition: transform 0.3s ease;">
         </a>
       </td>
-      <td style="padding: 15px; text-align: center; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); transition: transform 0.3s ease; border-radius: 10px;">
+      <td style="padding: 15px; text-align: center; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); transition: transform 0.3s ease; border-radius: 0px;">
         <div class="badge">成图大赛</div>
         <a href="/posts/2022/08/post/1">
           <img src='assets/images/二维工程图绘制.png' alt="sym" style="width: 100%; max-width: 400px; height: auto; display: block; margin: 0 auto; border-radius: 15px; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); transition: transform 0.3s ease;">
