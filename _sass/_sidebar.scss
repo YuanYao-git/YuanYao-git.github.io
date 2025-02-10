@@ -195,7 +195,7 @@
   box-shadow: 0 0 10px rgba(#000, 0.25);
   cursor: default;
 
-  @include breakpoint($large) {
+  @include breakpoint($medium) {
     display: block;
     position: relative;
     margin: 0;
@@ -217,7 +217,7 @@
     border-color: $border-color transparent;
     z-index: 0;
 
-    @include breakpoint($large) {
+    @include breakpoint($medium) {
       display: none;
     }
   }
@@ -234,7 +234,7 @@
     border-color: #fff transparent;
     z-index: 1;
 
-    @include breakpoint($large) {
+    @include breakpoint($medium) {
       display: none;
     }
   }
