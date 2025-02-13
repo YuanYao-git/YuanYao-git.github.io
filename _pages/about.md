@@ -11,7 +11,7 @@ I am currently a junior student at Jilin University majoring in Mechanical Engin
 
 I am currently seeking a position in a graduate program and am determined to pursue a PhD degree. This personal website provides detailed information about my previous projects, including two periods of research experience at [Hu Huang's lab](http://teachers.jlu.edu.cn/HuangLab) in Jilin University and at [Shuji Tanaka MEMS lab](http://www.mems.mech.tohoku.ac.jp) in Tohoku University. 
 
-Feel free to reach out, or get more information from [**My CV（PDF）**](files/cv_YuanYao_20250211.pdf).
+Feel free to reach out, or get more information from [**My CV（PDF）**](files/cv_YuanYao_20250213.pdf).
 Thank you for your interest!
 
 
@@ -20,7 +20,7 @@ Thank you for your interest!
 
 我目前正在寻找研究生项目的职位，并决心攻读博士学位。这个个人网站详细介绍了我之前的项目，包括在吉林大学[黄虎](http://teachers.jlu.edu.cn/HuangLab)老师课题组和东北大学[田中秀治微机电系统](http://www.mems.mech.tohoku.ac.jp)课题组的两段研究经历。
 
-欢迎联系，或从[**我的简历(PDF)**](files/简历_姚远_20250211.pdf)获取更多信息。
+欢迎联系，或从[**我的简历(PDF)**](files/简历_姚远_20250213.pdf)获取更多信息。
 感谢您的关注！
 ### If accessing via mobile phone, please rotate the phone to landscape mode for the best experience./若使用手机访问，为了获得最佳体验，请将手机横屏。
 
@@ -39,8 +39,9 @@ Thank you for your interest!
       <p>这项研究提出了一种基于二维激光隐切与剥离的新型技术方案，通过优化隐切激光的扫描路径，实现无需特殊分离层的激光剥离，在简化工艺流程的同时具备与传统半导体工艺（如高温制程）的良好兼容性，具有提供柔性电子器件转移的应用潜力。</p>
       <ul>
         <li><strong>Yuan Yao</strong>, Andrea Vergara<sup>*</sup>, Zhengnan Tang, Shuji Tanaka</li>
-        <li>Under review of the IEEJ transactions on electrical and electronic engineering as a conference extended paper./作为会议扩展论文投稿至《IEEJ transactions on electrical and electronic engineering》在审。</li>
-        <li><a href="files/IEEJ_TEEE.pdf">Manuscript/论文手稿</a></li>
+        <li>Submitted to the IEEJ transactions on electrical and electronic engineering as a conference extended paper./作为会议扩展论文投稿至《IEEJ transactions on electrical and electronic engineering》。</li>
+      
+        
       </ul>
     </td>
   </tr>
