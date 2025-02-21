@@ -12,98 +12,65 @@ redirect_from:
 
 欢迎联系，或从[**我的简历(PDF)**](files/简历_姚远_20250213.pdf)获取更多信息。
 感谢您的关注！
-### 若使用手机访问，为了获得最佳体验，请将手机横屏。
+
 
 # 📒 学术成果
-<table style="width: 100%; border: none; border-radius: 20px; overflow: hidden; background-color: #e0e0e0;">
-  <tr>
-    <td style="width: 50%; vertical-align: middle; padding-right: 20px; border-radius: 20px; font-size: 18px;border: none;">
-      <div style="border-radius: 20px; overflow: hidden; position: relative; height: 100%; display: flex; justify-content: center; align-items: center;">
-        <div class="badge" style="position: absolute; top: 10px; left: 10px;">IEEJ TEEE</div>
-        <img src='{{ site.baseurl }}/assets/images/fig1.png' alt="sym" width="400px" style="display: block; margin: 0 auto; border-radius: 20px;">
-      </div>
-    </td>
-    <td style="width: 50%; vertical-align: top; font-size: 18px; line-height: 1.8; border-radius: 20px; border: none;">
-      <h2 style="font-size: 26px;">利用二维图样内激光损伤在硅中分离层的可行性研究 (会议拓展论文)</h2>
-      <p>这项研究提出了一种基于二维激光隐切与剥离的新型技术方案，通过优化隐切激光的扫描路径，实现无需特殊分离层的激光剥离，在简化工艺流程的同时具备与传统半导体工艺（如高温制程）的良好兼容性，具有提供柔性电子器件转移的应用潜力。</p>
-      <ul>
-        <li><strong>Yuan Yao</strong>, Andrea Vergara<sup>*</sup>, Zhengnan Tang, Shuji Tanaka</li>
-        <li>作为会议扩展论文投稿至 IEEJ transactions on electrical and electronic engineering。</li>
-      
-        
-      </ul>
-    </td>
-  </tr>
-</table>
 
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">IEEJ TEEE</div><img src='{{ site.baseurl }}/assets/images/fig1.png' alt="sym" width="100%"></div></div>
+<div class='paper-box-text' markdown="1">
 
+## 利用二维图样内激光内损伤在硅层分离的可行性研究 (会议拓展论文)
 
+•这项研究提出了一种基于二维激光隐切与剥离的新型技术方案，通过优化隐切激光的扫描路径，实现无需特殊分离层的激光剥离，在简化工艺流程的同时具备与传统半导体工艺（如高温制程）的良好兼容性，具有提供柔性电子器件转移的应用潜力。
 
+•Yuan Yao, Andrea Vergara*, Zhengnan Tang, Shuji Tanaka
 
+•作为会议扩展论文投稿至 IEEJ transactions on electrical and electronic engineering。
 
-<table style="width: 100%; border: none; border-radius: 20px; overflow: hidden; background-color: #e0e0e0;">
-  <tr>
-    <td style="width: 50%; vertical-align: middle; padding-right: 20px; font-size: 18px;border-radius: 20px; border: none;">
-      <div style="border-radius: 20px; overflow: hidden; position: relative; display: flex; justify-content: center; align-items: center; height: 100%;">
-        <div class="badge" style="position: absolute; top: 10px; left: 10px;">Oral presentation on MNC2024</div>
-        <img src='{{ site.baseurl }}/assets/images/fig2.png' alt="sym" width="400px" style="display: block; margin: 0 auto; border-radius: 20px;">
-      </div>
-    </td>
-    <td style="width: 50%; vertical-align: top; font-size: 18px; line-height: 1.8; border-radius: 20px; border: none;">
-      <h2 style="font-size: 26px;">•第37届国际微工艺与纳米技术会议(MNC2024)口头汇报</h2>
-      <ul>
-        <li>第37届国际微处理与纳米技术会议（MNC2024）口头报告，京都：日本应用物理学会，2024年11月，15D-2-3</li>
-        <li><a href="files/paper3.pdf">摘要</a></li>
-        <li><a href="files/slides3.pdf">幻灯片</a></li>
-      </ul>
-    </td>
-  </tr>
-</table>
+</div>
+</div>
 
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">MNC2024 口头汇报</div><img src='{{ site.baseurl }}/assets/images/fig2.png' alt="sym" width="100%"></div></div>
+<div class='paper-box-text' markdown="1">
 
+## 第37届国际微工艺与纳米技术会议(MNC2024)口头汇报
 
+•第37届国际微处理与纳米技术会议（MNC2024）口头报告，京都：日本应用物理学会，2024年11月，15D-2-3
 
-<table style="width: 100%; border: none; border-radius: 20px; overflow: hidden; background-color: #e0e0e0;">
-  <tr>
-    <td style="width: 50%; vertical-align: middle; padding-right: 20px; font-size: 18px;border-radius: 20px; border: none;">
-      <div style="border-radius: 20px; overflow: hidden; position: relative; height: 100%; display: flex; justify-content: center; align-items: center;">
-        <div class="badge" style="position: absolute; top: 10px; left: 10px;">A paper published on Acatuators</div>
-        <img src='{{ site.baseurl }}/assets/images/fig4.png' alt="sym" width="400px" style="display: block; margin: 0 auto; border-radius: 20px;">
-      </div>
-    </td>
-    <td style="width: 50%; vertical-align: top; font-size: 18px; line-height: 1.8; border-radius: 20px; border: none;">
-      <h2 style="font-size: 26px;">•用于研究材料在超声振动接触状态下划伤特性的超声振动划伤试验机</h2>
-      <p>设计并验证螺纹-V型槽复合结构确保振动有效传递；通过 Abaqus模态仿真匹配系统共振频率与超声波换能器工作频率。填补了能够在超声振动下进行划痕测试的仪器空白。</p>
-      <ul>
-        <li>Huang, Y.; Wu, H.; <strong>Yao, Y.</strong>; Zhao, H.; Huang, H<sup>*</sup>. Actuators 2024, 13, 262. https://doi.org/10.3390/act13070262</li>
-        <li><a href="files/paper1.pdf">论文</a></li>
-      </ul>
-    </td>
-  </tr>
-</table>
+•[**摘要**]({{ site.baseurl }}/files/MNC_abstract.pdf)
 
+•[**幻灯片**]({{ site.baseurl }}/files/MNC_slides.pdf)
 
+</div>
+</div>
 
-<table style="width: 100%; border: none; border-radius: 20px; overflow: hidden; background-color: #e0e0e0;">
-  <tr>
-    <td style="width: 50%; vertical-align: middle; font-size: 18px;padding-right: 20px; border-radius: 20px; border: none;">
-      <div style="border-radius: 20px; overflow: hidden; position: relative; height: 100%; display: flex; justify-content: center; align-items: center;">
-        <div class="badge" style="position: absolute; top: 10px; left: 10px;">An utility model patent</div>
-        <img src='{{ site.baseurl }}/assets/images/fig3.png' alt="sym" width="400px" style="display: block; margin: 0 auto; border-radius: 20px;">
-      </div>
-    </td>
-    <td style="width: 50%; vertical-align: top; font-size: 18px; line-height: 1.8; border-radius: 20px; border: none;">
-      <h2 style="font-size: 26px;">•一种用于振动辅助划痕测试的超声振动装置</h2>
-      <p>设计了一种用于用于振动辅助划痕测试的超声振动装置，具有稳定的振幅和较高的振动精度，且振幅调节方便，能够为振动辅助划痕测试提供稳定的振动源。</p>
-      <ul>
-        <li>黄虎；<strong>姚远</strong>；黄雅明；吴浩翔.一种用于振动辅助划痕测试的超声振动装置:中国, CN 220649966U.2024-03-22.</li>
-        <li>H. Huang, Y. Yao, Y. Huang, and H. Wu, “An ultrasonic vibration device for vibration-assisted scratch testing,” Chinese Patent CN 220649966U, Mar. 22, 2024.</li>
-        <li><a href="files/patent.pdf">Patent/专利</a></li>
-      </ul>
-    </td>
-  </tr>
-</table>
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">Acatuators论文</div><img src='{{ site.baseurl }}/assets/images/fig4.png' alt="sym" width="100%"></div></div>
+<div class='paper-box-text' markdown="1">
 
+## 用于研究材料在超声振动接触状态下划伤特性的超声振动划伤试验机
+
+•设计并验证螺纹-V型槽复合结构确保振动有效传递；通过 Abaqus模态仿真匹配系统共振频率与超声波换能器工作频率。填补了能够在超声振动下进行划痕测试的仪器空白。
+
+•Huang, Y.; Wu, H.; <strong>Yao, Y.</strong>; Zhao, H.; Huang, H<sup>*</sup>. Actuators 2024, 13, 262. https://doi.org/10.3390/act13070262
+
+•[**论文**]({{ site.baseurl }}/files/acatuators.pdf)
+
+</div>
+</div>
+
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">实用新型专利</div><img src='{{ site.baseurl }}/assets/images/fig3.png' alt="sym" width="100%"></div></div>
+<div class='paper-box-text' markdown="1">
+
+## 一种用于振动辅助划痕测试的超声振动装置
+
+•设计了一种用于用于振动辅助划痕测试的超声振动装置，具有稳定的振幅和较高的振动精度，且振幅调节方便，能够为振动辅助划痕测试提供稳定的振动源。
+
+•黄虎；姚远；黄雅明；吴浩翔.一种用于振动辅助划痕测试的超声振动装置:中国, CN 220649966U.2024-03-22.
+
+•[**专利**]({{ site.baseurl }}/files/patent.pdf)
+
+</div>
+</div>
 
 
 

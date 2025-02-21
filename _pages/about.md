@@ -14,97 +14,63 @@ I am currently seeking a position in a graduate program and am determined to pur
 Feel free to reach out, or get more information from [**My CV（PDF）**](files/cv_YuanYao_20250213.pdf).
 Thank you for your interest!
 
-### If accessing via mobile phone, please rotate the phone to landscape mode for the best experience.
 
 # 📒 Academic acheivements
-<table style="width: 100%; border: none; border-radius: 20px; overflow: hidden; background-color: #e0e0e0;">
-  <tr>
-    <td style="width: 50%; vertical-align: middle; padding-right: 20px; border-radius: 20px; font-size: 18px;border: none;">
-      <div style="border-radius: 20px; overflow: hidden; position: relative; height: 100%; display: flex; justify-content: center; align-items: center;">
-        <div class="badge" style="position: absolute; top: 10px; left: 10px;">IEEJ TEEE</div>
-        <img src='assets/images/fig1.png' alt="sym" width="400px" style="display: block; margin: 0 auto; border-radius: 20px;">
-      </div>
-    </td>
-    <td style="width: 50%; vertical-align: top; font-size: 18px; line-height: 1.8; border-radius: 20px; border: none;">
-      <h2 style="font-size: 26px;">Feasibility study of layer separation using 2D patterned internal laser damage in silicon (Conference extended paper/会议拓展论文)</h2>
-      <p>This study presents a novel technical solution based on two-dimensional laser delamination. By optimizing the scanning path of the steal laser dicing, it achieves laser-lift-off without the need for a special separation layer. This approach simplifies the process flow while maintaining good compatibility with traditional semiconductor processes (such as high-temperature processing), and holds potential for applications in the transfer of flexible electronic devices.</p>
-      <ul>
-        <li><strong>Yuan Yao</strong>, Andrea Vergara<sup>*</sup>, Zhengnan Tang, Shuji Tanaka</li>
-        <li>Submitted to the IEEJ transactions on electrical and electronic engineering as a conference extended paper.</li>
-      
-        
-      </ul>
-    </td>
-  </tr>
-</table>
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">IEEJ TEEE</div><img src='assets/images/fig1.png' alt="sym" width="100%"></div></div>
+<div class='paper-box-text' markdown="1">
 
+## Feasibility study of layer separation using 2D patterned internal laser damage in silicon (Conference extended paper)
 
+•This study presents a novel technical solution based on two-dimensional laser delamination. By optimizing the scanning path of the steal laser dicing, it achieves laser-lift-off without the need for a special separation layer. This approach simplifies the process flow while maintaining good compatibility with traditional semiconductor processes (such as high-temperature processing), and holds potential for applications in the transfer of flexible electronic devices.
 
+•Yuan Yao, Andrea Vergara*, Zhengnan Tang, Shuji Tanaka
 
+•Submitted to the IEEJ transactions on electrical and electronic engineering as a conference extended paper.
 
+</div>
+</div>
 
-<table style="width: 100%; border: none; border-radius: 20px; overflow: hidden; background-color: #e0e0e0;">
-  <tr>
-    <td style="width: 50%; vertical-align: middle; padding-right: 20px; font-size: 18px;border-radius: 20px; border: none;">
-      <div style="border-radius: 20px; overflow: hidden; position: relative; display: flex; justify-content: center; align-items: center; height: 100%;">
-        <div class="badge" style="position: absolute; top: 10px; left: 10px;">Oral presentation on MNC2024</div>
-        <img src='assets/images/fig2.png' alt="sym" width="400px" style="display: block; margin: 0 auto; border-radius: 20px;">
-      </div>
-    </td>
-    <td style="width: 50%; vertical-align: top; font-size: 18px; line-height: 1.8; border-radius: 20px; border: none;">
-      <h2 style="font-size: 26px;">•Oral presentation on the 37th International Microprocesses and Nanotechnology Conference (MNC2024)</h2>
-      <ul>
-        <li>Oral presentation on the 37th International Microprocesses and Nanotechnology Conference (MNC2024), Kyoto: The Japan Society of Applied Physics, Nov. 2024, 15D-2-3</li>
-        <li><a href="files/paper3.pdf">Abstract</a></li>
-        <li><a href="files/slides3.pdf">Slide</a></li>
-      </ul>
-    </td>
-  </tr>
-</table>
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">Oral presentation on MNC2024</div><img src='assets/images/fig2.png' alt="sym" width="100%"></div></div>
+<div class='paper-box-text' markdown="1">
 
+## Oral presentation on the 37th International Microprocesses and Nanotechnology Conference (MNC2024)
 
+•Oral presentation on the 37th International Microprocesses and Nanotechnology Conference (MNC2024), Kyoto: The Japan Society of Applied Physics, Nov. 2024, 15D-2-3
 
+•[**Abstract**](files/MNC_abstract.pdf)
 
-<table style="width: 100%; border: none; border-radius: 20px; overflow: hidden; background-color: #e0e0e0;">
-  <tr>
-    <td style="width: 50%; vertical-align: middle; padding-right: 20px; font-size: 18px;border-radius: 20px; border: none;">
-      <div style="border-radius: 20px; overflow: hidden; position: relative; height: 100%; display: flex; justify-content: center; align-items: center;">
-        <div class="badge" style="position: absolute; top: 10px; left: 10px;">A paper published on Acatuators</div>
-        <img src='assets/images/fig4.png' alt="sym" width="400px" style="display: block; margin: 0 auto; border-radius: 20px;">
-      </div>
-    </td>
-    <td style="width: 50%; vertical-align: top; font-size: 18px; line-height: 1.8; border-radius: 20px; border: none;">
-      <h2 style="font-size: 26px;">•An Ultrasonic Vibration Scratch Tester for Studying the Scratch Characteristics of Materials under Ultrasonic Vibration Contact Status.</h2>
-      <p>Measure and verify the thread-V groove composite structure to ensure effective vibration transmission; Through Abaqus mode simulation, the resonant frequency of the system is matched with the operating frequency of the ultrasonic transducer. Fills the gap in instruments capable of performing scratch tests under ultrasonic vibration.</p>
-      <ul>
-        <li>Huang, Y.; Wu, H.; <strong>Yao, Y.</strong>; Zhao, H.; Huang, H<sup>*</sup>. Actuators 2024, 13, 262. https://doi.org/10.3390/act13070262</li>
-        <li><a href="files/paper1.pdf">Paper</a></li>
-      </ul>
-    </td>
-  </tr>
-</table>
+•[**Slide**](files/MNC_slides.pdf)
 
+</div>
+</div>
 
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">A paper published on Acatuators</div><img src='assets/images/fig4.png' alt="sym" width="100%"></div></div>
+<div class='paper-box-text' markdown="1">
 
-<table style="width: 100%; border: none; border-radius: 20px; overflow: hidden; background-color: #e0e0e0;">
-  <tr>
-    <td style="width: 50%; vertical-align: middle; font-size: 18px;padding-right: 20px; border-radius: 20px; border: none;">
-      <div style="border-radius: 20px; overflow: hidden; position: relative; height: 100%; display: flex; justify-content: center; align-items: center;">
-        <div class="badge" style="position: absolute; top: 10px; left: 10px;">An utility model patent</div>
-        <img src='assets/images/fig3.png' alt="sym" width="400px" style="display: block; margin: 0 auto; border-radius: 20px;">
-      </div>
-    </td>
-    <td style="width: 50%; vertical-align: top; font-size: 18px; line-height: 1.8; border-radius: 20px; border: none;">
-      <h2 style="font-size: 26px;">•A ultrasonic vibration device for vibration-assisted scratch testing</h2>
-      <p>An ultrasonic vibration device is designed for vibration assisted scratch test. It has stable amplitude, high vibration accuracy and easy amplitude adjustment, and can provide a stable vibration source for vibration assisted scratch test.</p>
-      <ul>
-        <li>H. Huang, Y. Yao, Y. Huang, and H. Wu, “An ultrasonic vibration device for vibration-assisted scratch testing,” Chinese Patent CN 220649966U, Mar. 22, 2024.</li>
-        <li><a href="files/patent.pdf">Patent</a></li>
-      </ul>
-    </td>
-  </tr>
-</table>
+## An Ultrasonic Vibration Scratch Tester for Studying the Scratch Characteristics of Materials under Ultrasonic Vibration Contact Status
 
+•Measure and verify the thread-V groove composite structure to ensure effective vibration transmission; Through Abaqus mode simulation, the resonant frequency of the system is matched with the operating frequency of the ultrasonic transducer. Fills the gap in instruments capable of performing scratch tests under ultrasonic vibration.
+
+•Huang, Y.; Wu, H.; <strong>Yao, Y.</strong>; Zhao, H.; Huang, H<sup>*</sup>. Actuators 2024, 13, 262. https://doi.org/10.3390/act13070262
+
+•[**Paper**](files/acatuators.pdf)
+
+</div>
+</div>
+
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">An utility model patent</div><img src='assets/images/fig3.png' alt="sym" width="100%"></div></div>
+<div class='paper-box-text' markdown="1">
+
+## A ultrasonic vibration device for vibration-assisted scratch testing
+
+•An ultrasonic vibration device is designed for vibration assisted scratch test. It has stable amplitude, high vibration accuracy and easy amplitude adjustment, and can provide a stable vibration source for vibration assisted scratch test.
+
+•H. Huang, Y. Yao, Y. Huang, and H. Wu, “An ultrasonic vibration device for vibration-assisted scratch testing,” Chinese Patent CN 220649966U, Mar. 22, 2024.
+
+•[**Patent**](files/patent.pdf)
+
+</div>
+</div>
 
 
 
