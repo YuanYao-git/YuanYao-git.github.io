@@ -11,7 +11,7 @@ I am currently a junior student at Jilin University majoring in Mechanical Engin
 
 I am currently seeking a position in a graduate program and am determined to pursue a PhD degree. This personal website provides detailed information about my previous projects, including two periods of research experience at [Hu Huang's lab](http://teachers.jlu.edu.cn/HuangLab) in Jilin University and at [Shuji Tanaka MEMS lab](http://www.mems.mech.tohoku.ac.jp) in Tohoku University. 
 
-Feel free to reach out, or get more information from [**My CV（PDF）**](files/cv_YuanYao_20250213.pdf).
+Feel free to reach out, or get more information from [**My CV（PDF）**](files/cv_YuanYao_20250225.pdf).
 Thank you for your interest!
 
 
@@ -49,7 +49,7 @@ Thank you for your interest!
 
 ## An Ultrasonic Vibration Scratch Tester for Studying the Scratch Characteristics of Materials under Ultrasonic Vibration Contact Status
 
-•Measure and verify the thread-V groove composite structure to ensure effective vibration transmission; Through Abaqus mode simulation, the resonant frequency of the system is matched with the operating frequency of the ultrasonic transducer. Fills the gap in instruments capable of performing scratch tests under ultrasonic vibration.
+•Measure and verify the thread-V groove composite structure to ensure effective vibration transmission; Through Abaqus modal analysis, the resonant frequency of the system is matched with the operating frequency of the ultrasonic transducer. Fills the gap in instruments capable of performing scratch tests under ultrasonic vibration.
 
 •Huang, Y.; Wu, H.; <strong>Yao, Y.</strong>; Zhao, H.; Huang, H<sup>*</sup>. Actuators 2024, 13, 262. https://doi.org/10.3390/act13070262
 
