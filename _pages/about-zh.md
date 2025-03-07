@@ -12,10 +12,11 @@ redirect_from:
 
 欢迎联系，或从[**我的简历(PDF)**]({{ site.baseurl }}/files/简历_姚远_20250225.pdf)获取更多信息。
 感谢您的关注！
-
+<br/>
+<br/>
 
 # 📒 学术成果
-
+<style>.paper-box{margin-top:-5mm;}</style>
 <div class='paper-box'><div class='paper-box-image'><div><div class="badge">IEEJ TEEE</div><img src='{{ site.baseurl }}/assets/images/fig1.png' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 
@@ -41,6 +42,8 @@ redirect_from:
 
 •[**幻灯片**]({{ site.baseurl }}/files/MNC_slides.pdf)
 
+*© 2024，JSAP 版权所有，作者按协议合法分发*
+
 </div>
 </div>
 
@@ -51,10 +54,11 @@ redirect_from:
 
 •设计并验证螺纹-V型槽复合结构确保振动有效传递；通过 Abaqus模态仿真匹配系统共振频率与超声波换能器工作频率。填补了能够在超声振动下进行划痕测试的仪器空白。
 
-•Huang, Y.; Wu, H.; <strong>Yao, Y.</strong>; Zhao, H.; Huang, H<sup>*</sup>. Actuators 2024, 13, 262. https://doi.org/10.3390/act13070262
+•Huang, Y.; Wu, H.; <strong>Yao, Y.</strong>; Zhao, H.; Huang, H<sup>*</sup>. Actuators 2024, 13, 262. [https://doi.org/10.3390/act13070262](https://doi.org/10.3390/act13070262)
 
 •[**论文**]({{ site.baseurl }}/files/acatuators.pdf)
 
+*© 2024，作者版权所有，CC BY 4.0*
 </div>
 </div>
 
@@ -65,10 +69,11 @@ redirect_from:
 
 •设计了一种用于用于振动辅助划痕测试的超声振动装置，具有稳定的振幅和较高的振动精度，且振幅调节方便，能够为振动辅助划痕测试提供稳定的振动源。
 
-•黄虎；姚远；黄雅明；吴浩翔.一种用于振动辅助划痕测试的超声振动装置:中国, CN 220649966U.2024-03-22.
+•黄虎；姚远；黄雅明；吴浩翔.一种用于振动辅助划痕测试的超声振动装置:中国, [CN 220649966U](http://epub.cnipa.gov.cn/patent/CN220649966U).2024-03-22.
 
 •[**专利**]({{ site.baseurl }}/files/patent.pdf)
 
+*© 2024，吉林大学版权所有，本专利文件为公开信息*
 </div>
 </div>
 

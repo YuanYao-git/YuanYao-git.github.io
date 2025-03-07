@@ -13,9 +13,12 @@ I am currently seeking a position in a graduate program and am determined to pur
 
 Feel free to reach out, or get more information from [**My CV（PDF）**](files/cv_YuanYao_20250225.pdf).
 Thank you for your interest!
+<br/>
+<br/>
 
 
 # 📒 Academic acheivements
+<style>.paper-box{margin-top:-5mm;}</style>
 <div class='paper-box'><div class='paper-box-image'><div><div class="badge">IEEJ TEEE</div><img src='assets/images/fig1.png' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 
@@ -41,6 +44,7 @@ Thank you for your interest!
 
 •[**Slide**](files/MNC_slides.pdf)
 
+*© 2024 JSAP. All rights reserved. The author distributes legally according to the agreement*
 </div>
 </div>
 
@@ -51,10 +55,11 @@ Thank you for your interest!
 
 •Measure and verify the thread-V groove composite structure to ensure effective vibration transmission; Through Abaqus modal analysis, the resonant frequency of the system is matched with the operating frequency of the ultrasonic transducer. Fills the gap in instruments capable of performing scratch tests under ultrasonic vibration.
 
-•Huang, Y.; Wu, H.; <strong>Yao, Y.</strong>; Zhao, H.; Huang, H<sup>*</sup>. Actuators 2024, 13, 262. https://doi.org/10.3390/act13070262
+•Huang, Y.; Wu, H.; <strong>Yao, Y.</strong>; Zhao, H.; Huang, H<sup>*</sup>. Actuators 2024, 13, 262. [https://doi.org/10.3390/act13070262](https://doi.org/10.3390/act13070262)
 
 •[**Paper**](files/acatuators.pdf)
 
+*© 2024 by the authors. Published under CC BY 4.0.*
 </div>
 </div>
 
@@ -65,10 +70,11 @@ Thank you for your interest!
 
 •An ultrasonic vibration device is designed for vibration assisted scratch test. It has stable amplitude, high vibration accuracy and easy amplitude adjustment, and can provide a stable vibration source for vibration assisted scratch test.
 
-•H. Huang, Y. Yao, Y. Huang, and H. Wu, “An ultrasonic vibration device for vibration-assisted scratch testing,” Chinese Patent CN 220649966U, Mar. 22, 2024.
+•H. Huang, Y. Yao, Y. Huang, and H. Wu, “An ultrasonic vibration device for vibration-assisted scratch testing,” Chinese Patent [CN 220649966U](http://epub.cnipa.gov.cn/patent/CN220649966U), Mar. 22, 2024.
 
 •[**Patent**](files/patent.pdf)
 
+*© 2024 Jilin University, All Rights Reserved. This patent document is public information.*
 </div>
 </div>
 
