@@ -42,7 +42,7 @@ Thank you for your interest!
 
 •[**Abstract**](files/MNC_abstract.pdf)
 
-•[**Slide**](files/MNC_slides.pdf)
+•[**Slides**](files/MNC_slides.pdf)
 
 *© 2024 JSAP. All rights reserved. The author distributes legally according to the agreement*
 </div>
