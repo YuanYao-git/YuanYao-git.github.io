@@ -11,7 +11,7 @@ I am currently a junior student at Jilin University majoring in Mechanical Engin
 
 I am currently seeking a position in a graduate program and am determined to pursue a PhD degree. This personal website provides detailed information about my previous projects, including two periods of research experience at [Hu Huang's lab](http://teachers.jlu.edu.cn/HuangLab) in Jilin University and at [Shuji Tanaka MEMS lab](http://www.mems.mech.tohoku.ac.jp) in Tohoku University. 
 
-Feel free to reach out, or get more information from [**My CV（PDF）**](files/cv_YuanYao_20250318.pdf).
+Feel free to reach out, or get more information from [**My CV（PDF）**](files/cv_YuanYao_20250319.pdf).
 Thank you for your interest!
 <br/>
 <br/>

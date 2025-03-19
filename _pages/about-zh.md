@@ -10,7 +10,7 @@ redirect_from:
 
 我目前正在寻找研究生项目的职位，并决心攻读博士学位。这个个人网站详细介绍了我之前的项目，包括在吉林大学[黄虎](http://teachers.jlu.edu.cn/HuangLab)老师课题组和东北大学[田中秀治微机电系统](http://www.mems.mech.tohoku.ac.jp)课题组的两段研究经历。
 
-欢迎联系，或从[**我的简历(PDF)**]({{ site.baseurl }}/files/简历_姚远_20250318.pdf)获取更多信息。
+欢迎联系，或从[**我的简历(PDF)**]({{ site.baseurl }}/files/简历_姚远_20250319.pdf)获取更多信息。
 感谢您的关注！
 <br/>
 <br/>
