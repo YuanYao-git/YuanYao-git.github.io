@@ -12,8 +12,7 @@ I am currently seeking a position in a graduate program and am determined to pur
 
 Feel free to reach out, or get more information from [**My CV（PDF）**](https://pub-435f283cdbe44123bb9e69b79358e329.r2.dev/files/cv_YuanYao_20250330.pdf).
 Thank you for your interest!
-`<br/>`
-`<br/>`
+
 
 # 📒 Academic acheivements
 
@@ -52,6 +51,7 @@ Thank you for your interest!
 </div>
 
 
+
 <div class='paper-box'><div class='paper-box-image'><div><div class="badge">A paper published on Acatuators</div><img src='https://pub-435f283cdbe44123bb9e69b79358e329.r2.dev/images/fig4.png' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 
@@ -69,6 +69,8 @@ Thank you for your interest!
 </div>
 
 
+
+
 <div class='paper-box'><div class='paper-box-image'><div><div class="badge">An utility model patent</div><img src='https://pub-435f283cdbe44123bb9e69b79358e329.r2.dev/images/fig3.png' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 
@@ -84,6 +86,7 @@ Thank you for your interest!
 
 </div>
 </div>
+
 
 
 # 🥇 Honors and Awards
