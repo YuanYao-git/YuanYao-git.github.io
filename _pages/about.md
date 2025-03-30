@@ -6,19 +6,19 @@ redirect_from:
   - /about/
   - /about.html
 ---
+I am currently a junior student at Jilin University majoring in Mechanical Engineering. My research interests include microfabrication and laser technology.
 
-I am currently a junior student at Jilin University majoring in Mechanical Engineering. My research interests include microfabrication and laser technology. 
+I am currently seeking a position in a graduate program and am determined to pursue a PhD degree. This personal website provides detailed information about my previous projects, including two periods of research experience at [Hu Huang&#39;s lab](http://teachers.jlu.edu.cn/HuangLab) in Jilin University and at [Shuji Tanaka MEMS lab](http://www.mems.mech.tohoku.ac.jp) in Tohoku University.
 
-I am currently seeking a position in a graduate program and am determined to pursue a PhD degree. This personal website provides detailed information about my previous projects, including two periods of research experience at [Hu Huang's lab](http://teachers.jlu.edu.cn/HuangLab) in Jilin University and at [Shuji Tanaka MEMS lab](http://www.mems.mech.tohoku.ac.jp) in Tohoku University. 
-
-Feel free to reach out, or get more information from [**My CV（PDF）**](https://pub-435f283cdbe44123bb9e69b79358e329.r2.dev/files/cv_YuanYao_20250319.pdf).
+Feel free to reach out, or get more information from [**My CV（PDF）**](https://pub-435f283cdbe44123bb9e69b79358e329.r2.dev/files/cv_YuanYao_20250330.pdf).
 Thank you for your interest!
-<br/>
-<br/>
-
+`<br/>`
+`<br/>`
 
 # 📒 Academic acheivements
+
 <style>.paper-box{margin-top:-5mm;}</style>
+
 <div class='paper-box'><div class='paper-box-image'><div><div class="badge">IEEJ TEEE</div><img src='https://pub-435f283cdbe44123bb9e69b79358e329.r2.dev/images/fig1.png' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 
@@ -28,10 +28,12 @@ Thank you for your interest!
 
 •Yuan Yao, Andrea Vergara*, Zhengnan Tang, Shuji Tanaka
 
-•Submitted to the IEEJ transactions on electrical and electronic engineering as a conference extended paper.
+•IEEJ transactions on electrical and electronic engineering as a conference extended paper (currently under minor revision)
 
 </div>
 </div>
+
+
 
 <div class='paper-box'><div class='paper-box-image'><div><div class="badge">Oral presentation on MNC2024</div><img src='https://pub-435f283cdbe44123bb9e69b79358e329.r2.dev/images/fig2.png' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
@@ -45,8 +47,10 @@ Thank you for your interest!
 •[**Slides**](https://pub-435f283cdbe44123bb9e69b79358e329.r2.dev/files/MNC_slides.pdf)
 
 *© 2024 JSAP. All rights reserved. The author distributes legally according to the agreement*
+
 </div>
 </div>
+
 
 <div class='paper-box'><div class='paper-box-image'><div><div class="badge">A paper published on Acatuators</div><img src='https://pub-435f283cdbe44123bb9e69b79358e329.r2.dev/images/fig4.png' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
@@ -55,13 +59,15 @@ Thank you for your interest!
 
 •Measure and verify the thread-V groove composite structure to ensure effective vibration transmission; Through Abaqus modal analysis, the resonant frequency of the system is matched with the operating frequency of the ultrasonic transducer. Fills the gap in instruments capable of performing scratch tests under ultrasonic vibration.
 
-•Huang, Y.; Wu, H.; <strong>Yao, Y.</strong>; Zhao, H.; Huang, H<sup>*</sup>. Actuators 2024, 13, 262. [https://doi.org/10.3390/act13070262](https://doi.org/10.3390/act13070262)
+•Huang, Y.; Wu, H.; `<strong>`Yao, Y.`</strong>`; Zhao, H.; Huang, H`<sup>`*`</sup>`. Actuators 2024, 13, 262. [https://doi.org/10.3390/act13070262](https://doi.org/10.3390/act13070262)
 
 •[**Paper**](https://pub-435f283cdbe44123bb9e69b79358e329.r2.dev/files/acatuators.pdf)
 
 *© 2024 by the authors. Published under CC BY 4.0.*
+
 </div>
 </div>
+
 
 <div class='paper-box'><div class='paper-box-image'><div><div class="badge">An utility model patent</div><img src='https://pub-435f283cdbe44123bb9e69b79358e329.r2.dev/images/fig3.png' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
@@ -75,9 +81,9 @@ Thank you for your interest!
 •[**Patent**](https://pub-435f283cdbe44123bb9e69b79358e329.r2.dev/files/patent.pdf)
 
 *© 2024 Jilin University, All Rights Reserved. This patent document is public information.*
-</div>
-</div>
 
+</div>
+</div>
 
 
 # 🥇 Honors and Awards
@@ -100,12 +106,8 @@ Thank you for your interest!
   </tbody>
 </table>
 
-
-
-
-
-
 # 📚 Blogs
+
 <table style="width: 100%; border-collapse: separate; border-spacing: 0; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); max-height: 1000px; overflow-y: auto;font-size: 18px;border-radius: 20px; background-color: #e0e0e0;">
   <thead>
     <tr style="background-color: #e0e0e0; font-weight: bold;">
