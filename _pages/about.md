@@ -13,7 +13,6 @@ I am currently seeking a position in a graduate program and am determined to pur
 Feel free to reach out, or get more information from [**My CV（PDF）**](https://pub-435f283cdbe44123bb9e69b79358e329.r2.dev/files/cv_YuanYao_20250330.pdf).
 Thank you for your interest!
 
-
 # 📒 Academic acheivements
 
 <style>.paper-box{margin-top:-5mm;}</style>
@@ -59,7 +58,7 @@ Thank you for your interest!
 
 •Measure and verify the thread-V groove composite structure to ensure effective vibration transmission; Through Abaqus modal analysis, the resonant frequency of the system is matched with the operating frequency of the ultrasonic transducer. Fills the gap in instruments capable of performing scratch tests under ultrasonic vibration.
 
-•Huang, Y.; Wu, H.; `<strong>`Yao, Y.`</strong>`; Zhao, H.; Huang, H`<sup>`*`</sup>`. Actuators 2024, 13, 262. [https://doi.org/10.3390/act13070262](https://doi.org/10.3390/act13070262)
+•Huang, Y.; Wu, H.;**Yao, Y.**; Zhao, H.; Huang, H *. Actuators 2024, 13, 262. [https://doi.org/10.3390/act13070262](https://doi.org/10.3390/act13070262)
 
 •[**Paper**](https://pub-435f283cdbe44123bb9e69b79358e329.r2.dev/files/acatuators.pdf)
 
@@ -67,7 +66,6 @@ Thank you for your interest!
 
 </div>
 </div>
-
 
 
 
