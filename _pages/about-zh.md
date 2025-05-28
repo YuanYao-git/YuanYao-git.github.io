@@ -26,7 +26,7 @@ redirect_from:
 
 •Yuan Yao, Andrea Vergara*, Zhengnan Tang, Shuji Tanaka
 
-•作为会议扩展论文投稿至 IEEJ transactions on electrical and electronic engineering (小修中)
+•IEEJ transactions on electrical and electronic engineering (已接收)
 
 </div>
 </div>

@@ -26,7 +26,7 @@ Thank you for your interest!
 
 •Yuan Yao, Andrea Vergara*, Zhengnan Tang, Shuji Tanaka
 
-•IEEJ transactions on electrical and electronic engineering as a conference extended paper (currently under minor revision)
+•IEEJ Transactions on Electrical and Electronic Engineering (accepted)
 
 </div>
 </div>
