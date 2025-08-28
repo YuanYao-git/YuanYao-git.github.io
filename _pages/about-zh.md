@@ -10,13 +10,16 @@ redirect_from:
 
 我目前正在寻找研究生项目的职位，并决心攻读博士学位。这个个人网站详细介绍了我之前的项目，包括在吉林大学[黄虎](http://teachers.jlu.edu.cn/HuangLab)老师课题组和东北大学[田中秀治微机电系统](http://www.mems.mech.tohoku.ac.jp)课题组的两段研究经历。
 
-欢迎联系，或从[**我的简历(PDF)**](https://pub-435f283cdbe44123bb9e69b79358e329.r2.dev/files/%E7%AE%80%E5%8E%86_%E5%A7%9A%E8%BF%9C_20250604.pdf)获取更多信息。
+欢迎联系，或从[**我的简历(PDF)**](https://pub-435f283cdbe44123bb9e69b79358e329.r2.dev/files/%E7%AE%80%E5%8E%86_%E5%A7%9A%E8%BF%9C_20250828.pdf)获取更多信息。
 感谢您的关注！
-<br/>
-<br/>
+
+
+
 
 # 📒 学术成果
+
 <style>.paper-box{margin-top:-5mm;}</style>
+
 <div class='paper-box'><div class='paper-box-image'><div><div class="badge">IEEJ TEEE</div><img src='https://pub-435f283cdbe44123bb9e69b79358e329.r2.dev/images/fig1.png' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 
@@ -24,19 +27,23 @@ redirect_from:
 
 •这项研究提出了一种基于二维激光隐切与剥离的新型技术方案，通过优化隐切激光的扫描路径，实现无需特殊分离层的激光剥离，在简化工艺流程的同时具备与传统半导体工艺（如高温制程）的良好兼容性，具有提供柔性电子器件转移的应用潜力。
 
-•Yuan Yao, Andrea Vergara*, Zhengnan Tang, Shuji Tanaka
+• **Yuan Yao**, Andrea Vergara* , Zhengnan Tang, Shuji Tanaka.  _IEEJ transactions on electrical and electronic engineering_ [http://doi.org/10.1002/tee.70136](http://doi.org/10.1002/tee.70136)
 
-•IEEJ transactions on electrical and electronic engineering (已接收)
+•[**论文**](https://pub-435f283cdbe44123bb9e69b79358e329.r2.dev/files/IEEJ%20Transactions%20Elec%20Engng%20-%202025%20-%20Yao%20-%20Feasibility%20Study%20of%20Layer%20Separation%20Using%202D%20Patterned%20Internal%20Laser%20Damage.pdf)
+
+*© 2025，作者版权所有，CC BY 4.0*
 
 </div>
 </div>
+
+
 
 <div class='paper-box'><div class='paper-box-image'><div><div class="badge">MNC2024 口头汇报</div><img src='https://pub-435f283cdbe44123bb9e69b79358e329.r2.dev/images/fig2.png' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 
 ## 第37届国际微工艺与纳米技术会议(MNC2024)口头汇报
 
-•第37届国际微处理与纳米技术会议（MNC2024）口头报告，京都：日本应用物理学会，2024年11月，15D-2-3
+•第37届国际微处理与纳米技术会议（MNC2024）口头报告，京都：_日本应用物理学会_，2024年11月，15D-2-3
 
 •[**摘要**](https://pub-435f283cdbe44123bb9e69b79358e329.r2.dev/files/MNC_abstract.pdf)
 
@@ -47,6 +54,8 @@ redirect_from:
 </div>
 </div>
 
+
+
 <div class='paper-box'><div class='paper-box-image'><div><div class="badge">Acatuators论文</div><img src='https://pub-435f283cdbe44123bb9e69b79358e329.r2.dev/images/fig4.png' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 
@@ -54,13 +63,16 @@ redirect_from:
 
 •设计并验证螺纹-V型槽复合结构确保振动有效传递；通过 Abaqus模态仿真匹配系统共振频率与超声波换能器工作频率。填补了能够在超声振动下进行划痕测试的仪器空白。
 
-•Huang, Y.; Wu, H.; <strong>Yao, Y.</strong>; Zhao, H.; Huang, H<sup>*</sup>. Actuators 2024, 13, 262. [https://doi.org/10.3390/act13070262](https://doi.org/10.3390/act13070262)
+•Yaming Huang, Haoxiang Wu, **Yuan Yao,** Hongwei Zhao, Hu Huang *. _Actuators_ [https://doi.org/10.3390/act13070262](https://doi.org/10.3390/act13070262)
 
 •[**论文**](https://pub-435f283cdbe44123bb9e69b79358e329.r2.dev/files/acatuators.pdf)
 
 *© 2024，作者版权所有，CC BY 4.0*
+
 </div>
 </div>
+
+
 
 <div class='paper-box'><div class='paper-box-image'><div><div class="badge">实用新型专利</div><img src='https://pub-435f283cdbe44123bb9e69b79358e329.r2.dev/images/fig3.png' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
@@ -69,11 +81,12 @@ redirect_from:
 
 •设计了一种用于用于振动辅助划痕测试的超声振动装置，具有稳定的振幅和较高的振动精度，且振幅调节方便，能够为振动辅助划痕测试提供稳定的振动源。
 
-•黄虎；姚远；黄雅明；吴浩翔.一种用于振动辅助划痕测试的超声振动装置:中国, [CN 220649966U](http://epub.cnipa.gov.cn/patent/CN220649966U).2024-03-22.
+•黄虎；**姚远**；黄雅明；吴浩翔.一种用于振动辅助划痕测试的超声振动装置:中国, [CN 220649966U](http://epub.cnipa.gov.cn/patent/CN220649966U).2024-03-22.
 
 •[**专利**](https://pub-435f283cdbe44123bb9e69b79358e329.r2.dev/files/patent.pdf)
 
 *© 2024，吉林大学版权所有，本专利文件为公开信息*
+
 </div>
 </div>
 
@@ -99,9 +112,8 @@ redirect_from:
   </tbody>
 </table>
 
-
-
 # 📚 博客
+
 <table style="width: 100%; border-collapse: separate; border-spacing: 0; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); max-height: 1000px; overflow-y: auto;font-size: 18px;border-radius: 20px; background-color: #e0e0e0;">
   <thead>
     <tr style="background-color: #e0e0e0; font-weight: bold;">

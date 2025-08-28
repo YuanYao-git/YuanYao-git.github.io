@@ -10,7 +10,7 @@ I am currently a junior student at Jilin University majoring in Mechanical Engin
 
 I am currently seeking a position in a graduate program and am determined to pursue a PhD degree. This personal website provides detailed information about my previous projects, including two periods of research experience at [Hu Huang&#39;s lab](http://teachers.jlu.edu.cn/HuangLab) in Jilin University and at [Shuji Tanaka MEMS lab](http://www.mems.mech.tohoku.ac.jp) in Tohoku University.
 
-Feel free to reach out, or get more information from [**My CV（PDF）**](https://pub-435f283cdbe44123bb9e69b79358e329.r2.dev/files/cv_YuanYao_20250604.pdf).
+Feel free to reach out, or get more information from [**My CV（PDF）**](https://pub-435f283cdbe44123bb9e69b79358e329.r2.dev/files/cv_YuanYao_20250828.pdf).
 Thank you for your interest!
 
 # 📒 Academic acheivements
@@ -24,9 +24,11 @@ Thank you for your interest!
 
 •This study presents a novel technical solution based on two-dimensional laser delamination. By optimizing the scanning path of the steal laser dicing, it achieves laser-lift-off without the need for a special separation layer. This approach simplifies the process flow while maintaining good compatibility with traditional semiconductor processes (such as high-temperature processing), and holds potential for applications in the transfer of flexible electronic devices.
 
-•Yuan Yao, Andrea Vergara*, Zhengnan Tang, Shuji Tanaka
+• **Yuan Yao**, Andrea Vergara* , Zhengnan Tang, Shuji Tanaka.  _IEEJ transactions on electrical and electronic engineering_ [http://doi.org/10.1002/tee.70136](http://doi.org/10.1002/tee.70136)
 
-•IEEJ Transactions on Electrical and Electronic Engineering (accepted)
+•[**Paper**](https://pub-435f283cdbe44123bb9e69b79358e329.r2.dev/files/IEEJ%20Transactions%20Elec%20Engng%20-%202025%20-%20Yao%20-%20Feasibility%20Study%20of%20Layer%20Separation%20Using%202D%20Patterned%20Internal%20Laser%20Damage.pdf)
+
+*© 2025 by the authors. Published under CC BY 4.0.*
 
 </div>
 </div>
@@ -38,7 +40,7 @@ Thank you for your interest!
 
 ## Oral presentation on the 37th International Microprocesses and Nanotechnology Conference (MNC2024)
 
-•Oral presentation on the 37th International Microprocesses and Nanotechnology Conference (MNC2024), Kyoto: The Japan Society of Applied Physics, Nov. 2024, 15D-2-3
+•Oral presentation on the 37th International Microprocesses and Nanotechnology Conference (MNC2024), Kyoto: _The Japan Society of Applied Physics_, Nov. 2024, 15D-2-3
 
 •[**Abstract**](https://pub-435f283cdbe44123bb9e69b79358e329.r2.dev/files/MNC_abstract.pdf)
 
@@ -58,7 +60,7 @@ Thank you for your interest!
 
 •Measure and verify the thread-V groove composite structure to ensure effective vibration transmission; Through Abaqus modal analysis, the resonant frequency of the system is matched with the operating frequency of the ultrasonic transducer. Fills the gap in instruments capable of performing scratch tests under ultrasonic vibration.
 
-•Huang, Y.; Wu, H.;**Yao, Y.**; Zhao, H.; Huang, H *. Actuators 2024, 13, 262. [https://doi.org/10.3390/act13070262](https://doi.org/10.3390/act13070262)
+•Yaming Huang, Haoxiang Wu, **Yuan Yao,** Hongwei Zhao, Hu Huang *. _Actuators_ [https://doi.org/10.3390/act13070262](https://doi.org/10.3390/act13070262)
 
 •[**Paper**](https://pub-435f283cdbe44123bb9e69b79358e329.r2.dev/files/acatuators.pdf)
 
@@ -76,7 +78,7 @@ Thank you for your interest!
 
 •An ultrasonic vibration device is designed for vibration assisted scratch test. It has stable amplitude, high vibration accuracy and easy amplitude adjustment, and can provide a stable vibration source for vibration assisted scratch test.
 
-•H. Huang, Y. Yao, Y. Huang, and H. Wu, “An ultrasonic vibration device for vibration-assisted scratch testing,” Chinese Patent [CN 220649966U](http://epub.cnipa.gov.cn/patent/CN220649966U), Mar. 22, 2024.
+•Hu Huang, **Yuan Yao**, Yaming Huang, and Haoxiang Wu, “An ultrasonic vibration device for vibration-assisted scratch testing,” _Chinese Patent_ [CN 220649966U](http://epub.cnipa.gov.cn/patent/CN220649966U), Mar. 22, 2024.
 
 •[**Patent**](https://pub-435f283cdbe44123bb9e69b79358e329.r2.dev/files/patent.pdf)
 
