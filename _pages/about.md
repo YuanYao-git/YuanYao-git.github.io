@@ -42,8 +42,6 @@ Thank you for your interest!
 
 •Oral presentation on the 37th International Microprocesses and Nanotechnology Conference (MNC2024), Kyoto: _The Japan Society of Applied Physics_, Nov. 2024, 15D-2-3
 
-•[**Abstract**](https://pub-435f283cdbe44123bb9e69b79358e329.r2.dev/files/MNC_abstract.pdf)
-
 •[**Slides**](https://pub-435f283cdbe44123bb9e69b79358e329.r2.dev/files/MNC_slides.pdf)
 
 *© 2024 JSAP. All rights reserved. The author distributes legally according to the agreement*
@@ -70,7 +68,6 @@ Thank you for your interest!
 </div>
 
 
-
 <div class='paper-box'><div class='paper-box-image'><div><div class="badge">An utility model patent</div><img src='https://pub-435f283cdbe44123bb9e69b79358e329.r2.dev/images/fig3.png' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 
@@ -86,7 +83,6 @@ Thank you for your interest!
 
 </div>
 </div>
-
 
 
 # 🥇 Honors and Awards

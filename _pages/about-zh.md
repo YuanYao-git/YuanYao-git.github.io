@@ -13,9 +13,6 @@ redirect_from:
 欢迎联系，或从[**我的简历(PDF)**](https://pub-435f283cdbe44123bb9e69b79358e329.r2.dev/files/%E7%AE%80%E5%8E%86_%E5%A7%9A%E8%BF%9C_20250828.pdf)获取更多信息。
 感谢您的关注！
 
-
-
-
 # 📒 学术成果
 
 <style>.paper-box{margin-top:-5mm;}</style>
@@ -45,8 +42,6 @@ redirect_from:
 
 •第37届国际微处理与纳米技术会议（MNC2024）口头报告，京都：_日本应用物理学会_，2024年11月，15D-2-3
 
-•[**摘要**](https://pub-435f283cdbe44123bb9e69b79358e329.r2.dev/files/MNC_abstract.pdf)
-
 •[**幻灯片**](https://pub-435f283cdbe44123bb9e69b79358e329.r2.dev/files/MNC_slides.pdf)
 
 *© 2024，JSAP 版权所有，作者按协议合法分发*
@@ -73,7 +68,6 @@ redirect_from:
 </div>
 
 
-
 <div class='paper-box'><div class='paper-box-image'><div><div class="badge">实用新型专利</div><img src='https://pub-435f283cdbe44123bb9e69b79358e329.r2.dev/images/fig3.png' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 
@@ -89,7 +83,6 @@ redirect_from:
 
 </div>
 </div>
-
 
 
 # 🥇 荣誉和奖项
