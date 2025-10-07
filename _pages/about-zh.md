@@ -6,7 +6,7 @@ redirect_from:
   - /about/zh
   - /about/zh.html
 ---
-我目前是吉林大学机械工程专业的大三学生。我的研究兴趣包括微纳制造和激光技术。
+我目前是吉林大学机械工程专业的大四学生。我的研究兴趣包括微纳制造和激光技术。
 
 我目前正在寻找研究生项目的职位，并决心攻读博士学位。这个个人网站详细介绍了我之前的项目，包括在吉林大学[黄虎](http://teachers.jlu.edu.cn/HuangLab)老师课题组和东北大学[田中秀治微机电系统](http://www.mems.mech.tohoku.ac.jp)课题组的两段研究经历。
 
@@ -32,7 +32,6 @@ redirect_from:
 
 </div>
 </div>
-
 
 
 <div class='paper-box'><div class='paper-box-image'><div><div class="badge">MNC2024 口头汇报</div><img src='https://pub-435f283cdbe44123bb9e69b79358e329.r2.dev/images/fig2.png' alt="sym" width="100%"></div></div>
@@ -68,6 +67,7 @@ redirect_from:
 </div>
 
 
+
 <div class='paper-box'><div class='paper-box-image'><div><div class="badge">实用新型专利</div><img src='https://pub-435f283cdbe44123bb9e69b79358e329.r2.dev/images/fig3.png' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 
@@ -83,6 +83,7 @@ redirect_from:
 
 </div>
 </div>
+
 
 
 # 🥇 荣誉和奖项

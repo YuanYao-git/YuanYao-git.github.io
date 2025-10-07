@@ -6,7 +6,7 @@ redirect_from:
   - /about/
   - /about.html
 ---
-I am currently a junior student at Jilin University majoring in Mechanical Engineering. My research interests include microfabrication and laser technology.
+I am currently a  senior student at Jilin University majoring in Mechanical Engineering. My research interests include microfabrication and laser technology.
 
 I am currently seeking a position in a graduate program and am determined to pursue a PhD degree. This personal website provides detailed information about my previous projects, including two periods of research experience at [Hu Huang&#39;s lab](http://teachers.jlu.edu.cn/HuangLab) in Jilin University and at [Shuji Tanaka MEMS lab](http://www.mems.mech.tohoku.ac.jp) in Tohoku University.
 
@@ -50,7 +50,6 @@ Thank you for your interest!
 </div>
 
 
-
 <div class='paper-box'><div class='paper-box-image'><div><div class="badge">A paper published on Acatuators</div><img src='https://pub-435f283cdbe44123bb9e69b79358e329.r2.dev/images/fig4.png' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 
@@ -66,6 +65,7 @@ Thank you for your interest!
 
 </div>
 </div>
+
 
 
 <div class='paper-box'><div class='paper-box-image'><div><div class="badge">An utility model patent</div><img src='https://pub-435f283cdbe44123bb9e69b79358e329.r2.dev/images/fig3.png' alt="sym" width="100%"></div></div>

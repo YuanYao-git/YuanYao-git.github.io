@@ -24,10 +24,10 @@ author:
   avatar           : "profile.png"
   name             : "Yuan Yao(姚远)"
   pronouns         : # example: "she/her"
-  bio              : "I am a junior student at JLU. Nice to meet you!      
-                     <br>我是一名来自吉林大学的大三学生，很高兴认识你！"
-  location         : "Changchun, China<br> "
-  employer         : "Jilin University<br> "
+  bio              : "I am a senior student at JLU. Nice to meet you!      
+                     <br>我是一名来自吉林大学的大四学生，很高兴认识你！"
+  location         : " Changchun, China<br> "
+  employer         : " Jilin University<br> "
   uri              : # URL
   email            : "yuanyao@ieee.org"
 
@@ -36,11 +36,12 @@ author:
   arxiv            : # URL - Update with the correct link to your profile
   googlescholar    : #"https://scholar.google.com/citations?user=PS_CX0AAAAAJ"
   impactstory      : # URL
-  orcid            : #"http://orcid.org/0009-0000-6987-8864"
+  scopus           : #"https://www.scopus.com/authid/detail.uri?authorId=60079907000"
+  orcid            : #" http://orcid.org/0009-0000-6987-8864"
   semantic         : # URL
   pubmed           : #"https://www.ncbi.nlm.nih.gov/pubmed/?term=john+snow"
   researchgate     : # URL
-  scopus           : # URL
+  
 
   # Repositories and software development
   github           : #"YuanYao-git"
