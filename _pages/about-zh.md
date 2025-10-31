@@ -8,7 +8,7 @@ redirect_from:
 ---
 我目前是吉林大学机械工程专业的大四学生。我的研究兴趣包括微纳制造和激光技术。
 
-我目前正在寻找研究生项目的职位，并决心攻读博士学位。这个个人网站详细介绍了我之前的项目，包括在吉林大学[黄虎](http://teachers.jlu.edu.cn/HuangLab)老师课题组和东北大学[田中秀治微机电系统](http://www.mems.mech.tohoku.ac.jp)课题组的两段研究经历。
+该个人网站详细介绍了我之前的项目，包括在吉林大学[黄虎](http://teachers.jlu.edu.cn/HuangLab)老师课题组和东北大学[田中秀治微机电系统](http://www.mems.mech.tohoku.ac.jp)课题组的两段研究经历。我将在2026年作为一名博士生加入北京大学[魏贤龙](http://mvdl.pku.edu.cn/zh/)老师课题组
 
 欢迎联系，或从[**我的简历(PDF)**](https://pub-435f283cdbe44123bb9e69b79358e329.r2.dev/files/%E7%AE%80%E5%8E%86_%E5%A7%9A%E8%BF%9C_20250828.pdf)获取更多信息。
 感谢您的关注！
@@ -84,28 +84,6 @@ redirect_from:
 </div>
 </div>
 
-
-
-# 🥇 荣誉和奖项
-
-<table style="width: 100%; border-collapse: separate; border-spacing: 0; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); border-radius: 20px; background-color: #e0e0e0;">
-  <tbody>
-    <tr>
-      <td style="padding: 20px; text-align: left; font-size: 18px; border-right: 1px solid #ddd; border-bottom: 1px solid #ddd; border-left: 1px solid #ddd; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); border-radius: 20px;">
-        <ul>
-          <li>2024.06: 全国大学生创新创业训练计划（大创）- <strong>国家级优秀结题</strong></li>
-          <li>2022.08: 第十五届“高教杯”全国大学生先进成图技术与产品信息建模创新大赛（成图大赛）- <strong>全国二等奖</strong></li>
-          <li>2023.11: 中国大学生工程实践与创新能力大赛- <strong>省级一等奖</strong></li>
-          <li>2023.10-2024.8: 交换生奖学金- 日本学生支援机构</li>
-          <li>2023.11/2022.11: 一等奖学金- 吉林大学</li>
-          <li>2023.11/2022.11: 校优秀学生- 吉林大学</li>
-          <li>2022.11: 院优秀学生干部- 吉林大学</li>
-        </ul>
-      </td>
-    </tr>
-  </tbody>
-</table>
-
 # 📚 博客
 
 <table style="width: 100%; border-collapse: separate; border-spacing: 0; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); max-height: 1000px; overflow-y: auto;font-size: 18px;border-radius: 20px; background-color: #e0e0e0;">
@@ -116,6 +94,22 @@ redirect_from:
     </tr>
   </thead>
   <tbody>
+
+   <!-- Fifth Blog Group (English and Chinese) -->
+  <tr style="background-color: #e0e0e0;">
+      <td style="padding: 15px; text-align: center; border-right: 1px solid #ddd; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); transition: transform 0.3s ease; border-radius: 0px;">
+        <div class="badge">Recall of summer research at Westlake University</div>
+        <a href="/posts/2025/10/post/555">
+          <img src='https://pub-435f283cdbe44123bb9e69b79358e329.r2.dev/images/%E8%A5%BF%E6%B9%96%E5%A4%A7%E5%AD%A6%E7%85%A7%E7%89%87/IMG_3170%202.jpg' alt="sym" style="width: 100%; max-width: 400px; height: auto; display: block; margin: 0 auto; border-radius: 15px; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); transition: transform 0.3s ease;">
+        </a>
+      </td>
+      <td style="padding: 15px; text-align: center; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); transition: transform 0.3s ease; border-radius: 0px;">
+        <div class="badge">暑研回忆-西湖大学</div>
+        <a href="/posts/2025/10/post/5">
+          <img src='https://pub-435f283cdbe44123bb9e69b79358e329.r2.dev/images/%E8%A5%BF%E6%B9%96%E5%A4%A7%E5%AD%A6%E7%85%A7%E7%89%87/IMG_3627%202.jpg' alt="sym" style="width: 100%; max-width: 400px; height: auto; display: block; margin: 0 auto; border-radius: 15px; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); transition: transform 0.3s ease;">
+        </a>
+      </td>
+    </tr>
     <!-- First Blog Group (English and Chinese) -->
     <tr style="background-color: #e0e0e0;">
       <td style="padding: 15px; text-align: center; border-right: 1px solid #ddd; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); transition: transform 0.3s ease; border-radius: 0px;">

@@ -8,7 +8,7 @@ redirect_from:
 ---
 I am currently a  senior student at Jilin University majoring in Mechanical Engineering. My research interests include microfabrication and laser technology.
 
-I am currently seeking a position in a graduate program and am determined to pursue a PhD degree. This personal website provides detailed information about my previous projects, including two periods of research experience at [Hu Huang&#39;s lab](http://teachers.jlu.edu.cn/HuangLab) in Jilin University and at [Shuji Tanaka MEMS lab](http://www.mems.mech.tohoku.ac.jp) in Tohoku University.
+I am currently seeking a position in a graduate program and am determined to pursue a PhD degree. This personal website provides detailed information about my previous projects, including two periods of research experience at [Hu Huang&#39;s lab](http://teachers.jlu.edu.cn/HuangLab) at Jilin University and at [Shuji Tanaka MEMS lab](http://www.mems.mech.tohoku.ac.jp) at Tohoku University. And at 2026, I will join [Xianlong Wei&#39;s lab](http://mvdl.pku.edu.cn/en/) at Peking University as a Ph.D. student.
 
 Feel free to reach out, or get more information from [**My CV（PDF）**](https://pub-435f283cdbe44123bb9e69b79358e329.r2.dev/files/cv_YuanYao_20250828.pdf).
 Thank you for your interest!
@@ -67,7 +67,6 @@ Thank you for your interest!
 </div>
 
 
-
 <div class='paper-box'><div class='paper-box-image'><div><div class="badge">An utility model patent</div><img src='https://pub-435f283cdbe44123bb9e69b79358e329.r2.dev/images/fig3.png' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 
@@ -85,26 +84,6 @@ Thank you for your interest!
 </div>
 
 
-# 🥇 Honors and Awards
-
-<table style="width: 100%; border-collapse: separate; border-spacing: 0; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); border-radius: 20px; background-color: #e0e0e0;">
-  <tbody>
-    <tr>
-      <td style="padding: 20px; text-align: left; font-size: 18px; border-right: 1px solid #ddd; border-bottom: 1px solid #ddd; border-left: 1px solid #ddd; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); border-radius: 20px;">
-        <ul>
-          <li>2024.06: National Undergraduate Training Program for Innovation and Entrepreneurship(NCSIETP)- <strong>National Excellent Conclusion</strong></li>
-          <li>2022.08: The 15th “Higher Education Cup” National University Students’ Advanced Graphic Technology and Product Information Modeling Innovation Contest- <strong>National second prize</strong></li>
-          <li>2023.11: China College Students Engineering Practice and Innovation Competition- <strong>Provincial first prize</strong></li>
-          <li>2023.10-2024.8: Exchange student scholarship- Japan Student Services Organization</li>
-          <li>2023.11/2022.11: First-class scholarship- Jilin University</li>
-          <li>2023.11/2022.11: University Excellent Student- Jilin University</li>
-          <li>2022.11: College excellent student leader - Jilin University</li>
-        </ul>
-      </td>
-    </tr>
-  </tbody>
-</table>
-
 # 📚 Blogs
 
 <table style="width: 100%; border-collapse: separate; border-spacing: 0; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); max-height: 1000px; overflow-y: auto;font-size: 18px;border-radius: 20px; background-color: #e0e0e0;">
@@ -115,6 +94,21 @@ Thank you for your interest!
     </tr>
   </thead>
   <tbody>
+   <!-- Fifth Blog Group (English and Chinese) -->
+  <tr style="background-color: #e0e0e0;">
+      <td style="padding: 15px; text-align: center; border-right: 1px solid #ddd; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); transition: transform 0.3s ease; border-radius: 0px;">
+        <div class="badge">Recall of summer research at Westlake University</div>
+        <a href="/posts/2025/10/post/555">
+          <img src='https://pub-435f283cdbe44123bb9e69b79358e329.r2.dev/images/%E8%A5%BF%E6%B9%96%E5%A4%A7%E5%AD%A6%E7%85%A7%E7%89%87/IMG_3170%202.jpg' alt="sym" style="width: 100%; max-width: 400px; height: auto; display: block; margin: 0 auto; border-radius: 15px; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); transition: transform 0.3s ease;">
+        </a>
+      </td>
+      <td style="padding: 15px; text-align: center; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); transition: transform 0.3s ease; border-radius: 0px;">
+        <div class="badge">暑研回忆-西湖大学</div>
+        <a href="/posts/2025/10/post/5">
+          <img src='https://pub-435f283cdbe44123bb9e69b79358e329.r2.dev/images/%E8%A5%BF%E6%B9%96%E5%A4%A7%E5%AD%A6%E7%85%A7%E7%89%87/IMG_3627%202.jpg' alt="sym" style="width: 100%; max-width: 400px; height: auto; display: block; margin: 0 auto; border-radius: 15px; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); transition: transform 0.3s ease;">
+        </a>
+      </td>
+    </tr>
     <!-- First Blog Group (English and Chinese) -->
     <tr style="background-color: #e0e0e0;">
       <td style="padding: 15px; text-align: center; border-right: 1px solid #ddd; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); transition: transform 0.3s ease; border-radius: 0px;">
