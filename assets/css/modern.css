@@ -12,35 +12,6 @@
     --font-eyebrow: 'Oswald', 'Helvetica Neue', 'Arial Narrow', sans-serif;
 }
 
-.video-bg-wrapper {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100vh;
-    z-index: -9999;
-    overflow: hidden;
-    background: #000 url("../images/heropic.png") center/cover no-repeat;
-}
-
-.video-bg-wrapper video {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    display: block;
-    opacity: 0.6;
-}
-
-.video-overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.8));
-    z-index: 1;
-}
-
 body {
     font-family: var(--font-body);
     font-size: 16px;
