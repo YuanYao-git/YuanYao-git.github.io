@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+{% assign page_lang = page.lang | default: site.locale | default: 'en-US' %}
+<html lang="{{ page_lang }}">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>{% if page.title %}{{ page.title }} - {% endif %}{{ site.title }}</title>
+    <link rel="stylesheet" href="{{ "/assets/css/modern.css" | relative_url }}">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Libre+Baskerville:wght@400;700&family=Noto+Serif+SC:wght@400;600;700&family=Oswald:wght@500&display=swap" rel="stylesheet">
+</head>
+
+<body{% if page.fullwidth %} class="has-panels"{% endif %}>
+    <div class="animated-bg-container" aria-hidden="true"></div>
+    <canvas id="background-canvas" aria-hidden="true"></canvas>
+
+    <header class="site-header">
+        <div class="wrapper">
+            {% assign lang_code = page.lang | default: '' %}
+            <nav class="site-nav">
+                {% if lang_code contains 'zh' %}
+                <a class="active" href="{{ "/" | relative_url }}">中文主页</a>
+                <a href="{{ "/en/" | relative_url }}">English</a>
+                {% else %}
+                <a href="{{ "/" | relative_url }}">中文主页</a>
+                <a class="active" href="{{ "/en/" | relative_url }}">English</a>
+                {% endif %}
+            </nav>
+        </div>
+    </header>
+
+    {% assign hero_title = page.hero_title | default: site.name | default: site.title %}
+    {% assign hero_subtitle = page.hero_subtitle | default: site.description %}
+    <div class="hero snap-section snap-hero">
+        <img src="{{ "/assets/images/hero.jpg" | relative_url }}" alt="Hero Background" class="hero-image">
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <h1 class="hero-title">{{ hero_title }}</h1>
+            {% if hero_subtitle %}
+            <div class="hero-subtitle">{{ hero_subtitle }}</div>
+            {% endif %}
+        </div>
+    </div>
+
+    <main class="page-content" aria-label="Content">
+        <div class="wrapper{% if page.fullwidth %} wrapper-full{% endif %}">
+            {{ content }}
+        </div>
+    </main>
+
+    <footer class="site-footer">
+        <div class="wrapper">
+            <p>&copy; {{ site.time | date: '%Y' }} {{ site.name | default: site.title }}.</p>
+        </div>
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const canvas = document.getElementById('background-canvas');
+            if (!canvas) {
+                return;
+            }
+            const ctx = canvas.getContext('2d');
+            let width = 0;
+            let viewHeight = 0;
+            let docHeight = 0;
+            let particles = [];
+            const density = 0.00012;
+
+            const createParticle = () => ({
+                x: Math.random() * width,
+                y: Math.random() * docHeight,
+                vx: (Math.random() - 0.5) * 0.35,
+                vy: (Math.random() - 0.5) * 0.35,
+                radius: Math.random() * 2 + 0.6,
+                alpha: 0.2 + Math.random() * 0.5,
+                hue: 190 + Math.random() * 40
+            });
+
+            const resizeCanvas = () => {
+                width = window.innerWidth;
+                viewHeight = window.innerHeight;
+                docHeight = Math.max(document.body.scrollHeight, viewHeight);
+                canvas.width = width;
+                canvas.height = docHeight;
+                const count = Math.max(160, Math.floor(width * viewHeight * density));
+                particles = Array.from({ length: count }, createParticle);
+            };
+
+            const drawParticles = () => {
+                ctx.clearRect(0, 0, width, docHeight);
+                ctx.fillStyle = '#020306';
+                ctx.fillRect(0, 0, width, docHeight);
+                particles.forEach((p) => {
+                    p.x += p.vx;
+                    p.y += p.vy;
+                    if (p.x < -20) p.x = width + 20;
+                    if (p.x > width + 20) p.x = -20;
+                    if (p.y < -20) p.y = docHeight + 20;
+                    if (p.y > docHeight + 20) p.y = -20;
+
+                    ctx.beginPath();
+                    ctx.fillStyle = `hsla(${p.hue}, 70%, 65%, ${p.alpha})`;
+                    ctx.arc(p.x, p.y, p.radius, 0, Math.PI * 2);
+                    ctx.fill();
+
+                    if (p.y < viewHeight + 200) {
+                        ctx.beginPath();
+                        ctx.strokeStyle = `hsla(${p.hue}, 80%, 70%, ${p.alpha * 0.35})`;
+                        ctx.moveTo(p.x, p.y);
+                        ctx.lineTo(p.x + p.vx * 30, p.y + p.vy * 30);
+                        ctx.stroke();
+                    }
+                });
+                requestAnimationFrame(drawParticles);
+            };
+
+            resizeCanvas();
+            drawParticles();
+            window.addEventListener('resize', resizeCanvas);
+            window.addEventListener('orientationchange', resizeCanvas);
+            window.setTimeout(resizeCanvas, 1000);
+
+            const sections = Array.from(document.querySelectorAll('.snap-section'));
+            if (!sections.length) {
+                return;
+            }
+
+            const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+            const heroSection = document.querySelector('.snap-hero');
+            const firstContentSection = sections.length > 1 ? sections[1] : null;
+            let heroSnapEnabled = false;
+            let heroSnapping = false;
+
+            const updateHeroSnapState = () => {
+                heroSnapEnabled = !!heroSection && window.innerWidth > 1024 && !prefersReducedMotion;
+            };
+
+            updateHeroSnapState();
+            window.addEventListener('resize', updateHeroSnapState);
+            window.addEventListener('orientationchange', updateHeroSnapState);
+
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach((entry) => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('is-active');
+                    } else {
+                        entry.target.classList.remove('is-active');
+                    }
+                });
+            }, { threshold: 0.65 });
+
+            sections.forEach((section) => observer.observe(section));
+            sections[0].classList.add('is-active');
+
+            const snapToNext = () => {
+                if (!firstContentSection || heroSnapping) return;
+                heroSnapping = true;
+                firstContentSection.scrollIntoView({ behavior: 'smooth' });
+                setTimeout(() => { heroSnapping = false; }, 900);
+            };
+
+            const snapToTop = () => {
+                if (heroSnapping) return;
+                heroSnapping = true;
+                window.scrollTo({ top: 0, behavior: 'smooth' });
+                setTimeout(() => { heroSnapping = false; }, 900);
+            };
+
+            window.addEventListener('wheel', (event) => {
+                if (!heroSnapEnabled || !heroSection) return;
+                if (Math.abs(event.deltaY) < 5) return;
+                const heroHeight = heroSection.offsetHeight;
+                const scrollTop = window.scrollY;
+                if (event.deltaY > 0 && scrollTop < heroHeight - 20) {
+                    event.preventDefault();
+                    snapToNext();
+                } else if (event.deltaY < 0 && scrollTop <= heroHeight + 10) {
+                    event.preventDefault();
+                    snapToTop();
+                }
+            }, { passive: false });
+
+            window.addEventListener('keydown', (event) => {
+                if (!heroSnapEnabled || !heroSection) return;
+                if (event.key !== 'ArrowDown' && event.key !== 'ArrowUp') return;
+                const heroHeight = heroSection.offsetHeight;
+                const scrollTop = window.scrollY;
+                if (event.key === 'ArrowDown' && scrollTop < heroHeight - 20) {
+                    event.preventDefault();
+                    snapToNext();
+                } else if (event.key === 'ArrowUp' && scrollTop <= heroHeight + 10) {
+                    event.preventDefault();
+                    snapToTop();
+                }
+            });
+        });
+    </script>
+
+</body>
+
+</html>

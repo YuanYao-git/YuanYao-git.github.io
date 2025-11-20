@@ -1,25 +1,47 @@
----
-layout: compress
----
+<!DOCTYPE html>
+{% assign page_lang = page.lang | default: site.locale | default: 'en-US' %}
+<html lang="{{ page_lang }}">
 
-{% include base_path %}
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>{% if page.title %}{{ page.title }} - {% endif %}{{ site.title }}</title>
+    <link rel="stylesheet" href="{{ "/assets/css/main.css" | relative_url }}">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Libre+Baskerville:wght@400;700&family=Noto+Serif+SC:wght@400;600;700&family=Oswald:wght@500&display=swap" rel="stylesheet">
+</head>
 
-<!doctype html>
-<html lang="{{ site.locale | slice: 0,2 }}" class="no-js">
-  <head>
-    {% include head.html %}
-    {% include head/custom.html %}
-  </head>
+<body>
 
-  <body>
+    <header class="site-header">
+        <div class="wrapper">
+            <a class="site-title" href="{{ "/" | relative_url }}">{{ site.title }}</a>
+            {% assign lang_code = page.lang | default: '' %}
+            <nav class="site-nav">
+                {% if lang_code contains 'zh' %}
+                <a class="active" href="{{ "/" | relative_url }}">中文主页</a>
+                <a href="{{ "/en/" | relative_url }}">English</a>
+                {% else %}
+                <a href="{{ "/" | relative_url }}">中文主页</a>
+                <a class="active" href="{{ "/en/" | relative_url }}">English</a>
+                {% endif %}
+            </nav>
+        </div>
+    </header>
 
-    {% include browser-upgrade.html %}
-    {% include masthead.html %}
+    <main class="page-content" aria-label="Content">
+        <div class="wrapper">
+            {{ content }}
+        </div>
+    </main>
 
-    {{ content }}
+    <footer class="site-footer">
+        <div class="wrapper">
+            <p>&copy; {{ site.time | date: '%Y' }} {{ site.name | default: site.title }}.</p>
+        </div>
+    </footer>
 
+</body>
 
-    {% include scripts.html %}
-
-  </body>
 </html>

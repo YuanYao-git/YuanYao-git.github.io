@@ -1,173 +1,99 @@
 ---
-permalink: /
+permalink: /en/
 title: "About me"
 author_profile: true
+layout: modern_home
+hero_title: "Yuan Yao"
+hero_subtitle: "Jilin University | Micro/Nano Fabrication"
+lang: en
+fullwidth: true
 redirect_from: 
   - /about/
   - /about.html
 ---
-I am currently a  senior student at Jilin University majoring in Mechanical Engineering. My research interests include microfabrication and laser technology.
 
-I am currently seeking a position in a graduate program and am determined to pursue a PhD degree. This personal website provides detailed information about my previous projects, including two periods of research experience at [Hu Huang&#39;s lab](http://teachers.jlu.edu.cn/HuangLab) at Jilin University and at [Shuji Tanaka MEMS lab](http://www.mems.mech.tohoku.ac.jp) at Tohoku University. And at 2026, I will join [Xianlong Wei&#39;s lab](http://mvdl.pku.edu.cn/en/) at Peking University as a Ph.D. student.
+{% assign blog_cards = site.data.blog_cards | where: "lang", page.lang | slice: 0, 5 %}
+{% assign blog_cta = "Read ↗" %}
 
-Feel free to reach out, or get more information from [**My CV（PDF）**](https://pub-435f283cdbe44123bb9e69b79358e329.r2.dev/files/cv_YuanYao_20250828.pdf).
-Thank you for your interest!
+<div class="panel-container">
 
-# 📒 Academic acheivements
+  <section class="panel snap-section panel-intro">
+    <div class="panel-inner">
+      <p class="eyebrow">About</p>
+      <h2>Combining micro-nano manufacturing with engineering practice.</h2>
+      <p>I study Mechanical Engineering at Jilin University and focus on microfabrication and laser fabrication. I keep close ties with <a href="http://teachers.jlu.edu.cn/HuangLab">Hu Huang’s lab</a> and the <a href="http://www.mems.mech.tohoku.ac.jp">Shuji Tanaka MEMS Lab</a> at Tohoku University.</p>
+      <p>In 2026 I will join <a href="http://mvdl.pku.edu.cn/en/">Prof. Xianlong Wei’s group</a> at Peking University for Ph.D. studies, continuing the same interests with a stronger experimental toolkit.</p>
+      <ul class="quick-facts">
+        <li><strong>Recent labs</strong><br>Hu Huang Lab (JLU) · Shuji Tanaka MEMS Lab (Tohoku).</li>
+        <li><strong>Interests</strong><br>Micro/nano manufacturing · laser fabrication.</li>
+        <li><strong>Next step</strong><br>Ph.D. student with Prof. Wei at PKU in 2026.</li>
+      </ul>
+      <div class="cta-group">
+        <a class="button" href="https://pub-435f283cdbe44123bb9e69b79358e329.r2.dev/files/cv_YuanYao_20250828.pdf">Download CV (PDF)</a>
+        <a class="button secondary" href="mailto:yuanyao@ieee.org">Email me</a>
+      </div>
+    </div>
+  </section>
 
-<style>.paper-box{margin-top:-5mm;}</style>
+  <section class="panel snap-section panel-achievements">
+    <div class="panel-inner">
+      <h2>Academic Achievements</h2>
+      <div class="achievement-grid">
+        <article class="achievement-card">
+          <img src="https://pub-435f283cdbe44123bb9e69b79358e329.r2.dev/images/fig1.png" alt="Laser separation graphic">
+          <div class="achievement-body">
+            <p class="badge">IEEJ TEEE</p>
+            <h3>Laser-enabled silicon layer separation</h3>
+            <p>Two-dimensional laser delamination removes the need for sacrificial layers, maintaining compatibility with high-temperature semiconductor flows.</p>
+            <a class="text-link" href="https://pub-435f283cdbe44123bb9e69b79358e329.r2.dev/files/IEEJ%20Transactions%20Elec%20Engng%20-%202025%20-%20Yao%20-%20Feasibility%20Study%20of%20Layer%20Separation%20Using%202D%20Patterned%20Internal%20Laser%20Damage.pdf">Paper ↗</a>
+          </div>
+        </article>
+        <article class="achievement-card">
+          <img src="https://pub-435f283cdbe44123bb9e69b79358e329.r2.dev/images/fig2.png" alt="Conference slide">
+          <div class="achievement-body">
+            <p class="badge">MNC2024 Oral</p>
+            <h3>International Microprocesses & Nanotechnology Conference</h3>
+            <p>Spoke in Kyoto (session 15D-2-3) about microfabrication methods for high-aspect-ratio silicon structures.</p>
+            <a class="text-link" href="https://pub-435f283cdbe44123bb9e69b79358e329.r2.dev/files/MNC_slides.pdf">Slides ↗</a>
+          </div>
+        </article>
+        <article class="achievement-card">
+          <img src="https://pub-435f283cdbe44123bb9e69b79358e329.r2.dev/images/fig4.png" alt="Ultrasonic tester">
+          <div class="achievement-body">
+            <p class="badge">Actuators</p>
+            <h3>Ultrasonic vibration scratch tester</h3>
+            <p>A thread–V-groove transfer path plus modal tuning enables stable ultrasonic excitation for scratch testing.</p>
+            <a class="text-link" href="https://pub-435f283cdbe44123bb9e69b79358e329.r2.dev/files/acatuators.pdf">Paper ↗</a>
+          </div>
+        </article>
+        <article class="achievement-card">
+          <img src="https://pub-435f283cdbe44123bb9e69b79358e329.r2.dev/images/fig3.png" alt="Ultrasonic device patent">
+          <div class="achievement-body">
+            <p class="badge">Utility patent</p>
+            <h3>Ultrasonic vibration device for scratch testing</h3>
+            <p>Co-invented a stable, adjustable ultrasonic source filed as CN 220649966U to support vibration-assisted scratch experiments.</p>
+            <a class="text-link" href="https://pub-435f283cdbe44123bb9e69b79358e329.r2.dev/files/patent.pdf">Patent ↗</a>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
 
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge">IEEJ TEEE</div><img src='https://pub-435f283cdbe44123bb9e69b79358e329.r2.dev/images/fig1.png' alt="sym" width="100%"></div></div>
-<div class='paper-box-text' markdown="1">
-
-## Feasibility study of layer separation using 2D patterned internal laser damage in silicon (Conference extended paper)
-
-•This study presents a novel technical solution based on two-dimensional laser delamination. By optimizing the scanning path of the steal laser dicing, it achieves laser-lift-off without the need for a special separation layer. This approach simplifies the process flow while maintaining good compatibility with traditional semiconductor processes (such as high-temperature processing), and holds potential for applications in the transfer of flexible electronic devices.
-
-• **Yuan Yao**, Andrea Vergara* , Zhengnan Tang, Shuji Tanaka.  _IEEJ transactions on electrical and electronic engineering_ [http://doi.org/10.1002/tee.70136](http://doi.org/10.1002/tee.70136)
-
-•[**Paper**](https://pub-435f283cdbe44123bb9e69b79358e329.r2.dev/files/IEEJ%20Transactions%20Elec%20Engng%20-%202025%20-%20Yao%20-%20Feasibility%20Study%20of%20Layer%20Separation%20Using%202D%20Patterned%20Internal%20Laser%20Damage.pdf)
-
-*© 2025 by the authors. Published under CC BY 4.0.*
+  <section class="panel snap-section panel-blog">
+    <div class="panel-inner">
+      <h2>Blog</h2>
+      <div class="blog-grid">
+        {% for card in blog_cards %}
+        <article class="blog-card">
+          <div class="badge">{{ card.badge }}</div>
+          <img src="{{ card.image }}" alt="{{ card.title }}">
+          <h3>{{ card.title }}</h3>
+          <p>{{ card.description }}</p>
+          <a class="text-link" href="{{ card.link }}">{{ blog_cta }}</a>
+        </article>
+        {% endfor %}
+      </div>
+    </div>
+  </section>
 
 </div>
-</div>
-
-
-
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge">Oral presentation on MNC2024</div><img src='https://pub-435f283cdbe44123bb9e69b79358e329.r2.dev/images/fig2.png' alt="sym" width="100%"></div></div>
-<div class='paper-box-text' markdown="1">
-
-## Oral presentation on the 37th International Microprocesses and Nanotechnology Conference (MNC2024)
-
-•Oral presentation on the 37th International Microprocesses and Nanotechnology Conference (MNC2024), Kyoto: _The Japan Society of Applied Physics_, Nov. 2024, 15D-2-3
-
-•[**Slides**](https://pub-435f283cdbe44123bb9e69b79358e329.r2.dev/files/MNC_slides.pdf)
-
-*© 2024 JSAP. All rights reserved. The author distributes legally according to the agreement*
-
-</div>
-</div>
-
-
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge">A paper published on Acatuators</div><img src='https://pub-435f283cdbe44123bb9e69b79358e329.r2.dev/images/fig4.png' alt="sym" width="100%"></div></div>
-<div class='paper-box-text' markdown="1">
-
-## An Ultrasonic Vibration Scratch Tester for Studying the Scratch Characteristics of Materials under Ultrasonic Vibration Contact Status
-
-•Measure and verify the thread-V groove composite structure to ensure effective vibration transmission; Through Abaqus modal analysis, the resonant frequency of the system is matched with the operating frequency of the ultrasonic transducer. Fills the gap in instruments capable of performing scratch tests under ultrasonic vibration.
-
-•Yaming Huang, Haoxiang Wu, **Yuan Yao,** Hongwei Zhao, Hu Huang *. _Actuators_ [https://doi.org/10.3390/act13070262](https://doi.org/10.3390/act13070262)
-
-•[**Paper**](https://pub-435f283cdbe44123bb9e69b79358e329.r2.dev/files/acatuators.pdf)
-
-*© 2024 by the authors. Published under CC BY 4.0.*
-
-</div>
-</div>
-
-
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge">An utility model patent</div><img src='https://pub-435f283cdbe44123bb9e69b79358e329.r2.dev/images/fig3.png' alt="sym" width="100%"></div></div>
-<div class='paper-box-text' markdown="1">
-
-## A ultrasonic vibration device for vibration-assisted scratch testing
-
-•An ultrasonic vibration device is designed for vibration assisted scratch test. It has stable amplitude, high vibration accuracy and easy amplitude adjustment, and can provide a stable vibration source for vibration assisted scratch test.
-
-•Hu Huang, **Yuan Yao**, Yaming Huang, and Haoxiang Wu, “An ultrasonic vibration device for vibration-assisted scratch testing,” _Chinese Patent_ [CN 220649966U](http://epub.cnipa.gov.cn/patent/CN220649966U), Mar. 22, 2024.
-
-•[**Patent**](https://pub-435f283cdbe44123bb9e69b79358e329.r2.dev/files/patent.pdf)
-
-*© 2024 Jilin University, All Rights Reserved. This patent document is public information.*
-
-</div>
-</div>
-
-
-# 📚 Blogs
-
-<table style="width: 100%; border-collapse: separate; border-spacing: 0; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); max-height: 1000px; overflow-y: auto;font-size: 18px;border-radius: 20px; background-color: #e0e0e0;">
-  <thead>
-    <tr style="background-color: #e0e0e0; font-weight: bold;">
-      <th style="padding: 15px; border-bottom: 1px solid #ddd; text-align: center; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); font-size: 18px; border-top-left-radius: 20px; border-top-right-radius: 0px;">English</th>
-      <th style="padding: 15px; border-bottom: 1px solid #ddd; text-align: center; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); border-top-left-radius: 0px; border-top-right-radius: 20px;">中文</th>
-    </tr>
-  </thead>
-  <tbody>
-   <!-- Fifth Blog Group (English and Chinese) -->
-  <tr style="background-color: #e0e0e0;">
-      <td style="padding: 15px; text-align: center; border-right: 1px solid #ddd; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); transition: transform 0.3s ease; border-radius: 0px;">
-        <div class="badge">Recall of summer research at Westlake University</div>
-        <a href="/posts/2025/10/post/555">
-          <img src='https://pub-435f283cdbe44123bb9e69b79358e329.r2.dev/images/%E8%A5%BF%E6%B9%96%E5%A4%A7%E5%AD%A6%E7%85%A7%E7%89%87/IMG_3170%202.jpg' alt="sym" style="width: 100%; max-width: 400px; height: auto; display: block; margin: 0 auto; border-radius: 15px; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); transition: transform 0.3s ease;">
-        </a>
-      </td>
-      <td style="padding: 15px; text-align: center; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); transition: transform 0.3s ease; border-radius: 0px;">
-        <div class="badge">暑研回忆-西湖大学</div>
-        <a href="/posts/2025/10/post/5">
-          <img src='https://pub-435f283cdbe44123bb9e69b79358e329.r2.dev/images/%E8%A5%BF%E6%B9%96%E5%A4%A7%E5%AD%A6%E7%85%A7%E7%89%87/IMG_3627%202.jpg' alt="sym" style="width: 100%; max-width: 400px; height: auto; display: block; margin: 0 auto; border-radius: 15px; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); transition: transform 0.3s ease;">
-        </a>
-      </td>
-    </tr>
-    <!-- First Blog Group (English and Chinese) -->
-    <tr style="background-color: #e0e0e0;">
-      <td style="padding: 15px; text-align: center; border-right: 1px solid #ddd; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); transition: transform 0.3s ease; border-radius: 0px;">
-        <div class="badge">Exchange Life - Learning Chapter</div>
-        <a href="/posts/2025/01/post/444">
-          <img src='https://pub-435f283cdbe44123bb9e69b79358e329.r2.dev/images/MNC2024.jpg' alt="sym" style="width: 100%; max-width: 400px; height: auto; display: block; margin: 0 auto; border-radius: 15px; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); transition: transform 0.3s ease;">
-        </a>
-      </td>
-      <td style="padding: 15px; text-align: center; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); transition: transform 0.3s ease; border-radius: 0px;">
-        <div class="badge">交换生活-学习篇</div>
-        <a href="/posts/2025/01/post/4">
-          <img src='https://pub-435f283cdbe44123bb9e69b79358e329.r2.dev/images/JYPE%E5%90%88%E7%85%A71.jpg' alt="sym" style="width: 100%; max-width: 400px; height: auto; display: block; margin: 0 auto; border-radius: 15px; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); transition: transform 0.3s ease;">
-        </a>
-      </td>
-    </tr>
-    <!-- Second Blog Group (English and Chinese) -->
-    <tr style="background-color: #e0e0e0;">
-      <td style="padding: 15px; text-align: center; border-right: 1px solid #ddd; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); transition: transform 0.3s ease; border-radius: 0px;">
-        <div class="badge">NCSIETP</div>
-        <a href="/posts/2024/06/post/333">
-          <img src='https://pub-435f283cdbe44123bb9e69b79358e329.r2.dev/images/ultrasonic%20vibration%20platform.png' alt="sym" style="width: 100%; max-width: 400px; height: auto; display: block; margin: 0 auto; border-radius: 15px; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); transition: transform 0.3s ease;">
-        </a>
-      </td>
-      <td style="padding: 15px; text-align: center; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); transition: transform 0.3s ease; border-radius: 0px;">
-        <div class="badge">大创</div>
-        <a href="/posts/2024/06/post/3">
-          <img src='https://pub-435f283cdbe44123bb9e69b79358e329.r2.dev/images/%E5%AE%9E%E6%B5%8B%E9%A2%91%E7%8E%87.png' alt="sym" style="width: 100%; max-width: 400px; height: auto; display: block; margin: 0 auto; border-radius: 15px; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); transition: transform 0.3s ease;">
-        </a>
-      </td>
-    </tr>
-    <!-- Third Blog Group -->
-    <tr style="background-color: #e0e0e0;">
-      <td style="padding: 15px; text-align: center; border-right: 1px solid #ddd; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); transition: transform 0.3s ease; border-radius: 0px;">
-        <div class="badge">Engineering Innovation competition</div>
-        <a href="/posts/2023/10/post/222">
-          <img src='https://pub-435f283cdbe44123bb9e69b79358e329.r2.dev/images/%E5%B0%8F%E8%BD%A6%E6%A8%A1%E5%9E%8B.png' alt="sym" style="width: 100%; max-width: 400px; height: auto; display: block; margin: 0 auto; border-radius: 15px; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); transition: transform 0.3s ease;">
-        </a>
-      </td>
-      <td style="padding: 15px; text-align: center; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); transition: transform 0.3s ease; border-radius: 0px;">
-        <div class="badge">工创大赛</div>
-        <a href="/posts/2023/10/post/2">
-          <img src='https://pub-435f283cdbe44123bb9e69b79358e329.r2.dev/images/%E5%B7%A5%E5%88%9B%E5%90%88%E7%85%A7.jpg' alt="sym" style="width: 100%; max-width: 400px; height: auto; display: block; margin: 0 auto; border-radius: 15px; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); transition: transform 0.3s ease;">
-        </a>
-      </td>
-    </tr>
-    <!-- Fourth Blog Group: 成图大赛 -->
-    <tr style="background-color: #e0e0e0;">
-      <td style="padding: 15px; text-align: center; border-right: 1px solid #ddd; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); transition: transform 0.3s ease; border-radius: 0px;">
-        <div class="badge">Engineering Drawing Competition</div>
-        <a href="/posts/2022/08/post/111">
-          <img src='https://pub-435f283cdbe44123bb9e69b79358e329.r2.dev/images/%E4%B8%89%E7%BB%B4%E5%88%B6%E5%9B%BE.png' alt="sym" style="width: 100%; max-width: 400px; height: auto; display: block; margin: 0 auto; border-radius: 15px; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); transition: transform 0.3s ease;">
-        </a>
-      </td>
-      <td style="padding: 15px; text-align: center; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); transition: transform 0.3s ease; border-radius: 0px;">
-        <div class="badge">成图大赛</div>
-        <a href="/posts/2022/08/post/1">
-          <img src='https://pub-435f283cdbe44123bb9e69b79358e329.r2.dev/images/%E4%BA%8C%E7%BB%B4%E5%B7%A5%E7%A8%8B%E5%9B%BE%E7%BB%98%E5%88%B6.png' alt="sym" style="width: 100%; max-width: 400px; height: auto; display: block; margin: 0 auto; border-radius: 15px; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); transition: transform 0.3s ease;">
-        </a>
-      </td>
-    </tr>
-  </tbody>
-</table>

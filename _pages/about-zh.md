@@ -1,174 +1,100 @@
 ---
-permalink: /about/zh/
+permalink: /
 title: "关于我"
 author_profile: true
+layout: modern_home
+lang: zh-CN
+hero_title: "姚远"
+hero_subtitle: "吉林大学 · 微纳制造"
+fullwidth: true
 redirect_from: 
+  - /about/zh/
   - /about/zh
   - /about/zh.html
 ---
-我目前是吉林大学机械工程专业的大四学生。我的研究兴趣包括微纳制造和激光技术。
 
-该个人网站详细介绍了我之前的项目，包括在吉林大学[黄虎](http://teachers.jlu.edu.cn/HuangLab)老师课题组和东北大学[田中秀治微机电系统](http://www.mems.mech.tohoku.ac.jp)课题组的两段研究经历。我将在2026年作为一名博士生加入北京大学[魏贤龙](http://mvdl.pku.edu.cn/zh/)老师课题组
+{% assign blog_cards = site.data.blog_cards | where: "lang", "zh" | slice: 0, 5 %}
+{% assign blog_cta = "阅读全文 ↗" %}
 
-欢迎联系，或从[**我的简历(PDF)**](https://pub-435f283cdbe44123bb9e69b79358e329.r2.dev/files/%E7%AE%80%E5%8E%86_%E5%A7%9A%E8%BF%9C_20250828.pdf)获取更多信息。
-感谢您的关注！
+<div class="panel-container">
 
-# 📒 学术成果
+  <section class="panel snap-section panel-intro">
+    <div class="panel-inner">
+      <p class="eyebrow">个人简介</p>
+      <h2>把微纳制造与工程实践结合起来。</h2>
+      <p>我在吉林大学机械工程专业学习，主要研究微纳制造与激光加工。先后在<a href="http://teachers.jlu.edu.cn/HuangLab">黄虎老师课题组</a>和<a href="http://www.mems.mech.tohoku.ac.jp">田中秀治 MEMS Lab</a>参与项目。</p>
+      <p>2026 年，我将加入北京大学<a href="http://mvdl.pku.edu.cn/zh/">魏贤龙老师课题组</a>攻读博士，沿着同样的方向继续扎实推进。</p>
+      <ul class="quick-facts">
+        <li><strong>合作课题组</strong><br>吉林大学黄虎课题组 · 东北大学 S.Tanaka MEMS Lab。</li>
+        <li><strong>研究兴趣</strong><br>微纳制造 · 激光加工。</li>
+        <li><strong>下一站</strong><br>北京大学电子学院博士生。</li>
+      </ul>
+      <div class="cta-group">
+        <a class="button" href="https://pub-435f283cdbe44123bb9e69b79358e329.r2.dev/files/%E7%AE%80%E5%8E%86_%E5%A7%9A%E8%BF%9C_20250828.pdf">下载简历 (PDF)</a>
+        <a class="button secondary" href="mailto:yuanyao@ieee.org">联系我</a>
+      </div>
+    </div>
+  </section>
 
-<style>.paper-box{margin-top:-5mm;}</style>
+  <section class="panel snap-section panel-achievements">
+    <div class="panel-inner">
+      <h2>学术成果</h2>
+      <div class="achievement-grid">
+        <article class="achievement-card">
+          <img src="https://pub-435f283cdbe44123bb9e69b79358e329.r2.dev/images/fig1.png" alt="激光分离示意">
+          <div class="achievement-body">
+            <p class="badge">IEEJ TEEE</p>
+            <h3>二维激光内损伤实现硅层分离</h3>
+            <p>通过优化激光隐切路径，实现无需分离层的激光剥离，兼容传统半导体高温工艺。</p>
+            <a class="text-link" href="https://pub-435f283cdbe44123bb9e69b79358e329.r2.dev/files/IEEJ%20Transactions%20Elec%20Engng%20-%202025%20-%20Yao%20-%20Feasibility%20Study%20of%20Layer%20Separation%20Using%202D%20Patterned%20Internal%20Laser%20Damage.pdf">论文 ↗</a>
+          </div>
+        </article>
+        <article class="achievement-card">
+          <img src="https://pub-435f283cdbe44123bb9e69b79358e329.r2.dev/images/fig2.png" alt="会议演讲">
+          <div class="achievement-body">
+            <p class="badge">MNC2024</p>
+            <h3>国际微工艺与纳米技术会议口头报告</h3>
+            <p>在京都 MNC2024 会议（15D-2-3）分享微纳加工方案与实验结果。</p>
+            <a class="text-link" href="https://pub-435f283cdbe44123bb9e69b79358e329.r2.dev/files/MNC_slides.pdf">幻灯片 ↗</a>
+          </div>
+        </article>
+        <article class="achievement-card">
+          <img src="https://pub-435f283cdbe44123bb9e69b79358e329.r2.dev/images/fig4.png" alt="超声划痕试验机">
+          <div class="achievement-body">
+            <p class="badge">Actuators</p>
+            <h3>超声振动划痕试验机</h3>
+            <p>提出螺纹-V 型槽复合结构与模态匹配策略，实现稳定的超声振幅传递。</p>
+            <a class="text-link" href="https://pub-435f283cdbe44123bb9e69b79358e329.r2.dev/files/acatuators.pdf">论文 ↗</a>
+          </div>
+        </article>
+        <article class="achievement-card">
+          <img src="https://pub-435f283cdbe44123bb9e69b79358e329.r2.dev/images/fig3.png" alt="超声振动专利">
+          <div class="achievement-body">
+            <p class="badge">实用新型专利</p>
+            <h3>用于振动辅助划痕测试的超声振动装置</h3>
+            <p>具备稳定振幅和易调节特性，为振动辅助划痕实验提供可靠振动源。</p>
+            <a class="text-link" href="https://pub-435f283cdbe44123bb9e69b79358e329.r2.dev/files/patent.pdf">专利 ↗</a>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
 
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge">IEEJ TEEE</div><img src='https://pub-435f283cdbe44123bb9e69b79358e329.r2.dev/images/fig1.png' alt="sym" width="100%"></div></div>
-<div class='paper-box-text' markdown="1">
-
-## 利用二维图样内激光内损伤在硅层分离的可行性研究 (会议拓展论文)
-
-•这项研究提出了一种基于二维激光隐切与剥离的新型技术方案，通过优化隐切激光的扫描路径，实现无需特殊分离层的激光剥离，在简化工艺流程的同时具备与传统半导体工艺（如高温制程）的良好兼容性，具有提供柔性电子器件转移的应用潜力。
-
-• **Yuan Yao**, Andrea Vergara* , Zhengnan Tang, Shuji Tanaka.  _IEEJ transactions on electrical and electronic engineering_ [http://doi.org/10.1002/tee.70136](http://doi.org/10.1002/tee.70136)
-
-•[**论文**](https://pub-435f283cdbe44123bb9e69b79358e329.r2.dev/files/IEEJ%20Transactions%20Elec%20Engng%20-%202025%20-%20Yao%20-%20Feasibility%20Study%20of%20Layer%20Separation%20Using%202D%20Patterned%20Internal%20Laser%20Damage.pdf)
-
-*© 2025，作者版权所有，CC BY 4.0*
+  <section class="panel snap-section panel-blog">
+    <div class="panel-inner">
+      <h2>博客</h2>
+      <div class="blog-grid">
+        {% for card in blog_cards %}
+        <article class="blog-card">
+          <div class="badge">{{ card.badge }}</div>
+          <img src="{{ card.image }}" alt="{{ card.title }}">
+          <h3>{{ card.title }}</h3>
+          <p>{{ card.description }}</p>
+          <a class="text-link" href="{{ card.link }}">{{ blog_cta }}</a>
+        </article>
+        {% endfor %}
+      </div>
+    </div>
+  </section>
 
 </div>
-</div>
-
-
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge">MNC2024 口头汇报</div><img src='https://pub-435f283cdbe44123bb9e69b79358e329.r2.dev/images/fig2.png' alt="sym" width="100%"></div></div>
-<div class='paper-box-text' markdown="1">
-
-## 第37届国际微工艺与纳米技术会议(MNC2024)口头汇报
-
-•第37届国际微处理与纳米技术会议（MNC2024）口头报告，京都：_日本应用物理学会_，2024年11月，15D-2-3
-
-•[**幻灯片**](https://pub-435f283cdbe44123bb9e69b79358e329.r2.dev/files/MNC_slides.pdf)
-
-*© 2024，JSAP 版权所有，作者按协议合法分发*
-
-</div>
-</div>
-
-
-
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge">Acatuators论文</div><img src='https://pub-435f283cdbe44123bb9e69b79358e329.r2.dev/images/fig4.png' alt="sym" width="100%"></div></div>
-<div class='paper-box-text' markdown="1">
-
-## 用于研究材料在超声振动接触状态下划伤特性的超声振动划伤试验机
-
-•设计并验证螺纹-V型槽复合结构确保振动有效传递；通过 Abaqus模态仿真匹配系统共振频率与超声波换能器工作频率。填补了能够在超声振动下进行划痕测试的仪器空白。
-
-•Yaming Huang, Haoxiang Wu, **Yuan Yao,** Hongwei Zhao, Hu Huang *. _Actuators_ [https://doi.org/10.3390/act13070262](https://doi.org/10.3390/act13070262)
-
-•[**论文**](https://pub-435f283cdbe44123bb9e69b79358e329.r2.dev/files/acatuators.pdf)
-
-*© 2024，作者版权所有，CC BY 4.0*
-
-</div>
-</div>
-
-
-
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge">实用新型专利</div><img src='https://pub-435f283cdbe44123bb9e69b79358e329.r2.dev/images/fig3.png' alt="sym" width="100%"></div></div>
-<div class='paper-box-text' markdown="1">
-
-## 一种用于振动辅助划痕测试的超声振动装置
-
-•设计了一种用于用于振动辅助划痕测试的超声振动装置，具有稳定的振幅和较高的振动精度，且振幅调节方便，能够为振动辅助划痕测试提供稳定的振动源。
-
-•黄虎；**姚远**；黄雅明；吴浩翔.一种用于振动辅助划痕测试的超声振动装置:中国, [CN 220649966U](http://epub.cnipa.gov.cn/patent/CN220649966U).2024-03-22.
-
-•[**专利**](https://pub-435f283cdbe44123bb9e69b79358e329.r2.dev/files/patent.pdf)
-
-*© 2024，吉林大学版权所有，本专利文件为公开信息*
-
-</div>
-</div>
-
-# 📚 博客
-
-<table style="width: 100%; border-collapse: separate; border-spacing: 0; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); max-height: 1000px; overflow-y: auto;font-size: 18px;border-radius: 20px; background-color: #e0e0e0;">
-  <thead>
-    <tr style="background-color: #e0e0e0; font-weight: bold;">
-      <th style="padding: 15px; border-bottom: 1px solid #ddd; text-align: center; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); font-size: 18px; border-top-left-radius: 20px; border-top-right-radius: 0px;">English</th>
-      <th style="padding: 15px; border-bottom: 1px solid #ddd; text-align: center; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); border-top-left-radius: 0px; border-top-right-radius: 20px;">中文</th>
-    </tr>
-  </thead>
-  <tbody>
-
-   <!-- Fifth Blog Group (English and Chinese) -->
-  <tr style="background-color: #e0e0e0;">
-      <td style="padding: 15px; text-align: center; border-right: 1px solid #ddd; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); transition: transform 0.3s ease; border-radius: 0px;">
-        <div class="badge">Recall of summer research at Westlake University</div>
-        <a href="/posts/2025/10/post/555">
-          <img src='https://pub-435f283cdbe44123bb9e69b79358e329.r2.dev/images/%E8%A5%BF%E6%B9%96%E5%A4%A7%E5%AD%A6%E7%85%A7%E7%89%87/IMG_3170%202.jpg' alt="sym" style="width: 100%; max-width: 400px; height: auto; display: block; margin: 0 auto; border-radius: 15px; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); transition: transform 0.3s ease;">
-        </a>
-      </td>
-      <td style="padding: 15px; text-align: center; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); transition: transform 0.3s ease; border-radius: 0px;">
-        <div class="badge">暑研回忆-西湖大学</div>
-        <a href="/posts/2025/10/post/5">
-          <img src='https://pub-435f283cdbe44123bb9e69b79358e329.r2.dev/images/%E8%A5%BF%E6%B9%96%E5%A4%A7%E5%AD%A6%E7%85%A7%E7%89%87/IMG_3627%202.jpg' alt="sym" style="width: 100%; max-width: 400px; height: auto; display: block; margin: 0 auto; border-radius: 15px; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); transition: transform 0.3s ease;">
-        </a>
-      </td>
-    </tr>
-    <!-- First Blog Group (English and Chinese) -->
-    <tr style="background-color: #e0e0e0;">
-      <td style="padding: 15px; text-align: center; border-right: 1px solid #ddd; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); transition: transform 0.3s ease; border-radius: 0px;">
-        <div class="badge">Exchange Life - Learning Chapter</div>
-        <a href="/posts/2025/01/post/444">
-          <img src='https://pub-435f283cdbe44123bb9e69b79358e329.r2.dev/images/MNC2024.jpg' alt="sym" style="width: 100%; max-width: 400px; height: auto; display: block; margin: 0 auto; border-radius: 15px; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); transition: transform 0.3s ease;">
-        </a>
-      </td>
-      <td style="padding: 15px; text-align: center; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); transition: transform 0.3s ease; border-radius: 0px;">
-        <div class="badge">交换生活-学习篇</div>
-        <a href="/posts/2025/01/post/4">
-          <img src='https://pub-435f283cdbe44123bb9e69b79358e329.r2.dev/images/JYPE%E5%90%88%E7%85%A71.jpg' alt="sym" style="width: 100%; max-width: 400px; height: auto; display: block; margin: 0 auto; border-radius: 15px; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); transition: transform 0.3s ease;">
-        </a>
-      </td>
-    </tr>
-    <!-- Second Blog Group (English and Chinese) -->
-    <tr style="background-color: #e0e0e0;">
-      <td style="padding: 15px; text-align: center; border-right: 1px solid #ddd; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); transition: transform 0.3s ease; border-radius: 0px;">
-        <div class="badge">NCSIETP</div>
-        <a href="/posts/2024/06/post/333">
-          <img src='https://pub-435f283cdbe44123bb9e69b79358e329.r2.dev/images/ultrasonic%20vibration%20platform.png' alt="sym" style="width: 100%; max-width: 400px; height: auto; display: block; margin: 0 auto; border-radius: 15px; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); transition: transform 0.3s ease;">
-        </a>
-      </td>
-      <td style="padding: 15px; text-align: center; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); transition: transform 0.3s ease; border-radius: 0px;">
-        <div class="badge">大创</div>
-        <a href="/posts/2024/06/post/3">
-          <img src='https://pub-435f283cdbe44123bb9e69b79358e329.r2.dev/images/%E5%AE%9E%E6%B5%8B%E9%A2%91%E7%8E%87.png' alt="sym" style="width: 100%; max-width: 400px; height: auto; display: block; margin: 0 auto; border-radius: 15px; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); transition: transform 0.3s ease;">
-        </a>
-      </td>
-    </tr>
-    <!-- Third Blog Group -->
-    <tr style="background-color: #e0e0e0;">
-      <td style="padding: 15px; text-align: center; border-right: 1px solid #ddd; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); transition: transform 0.3s ease; border-radius: 0px;">
-        <div class="badge">Engineering Innovation competition</div>
-        <a href="/posts/2023/10/post/222">
-          <img src='https://pub-435f283cdbe44123bb9e69b79358e329.r2.dev/images/%E5%B0%8F%E8%BD%A6%E6%A8%A1%E5%9E%8B.png' alt="sym" style="width: 100%; max-width: 400px; height: auto; display: block; margin: 0 auto; border-radius: 15px; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); transition: transform 0.3s ease;">
-        </a>
-      </td>
-      <td style="padding: 15px; text-align: center; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); transition: transform 0.3s ease; border-radius: 0px;">
-        <div class="badge">工创大赛</div>
-        <a href="/posts/2023/10/post/2">
-          <img src='https://pub-435f283cdbe44123bb9e69b79358e329.r2.dev/images/%E5%B7%A5%E5%88%9B%E5%90%88%E7%85%A7.jpg' alt="sym" style="width: 100%; max-width: 400px; height: auto; display: block; margin: 0 auto; border-radius: 15px; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); transition: transform 0.3s ease;">
-        </a>
-      </td>
-    </tr>
-    <!-- Fourth Blog Group: 成图大赛 -->
-    <tr style="background-color: #e0e0e0;">
-      <td style="padding: 15px; text-align: center; border-right: 1px solid #ddd; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); transition: transform 0.3s ease; border-radius: 0px;">
-        <div class="badge">Engineering Drawing Competition</div>
-        <a href="/posts/2022/08/post/111">
-          <img src='https://pub-435f283cdbe44123bb9e69b79358e329.r2.dev/images/%E4%B8%89%E7%BB%B4%E5%88%B6%E5%9B%BE.png' alt="sym" style="width: 100%; max-width: 400px; height: auto; display: block; margin: 0 auto; border-radius: 15px; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); transition: transform 0.3s ease;">
-        </a>
-      </td>
-      <td style="padding: 15px; text-align: center; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); transition: transform 0.3s ease; border-radius: 0px;">
-        <div class="badge">成图大赛</div>
-        <a href="/posts/2022/08/post/1">
-          <img src='https://pub-435f283cdbe44123bb9e69b79358e329.r2.dev/images/%E4%BA%8C%E7%BB%B4%E5%B7%A5%E7%A8%8B%E5%9B%BE%E7%BB%98%E5%88%B6.png' alt="sym" style="width: 100%; max-width: 400px; height: auto; display: block; margin: 0 auto; border-radius: 15px; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); transition: transform 0.3s ease;">
-        </a>
-      </td>
-    </tr>
-  </tbody>
-</table>

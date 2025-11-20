@@ -8,7 +8,7 @@
 
 # Basic Site Settings
 locale                   : "en-US"
-title                    : "Homepage"
+title                    : "Yuan Yao"
 title_separator          : "-"
 name                     : &name "Yuan Yao"
 description              : &description "personal description"
