@@ -1,60 +1,60 @@
 - lang: en
-  badge: Westlake Summer
-  title: "Summer research at Westlake University"
-  description: "Highlights from six weeks inside Prof. Min Qiu’s group and why SiC waveguides matter."
-  image: "https://pub-435f283cdbe44123bb9e69b79358e329.r2.dev/images/%E8%A5%BF%E6%B9%96%E5%A4%A7%E5%AD%A6%E7%85%A7%E7%89%87/IMG_3170%202.jpg"
-  link: "/posts/2025/10/post/555"
+  badge: Graphics Competition
+  title: "Graphics Competition"
+  description: "Engaged in systematic training in engineering drawing and modeling, gaining foundational graphics practice."
+  image: "https://pub-435f283cdbe44123bb9e69b79358e329.r2.dev/images/%E4%B8%89%E7%BB%B4%E5%88%B6%E5%9B%BE.png"
+  link: "/posts/2022/08/post/111"
 - lang: en
-  badge: Exchange
-  title: "Exchange Life – Learning Chapter"
-  description: "Reflections from the JYPE exchange in Japan and the classroom surprises I met there."
-  image: "https://pub-435f283cdbe44123bb9e69b79358e329.r2.dev/images/MNC2024.jpg"
-  link: "/posts/2025/01/post/444"
-- lang: en
-  badge: NCSIETP
-  title: "NCSIETP Project Recap"
-  description: "From sketches to experiments on an ultrasonic vibration platform for scratch testing."
-  image: "https://pub-435f283cdbe44123bb9e69b79358e329.r2.dev/images/ultrasonic%20vibration%20platform.png"
-  link: "/posts/2024/06/post/333"
-- lang: en
-  badge: Innovation
+  badge: Engineering Innovation Competition
   title: "Engineering Innovation Competition"
-  description: "Rapid prototyping and team collaboration lessons from a national hardware event."
+  description: "Participated in the full workflow of vehicle design, component selection, and assembly debugging."
   image: "https://pub-435f283cdbe44123bb9e69b79358e329.r2.dev/images/%E5%B0%8F%E8%BD%A6%E6%A8%A1%E5%9E%8B.png"
   link: "/posts/2023/10/post/222"
 - lang: en
-  badge: Drawing Contest
-  title: "Engineering Drawing Competition"
-  description: "How precision drafting built the base for my CAD/CAM research and projects."
-  image: "https://pub-435f283cdbe44123bb9e69b79358e329.r2.dev/images/%E4%B8%89%E7%BB%B4%E5%88%B6%E5%9B%BE.png"
-  link: "/posts/2022/08/post/111"
-- lang: zh
-  badge: 暑研记忆
-  title: "暑研回忆 · 西湖大学"
-  description: "第一次深入科研小组，体验杭州节奏与团队协作。"
-  image: "https://pub-435f283cdbe44123bb9e69b79358e329.r2.dev/images/%E8%A5%BF%E6%B9%96%E5%A4%A7%E5%AD%A6%E7%85%A7%E7%89%87/IMG_3627%202.jpg"
-  link: "/posts/2025/10/post/5"
-- lang: zh
-  badge: 交换生活
-  title: "交换生活 · 学习篇"
-  description: "在日本 JYPE 项目的课堂体验，以及跨文化合作的思考。"
+  badge: Innovation Training Program
+  title: "Innovation Training Program (Ultrasonic Device)"
+  description: "Worked through structural design, simulation, and functional verification for an ultrasonic vibration module."
+  image: "https://pub-435f283cdbe44123bb9e69b79358e329.r2.dev/images/ultrasonic%20vibration%20platform.png"
+  link: "/posts/2024/06/post/333"
+- lang: en
+  badge: JYPE Exchange
+  title: "JYPE at Tohoku University"
+  description: "Conducted research training on MEMS fabrication, experiments, and laser process development."
   image: "https://pub-435f283cdbe44123bb9e69b79358e329.r2.dev/images/JYPE%E5%90%88%E7%85%A71.jpg"
-  link: "/posts/2025/01/post/4"
-- lang: zh
-  badge: 大创
-  title: "国家级大学生创新训练"
-  description: "围绕超声振动平台的设计、实验与展示全过程。"
-  image: "https://pub-435f283cdbe44123bb9e69b79358e329.r2.dev/images/%E5%AE%9E%E6%B5%8B%E9%A2%91%E7%8E%87.png"
-  link: "/posts/2024/06/post/3"
-- lang: zh
-  badge: 工创大赛
-  title: "工创大赛记"
-  description: "与队友完成硬件原型、现场路演和持续迭代的经历。"
-  image: "https://pub-435f283cdbe44123bb9e69b79358e329.r2.dev/images/%E5%B7%A5%E5%88%9B%E5%90%88%E7%85%A7.jpg"
-  link: "/posts/2023/10/post/2"
+  link: "/posts/2025/01/post/444"
+- lang: en
+  badge: Westlake Summer Research
+  title: "Westlake University Summer Research"
+  description: "Focused on research-oriented study and conceptual exploration in waveguide and micro-nano fabrication."
+  image: "https://pub-435f283cdbe44123bb9e69b79358e329.r2.dev/images/%E8%A5%BF%E6%B9%96%E5%A4%A7%E5%AD%A6%E7%85%A7%E7%89%87/IMG_3170%202.jpg"
+  link: "/posts/2025/10/post/555"
 - lang: zh
   badge: 成图大赛
   title: "成图大赛"
-  description: "从二维工程图到三维建模的进阶，更熟悉 CAD/CAM 工具。"
+  description: "在成图大赛期间经历系统的工程制图与建模训练，形成基本的图学实践。"
   image: "https://pub-435f283cdbe44123bb9e69b79358e329.r2.dev/images/%E4%BA%8C%E7%BB%B4%E5%B7%A5%E7%A8%8B%E5%9B%BE%E7%BB%98%E5%88%B6.png"
   link: "/posts/2022/08/post/1"
+- lang: zh
+  badge: 工创赛
+  title: "工创赛（小车）"
+  description: "参与小车设计、部件选型与装配调试的完整工程流程。"
+  image: "https://pub-435f283cdbe44123bb9e69b79358e329.r2.dev/images/%E5%B7%A5%E5%88%9B%E5%90%88%E7%85%A7.jpg"
+  link: "/posts/2023/10/post/2"
+- lang: zh
+  badge: 大创项目
+  title: "大创项目（超声装置）"
+  description: "经历超声振动装置的结构设计、仿真分析与功能验证等工程流程。"
+  image: "https://pub-435f283cdbe44123bb9e69b79358e329.r2.dev/images/%E5%AE%9E%E6%B5%8B%E9%A2%91%E7%8E%87.png"
+  link: "/posts/2024/06/post/3"
+- lang: zh
+  badge: 交换学习
+  title: "JYPE / 东北大学交换"
+  description: "在MEMS方向开展加工、实验与激光工艺开发的研究训练。"
+  image: "https://pub-435f283cdbe44123bb9e69b79358e329.r2.dev/images/JYPE%E5%90%88%E7%85%A71.jpg"
+  link: "/posts/2025/01/post/4"
+- lang: zh
+  badge: 西湖暑研
+  title: "西湖大学暑研"
+  description: "在光波导与微纳加工方向进行调研、学习与科研方法的思考。"
+  image: "https://pub-435f283cdbe44123bb9e69b79358e329.r2.dev/images/%E8%A5%BF%E6%B9%96%E5%A4%A7%E5%AD%A6%E7%85%A7%E7%89%87/IMG_3627%202.jpg"
+  link: "/posts/2025/10/post/5"

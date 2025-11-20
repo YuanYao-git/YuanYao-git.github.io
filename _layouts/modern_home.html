@@ -13,8 +13,12 @@
 </head>
 
 <body{% if page.fullwidth %} class="has-panels"{% endif %}>
-    <div class="animated-bg-container" aria-hidden="true"></div>
-    <canvas id="background-canvas" aria-hidden="true"></canvas>
+    <div class="video-bg-wrapper" aria-hidden="true">
+        <div class="video-overlay"></div>
+        <video autoplay muted loop playsinline poster="{{ "/assets/images/heropic.png" | relative_url }}">
+            <source src="https://pub-435f283cdbe44123bb9e69b79358e329.r2.dev/files/142815-780943566_small.mp4" type="video/mp4">
+        </video>
+    </div>
 
     <header class="site-header">
         <div class="wrapper">
@@ -34,7 +38,10 @@
     {% assign hero_title = page.hero_title | default: site.name | default: site.title %}
     {% assign hero_subtitle = page.hero_subtitle | default: site.description %}
     <div class="hero snap-section snap-hero">
-        <img src="{{ "/assets/images/hero.jpg" | relative_url }}" alt="Hero Background" class="hero-image">
+        <video class="hero-image" autoplay muted loop playsinline poster="{{ "/assets/images/hero.jpg" | relative_url }}">
+            <source src="https://pub-435f283cdbe44123bb9e69b79358e329.r2.dev/files/142815-780943566_small.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
         <div class="hero-overlay"></div>
         <div class="hero-content">
             <h1 class="hero-title">{{ hero_title }}</h1>
@@ -58,71 +65,6 @@
 
     <script>
         document.addEventListener('DOMContentLoaded', function () {
-            const canvas = document.getElementById('background-canvas');
-            if (!canvas) {
-                return;
-            }
-            const ctx = canvas.getContext('2d');
-            let width = 0;
-            let viewHeight = 0;
-            let docHeight = 0;
-            let particles = [];
-            const density = 0.00012;
-
-            const createParticle = () => ({
-                x: Math.random() * width,
-                y: Math.random() * docHeight,
-                vx: (Math.random() - 0.5) * 0.35,
-                vy: (Math.random() - 0.5) * 0.35,
-                radius: Math.random() * 2 + 0.6,
-                alpha: 0.2 + Math.random() * 0.5,
-                hue: 190 + Math.random() * 40
-            });
-
-            const resizeCanvas = () => {
-                width = window.innerWidth;
-                viewHeight = window.innerHeight;
-                docHeight = Math.max(document.body.scrollHeight, viewHeight);
-                canvas.width = width;
-                canvas.height = docHeight;
-                const count = Math.max(160, Math.floor(width * viewHeight * density));
-                particles = Array.from({ length: count }, createParticle);
-            };
-
-            const drawParticles = () => {
-                ctx.clearRect(0, 0, width, docHeight);
-                ctx.fillStyle = '#020306';
-                ctx.fillRect(0, 0, width, docHeight);
-                particles.forEach((p) => {
-                    p.x += p.vx;
-                    p.y += p.vy;
-                    if (p.x < -20) p.x = width + 20;
-                    if (p.x > width + 20) p.x = -20;
-                    if (p.y < -20) p.y = docHeight + 20;
-                    if (p.y > docHeight + 20) p.y = -20;
-
-                    ctx.beginPath();
-                    ctx.fillStyle = `hsla(${p.hue}, 70%, 65%, ${p.alpha})`;
-                    ctx.arc(p.x, p.y, p.radius, 0, Math.PI * 2);
-                    ctx.fill();
-
-                    if (p.y < viewHeight + 200) {
-                        ctx.beginPath();
-                        ctx.strokeStyle = `hsla(${p.hue}, 80%, 70%, ${p.alpha * 0.35})`;
-                        ctx.moveTo(p.x, p.y);
-                        ctx.lineTo(p.x + p.vx * 30, p.y + p.vy * 30);
-                        ctx.stroke();
-                    }
-                });
-                requestAnimationFrame(drawParticles);
-            };
-
-            resizeCanvas();
-            drawParticles();
-            window.addEventListener('resize', resizeCanvas);
-            window.addEventListener('orientationchange', resizeCanvas);
-            window.setTimeout(resizeCanvas, 1000);
-
             const sections = Array.from(document.querySelectorAll('.snap-section'));
             if (!sections.length) {
                 return;

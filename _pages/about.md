@@ -46,6 +46,7 @@ redirect_from:
             <h3>Laser-enabled silicon layer separation</h3>
             <p>Two-dimensional laser delamination removes the need for sacrificial layers, maintaining compatibility with high-temperature semiconductor flows.</p>
             <a class="text-link" href="https://pub-435f283cdbe44123bb9e69b79358e329.r2.dev/files/IEEJ%20Transactions%20Elec%20Engng%20-%202025%20-%20Yao%20-%20Feasibility%20Study%20of%20Layer%20Separation%20Using%202D%20Patterned%20Internal%20Laser%20Damage.pdf">Paper ↗</a>
+            <p class="citation">Citation: Yao, Y., Vergara, A., Tang, Z., Tanaka, S. “Feasibility Study of Layer Separation using 2D Patterned Internal Laser Damage in Silicon.” <em>IEEJ Transactions on Electrical and Electronic Engineering</em>. <a href="https://doi.org/10.1002/tee.70136">https://doi.org/10.1002/tee.70136</a>. © Open-access article reused under the IEEE OA license.</p>
           </div>
         </article>
         <article class="achievement-card">
@@ -55,6 +56,7 @@ redirect_from:
             <h3>International Microprocesses & Nanotechnology Conference</h3>
             <p>Spoke in Kyoto (session 15D-2-3) about microfabrication methods for high-aspect-ratio silicon structures.</p>
             <a class="text-link" href="https://pub-435f283cdbe44123bb9e69b79358e329.r2.dev/files/MNC_slides.pdf">Slides ↗</a>
+            <p class="citation">Citation: 37th International Microprocesses and Nanotechnology Conference (MNC 2024) oral presentation, Kyoto, The Japan Society of Applied Physics, 15 Nov 2024, session 15D-2-3. © Slides distributed lawfully by the author under the conference agreement.</p>
           </div>
         </article>
         <article class="achievement-card">
@@ -64,6 +66,7 @@ redirect_from:
             <h3>Ultrasonic vibration scratch tester</h3>
             <p>A thread–V-groove transfer path plus modal tuning enables stable ultrasonic excitation for scratch testing.</p>
             <a class="text-link" href="https://pub-435f283cdbe44123bb9e69b79358e329.r2.dev/files/acatuators.pdf">Paper ↗</a>
+            <p class="citation">Citation: Huang, Y.; Wu, H.; Yao, Y.; Zhao, H.; Huang, H. “An Ultrasonic Vibration Scratch Tester for Studying the Scratch Characteristics of Materials under Ultrasonic Vibration Contact Status.” <em>Actuators</em>. <a href="https://doi.org/10.3390/act13070262">https://doi.org/10.3390/act13070262</a>. © Open-access article cited per the MDPI license.</p>
           </div>
         </article>
         <article class="achievement-card">
@@ -73,6 +76,7 @@ redirect_from:
             <h3>Ultrasonic vibration device for scratch testing</h3>
             <p>Co-invented a stable, adjustable ultrasonic source filed as CN 220649966U to support vibration-assisted scratch experiments.</p>
             <a class="text-link" href="https://pub-435f283cdbe44123bb9e69b79358e329.r2.dev/files/patent.pdf">Patent ↗</a>
+            <p class="citation">Citation: Hu Huang; Yuan Yao; Yaming Huang; Haoxiang Wu. “Ultrasonic Vibration Device for Vibration-Assisted Scratch Testing.” Utility Patent CN 220649966U, China, 22 Mar 2024. © Public record released by CNIPA.</p>
           </div>
         </article>
       </div>
