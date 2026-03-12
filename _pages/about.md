@@ -29,7 +29,7 @@ redirect_from:
         <li><strong>Next step</strong><br>Ph.D. student with Prof. Wei at PKU in 2026.</li>
       </ul>
       <div class="cta-group">
-        <a class="button" href="https://pub-435f283cdbe44123bb9e69b79358e329.r2.dev/files/cv_YuanYao_20250828.pdf">Download CV (PDF)</a>
+        <a class="button" href="https://pub-435f283cdbe44123bb9e69b79358e329.r2.dev/files/cv_yuanyao_2026.pdf">Download CV (PDF)</a>
         <a class="button secondary" href="mailto:yuanyao@ieee.org">Email me</a>
       </div>
     </div>

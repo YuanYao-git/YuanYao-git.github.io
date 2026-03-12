@@ -30,7 +30,7 @@ redirect_from:
         <li><strong>下一站</strong><br>北京大学电子学院博士生。</li>
       </ul>
       <div class="cta-group">
-        <a class="button" href="https://pub-435f283cdbe44123bb9e69b79358e329.r2.dev/files/%E7%AE%80%E5%8E%86_%E5%A7%9A%E8%BF%9C_20250828.pdf">下载简历 (PDF)</a>
+        <a class="button" href="https://pub-435f283cdbe44123bb9e69b79358e329.r2.dev/files/%E7%AE%80%E5%8E%86-%E5%A7%9A%E8%BF%9C-2026.pdf">下载简历 (PDF)</a>
         <a class="button secondary" href="mailto:yuanyao@ieee.org">联系我</a>
       </div>
     </div>

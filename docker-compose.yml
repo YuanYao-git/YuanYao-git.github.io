@@ -1,10 +1,13 @@
-version: '3'
-
 services:
   jekyll:
     image: jekyll/jekyll:latest
+    # 显式指定 root 用户以解决 F 盘挂载的权限限制
+    user: root
     volumes:
       - .:/srv/jekyll
     ports:
       - "4000:4000"
-    command: jekyll serve --host 0.0.0.0 --port 4000
+      - "35729:35729"
+    environment:
+      - JEKYLL_ENV=development
+    command: jekyll serve --watch --force_polling --livereload --host 0.0.0.0
