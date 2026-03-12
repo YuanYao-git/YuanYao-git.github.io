@@ -80,7 +80,7 @@ a:hover {
 .hero-overlay {
     position: absolute;
     inset: 0;
-    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.35) 0%, rgba(0, 0, 0, 0.85) 100%);
+    background: linear-gradient(to bottom, rgba(250, 249, 247, 0.1) 0%, rgba(250, 249, 247, 0.7) 100%);
     z-index: 2;
 }
 
@@ -98,14 +98,14 @@ a:hover {
     font-size: clamp(2.4rem, 6vw, 3.8rem);
     font-weight: 700;
     margin: 0;
-    color: #fff;
-    text-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+    color: var(--text-color);
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
     font-family: var(--font-heading);
 }
 
 .hero-subtitle {
     font-size: 1.2rem;
-    color: rgba(255, 255, 255, 0.9);
+    color: var(--secondary-text);
     margin-top: 16px;
     font-family: var(--font-heading);
     letter-spacing: 0.05em;
