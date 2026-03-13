@@ -191,3 +191,14 @@ figcaption {
     font-weight: 700;
     color: var(--accent-color);
 }
+
+@media screen and (max-width: 768px) {
+    .post-content > p:first-of-type::first-letter,
+    .page-content > .wrapper > p:first-of-type::first-letter,
+    .page-content p:first-of-type::first-letter {
+        font-size: 2.5rem !important;
+        line-height: 1 !important;
+        margin-right: 0.15rem !important;
+        padding-top: 0.2rem !important;
+    }
+}

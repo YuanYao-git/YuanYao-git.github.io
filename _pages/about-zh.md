@@ -13,7 +13,7 @@ redirect_from:
   - /about/zh.html
 ---
 
-{% assign blog_cards = site.data.blog_cards | where: "lang", "zh" | slice: 0, 5 %}
+{% assign blog_cards = site.data.blog_cards | where: "lang", "zh" | reverse | slice: 0, 5 %}
 {% assign blog_cta = "阅读全文 ↗" %}
 
 <div class="panel-container">

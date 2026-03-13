@@ -71,22 +71,27 @@
             let heroSnapping = false;
 
             const updateHeroSnapState = () => {
-                heroSnapEnabled = !!heroSection && window.innerWidth > 1024 && !prefersReducedMotion;
+                heroSnapEnabled = !!heroSection && !prefersReducedMotion;
             };
 
             updateHeroSnapState();
             window.addEventListener('resize', updateHeroSnapState);
             window.addEventListener('orientationchange', updateHeroSnapState);
 
+            // 【核心修复】降低 IntersectionObserver 的阈值，适配移动端超长区块
             const observer = new IntersectionObserver((entries) => {
                 entries.forEach((entry) => {
                     if (entry.isIntersecting) {
                         entry.target.classList.add('is-active');
                     } else {
+                        // 如果你希望往回滚动时能再次触发动画，保留这行；否则可以删掉
                         entry.target.classList.remove('is-active');
                     }
                 });
-            }, { threshold: 0.65 });
+            }, {
+                threshold: 0.1, // 降低到 10%，只要区块顶部进入视口一小部分就立即触发
+                rootMargin: '0px 0px -50px 0px' // 距离视口底部 50px 时提前触发，体验更丝滑
+            });
 
             sections.forEach((section) => observer.observe(section));
             sections[0].classList.add('is-active');
@@ -119,6 +124,27 @@
                 }
             }, { passive: false });
 
+            let touchStartY = 0;
+            window.addEventListener('touchstart', (e) => {
+                touchStartY = e.touches[0].clientY;
+            }, { passive: true });
+
+            window.addEventListener('touchend', (e) => {
+                if (!heroSnapEnabled || !heroSection) return;
+                const touchEndY = e.changedTouches[0].clientY;
+                const deltaY = touchStartY - touchEndY;
+                const heroHeight = heroSection.offsetHeight;
+                const scrollTop = window.scrollY;
+
+                if (Math.abs(deltaY) > 50) {
+                    if (deltaY > 0 && scrollTop < heroHeight - 20) {
+                        snapToNext();
+                    } else if (deltaY < 0 && scrollTop <= heroHeight + 10) {
+                        snapToTop();
+                    }
+                }
+            }, { passive: true });
+
             window.addEventListener('keydown', (event) => {
                 if (!heroSnapEnabled || !heroSection) return;
                 if (event.key !== 'ArrowDown' && event.key !== 'ArrowUp') return;
@@ -132,6 +158,128 @@
                     snapToTop();
                 }
             });
+            const blogGrid = document.querySelector('.blog-grid');
+            if (blogGrid) {
+                let scrollAccumulator = 0;
+                const SCROLL_THRESHOLD = 50;
+                let targetIndex = 0;
+                let isWheelScrolling = false;
+                let wheelLockTimer = null; // 意图锁防抖定时器
+
+                const getClosestCardIndex = () => {
+                    const cards = Array.from(blogGrid.querySelectorAll('.blog-card'));
+                    if (!cards.length) return 0;
+                    const gridCenter = blogGrid.scrollLeft + blogGrid.clientWidth / 2;
+                    let closestIndex = 0;
+                    let minDiff = Infinity;
+                    cards.forEach((card, index) => {
+                        const cardCenter = card.offsetLeft + card.offsetWidth / 2;
+                        const diff = Math.abs(gridCenter - cardCenter);
+                        if (diff < minDiff) {
+                            minDiff = diff;
+                            closestIndex = index;
+                        }
+                    });
+                    return closestIndex;
+                };
+
+                blogGrid.addEventListener('wheel', (e) => {
+                    // 【核心交互修复】精确判定鼠标是否悬停在卡片实体上
+                    // 如果触发滚轮的元素不是 .blog-card 或其子元素（即在卡片外的空白/缝隙处）
+                    // 直接 return，放行浏览器的原生页面上下滚动
+                    if (!e.target.closest('.blog-card')) {
+                        return;
+                    }
+
+                    const rect = blogGrid.getBoundingClientRect();
+                    const viewHeight = window.innerHeight;
+                    const isFocused = (rect.top < viewHeight * 0.8) && (rect.bottom > viewHeight * 0.2);
+                    if (!isFocused) return;
+
+                    // 触控板横滑原生放行
+                    if (Math.abs(e.deltaX) > Math.abs(e.deltaY)) return;
+
+                    let dy = e.deltaY;
+                    if (e.deltaMode === 1) dy *= 16;
+                    if (e.deltaMode === 2) dy *= viewHeight;
+                    if (Math.abs(dy) < 2) return;
+
+                    const cards = Array.from(blogGrid.querySelectorAll('.blog-card'));
+                    if (!cards.length) return;
+
+                    if (!isWheelScrolling) {
+                        targetIndex = getClosestCardIndex();
+                    }
+
+                    // --- 核心修复：意图锁边缘判断 ---
+                    const isAtStart = targetIndex === 0 && dy < 0;
+                    const isAtEnd = targetIndex === cards.length - 1 && dy > 0;
+
+                    // 只有在边缘，【且】意图锁已释放（用户停顿了）的情况下，才允许上下滚动页面
+                    if ((isAtStart || isAtEnd) && !isWheelScrolling) {
+                        return; // 放行原生垂直滚动
+                    }
+
+                    // 只要没有放行，就必须绝对拦截，防止 1px 的滚动泄漏
+                    e.preventDefault();
+
+                    scrollAccumulator += dy;
+
+                    if (Math.abs(scrollAccumulator) >= SCROLL_THRESHOLD) {
+                        const direction = scrollAccumulator > 0 ? 1 : -1;
+                        targetIndex = Math.max(0, Math.min(cards.length - 1, targetIndex + direction));
+                        scrollAccumulator = 0;
+
+                        const targetCard = cards[targetIndex];
+                        const targetScrollLeft = targetCard.offsetLeft - (blogGrid.clientWidth / 2) + (targetCard.offsetWidth / 2);
+
+                        isWheelScrolling = true; // 开启意图锁，锁定垂直滚动
+
+                        blogGrid.scrollTo({
+                            left: targetScrollLeft,
+                            behavior: 'smooth'
+                        });
+
+                        // 刷新意图锁：用户完全停止操作滚轮 300ms 后，才解除横向状态
+                        clearTimeout(wheelLockTimer);
+                        wheelLockTimer = setTimeout(() => {
+                            isWheelScrolling = false;
+                            scrollAccumulator = 0;
+                        }, 300);
+                    }
+                }, { passive: false });
+
+                const updateFlowEffect = () => {
+                    const rect = blogGrid.getBoundingClientRect();
+                    const viewHeight = window.innerHeight;
+                    if (rect.bottom < 0 || rect.top > viewHeight) {
+                        requestAnimationFrame(updateFlowEffect);
+                        return;
+                    }
+
+                    const gridCenter = blogGrid.scrollLeft + blogGrid.clientWidth / 2;
+                    const cards = blogGrid.querySelectorAll('.blog-card');
+                    cards.forEach((card) => {
+                        const cardCenter = card.offsetLeft + card.offsetWidth / 2;
+                        const dist = Math.abs(gridCenter - cardCenter);
+                        const maxDist = blogGrid.clientWidth * 0.6;
+                        let scale = 1 - (dist / maxDist) * 0.15;
+                        scale = Math.max(0.85, Math.min(1, scale));
+                        let opacity = 1 - (dist / maxDist) * 0.4;
+                        opacity = Math.max(0.6, Math.min(1, opacity));
+                        card.style.transform = `scale(${scale})`;
+                        card.style.opacity = opacity;
+                        if (dist > 200) {
+                             card.style.filter = 'grayscale(30%)';
+                        } else {
+                             card.style.filter = 'grayscale(0%)';
+                        }
+                    });
+                    requestAnimationFrame(updateFlowEffect);
+                };
+                requestAnimationFrame(updateFlowEffect);
+            }
+
         });
     </script>
 

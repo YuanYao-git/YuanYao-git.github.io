@@ -12,7 +12,7 @@ redirect_from:
   - /about.html
 ---
 
-{% assign blog_cards = site.data.blog_cards | where: "lang", page.lang | slice: 0, 5 %}
+{% assign blog_cards = site.data.blog_cards | where: "lang", page.lang | reverse | slice: 0, 5 %}
 {% assign blog_cta = "Read ↗" %}
 
 <div class="panel-container">
