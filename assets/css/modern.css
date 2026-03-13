@@ -508,16 +508,48 @@ a:hover {
     .panel {
         min-height: auto;
         padding: 60px 24px;
+        margin: 20px auto;
     }
 }
 
 @media (max-width: 768px) {
+    .hero {
+        height: 100vh;
+        min-height: 100vh;
+    }
+
+    .hero-image {
+        object-position: center;
+    }
+
+    .site-header {
+        padding: 20px 0;
+    }
+
     .site-header .wrapper {
         justify-content: center;
     }
 
+    .site-nav {
+        gap: 20px;
+    }
+
+    .site-nav a {
+        font-size: 0.9rem;
+    }
+
+    .hero-title {
+        font-size: 2.2rem;
+    }
+
+    .hero-subtitle {
+        font-size: 1.1rem;
+        margin-top: 12px;
+    }
+
     .quick-facts {
         flex-direction: column;
+        gap: 12px;
     }
 
     .quick-facts li {
@@ -527,11 +559,30 @@ a:hover {
         border-radius: 14px;
     }
 
+    .achievement-grid,
+    .blog-grid {
+        grid-template-columns: 1fr;
+        gap: 24px;
+    }
+
     .achievement-card img,
     .blog-card img {
         height: 200px;
         object-fit: contain;
         padding: 8px;
+    }
+
+    .panel {
+        padding: 40px 20px;
+        border-radius: 0;
+        border-left: none;
+        border-right: none;
+        box-shadow: none;
+        margin: 0;
+    }
+
+    .panel-container {
+        padding-bottom: 60px;
     }
 }
 
