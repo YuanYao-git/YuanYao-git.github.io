@@ -371,9 +371,39 @@
 
                     const gridCenter = blogGrid.scrollLeft + blogGrid.clientWidth / 2;
                     const cards = blogGrid.querySelectorAll('.blog-card');
-                    cards.forEach((card) => {
+                    const cardArr = Array.from(cards);
+                    const totalCards = cardArr.length;
+
+                    // 预计算边缘卡片在滚动到极限时，距中心的最小不可消除偏移量
+                    // 第一张卡片：scrollLeft=0 时的中心偏移
+                    let firstMinDist = 0;
+                    if (totalCards > 0) {
+                        const firstCard = cardArr[0];
+                        const firstCenter = firstCard.offsetLeft + firstCard.offsetWidth / 2;
+                        const minGridCenter = blogGrid.clientWidth / 2; // scrollLeft = 0
+                        firstMinDist = Math.abs(minGridCenter - firstCenter);
+                    }
+                    // 最后一张卡片：scrollLeft=maxScroll 时的中心偏移
+                    let lastMinDist = 0;
+                    if (totalCards > 1) {
+                        const lastCard = cardArr[totalCards - 1];
+                        const lastCenter = lastCard.offsetLeft + lastCard.offsetWidth / 2;
+                        const maxScrollLeft = blogGrid.scrollWidth - blogGrid.clientWidth;
+                        const maxGridCenter = maxScrollLeft + blogGrid.clientWidth / 2;
+                        lastMinDist = Math.abs(maxGridCenter - lastCenter);
+                    }
+
+                    cardArr.forEach((card, index) => {
                         const cardCenter = card.offsetLeft + card.offsetWidth / 2;
-                        const dist = Math.abs(gridCenter - cardCenter);
+                        let dist = Math.abs(gridCenter - cardCenter);
+
+                        // 边缘补偿：减去该卡片无论如何都消不掉的最小距离
+                        if (index === 0 && firstMinDist > 0) {
+                            dist = Math.max(0, dist - firstMinDist);
+                        } else if (index === totalCards - 1 && lastMinDist > 0) {
+                            dist = Math.max(0, dist - lastMinDist);
+                        }
+
                         const maxDist = blogGrid.clientWidth * 0.6;
                         let scale = 1 - (dist / maxDist) * 0.15;
                         scale = Math.max(0.85, Math.min(1, scale));

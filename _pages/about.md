@@ -130,7 +130,7 @@ redirect_from:
     </div>
 
     <footer style="text-align: center; margin-top: 45px; color: #aaa; font-size: 0.95rem; border-top: 1px solid #eee; padding-top: 25px; line-height: 1.8;">
-      © 2026 Yuan Yao. Crafted with ✨ Vibe Coding ✨.<br>
+      © 2026 Yuan Yao. Crafted with ✨ Vibe Coding.<br>
       <span style="font-style: italic; font-size: 0.85rem; color: #999;">"Any sufficiently advanced technology is indistinguishable from magic." — Arthur C. Clarke</span>
     </footer>
   </div>

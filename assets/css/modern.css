@@ -874,6 +874,20 @@ body.has-cursor-glow * {
         margin: 0;
     }
 
+    /* 修复：blog panel 内部的 panel-inner 必须限制宽度，
+       否则 blog-grid 的负边距会把 panel-inner 撑到 ~860px，
+       flex 居中后 panel-inner 被推到 offsetLeft=-180，导致 h2 和卡片左侧被裁剪 */
+    .panel-blog {
+        overflow: visible;
+    }
+
+    .panel-blog > .panel-inner {
+        width: 100%;
+        min-width: 0;
+        max-width: 100%;
+        overflow: visible;
+    }
+
     .panel-container {
         padding-bottom: 60px;
     }
@@ -964,12 +978,12 @@ body.has-cursor-glow * {
         grid-template-columns: none !important;
         gap: 20px;
         padding-bottom: 20px;
-        /* 移动端适配：抵消 .panel 的 20px 内边距 */
-        margin-left: -20px !important;
-        margin-right: -20px !important;
-        padding-left: 20px !important;
-        /* 右侧需要足够空间让最后一张卡片能滚动居中：(100vw - 85vw) / 2 = 7.5vw */
-        padding-right: 7.5vw !important;
+        /* 移动端：不再使用负边距突破父容器（这会撑大 panel-inner 导致 flex 居中偏移）
+           改为归零边距，用 padding 控制卡片起始位置 */
+        margin-left: 0 !important;
+        margin-right: 0 !important;
+        padding-left: 0 !important;
+        padding-right: 0 !important;
     }
 }
 
