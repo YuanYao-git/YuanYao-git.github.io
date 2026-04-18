@@ -148,6 +148,12 @@ yandex_site_verification :
 #  google:
 #    tracking_id          :
 
+visitor_map:
+  enabled                 : true
+  embed_url               :
+  cloudflare_endpoint     : https://visitor-map-api.a1393691489.workers.dev
+  cloudflare_dashboard    : https://dash.cloudflare.com/?to=/:account/analytics/web-analytics
+
 
 # Reading Files
 include:

@@ -9,10 +9,10 @@
     <link rel="stylesheet" href="{{ "/assets/css/modern.css" | relative_url }}">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;700&family=Source+Serif+4:ital,wght@0,400;0,700;1,400&family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;700&family=Noto+Serif+SC:wght@400;700&family=Source+Serif+4:ital,wght@0,400;0,700;1,400&family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
 </head>
 
-<body{% if page.fullwidth %} class="has-panels"{% endif %}>
+<body{% if page.fullwidth or page.body_class %} class="{% if page.fullwidth %}has-panels{% endif %}{% if page.fullwidth and page.body_class %} {% endif %}{% if page.body_class %}{{ page.body_class }}{% endif %}"{% endif %}>
 
     <header class="site-header">
         <div class="wrapper">
@@ -28,6 +28,9 @@
             </nav>
         </div>
     </header>
+
+    <div class="cursor-glow" aria-hidden="true"></div>
+    <div class="ripple-layer" aria-hidden="true"></div>
 
     {% assign hero_title = page.hero_title | default: site.name | default: site.title %}
     {% assign hero_subtitle = page.hero_subtitle | default: site.description %}
@@ -51,24 +54,75 @@
         </div>
     </main>
 
-    <footer class="site-footer">
-        <div class="wrapper">
-            <p>&copy; {{ site.time | date: '%Y' }} {{ site.name | default: site.title }}.</p>
-        </div>
-    </footer>
+
 
     <script>
         document.addEventListener('DOMContentLoaded', function () {
+            const pageLang = {{ page_lang | jsonify }};
             const sections = Array.from(document.querySelectorAll('.snap-section'));
+            const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+            const hasFinePointer = window.matchMedia('(hover: hover) and (pointer: fine)').matches;
+            const heroSection = document.querySelector('.snap-hero');
+            const firstContentSection = sections.length > 1 ? sections[1] : null;
+            const cursorGlow = document.querySelector('.cursor-glow');
+            const rippleLayer = document.querySelector('.ripple-layer');
+            let heroSnapEnabled = false;
+            let heroSnapping = false;
+            let glowActive = false;
+
+            if (cursorGlow && hasFinePointer && !prefersReducedMotion) {
+                document.body.classList.add('has-cursor-glow');
+
+                const setGlowPosition = (x, y) => {
+                    cursorGlow.style.setProperty('--glow-x', x + 'px');
+                    cursorGlow.style.setProperty('--glow-y', y + 'px');
+                };
+
+                window.addEventListener('pointermove', (event) => {
+                    if (event.pointerType && event.pointerType !== 'mouse') return;
+                    setGlowPosition(event.clientX, event.clientY);
+                    if (!glowActive) {
+                        glowActive = true;
+                        cursorGlow.classList.add('is-visible');
+                    }
+                }, { passive: true });
+
+                document.documentElement.addEventListener('mouseleave', () => {
+                    glowActive = false;
+                    cursorGlow.classList.remove('is-visible');
+                });
+
+                window.addEventListener('blur', () => {
+                    glowActive = false;
+                    cursorGlow.classList.remove('is-visible');
+                });
+
+                document.addEventListener('visibilitychange', () => {
+                    if (!document.hidden) return;
+                    glowActive = false;
+                    cursorGlow.classList.remove('is-visible');
+                });
+            }
+
+            if (rippleLayer && !prefersReducedMotion) {
+                window.addEventListener('pointerdown', (event) => {
+                    if (event.pointerType === 'touch') return;
+
+                    const ripple = document.createElement('span');
+                    ripple.className = 'click-ripple';
+                    ripple.style.left = event.clientX + 'px';
+                    ripple.style.top = event.clientY + 'px';
+                    rippleLayer.appendChild(ripple);
+
+                    ripple.addEventListener('animationend', () => {
+                        ripple.remove();
+                    }, { once: true });
+                }, { passive: true });
+            }
+
             if (!sections.length) {
                 return;
             }
-
-            const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
-            const heroSection = document.querySelector('.snap-hero');
-            const firstContentSection = sections.length > 1 ? sections[1] : null;
-            let heroSnapEnabled = false;
-            let heroSnapping = false;
 
             const updateHeroSnapState = () => {
                 heroSnapEnabled = !!heroSection && !prefersReducedMotion;
@@ -95,6 +149,64 @@
 
             sections.forEach((section) => observer.observe(section));
             sections[0].classList.add('is-active');
+
+            const visitorMap = document.querySelector('[data-visitor-map]');
+            if (visitorMap) {
+                const stage = visitorMap.querySelector('[data-visitor-map-stage]');
+                const placeholder = visitorMap.querySelector('[data-visitor-map-placeholder]');
+                const status = visitorMap.querySelector('[data-visitor-map-status]');
+                const embedUrl = visitorMap.dataset.embedUrl;
+                const endpoint = visitorMap.dataset.endpoint;
+
+                const setStatus = (message) => {
+                    if (status) {
+                        status.textContent = message;
+                    }
+                };
+
+                const mountFrame = (url) => {
+                    if (!stage || !url) return;
+                    stage.innerHTML = '';
+
+                    const frame = document.createElement('iframe');
+                    frame.className = 'visitor-map-frame';
+                    frame.src = url;
+                    frame.loading = 'lazy';
+                    frame.referrerPolicy = 'strict-origin-when-cross-origin';
+                    frame.title = pageLang.startsWith('zh') ? '网站访问者地图' : 'Website visitor map';
+                    stage.appendChild(frame);
+                };
+
+                if (embedUrl) {
+                    mountFrame(embedUrl);
+                    setStatus(pageLang.startsWith('zh') ? '当前显示公开地图嵌入。' : 'Displaying the configured public map embed.');
+                } else if (endpoint) {
+                    fetch(endpoint, { headers: { Accept: 'application/json' } })
+                        .then((response) => {
+                            if (!response.ok) throw new Error('Request failed');
+                            return response.json();
+                        })
+                        .then((data) => {
+                            if (data && typeof data.embed_url === 'string' && data.embed_url) {
+                                mountFrame(data.embed_url);
+                                setStatus(data.description || (pageLang.startsWith('zh') ? '当前显示 Cloudflare 数据驱动的访问者地图。' : 'Displaying the Cloudflare-backed visitor map.'));
+                                return;
+                            }
+
+                            throw new Error('Missing embed_url');
+                        })
+                        .catch(() => {
+                            if (placeholder) {
+                                placeholder.classList.add('is-idle');
+                            }
+                            setStatus(pageLang.startsWith('zh')
+                                ? '尚未获取到可公开嵌入的地图。若要使用 Cloudflare，请让 Worker 返回 { "embed_url": "..." }。'
+                                : 'No public map embed is available yet. For Cloudflare, let your Worker return { "embed_url": "..." }.');
+                        });
+                } else if (placeholder) {
+                    placeholder.classList.add('is-idle');
+                }
+            }
 
             const snapToNext = () => {
                 if (!firstContentSection || heroSnapping) return;

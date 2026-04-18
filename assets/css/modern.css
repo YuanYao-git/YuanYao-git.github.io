@@ -7,9 +7,16 @@
     --card-bg: rgba(255, 255, 255, 0.7);
     --spacing-unit: 30px;
     --content-width: 1000px;
-    --font-body: "Source Serif 4", "Georgia", "STKaiti", "KaiTi", "楷体", serif;
-    --font-heading: "Cormorant Garamond", "Georgia", "STKaiti", "KaiTi", "楷体", serif;
-    --font-ui: "Source Serif 4", "Georgia", "STKaiti", "KaiTi", "楷体", serif;
+    --font-body: "Source Serif 4", "Noto Serif SC", "Georgia", serif;
+    --font-heading: "Cormorant Garamond", "Noto Serif SC", "Georgia", serif;
+    --font-ui: "Source Serif 4", "Noto Serif SC", "Georgia", serif;
+}
+
+body.about-fonts,
+body.has-panelsabout-fonts {
+    --font-body-zh: "STKaiti", "KaiTi", "Kaiti SC", "Songti SC", "Noto Serif SC", serif;
+    --font-heading-zh: "STKaiti", "KaiTi", "Kaiti SC", "Songti SC", "Noto Serif SC", serif;
+    --font-ui-zh: "STKaiti", "KaiTi", "Kaiti SC", "Songti SC", "Noto Serif SC", serif;
 }
 
 body {
@@ -32,6 +39,65 @@ html[lang^="zh"] body {
     /* No global serif override for Chinese to keep UI clean with sans-serif */
 }
 
+html[lang="zh-CN"] body.about-fonts,
+html[lang="zh-CN"] body.has-panelsabout-fonts {
+    font-family: var(--font-body-zh);
+}
+
+html[lang="zh-CN"] body.about-fonts main,
+html[lang="zh-CN"] body.about-fonts .panel,
+html[lang="zh-CN"] body.about-fonts .panel p,
+html[lang="zh-CN"] body.about-fonts .panel li,
+html[lang="zh-CN"] body.about-fonts .panel a,
+html[lang="zh-CN"] body.about-fonts .achievement-body,
+html[lang="zh-CN"] body.about-fonts .citation,
+html[lang="zh-CN"] body.about-fonts .text-link,
+html[lang="zh-CN"] body.has-panelsabout-fonts main,
+html[lang="zh-CN"] body.has-panelsabout-fonts .panel,
+html[lang="zh-CN"] body.has-panelsabout-fonts .panel p,
+html[lang="zh-CN"] body.has-panelsabout-fonts .panel li,
+html[lang="zh-CN"] body.has-panelsabout-fonts .panel a,
+html[lang="zh-CN"] body.has-panelsabout-fonts .achievement-body,
+html[lang="zh-CN"] body.has-panelsabout-fonts .citation,
+html[lang="zh-CN"] body.has-panelsabout-fonts .text-link {
+    font-family: var(--font-body-zh);
+}
+
+html[lang="zh-CN"] body.about-fonts .hero-title,
+html[lang="zh-CN"] body.about-fonts .panel h2,
+html[lang="zh-CN"] body.about-fonts .achievement-card h3,
+html[lang="zh-CN"] body.about-fonts .blog-card h3,
+html[lang="zh-CN"] body.about-fonts .edu-stop-name,
+html[lang="zh-CN"] body.has-panelsabout-fonts .hero-title,
+html[lang="zh-CN"] body.has-panelsabout-fonts .panel h2,
+html[lang="zh-CN"] body.has-panelsabout-fonts .achievement-card h3,
+html[lang="zh-CN"] body.has-panelsabout-fonts .blog-card h3,
+html[lang="zh-CN"] body.has-panelsabout-fonts .edu-stop-name {
+    font-family: var(--font-heading-zh);
+    font-weight: 400;
+}
+
+html[lang="zh-CN"] body.about-fonts .hero-subtitle,
+html[lang="zh-CN"] body.about-fonts .site-header,
+html[lang="zh-CN"] body.about-fonts .site-nav a,
+html[lang="zh-CN"] body.about-fonts .button,
+html[lang="zh-CN"] body.about-fonts .badge,
+html[lang="zh-CN"] body.about-fonts .eyebrow,
+html[lang="zh-CN"] body.about-fonts .edu-stop-year,
+html[lang="zh-CN"] body.about-fonts .site-footer,
+html[lang="zh-CN"] body.about-fonts .site-footer p,
+html[lang="zh-CN"] body.has-panelsabout-fonts .hero-subtitle,
+html[lang="zh-CN"] body.has-panelsabout-fonts .site-header,
+html[lang="zh-CN"] body.has-panelsabout-fonts .site-nav a,
+html[lang="zh-CN"] body.has-panelsabout-fonts .button,
+html[lang="zh-CN"] body.has-panelsabout-fonts .badge,
+html[lang="zh-CN"] body.has-panelsabout-fonts .eyebrow,
+html[lang="zh-CN"] body.has-panelsabout-fonts .edu-stop-year,
+html[lang="zh-CN"] body.has-panelsabout-fonts .site-footer,
+html[lang="zh-CN"] body.has-panelsabout-fonts .site-footer p {
+    font-family: var(--font-ui-zh);
+}
+
 a {
     color: #74baff;
     text-decoration: none;
@@ -41,6 +107,72 @@ a {
 a:hover {
     color: #a8d6ff;
     text-decoration: underline;
+}
+
+.cursor-glow,
+.ripple-layer {
+    position: fixed;
+    inset: 0;
+    pointer-events: none;
+    z-index: 40;
+}
+
+.cursor-glow {
+    opacity: 0;
+    transition: opacity 0.2s ease;
+}
+
+.cursor-glow::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 14px;
+    height: 14px;
+    border-radius: 50%;
+    transform: translate(calc(var(--glow-x, 50vw) - 50%), calc(var(--glow-y, 50vh) - 50%));
+    background: #000;
+    box-shadow: 0 0 0 4px rgba(0, 0, 0, 0.08);
+}
+
+.cursor-glow.is-visible {
+    opacity: 1;
+}
+
+body.has-cursor-glow,
+body.has-cursor-glow * {
+    cursor: none !important;
+}
+
+.click-ripple {
+    position: absolute;
+    width: 18px;
+    height: 18px;
+    margin-left: -9px;
+    margin-top: -9px;
+    border-radius: 50%;
+    border: 1px solid rgba(112, 118, 128, 0.22);
+    background: radial-gradient(circle, rgba(255, 255, 255, 0.2) 0%, rgba(112, 118, 128, 0.13) 45%, rgba(112, 118, 128, 0) 72%);
+    transform: scale(0.2);
+    opacity: 0;
+    animation: clickRipple 0.78s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+    will-change: transform, opacity;
+}
+
+@keyframes clickRipple {
+    0% {
+        transform: scale(0.2);
+        opacity: 0.75;
+    }
+
+    70% {
+        opacity: 0.18;
+    }
+
+    100% {
+        transform: scale(12);
+        opacity: 0;
+    }
 }
 
 /* Hero Section */
@@ -253,6 +385,7 @@ a:hover {
 
 .panel-intro,
 .panel-achievements,
+.panel-education,
 .panel-blog {
     background: #fff;
     backdrop-filter: none;
@@ -474,6 +607,122 @@ a:hover {
     font-family: var(--font-heading);
 }
 
+.visitor-map-card {
+    display: grid;
+    grid-template-columns: minmax(0, 0.9fr) minmax(320px, 1.1fr);
+    gap: 28px;
+    align-items: center;
+    padding: 28px;
+    margin: 0 auto 28px;
+    border: 1px solid rgba(26, 26, 26, 0.08);
+    border-radius: 22px;
+    background:
+        radial-gradient(circle at top left, rgba(196, 30, 58, 0.08), transparent 34%),
+        linear-gradient(135deg, rgba(255, 255, 255, 0.92), rgba(247, 243, 238, 0.95));
+    box-shadow: 0 24px 60px rgba(22, 23, 26, 0.08);
+}
+
+.visitor-map-kicker {
+    margin: 0 0 10px;
+    color: var(--accent-color);
+    font-size: 0.82rem;
+    letter-spacing: 0.16em;
+    text-transform: uppercase;
+}
+
+.visitor-map-card h3 {
+    margin: 0 0 12px;
+    font-size: 1.7rem;
+    line-height: 1.15;
+    color: var(--text-color);
+}
+
+.visitor-map-note {
+    margin: 0 0 18px;
+    color: var(--secondary-text);
+    font-size: 0.98rem;
+    line-height: 1.7;
+    text-align: left !important;
+}
+
+.visitor-map-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    color: var(--text-color);
+    font-size: 0.95rem;
+    text-decoration: none;
+    border-bottom: 1px solid rgba(26, 26, 26, 0.18);
+}
+
+.visitor-map-link:hover {
+    border-bottom-color: var(--accent-color);
+}
+
+.visitor-map-stage {
+    position: relative;
+    min-height: 220px;
+    overflow: hidden;
+    border-radius: 18px;
+    background:
+        linear-gradient(180deg, rgba(255, 255, 255, 0.88), rgba(240, 234, 228, 0.92)),
+        repeating-linear-gradient(90deg, rgba(26, 26, 26, 0.04) 0, rgba(26, 26, 26, 0.04) 1px, transparent 1px, transparent 64px),
+        repeating-linear-gradient(0deg, rgba(26, 26, 26, 0.04) 0, rgba(26, 26, 26, 0.04) 1px, transparent 1px, transparent 48px);
+    border: 1px solid rgba(26, 26, 26, 0.08);
+}
+
+.visitor-map-placeholder {
+    position: absolute;
+    inset: 0;
+    background:
+        radial-gradient(circle at 18% 32%, rgba(0, 0, 0, 0.08) 0 10%, transparent 11%),
+        radial-gradient(circle at 33% 42%, rgba(0, 0, 0, 0.07) 0 7%, transparent 8%),
+        radial-gradient(circle at 51% 34%, rgba(0, 0, 0, 0.07) 0 9%, transparent 10%),
+        radial-gradient(circle at 65% 45%, rgba(0, 0, 0, 0.07) 0 8%, transparent 9%),
+        radial-gradient(circle at 81% 39%, rgba(0, 0, 0, 0.07) 0 9%, transparent 10%),
+        linear-gradient(135deg, rgba(250, 249, 247, 0.12), rgba(196, 30, 58, 0.04));
+}
+
+.visitor-map-placeholder.is-idle {
+    opacity: 0.94;
+}
+
+.map-dot {
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: rgba(196, 30, 58, 0.92);
+    box-shadow: 0 0 0 8px rgba(196, 30, 58, 0.08);
+    animation: mapPulse 2.8s ease-in-out infinite;
+}
+
+.map-dot-a { top: 30%; left: 19%; }
+.map-dot-b { top: 44%; left: 34%; animation-delay: 0.3s; }
+.map-dot-c { top: 36%; left: 55%; animation-delay: 0.8s; }
+.map-dot-d { top: 52%; left: 69%; animation-delay: 1.1s; }
+.map-dot-e { top: 66%; left: 82%; animation-delay: 1.5s; }
+
+.visitor-map-frame {
+    display: block;
+    width: 100%;
+    min-height: 220px;
+    border: 0;
+    background: transparent;
+}
+
+@keyframes mapPulse {
+    0%, 100% {
+        transform: scale(0.95);
+        opacity: 0.82;
+    }
+
+    50% {
+        transform: scale(1.1);
+        opacity: 1;
+    }
+}
+
 .site-footer p {
     color: #ccc;
     font-size: 0.9rem;
@@ -481,6 +730,23 @@ a:hover {
     margin: 0 auto !important;
     width: 100% !important;
     display: block !important;
+}
+
+@media (hover: none), (pointer: coarse) {
+    .cursor-glow {
+        display: none;
+    }
+
+    .click-ripple {
+        animation-duration: 0.62s;
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .cursor-glow,
+    .ripple-layer {
+        display: none;
+    }
 }
 
 /* Legacy paper-box styles (used by older posts) */
@@ -529,6 +795,16 @@ a:hover {
     .hero {
         height: 100vh;
         min-height: 100vh;
+    }
+
+    .visitor-map-card {
+        grid-template-columns: 1fr;
+        gap: 20px;
+        padding: 22px;
+    }
+
+    .visitor-map-card h3 {
+        font-size: 1.35rem;
     }
 
     .panel p {
@@ -601,6 +877,7 @@ a:hover {
     .panel-container {
         padding-bottom: 60px;
     }
+
 }
 
 @keyframes particle-drift {
@@ -691,7 +968,8 @@ a:hover {
         margin-left: -20px !important;
         margin-right: -20px !important;
         padding-left: 20px !important;
-        padding-right: 20px !important;
+        /* 右侧需要足够空间让最后一张卡片能滚动居中：(100vw - 85vw) / 2 = 7.5vw */
+        padding-right: 7.5vw !important;
     }
 }
 
@@ -744,3 +1022,89 @@ a:hover {
     margin-top: 10px;
 }
 
+/* ── Education Journey ─────────────────────────── */
+.edu-journey {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    margin-bottom: 36px;
+    margin-top: 36px;
+}
+
+.edu-stop {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    flex: 1;
+    opacity: 0;
+    transform: translateX(48px);
+}
+
+/* Triggered by IntersectionObserver adding .is-active to the parent panel */
+.panel-intro.is-active .edu-stop:nth-child(3) {
+    animation: eduSlideIn 0.55s cubic-bezier(0.19, 1, 0.22, 1) 0.05s forwards;
+}
+.panel-intro.is-active .edu-stop:nth-child(2) {
+    animation: eduSlideIn 0.55s cubic-bezier(0.19, 1, 0.22, 1) 0.2s forwards;
+}
+.panel-intro.is-active .edu-stop:nth-child(1) {
+    animation: eduSlideIn 0.55s cubic-bezier(0.19, 1, 0.22, 1) 0.35s forwards;
+}
+
+@keyframes eduSlideIn {
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+.edu-stop img {
+    width: 92px;
+    height: 92px;
+    object-fit: contain;
+    border-radius: 50%;
+    background: white;
+    border: 2px solid var(--border-color);
+    padding: 10px;
+    box-sizing: border-box;
+    box-shadow: 0 2px 14px rgba(0,0,0,0.07);
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.edu-stop:hover img {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 24px rgba(0,0,0,0.13);
+}
+
+.edu-stop-name {
+    font-family: var(--font-heading);
+    font-size: 0.92rem;
+    font-weight: 700;
+    color: var(--text-color);
+    text-align: center;
+}
+
+.edu-stop-year {
+    font-size: 0.75rem;
+    color: var(--secondary-text);
+    font-family: var(--font-ui);
+    letter-spacing: 0.05em;
+    margin-top: -4px;
+}
+
+@media (max-width: 600px) {
+    .edu-stop img {
+        width: 70px;
+        height: 70px;
+        padding: 8px;
+    }
+
+    .edu-stop-name {
+        font-size: 0.8rem;
+    }
+
+    .edu-stop-year {
+        font-size: 0.7rem;
+    }
+}

@@ -1,0 +1,8 @@
+name = "visitor-map-api"
+main = "src/index.js"
+compatibility_date = "2026-04-18"
+
+[vars]
+CF_ZONE_TAG = "554d1c0b1a010a2bda0df907ea7331ee"
+VISITOR_MAP_DAYS = "7"
+VISITOR_MAP_LIMIT = "8"

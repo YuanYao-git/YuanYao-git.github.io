@@ -1,0 +1,33 @@
+{% assign visitor_map = site.visitor_map %}
+{% if visitor_map and visitor_map.enabled %}
+{% assign is_zh = page.lang contains 'zh' %}
+<section
+    class="visitor-map-card"
+    data-visitor-map
+    data-embed-url="{{ visitor_map.embed_url | default: '' | escape }}"
+    data-endpoint="{{ visitor_map.cloudflare_endpoint | default: '' | escape }}"
+    data-dashboard-url="{{ visitor_map.cloudflare_dashboard | default: 'https://dash.cloudflare.com/' | escape }}">
+    <div class="visitor-map-copy">
+        {% if is_zh %}
+        <p class="visitor-map-kicker">访问者地图</p>
+        <h3>来自世界各地的访问轨迹</h3>
+        <p class="visitor-map-note" data-visitor-map-status>等待接入地图数据。可直接填写公开嵌入链接，或接入 Cloudflare Worker 输出的公开地址。</p>
+        <a class="visitor-map-link" href="{{ visitor_map.cloudflare_dashboard | default: 'https://dash.cloudflare.com/' }}" target="_blank" rel="noopener noreferrer">打开 Cloudflare Analytics ↗</a>
+        {% else %}
+        <p class="visitor-map-kicker">Visitor Map</p>
+        <h3>Where readers are coming from</h3>
+        <p class="visitor-map-note" data-visitor-map-status>Waiting for map data. You can provide a public embed URL or expose one from a Cloudflare Worker.</p>
+        <a class="visitor-map-link" href="{{ visitor_map.cloudflare_dashboard | default: 'https://dash.cloudflare.com/' }}" target="_blank" rel="noopener noreferrer">Open Cloudflare Analytics ↗</a>
+        {% endif %}
+    </div>
+    <div class="visitor-map-stage" data-visitor-map-stage>
+        <div class="visitor-map-placeholder" data-visitor-map-placeholder aria-hidden="true">
+            <span class="map-dot map-dot-a"></span>
+            <span class="map-dot map-dot-b"></span>
+            <span class="map-dot map-dot-c"></span>
+            <span class="map-dot map-dot-d"></span>
+            <span class="map-dot map-dot-e"></span>
+        </div>
+    </div>
+</section>
+{% endif %}
