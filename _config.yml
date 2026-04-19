@@ -12,7 +12,7 @@ title                    : "Yuan Yao"
 title_separator          : "-"
 name                     : &name "Yuan Yao"
 description              : &description "Yuan Yao's academic website — Micro/Nano Fabrication, Laser Processing, MEMS. 姚远的个人学术主页。"
-url                      : https://yuan-yao.me # the base hostname & protocol for your site e.g. "https://[your GitHub username].github.io"
+url                      : https://yaoyuan.org # the base hostname & protocol for your site e.g. "https://[your GitHub username].github.io"
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
 repository               : #"academicpages/academicpages.github.io"
 
@@ -29,7 +29,7 @@ author:
   location         : " Changchun, China<br> "
   employer         : " Jilin University<br> "
   uri              : # URL
-  email            : "yuanyao@ieee.org"
+  email            : "me@yaoyuan.org"
 
   # Academic websites
   # arxiv            : # URL - Update with the correct link to your profile

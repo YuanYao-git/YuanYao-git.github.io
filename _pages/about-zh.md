@@ -19,7 +19,7 @@ redirect_from:
 
 <div class="panel-container">
 
-  <section class="panel snap-section panel-intro">
+  <section id="intro" class="panel snap-section panel-intro" data-section-anchor="intro">
     <div class="panel-inner">
       <p class="eyebrow">个人简介</p>
       <h2>把微纳制造与工程实践结合起来。</h2>
@@ -56,7 +56,7 @@ redirect_from:
     </div>
   </section>
 
-  <section class="panel snap-section panel-achievements">
+  <section id="achievements" class="panel snap-section panel-achievements" data-section-anchor="achievements">
     <div class="panel-inner">
       <h2>学术成果</h2>
       <div class="achievement-grid">
@@ -104,7 +104,7 @@ redirect_from:
     </div>
   </section>
 
-  <section class="panel snap-section panel-blog">
+  <section id="blog" class="panel snap-section panel-blog" data-section-anchor="blog">
     <div class="panel-inner">
       <h2>博客</h2>
       <div class="blog-grid">
@@ -121,7 +121,7 @@ redirect_from:
     </div>
   </section>
 
-<section class="panel snap-section panel-map">
+<section id="map" class="panel snap-section panel-map" data-section-anchor="map">
   <div class="panel-inner">
     <p class="eyebrow">访客来源地</p>
     

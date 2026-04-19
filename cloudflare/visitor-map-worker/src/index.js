@@ -298,6 +298,8 @@ function renderEmbedHtml(dataset, requestUrl) {
   // map_countries: all countries with known coords (not capped by list limit)
   const chartDataJson = safeJson(dataset.map_countries || dataset.countries.map(c => ({ name: c.name, requests: c.requests })));
   const coordsJson = safeJson(COUNTRY_COORDS);
+  const totalUniquesJson = safeJson(dataset.total_uniques || 0);
+  const totalRequestsJson = safeJson(dataset.total_requests || 0);
 
   return `<!DOCTYPE html>
 <html lang="en">
@@ -365,6 +367,10 @@ function renderEmbedHtml(dataset, requestUrl) {
       flex: 1;
       min-height: 260px;
       width: 100%;
+      touch-action: none;
+      -webkit-touch-callout: none;
+      -webkit-user-select: none;
+      user-select: none;
       background:
         radial-gradient(circle, rgba(26,26,26,0.06) 1px, transparent 1px);
       background-size: 20px 20px;
@@ -486,6 +492,8 @@ function renderEmbedHtml(dataset, requestUrl) {
   <script>
     const COORDS = ${coordsJson};
     const CHART_DATA = ${chartDataJson};
+    const TOTAL_UNIQUES = ${totalUniquesJson};
+    const TOTAL_REQUESTS = ${totalRequestsJson};
 
     (async () => {
       const el = document.getElementById('chart');
@@ -509,57 +517,115 @@ function renderEmbedHtml(dataset, requestUrl) {
         const scatterData = CHART_DATA
           .map(c => {
             const coord = COORDS[c.name];
-            return coord ? { name: c.name, value: [coord[0], coord[1], c.requests] } : null;
+            const uv = TOTAL_UNIQUES && TOTAL_REQUESTS
+              ? Math.max(1, Math.ceil(TOTAL_UNIQUES * (c.requests / TOTAL_REQUESTS)))
+              : c.requests;
+            return coord ? { name: c.name, value: [coord[0], coord[1], uv] } : null;
           })
           .filter(Boolean);
+        const mapAreaData = scatterData.map(item => ({ name: item.name, value: item.value[2] }));
+        const scatterIndexByName = new Map(scatterData.map((item, index) => [item.name, index]));
+        let activeScatterIndex = null;
+
+        const syncScatterEmphasis = (name) => {
+          const nextIndex = scatterIndexByName.get(name);
+          if (activeScatterIndex != null && activeScatterIndex !== nextIndex) {
+            chart.dispatchAction({ type: 'downplay', seriesIndex: 1, dataIndex: activeScatterIndex });
+          }
+          if (nextIndex != null) {
+            chart.dispatchAction({ type: 'highlight', seriesIndex: 1, dataIndex: nextIndex });
+            activeScatterIndex = nextIndex;
+          } else {
+            activeScatterIndex = null;
+          }
+        };
+        const clearScatterEmphasis = () => {
+          if (activeScatterIndex != null) {
+            chart.dispatchAction({ type: 'downplay', seriesIndex: 1, dataIndex: activeScatterIndex });
+            activeScatterIndex = null;
+          }
+        };
+        const getMetric = (params) => {
+          if (Array.isArray(params.value)) return params.value[2];
+          return params.value;
+        };
 
         chart.setOption({
           backgroundColor: 'transparent',
           tooltip: {
             trigger: 'item',
-            formatter: p => p.name + ': ' + Number(p.value[2]).toLocaleString('en-US') + ' req'
+            triggerOn: 'mousemove|click',
+            confine: true,
+            formatter: (p) => {
+              const value = getMetric(p);
+              if (!p.name || value == null) return '';
+              return '<b>' + p.name + '</b><br/>Estimated visitors: ' + Number(value).toLocaleString('en-US');
+            }
           },
           geo: {
             map: 'world',
-            roam: false,
-            silent: true,
+            roam: true,
+            scaleLimit: { min: 1, max: 8 },
             itemStyle: {
               areaColor: '#f0ebe5',
               borderColor: '#c8c0b8',
               borderWidth: 0.5
             },
-            emphasis: { disabled: true },
+            emphasis: {
+              itemStyle: { areaColor: '#ead9cf' },
+              label: { show: false }
+            },
             select:   { disabled: true }
           },
-          series: [{
-            type: 'effectScatter',
-            coordinateSystem: 'geo',
-            data: scatterData,
-            symbolSize: function(val) {
-              // rank-based: top country gets 20px, last gets 10px
-              const max = scatterData[0] ? scatterData[0].value[2] : 1;
-              return Math.round(10 + (val[2] / max) * 10);
+          series: [
+            {
+              type: 'map',
+              map: 'world',
+              geoIndex: 0,
+              data: mapAreaData,
+              selectedMode: false,
+              itemStyle: {
+                areaColor: 'rgba(0,0,0,0)',
+                borderColor: 'rgba(0,0,0,0)'
+              },
+              emphasis: {
+                itemStyle: { areaColor: 'rgba(196, 30, 58, 0.12)' },
+                label: { show: false }
+              },
+              zlevel: 1
             },
-            showEffectOn: 'render',
-            rippleEffect: { brushType: 'stroke', scale: 3, period: 3 },
-            label: {
-              formatter: '{b}',
-              position: 'right',
-              show: true,
-              fontSize: 11,
-              fontFamily: 'Georgia, serif',
-              color: '#1a1a1a',
-              textBorderColor: 'rgba(255,255,255,0.85)',
-              textBorderWidth: 2
-            },
-            itemStyle: {
-              color: '#c41e3a',
-              shadowBlur: 10,
-              shadowColor: 'rgba(196,30,58,0.5)'
-            },
-            zlevel: 2
-          }]
+            {
+              type: 'effectScatter',
+              coordinateSystem: 'geo',
+              data: scatterData,
+              symbolSize: function(val) {
+                const max = scatterData[0] ? scatterData[0].value[2] : 1;
+                return Math.round(10 + (val[2] / max) * 10);
+              },
+              showEffectOn: 'render',
+              rippleEffect: { brushType: 'stroke', scale: 3, period: 3 },
+              label: { show: false },
+              itemStyle: {
+                color: '#c41e3a',
+                shadowBlur: 10,
+                shadowColor: 'rgba(196,30,58,0.5)'
+              },
+              emphasis: {
+                scale: true,
+                itemStyle: {
+                  color: '#d93a57',
+                  shadowBlur: 18,
+                  shadowColor: 'rgba(196,30,58,0.65)'
+                }
+              },
+              zlevel: 2
+            }
+          ]
         });
+
+        chart.on('mouseover', (params) => syncScatterEmphasis(params.name));
+        chart.on('click', (params) => syncScatterEmphasis(params.name));
+        chart.on('globalout', clearScatterEmphasis);
 
         window.addEventListener('resize', () => chart.resize());
       } catch (_) {

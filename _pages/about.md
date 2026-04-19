@@ -18,7 +18,7 @@ redirect_from:
 
 <div class="panel-container">
 
-  <section class="panel snap-section panel-intro">
+  <section id="intro" class="panel snap-section panel-intro" data-section-anchor="intro">
     <div class="panel-inner">
       <p class="eyebrow">About</p>
       <h2>Combining micro-nano manufacturing with engineering practice.</h2>
@@ -55,7 +55,7 @@ redirect_from:
     </div>
   </section>
 
-  <section class="panel snap-section panel-achievements">
+  <section id="achievements" class="panel snap-section panel-achievements" data-section-anchor="achievements">
     <div class="panel-inner">
       <h2>Academic Achievements</h2>
       <div class="achievement-grid">
@@ -103,7 +103,7 @@ redirect_from:
     </div>
   </section>
 
-  <section class="panel snap-section panel-blog">
+  <section id="blog" class="panel snap-section panel-blog" data-section-anchor="blog">
     <div class="panel-inner">
       <h2>Blog</h2>
       <div class="blog-grid">
@@ -119,7 +119,7 @@ redirect_from:
       </div>
     </div>
   </section>
-<section class="panel snap-section panel-map">
+<section id="map" class="panel snap-section panel-map" data-section-anchor="map">
   <div class="panel-inner">
     <p class="eyebrow">Visitor Geography</p>
     
@@ -147,4 +147,3 @@ redirect_from:
 </script>
 
 </div>
-

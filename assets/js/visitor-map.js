@@ -70,6 +70,11 @@
     var lang = opts.lang || 'en';
     var apiEndpoint = opts.apiEndpoint || 'https://visitor-map-api.a1393691489.workers.dev/';
     var isZh = lang.indexOf('zh') === 0;
+    var isWeChatBrowser = /MicroMessenger/i.test(navigator.userAgent || '');
+    var prefersReducedMotion = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+    var hasCoarsePointer = window.matchMedia && window.matchMedia('(hover: none) and (pointer: coarse)').matches;
+    var isNarrowViewport = window.matchMedia && window.matchMedia('(max-width: 768px)').matches;
+    var lowPowerMode = prefersReducedMotion || hasCoarsePointer || isNarrowViewport || isWeChatBrowser;
 
     var el = document.getElementById(containerId);
     if (!el) return;
@@ -94,7 +99,11 @@
     }
 
     function initChart() {
-      var chart = echarts.init(el);
+      var chart = echarts.init(el, null, {
+        renderer: 'canvas',
+        devicePixelRatio: lowPowerMode ? 1 : Math.min(window.devicePixelRatio || 1, 1.75),
+        useDirtyRect: true
+      });
       chart.showLoading({
         text: isZh ? '加载中…' : 'Loading…',
         color: '#c41e3a', textColor: '#6a6762',
@@ -130,16 +139,50 @@
               : c.requests;
             return { name: c.name, value: [COORDS[c.name][0], COORDS[c.name][1], uv] };
           });
+        var mapAreaData = scatterData.map(function (item) {
+          return { name: item.name, value: item.value[2] };
+        });
+        var scatterIndexByName = new Map(scatterData.map(function (item, index) {
+          return [item.name, index];
+        }));
+        var activeScatterIndex = null;
 
         var max = scatterData.reduce(function (m, c) { return Math.max(m, c.value[2]); }, 1);
+        function getMetric(params) {
+          return Array.isArray(params.value) ? params.value[2] : params.value;
+        }
+        function syncScatterEmphasis(name) {
+          var nextIndex = scatterIndexByName.get(name);
+          if (activeScatterIndex != null && activeScatterIndex !== nextIndex) {
+            chart.dispatchAction({ type: 'downplay', seriesIndex: 1, dataIndex: activeScatterIndex });
+          }
+          if (nextIndex != null) {
+            chart.dispatchAction({ type: 'highlight', seriesIndex: 1, dataIndex: nextIndex });
+            activeScatterIndex = nextIndex;
+          } else {
+            activeScatterIndex = null;
+          }
+        }
+        function clearScatterEmphasis() {
+          if (activeScatterIndex != null) {
+            chart.dispatchAction({ type: 'downplay', seriesIndex: 1, dataIndex: activeScatterIndex });
+            activeScatterIndex = null;
+          }
+        }
 
         chart.setOption({
+          animation: !lowPowerMode,
+          animationDuration: lowPowerMode ? 0 : 500,
+          animationDurationUpdate: lowPowerMode ? 0 : 300,
           tooltip: {
             trigger: 'item',
+            triggerOn: lowPowerMode ? 'click' : 'mousemove|click',
+            confine: true,
             formatter: function (p) {
               if (p.componentType !== 'series') return '';
               var display = isZh ? (zhDict[p.name] || p.name) : p.name;
-              var req = p.value && p.value[2] != null ? p.value[2] : p.value;
+              var req = getMetric(p);
+              if (!display || req == null) return '';
               return '<b>' + display + '</b><br/>' +
                 (isZh ? '访客数: ' : 'Visitors: ') +
                 Number(req).toLocaleString('en-US');
@@ -147,49 +190,76 @@
           },
           geo: {
             map: 'world',
-            roam: false,
+            roam: !isWeChatBrowser,
+            scaleLimit: { min: 1, max: 8 },
             itemStyle: { areaColor: '#f0ebe5', borderColor: '#c8c0b8', borderWidth: 0.5 },
             emphasis: {
-              itemStyle: { areaColor: '#e8d8d0' },
+              itemStyle: { areaColor: '#ead9cf' },
               label: { show: false },
             },
             select: { disabled: true },
           },
-          series: [{
-            type: 'effectScatter',
-            coordinateSystem: 'geo',
-            data: scatterData,
-            symbolSize: function (val) {
-              // cubic scale: tiny countries stay tiny, top countries stand out
-              var ratio = val[2] / max;
-              return Math.round(3 + Math.pow(ratio, 0.6) * 14);
-            },
-            showEffectOn: 'render',
-            rippleEffect: { brushType: 'stroke', scale: 2, period: 4 },
-            label: { show: false },
-            itemStyle: {
-              color: '#a85c68',
-              shadowBlur: 5,
-              shadowColor: 'rgba(168,92,104,0.3)',
-            },
-            emphasis: {
-              itemStyle: { color: '#c07080', shadowBlur: 12 },
-              label: {
-                show: true,
-                formatter: function (p) {
-                  return isZh ? (zhDict[p.name] || p.name) : p.name;
-                },
-                position: 'right',
-                fontSize: 11,
-                fontWeight: 'bold',
-                color: '#3a3a3a',
-                textBorderColor: 'rgba(255,255,255,0.95)',
-                textBorderWidth: 2,
+          series: [
+            {
+              type: 'map',
+              map: 'world',
+              geoIndex: 0,
+              data: mapAreaData,
+              selectedMode: false,
+              itemStyle: {
+                areaColor: 'rgba(0,0,0,0)',
+                borderColor: 'rgba(0,0,0,0)',
               },
+              emphasis: {
+                itemStyle: { areaColor: 'rgba(196, 30, 58, 0.12)' },
+                label: { show: false },
+              },
+              zlevel: 1,
             },
-            zlevel: 2,
-          }],
+            {
+              type: 'effectScatter',
+              coordinateSystem: 'geo',
+              data: scatterData,
+              symbolSize: function (val) {
+                // cubic scale: tiny countries stay tiny, top countries stand out
+                var ratio = val[2] / max;
+                return Math.round(3 + Math.pow(ratio, 0.6) * 14);
+              },
+              showEffectOn: lowPowerMode ? 'emphasis' : 'render',
+              rippleEffect: lowPowerMode ? { brushType: 'stroke', scale: 1.5, period: 6 } : { brushType: 'stroke', scale: 2, period: 4 },
+              label: { show: false },
+              itemStyle: {
+                color: '#a85c68',
+                shadowBlur: lowPowerMode ? 0 : 5,
+                shadowColor: 'rgba(168,92,104,0.3)',
+              },
+              emphasis: {
+                scale: true,
+                itemStyle: {
+                  color: '#c07080',
+                  shadowBlur: lowPowerMode ? 4 : 12,
+                  shadowColor: 'rgba(168,92,104,0.45)',
+                },
+                label: {
+                  show: !lowPowerMode,
+                  formatter: function (p) {
+                    return isZh ? (zhDict[p.name] || p.name) : p.name;
+                  },
+                  position: 'right',
+                  fontSize: 11,
+                  fontWeight: 'bold',
+                  color: '#3a3a3a',
+                  textBorderColor: 'rgba(255,255,255,0.95)',
+                  textBorderWidth: 2,
+                },
+              },
+              zlevel: 2,
+            },
+          ],
         });
+        chart.on('mouseover', function (params) { syncScatterEmphasis(params.name); });
+        chart.on('click', function (params) { syncScatterEmphasis(params.name); });
+        chart.on('globalout', clearScatterEmphasis);
       }).catch(function (err) {
         console.error('Visitor map error:', err);
         chart.dispose();
@@ -197,9 +267,28 @@
           (isZh ? '地图暂时无法加载，请刷新重试' : 'Map unavailable — please refresh') + '</div>';
       });
 
-      window.addEventListener('resize', function () { chart.resize(); });
+      var resizeTicking = false;
+      window.addEventListener('resize', function () {
+        if (resizeTicking) return;
+        resizeTicking = true;
+        requestAnimationFrame(function () {
+          resizeTicking = false;
+          if (!chart.isDisposed()) chart.resize();
+        });
+      }, { passive: true });
     }
 
-    loadECharts(initChart);
+    if ('IntersectionObserver' in window) {
+      var observer = new IntersectionObserver(function (entries) {
+        entries.forEach(function (entry) {
+          if (!entry.isIntersecting) return;
+          observer.disconnect();
+          loadECharts(initChart);
+        });
+      }, { rootMargin: '200px 0px' });
+      observer.observe(el);
+    } else {
+      loadECharts(initChart);
+    }
   };
 })();

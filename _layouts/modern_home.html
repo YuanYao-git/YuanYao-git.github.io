@@ -46,12 +46,38 @@
         </div>
     </header>
 
+    {% if page.fullwidth %}
+    <nav class="section-dots-nav" aria-label="{% if page_lang contains 'zh' %}页面分区导航{% else %}Section navigation{% endif %}">
+        <a class="section-dot is-active" href="#hero" data-section-target="hero" aria-label="{% if page_lang contains 'zh' %}回到顶部{% else %}Back to top{% endif %}">
+            <span class="section-dot-marker" aria-hidden="true"></span>
+            <span class="section-dot-label">{% if page_lang contains 'zh' %}顶部{% else %}Top{% endif %}</span>
+        </a>
+        <a class="section-dot" href="#intro" data-section-target="intro" aria-label="{% if page_lang contains 'zh' %}跳转到个人简介{% else %}Jump to About{% endif %}">
+            <span class="section-dot-marker" aria-hidden="true"></span>
+            <span class="section-dot-label">{% if page_lang contains 'zh' %}简介{% else %}About{% endif %}</span>
+        </a>
+        <a class="section-dot" href="#achievements" data-section-target="achievements" aria-label="{% if page_lang contains 'zh' %}跳转到学术成果{% else %}Jump to Achievements{% endif %}">
+            <span class="section-dot-marker" aria-hidden="true"></span>
+            <span class="section-dot-label">{% if page_lang contains 'zh' %}成果{% else %}Achievements{% endif %}</span>
+        </a>
+        <a class="section-dot" href="#blog" data-section-target="blog" aria-label="{% if page_lang contains 'zh' %}跳转到博客{% else %}Jump to Blog{% endif %}">
+            <span class="section-dot-marker" aria-hidden="true"></span>
+            <span class="section-dot-label">{% if page_lang contains 'zh' %}博客{% else %}Blog{% endif %}</span>
+        </a>
+        <a class="section-dot" href="#map" data-section-target="map" aria-label="{% if page_lang contains 'zh' %}跳转到访客地图{% else %}Jump to Visitor map{% endif %}">
+            <span class="section-dot-marker" aria-hidden="true"></span>
+            <span class="section-dot-label">{% if page_lang contains 'zh' %}地图{% else %}Map{% endif %}</span>
+        </a>
+    </nav>
+    {% endif %}
+
     <div class="cursor-glow" aria-hidden="true"></div>
     <div class="ripple-layer" aria-hidden="true"></div>
+    <div class="wechat-link-toast" aria-live="polite" aria-hidden="true"></div>
 
     {% assign hero_title = page.hero_title | default: site.name | default: site.title %}
     {% assign hero_subtitle = page.hero_subtitle | default: site.description %}
-    <div class="hero snap-section snap-hero">
+    <div id="hero" class="hero snap-section snap-hero" data-section-anchor="hero">
         <picture>
             <source media="(max-width: 768px)" srcset="https://pub-435f283cdbe44123bb9e69b79358e329.r2.dev/images/phone-hero-image.png">
             <img src="https://pub-435f283cdbe44123bb9e69b79358e329.r2.dev/images/chip-laser.png" alt="Hero Background" class="hero-image">
@@ -77,17 +103,41 @@
         document.addEventListener('DOMContentLoaded', function () {
             const pageLang = {{ page_lang | jsonify }};
             const sections = Array.from(document.querySelectorAll('.snap-section'));
+            const userAgent = navigator.userAgent || '';
+            const isWeChatBrowser = /MicroMessenger/i.test(userAgent);
             const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
             const hasFinePointer = window.matchMedia('(hover: hover) and (pointer: fine)').matches;
+            const hasCoarsePointer = window.matchMedia('(hover: none) and (pointer: coarse)').matches;
+            const supportsBackdropFilter = typeof CSS !== 'undefined' && (
+                CSS.supports('backdrop-filter: blur(1px)') ||
+                CSS.supports('-webkit-backdrop-filter: blur(1px)')
+            );
             const heroSection = document.querySelector('.snap-hero');
             const firstContentSection = sections.length > 1 ? sections[1] : null;
+            const siteHeader = document.querySelector('.site-header');
+            const sectionDotsNav = document.querySelector('.section-dots-nav');
+            const sectionDots = Array.from(document.querySelectorAll('.section-dot'));
             const cursorGlow = document.querySelector('.cursor-glow');
             const rippleLayer = document.querySelector('.ripple-layer');
+            const wechatLinkToast = document.querySelector('.wechat-link-toast');
+            const lightweightEffects = window.matchMedia('(max-width: 1024px)').matches || hasCoarsePointer || isWeChatBrowser;
+            const pageBody = document.body;
             let heroSnapEnabled = false;
             let heroSnapping = false;
             let glowActive = false;
+            let programmaticScrollLock = false;
+            let programmaticScrollFrame = null;
+            let headerStateTicking = false;
+            let wechatToastTimer = null;
 
-            if (cursorGlow && hasFinePointer && !prefersReducedMotion) {
+            if (pageBody) {
+                if (isWeChatBrowser) pageBody.classList.add('is-wechat-browser');
+                if (hasCoarsePointer) pageBody.classList.add('is-coarse-pointer');
+                if (!supportsBackdropFilter) pageBody.classList.add('no-backdrop-filter');
+                if (lightweightEffects) pageBody.classList.add('is-lightweight-effects');
+            }
+
+            if (cursorGlow && hasFinePointer && !prefersReducedMotion && !lightweightEffects) {
                 document.body.classList.add('has-cursor-glow');
 
                 const setGlowPosition = (x, y) => {
@@ -121,7 +171,7 @@
                 });
             }
 
-            if (rippleLayer && !prefersReducedMotion) {
+            if (rippleLayer && !prefersReducedMotion && !lightweightEffects) {
                 window.addEventListener('pointerdown', (event) => {
                     if (event.pointerType === 'touch') return;
 
@@ -141,19 +191,184 @@
                 return;
             }
 
+            const showWeChatLinkToast = () => {
+                if (!isWeChatBrowser || !wechatLinkToast) return;
+                const message = pageLang.indexOf('zh') === 0
+                    ? '微信内打开部分 PDF 或外链可能受限，若加载失败请在系统浏览器中打开。'
+                    : 'Some PDFs or external links may be limited in WeChat. If loading fails, open in your system browser.';
+                wechatLinkToast.textContent = message;
+                wechatLinkToast.classList.add('is-visible');
+                wechatLinkToast.setAttribute('aria-hidden', 'false');
+                if (wechatToastTimer) {
+                    clearTimeout(wechatToastTimer);
+                }
+                wechatToastTimer = window.setTimeout(() => {
+                    wechatLinkToast.classList.remove('is-visible');
+                    wechatLinkToast.setAttribute('aria-hidden', 'true');
+                }, 2600);
+            };
+
+            if (isWeChatBrowser) {
+                document.addEventListener('click', (event) => {
+                    const link = event.target.closest('a[href]');
+                    if (!link) return;
+                    const href = link.getAttribute('href') || '';
+                    const isPdfLink = /\.pdf(?:$|[?#])/i.test(href);
+                    const isExternalLink = link.target === '_blank' || (/^https?:\/\//i.test(href) && link.origin !== window.location.origin);
+                    if (!isPdfLink && !isExternalLink) return;
+                    showWeChatLinkToast();
+                }, { passive: true });
+            }
+
             const updateHeroSnapState = () => {
-                heroSnapEnabled = !!heroSection && !prefersReducedMotion;
+                heroSnapEnabled = !!heroSection && !prefersReducedMotion && !hasCoarsePointer && !isWeChatBrowser;
             };
 
             updateHeroSnapState();
             window.addEventListener('resize', updateHeroSnapState);
             window.addEventListener('orientationchange', updateHeroSnapState);
 
+            const updateHeaderState = (force = false) => {
+                if (!siteHeader || !heroSection) return;
+                if (programmaticScrollLock && !force) return;
+                const heroHeight = heroSection.offsetHeight;
+                const shouldCondense = window.scrollY > Math.max(48, heroHeight - 140);
+                siteHeader.classList.toggle('is-scrolled', shouldCondense);
+                if (sectionDotsNav) {
+                    sectionDotsNav.classList.toggle('is-visible', shouldCondense);
+                }
+            };
+
+            const queueHeaderStateUpdate = (force = false) => {
+                if (headerStateTicking && !force) return;
+                headerStateTicking = true;
+                requestAnimationFrame(() => {
+                    headerStateTicking = false;
+                    updateHeaderState(force);
+                });
+            };
+
+            const easeInOutQuart = (t) => {
+                return t < 0.5 ? 8 * t * t * t * t : 1 - Math.pow(-2 * t + 2, 4) / 2;
+            };
+
+            const getScrollTargetTop = (element) => {
+                if (!element) return window.scrollY;
+                const rect = element.getBoundingClientRect();
+                return rect.top + window.scrollY;
+            };
+
+            const smoothScrollToY = (targetY, options = {}) => {
+                const duration = options.duration || 620;
+                const startY = window.scrollY;
+                const maxY = Math.max(0, document.documentElement.scrollHeight - window.innerHeight);
+                const finalY = Math.max(0, Math.min(targetY, maxY));
+
+                if (programmaticScrollFrame) {
+                    cancelAnimationFrame(programmaticScrollFrame);
+                    programmaticScrollFrame = null;
+                }
+
+                if (Math.abs(finalY - startY) < 2) {
+                    window.scrollTo(0, finalY);
+                    queueHeaderStateUpdate(true);
+                    return Promise.resolve();
+                }
+
+                const startTime = performance.now();
+                programmaticScrollLock = true;
+                heroSnapping = true;
+                if (pageBody) {
+                    pageBody.classList.add('is-programmatic-scrolling');
+                }
+
+                return new Promise((resolve) => {
+                    const step = (now) => {
+                        const elapsed = now - startTime;
+                        const progress = Math.min(elapsed / duration, 1);
+                        const eased = easeInOutQuart(progress);
+                        const currentY = startY + (finalY - startY) * eased;
+                        window.scrollTo(0, currentY);
+
+                        if (progress < 1) {
+                            programmaticScrollFrame = requestAnimationFrame(step);
+                            return;
+                        }
+
+                        window.scrollTo(0, finalY);
+                        programmaticScrollFrame = null;
+                        window.setTimeout(() => {
+                            programmaticScrollLock = false;
+                            heroSnapping = false;
+                            if (pageBody) {
+                                pageBody.classList.remove('is-programmatic-scrolling');
+                            }
+                            queueHeaderStateUpdate(true);
+                            resolve();
+                        }, 80);
+                    };
+
+                    programmaticScrollFrame = requestAnimationFrame(step);
+                });
+            };
+
+            const assignRevealIndices = () => {
+                const revealSelectors = [
+                    '.eyebrow',
+                    'h2',
+                    '.panel-inner > p',
+                    '.cta-group',
+                    '.achievement-card',
+                    '.blog-card',
+                    '.map-container',
+                    '.map-source-note',
+                    '.site-footer-main'
+                ].join(', ');
+
+                sections.forEach((section) => {
+                    const revealItems = Array.from(section.querySelectorAll(revealSelectors));
+                    revealItems.forEach((item, index) => {
+                        item.style.setProperty('--reveal-index', index);
+                    });
+                });
+            };
+
+            assignRevealIndices();
+            updateHeaderState(true);
+            window.addEventListener('scroll', () => queueHeaderStateUpdate(false), { passive: true });
+
+            const setActiveSectionDot = (anchor) => {
+                if (!sectionDots.length) return;
+                sectionDots.forEach((dot) => {
+                    const isActive = dot.dataset.sectionTarget === anchor;
+                    dot.classList.toggle('is-active', isActive);
+                    dot.setAttribute('aria-current', isActive ? 'true' : 'false');
+                });
+            };
+
+            if (sectionDots.length) {
+                sectionDots.forEach((dot) => {
+                    dot.addEventListener('click', (event) => {
+                        const targetId = dot.getAttribute('href');
+                        const target = targetId ? document.querySelector(targetId) : null;
+                        if (!target) return;
+                        event.preventDefault();
+                        smoothScrollToY(getScrollTargetTop(target), { duration: 680 });
+                        setActiveSectionDot(dot.dataset.sectionTarget || '');
+                    });
+                });
+            }
+
             // 【核心修复】降低 IntersectionObserver 的阈值，适配移动端超长区块
             const observer = new IntersectionObserver((entries) => {
                 entries.forEach((entry) => {
                     if (entry.isIntersecting) {
                         entry.target.classList.add('is-active');
+                        const anchor = entry.target.dataset.sectionAnchor;
+                        if (anchor) {
+                            setActiveSectionDot(anchor);
+                        }
+                        queueHeaderStateUpdate(false);
                     } else {
                         // 如果你希望往回滚动时能再次触发动画，保留这行；否则可以删掉
                         entry.target.classList.remove('is-active');
@@ -227,19 +442,19 @@
 
             const snapToNext = () => {
                 if (!firstContentSection || heroSnapping) return;
-                heroSnapping = true;
-                firstContentSection.scrollIntoView({ behavior: 'smooth' });
-                setTimeout(() => { heroSnapping = false; }, 900);
+                smoothScrollToY(getScrollTargetTop(firstContentSection), { duration: 560 });
             };
 
             const snapToTop = () => {
                 if (heroSnapping) return;
-                heroSnapping = true;
-                window.scrollTo({ top: 0, behavior: 'smooth' });
-                setTimeout(() => { heroSnapping = false; }, 900);
+                smoothScrollToY(0, { duration: 520 });
             };
 
             window.addEventListener('wheel', (event) => {
+                if (programmaticScrollLock) {
+                    event.preventDefault();
+                    return;
+                }
                 if (!heroSnapEnabled || !heroSection) return;
                 if (Math.abs(event.deltaY) < 5) return;
                 const heroHeight = heroSection.offsetHeight;
@@ -259,6 +474,7 @@
             }, { passive: true });
 
             window.addEventListener('touchend', (e) => {
+                if (programmaticScrollLock) return;
                 if (!heroSnapEnabled || !heroSection) return;
                 const touchEndY = e.changedTouches[0].clientY;
                 const deltaY = touchStartY - touchEndY;
@@ -275,6 +491,7 @@
             }, { passive: true });
 
             window.addEventListener('keydown', (event) => {
+                if (programmaticScrollLock) return;
                 if (!heroSnapEnabled || !heroSection) return;
                 if (event.key !== 'ArrowDown' && event.key !== 'ArrowUp') return;
                 const heroHeight = heroSection.offsetHeight;
@@ -294,6 +511,8 @@
                 let targetIndex = 0;
                 let isWheelScrolling = false;
                 let wheelLockTimer = null; // 意图锁防抖定时器
+                let flowTicking = false;
+                const enableFlowEffect = !lightweightEffects && !prefersReducedMotion;
 
                 const getClosestCardIndex = () => {
                     const cards = Array.from(blogGrid.querySelectorAll('.blog-card'));
@@ -378,11 +597,24 @@
                     }
                 }, { passive: false });
 
+                const resetFlowEffect = () => {
+                    const cards = blogGrid.querySelectorAll('.blog-card');
+                    cards.forEach((card) => {
+                        card.style.transform = '';
+                        card.style.opacity = '';
+                        card.style.filter = '';
+                    });
+                };
+
                 const updateFlowEffect = () => {
+                    flowTicking = false;
+                    if (!enableFlowEffect) {
+                        resetFlowEffect();
+                        return;
+                    }
                     const rect = blogGrid.getBoundingClientRect();
                     const viewHeight = window.innerHeight;
                     if (rect.bottom < 0 || rect.top > viewHeight) {
-                        requestAnimationFrame(updateFlowEffect);
                         return;
                     }
 
@@ -434,9 +666,21 @@
                              card.style.filter = 'grayscale(0%)';
                         }
                     });
+                };
+
+                const queueFlowEffect = () => {
+                    if (flowTicking) return;
+                    flowTicking = true;
                     requestAnimationFrame(updateFlowEffect);
                 };
-                requestAnimationFrame(updateFlowEffect);
+
+                if (enableFlowEffect) {
+                    queueFlowEffect();
+                    blogGrid.addEventListener('scroll', queueFlowEffect, { passive: true });
+                    window.addEventListener('resize', queueFlowEffect, { passive: true });
+                } else {
+                    resetFlowEffect();
+                }
 
                 // ── Blog scroll indicators ──
                 const blogCards = blogGrid.querySelectorAll('.blog-card');
@@ -464,7 +708,7 @@
                 blogGrid.addEventListener('scroll', updateIndicators, { passive: true });
 
                 // ── Mobile swipe guide animation ──
-                if (window.matchMedia('(max-width: 768px)').matches) {
+                if (window.matchMedia('(max-width: 768px)').matches && !prefersReducedMotion) {
                     const swipeObserver = new IntersectionObserver((entries) => {
                         entries.forEach(entry => {
                             if (entry.isIntersecting) {
