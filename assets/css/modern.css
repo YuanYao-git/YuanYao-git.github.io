@@ -935,10 +935,11 @@ body.has-panels .panel.is-active .site-footer-main {
 
 .visitor-map-card {
     display: grid;
-    grid-template-columns: minmax(0, 0.9fr) minmax(320px, 1.1fr);
+    grid-template-columns: minmax(0, 1.1fr) minmax(260px, 0.9fr);
     gap: 28px;
     align-items: center;
     padding: 28px;
+    max-width: 500px;
     margin: 0 auto 28px;
     border: 1px solid rgba(26, 26, 26, 0.08);
     border-radius: 22px;
@@ -987,7 +988,7 @@ body.has-panels .panel.is-active .site-footer-main {
 
 .visitor-map-stage {
     position: relative;
-    min-height: 220px;
+    min-height: 190px;
     overflow: hidden;
     border-radius: 18px;
     background:
@@ -1032,7 +1033,7 @@ body.has-panels .panel.is-active .site-footer-main {
 .visitor-map-frame {
     display: block;
     width: 100%;
-    min-height: 220px;
+    min-height: 190px;
     border: 0;
     background: transparent;
 }
@@ -1570,7 +1571,9 @@ body.has-panels .panel.is-active .site-footer-main {
 
 .map-container {
     width: 100%;
-    height: 450px;
+    aspect-ratio: 1.38 / 1;
+    min-height: 680px;
+    height: auto;
     padding: 10px;
     background: linear-gradient(180deg, rgba(255, 255, 255, 0.92), rgba(244, 239, 234, 0.94));
     border: 1px solid rgba(26, 26, 26, 0.12);
@@ -1716,8 +1719,9 @@ body.has-panels .panel.is-active .site-footer-main {
     }
 
     .map-container {
-        height: 350px;
-        min-height: 350px;
+        aspect-ratio: 1.12 / 1;
+        min-height: 560px;
+        height: auto;
     }
 }
 

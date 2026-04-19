@@ -6,7 +6,7 @@
 (function () {
   'use strict';
 
-  var PACIFIC_CENTER_LON = 180;
+  var PACIFIC_CENTER_LON = 160;
   var MAX_PIXEL_RATIO = 2;
 
   var COORDS = {
@@ -158,33 +158,7 @@
     });
   }
 
-  function drawGraticule(ctx, width, height, padding, project) {
-    var lat;
-    var lon;
-    ctx.save();
-    ctx.strokeStyle = 'rgba(106, 103, 98, 0.08)';
-    ctx.lineWidth = 1;
-
-    for (lat = -60; lat <= 60; lat += 30) {
-      var latY = project(0, lat).y;
-      ctx.beginPath();
-      ctx.moveTo(padding, latY);
-      ctx.lineTo(width - padding, latY);
-      ctx.stroke();
-    }
-
-    for (lon = -150; lon <= 180; lon += 30) {
-      var lonX = project(lon, 0).x;
-      ctx.beginPath();
-      ctx.moveTo(lonX, padding);
-      ctx.lineTo(lonX, height - padding);
-      ctx.stroke();
-    }
-
-    ctx.restore();
-  }
-
-  function drawRing(ctx, ring, width, height, padding, project) {
+  function drawRing(path, ring, width, height, padding, project) {
     var i;
     var point;
     var prevWrapped;
@@ -198,13 +172,15 @@
     var seamLat;
     var seamPoint;
     var oppositePoint;
+    var subpathStartPoint;
 
     if (!ring || !ring.length) return;
 
     point = project(ring[0][0], ring[0][1]);
     prevWrapped = wrapLongitude(ring[0][0], PACIFIC_CENTER_LON);
     prevLat = ring[0][1];
-    ctx.moveTo(point.x, point.y);
+    path.moveTo(point.x, point.y);
+    subpathStartPoint = point;
 
     for (i = 1; i < ring.length; i += 1) {
       currWrapped = wrapLongitude(ring[i][0], PACIFIC_CENTER_LON);
@@ -232,48 +208,71 @@
           y: seamPoint.y
         };
 
-        ctx.lineTo(seamPoint.x, seamPoint.y);
-        ctx.moveTo(oppositePoint.x, oppositePoint.y);
+        path.lineTo(seamPoint.x, seamPoint.y);
+        path.closePath();
+        path.moveTo(oppositePoint.x, oppositePoint.y);
+        subpathStartPoint = oppositePoint;
       }
 
       point = project(ring[i][0], lat);
-      ctx.lineTo(point.x, point.y);
+      path.lineTo(point.x, point.y);
       prevWrapped = currWrapped;
       prevLat = lat;
     }
+
+    if (subpathStartPoint) {
+      path.closePath();
+    }
+  }
+
+  function buildFeaturePath(feature, width, height, padding, project) {
+    var geometry = feature && feature.geometry;
+    var rings;
+    var path = new Path2D();
+    var j;
+
+    if (!geometry) return path;
+
+    if (geometry.type === 'Polygon') {
+      rings = geometry.coordinates || [];
+      for (j = 0; j < rings.length; j += 1) {
+        drawRing(path, rings[j], width, height, padding, project);
+      }
+    } else if (geometry.type === 'MultiPolygon') {
+      rings = geometry.coordinates || [];
+      rings.forEach(function (polygon) {
+        polygon.forEach(function (ring) {
+          drawRing(path, ring, width, height, padding, project);
+        });
+      });
+    }
+
+    return path;
   }
 
   function drawWorld(ctx, geoJson, width, height, padding, project) {
     var features = geoJson && geoJson.features ? geoJson.features : [];
     var i;
-    var j;
-    var geometry;
-    var rings;
+    var feature;
+    var featureName;
+    var featurePath;
+    var renderedFeatures = [];
 
     ctx.save();
-    ctx.beginPath();
-    for (i = 0; i < features.length; i += 1) {
-      geometry = features[i] && features[i].geometry;
-      if (!geometry) continue;
-
-      if (geometry.type === 'Polygon') {
-        rings = geometry.coordinates || [];
-        for (j = 0; j < rings.length; j += 1) {
-          drawRing(ctx, rings[j], width, height, padding, project);
-        }
-      } else if (geometry.type === 'MultiPolygon') {
-        rings = geometry.coordinates || [];
-        rings.forEach(function (polygon) {
-          polygon.forEach(function (ring) {
-            drawRing(ctx, ring, width, height, padding, project);
-          });
-        });
-      }
-    }
     ctx.strokeStyle = 'rgba(132, 124, 116, 0.58)';
     ctx.lineWidth = 0.9;
-    ctx.stroke();
+    for (i = 0; i < features.length; i += 1) {
+      feature = features[i];
+      featurePath = buildFeaturePath(feature, width, height, padding, project);
+      featureName = feature && feature.properties && feature.properties.name;
+      renderedFeatures.push({
+        path: featurePath,
+        name: featureName
+      });
+      ctx.stroke(featurePath);
+    }
     ctx.restore();
+    return renderedFeatures;
   }
 
   function buildTooltip(el) {
@@ -328,6 +327,7 @@
       return Math.max(current, item.visitors);
     }, 1);
     var hitDots = [];
+    var hitCountries = [];
 
     el.innerHTML = '';
     el.style.position = 'relative';
@@ -354,8 +354,14 @@
       ctx.fillStyle = background;
       ctx.fillRect(0, 0, width, height);
 
-      drawGraticule(ctx, width, height, padding, project);
-      drawWorld(ctx, worldJson, width, height, padding, project);
+      ctx.strokeStyle = 'rgba(132, 124, 116, 0.58)';
+      ctx.lineWidth = 0.9;
+      hitCountries = drawWorld(ctx, worldJson, width, height, padding, project).map(function (feature) {
+        return {
+          path: feature.path,
+          label: isZh ? (zhDict[feature.name] || feature.name) : feature.name
+        };
+      });
 
       hitDots = [];
       dots.forEach(function (dot) {
@@ -384,11 +390,6 @@
           requests: dot.requests
         });
       });
-
-      ctx.fillStyle = 'rgba(106,103,98,0.92)';
-      ctx.font = '12px sans-serif';
-      ctx.textAlign = 'left';
-      ctx.fillText(isZh ? '太平洋中心投影' : 'Pacific-centered projection', padding, height - 10);
     }
 
     function findDot(x, y) {
@@ -405,21 +406,51 @@
       return null;
     }
 
+    function findCountry(ctx, x, y) {
+      var i;
+      var country;
+      for (i = hitCountries.length - 1; i >= 0; i -= 1) {
+        country = hitCountries[i];
+        if (!country.path || !country.label) continue;
+        if (ctx.isPointInPath(country.path, x, y) || ctx.isPointInStroke(country.path, x, y)) {
+          return country;
+        }
+      }
+      return null;
+    }
+
+    function positionTooltip(rect, x, y) {
+      tooltip.style.left = Math.min(rect.width - 150, x + 12) + 'px';
+      tooltip.style.top = Math.max(8, y - 44) + 'px';
+      tooltip.style.display = 'block';
+    }
+
     canvas.addEventListener('mousemove', function (event) {
       var rect = canvas.getBoundingClientRect();
-      var dot = findDot(event.clientX - rect.left, event.clientY - rect.top);
-      if (!dot) {
+      var x = event.clientX - rect.left;
+      var y = event.clientY - rect.top;
+      var ctx = canvas.getContext('2d');
+      var dot = findDot(x, y);
+      var country;
+
+      if (dot) {
+        positionTooltip(rect, x, y);
+        tooltip.innerHTML = '<strong>' + dot.label + '</strong><br>' +
+          (isZh ? '访客数: ' : 'Visitors: ') + dot.visitors.toLocaleString('en-US') + '<br>' +
+          (isZh ? '请求数: ' : 'Requests: ') + dot.requests.toLocaleString('en-US');
+        canvas.style.cursor = 'pointer';
+        return;
+      }
+
+      country = findCountry(ctx, x, y);
+      if (!country) {
         tooltip.style.display = 'none';
         canvas.style.cursor = 'default';
         return;
       }
 
-      tooltip.style.display = 'block';
-      tooltip.style.left = Math.min(rect.width - 150, event.clientX - rect.left + 12) + 'px';
-      tooltip.style.top = Math.max(8, event.clientY - rect.top - 44) + 'px';
-      tooltip.innerHTML = '<strong>' + dot.label + '</strong><br>' +
-        (isZh ? '访客数: ' : 'Visitors: ') + dot.visitors.toLocaleString('en-US') + '<br>' +
-        (isZh ? '请求数: ' : 'Requests: ') + dot.requests.toLocaleString('en-US');
+      positionTooltip(rect, x, y);
+      tooltip.innerHTML = '<strong>' + country.label + '</strong>';
       canvas.style.cursor = 'pointer';
     });
 
