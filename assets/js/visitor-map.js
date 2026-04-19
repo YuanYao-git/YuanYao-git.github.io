@@ -192,7 +192,9 @@
         });
       }).catch(function (err) {
         console.error('Visitor map error:', err);
-        chart.hideLoading();
+        chart.dispose();
+        el.innerHTML = '<div style="display:flex;align-items:center;justify-content:center;height:100%;color:#aaa;font-size:0.85rem;">' +
+          (isZh ? '地图暂时无法加载，请刷新重试' : 'Map unavailable — please refresh') + '</div>';
       });
 
       window.addEventListener('resize', function () { chart.resize(); });

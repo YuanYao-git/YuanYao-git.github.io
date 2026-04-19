@@ -318,7 +318,6 @@ function renderEmbedHtml(dataset, requestUrl) {
     * { box-sizing: border-box; }
     body {
       margin: 0;
-      min-height: 100vh;
       font-family: "Georgia", "Source Serif 4", serif;
       color: var(--ink);
       background:
@@ -327,7 +326,7 @@ function renderEmbedHtml(dataset, requestUrl) {
         linear-gradient(135deg, #fcfbf8, var(--bg));
     }
     .wrap {
-      min-height: 100vh;
+      min-height: 500px;
       padding: 18px;
       display: grid;
       grid-template-columns: 1.1fr 0.9fr;
@@ -564,7 +563,8 @@ function renderEmbedHtml(dataset, requestUrl) {
 
         window.addEventListener('resize', () => chart.resize());
       } catch (_) {
-        el.innerHTML = '<p style="color:#6a6762;font-size:0.8rem;padding:16px">地图加载失败，请检查网络</p>';
+        el.style.background = 'none';
+        el.innerHTML = '<p style="color:#6a6762;font-size:0.8rem;padding:20px;text-align:center">Map unavailable — please refresh</p>';
       }
     })();
   </script>
