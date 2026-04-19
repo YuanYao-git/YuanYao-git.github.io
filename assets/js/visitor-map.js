@@ -68,7 +68,7 @@
   window.initVisitorMap = function (opts) {
     var containerId = opts.containerId || 'v-map-final';
     var lang = opts.lang || 'en';
-    var apiEndpoint = opts.apiEndpoint || 'https://visitor-map-api.a1393691489.workers.dev/';
+    var apiEndpoint = opts.apiEndpoint || 'https://api.yaoyuan.org/';
     var isZh = lang.indexOf('zh') === 0;
     var isWeChatBrowser = /MicroMessenger/i.test(navigator.userAgent || '');
     var prefersReducedMotion = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
@@ -89,18 +89,26 @@
     el.innerHTML = '<div style="display:flex;align-items:center;justify-content:center;height:100%;color:#aaa;font-size:0.9rem;">' +
       (isZh ? '加载地图数据中…' : 'Loading map data…') + '</div>';
 
-    // Primary: proxied through our own Worker edge cache; fallback: jsdelivr
+    // Primary: proxied through our own Worker edge cache; fallback: bootcdn (China-accessible)
     var geoJsonUrl = apiEndpoint.replace(/\/*$/, '') + '/geo';
-    var geoFallbackUrl = 'https://cdn.jsdelivr.net/npm/echarts@4.9.0/map/json/world.json';
+    var geoFallbackUrl = 'https://cdn.bootcdn.net/ajax/libs/echarts/4.9.0/map/json/world.json';
 
     function loadECharts(cb) {
       if (typeof echarts !== 'undefined') { cb(); return; }
       var s = document.createElement('script');
-      s.src = 'https://cdn.jsdelivr.net/npm/echarts@5.6.0/dist/echarts.min.js';
+      // Baomitu (360 CDN) as primary — accessible in mainland China
+      s.src = 'https://lib.baomitu.com/echarts/5.5.0/echarts.min.js';
       s.onload = cb;
       s.onerror = function () {
-        el.innerHTML = '<div style="color:#999;font-size:0.85rem;padding:16px;text-align:center;">' +
-          (isZh ? '地图加载失败，请刷新重试' : 'Map failed to load. Please refresh.') + '</div>';
+        // Fallback to jsdelivr for non-China users
+        var s2 = document.createElement('script');
+        s2.src = 'https://cdn.jsdelivr.net/npm/echarts@5.6.0/dist/echarts.min.js';
+        s2.onload = cb;
+        s2.onerror = function () {
+          el.innerHTML = '<div style="color:#999;font-size:0.85rem;padding:16px;text-align:center;">' +
+            (isZh ? '地图加载失败，请刷新重试' : 'Map failed to load. Please refresh.') + '</div>';
+        };
+        document.head.appendChild(s2);
       };
       document.head.appendChild(s);
     }
