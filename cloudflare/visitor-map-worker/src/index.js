@@ -93,7 +93,8 @@ export default {
       const dataset = await getDataset(env);
 
       if (url.pathname === "/embed") {
-        return new Response(renderEmbedHtml(dataset, request.url), {
+        const isZh = url.searchParams.get("lang") === "zh";
+        return new Response(renderEmbedHtml(dataset, request.url, isZh), {
           headers: {
             "content-type": "text/html; charset=utf-8",
             "cache-control": "public, max-age=3600",
@@ -272,7 +273,7 @@ async function graphql(env, query, variables) {
   return payload;
 }
 
-function renderEmbedHtml(dataset, requestUrl) {
+function renderEmbedHtml(dataset, requestUrl, isZh = false) {
   const escape = (value) =>
     String(value)
       .replace(/&/g, "&amp;")
@@ -280,12 +281,15 @@ function renderEmbedHtml(dataset, requestUrl) {
       .replace(/>/g, "&gt;")
       .replace(/"/g, "&quot;");
 
+  const ZH_DICT = {"United States":"美国","China":"中国","Germany":"德国","Norway":"挪威","Canada":"加拿大","France":"法国","Netherlands":"荷兰","India":"印度","Singapore":"新加坡","Japan":"日本","United Kingdom":"英国","Russia":"俄罗斯","South Korea":"韩国","Switzerland":"瑞士","Italy":"意大利","Australia":"澳大利亚","Brazil":"巴西","Spain":"西班牙","Taiwan":"台湾","Sweden":"瑞典","Poland":"波兰","Portugal":"葡萄牙","Mexico":"墨西哥","Indonesia":"印度尼西亚","Thailand":"泰国","Vietnam":"越南","Philippines":"菲律宾","Malaysia":"马来西亚","Turkey":"土耳其","Egypt":"埃及","South Africa":"南非","Argentina":"阿根廷","Chile":"智利","Colombia":"哥伦比亚","Ukraine":"乌克兰","Romania":"罗马尼亚","Czech Republic":"捷克","Austria":"奥地利","Belgium":"比利时","Denmark":"丹麦","Finland":"芬兰","Ireland":"爱尔兰","New Zealand":"新西兰","Israel":"以色列","Saudi Arabia":"沙特阿拉伯","United Arab Emirates":"阿联酋","Pakistan":"巴基斯坦","Bangladesh":"孟加拉国","Nigeria":"尼日利亚","Kenya":"肯尼亚"};
+  const displayName = (en) => isZh ? (ZH_DICT[en] || en) : en;
+
   const countries = dataset.countries
     .map(
       (country, index) => `
         <li class="country-row">
           <span class="country-rank">${index + 1}</span>
-          <span class="country-name">${escape(country.name)}</span>
+          <span class="country-name">${escape(displayName(country.name))}</span>
           <span class="country-metric">${escape(country.requests.toLocaleString("en-US"))} req</span>
           <span class="country-bar"><span style="width:${Math.max(country.share, 8)}%"></span></span>
         </li>
@@ -301,8 +305,10 @@ function renderEmbedHtml(dataset, requestUrl) {
   const totalUniquesJson = safeJson(dataset.total_uniques || 0);
   const totalRequestsJson = safeJson(dataset.total_requests || 0);
 
+  const zhDictJson = safeJson(ZH_DICT);
+
   return `<!DOCTYPE html>
-<html lang="en">
+<html lang="${isZh ? 'zh' : 'en'}">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -494,6 +500,8 @@ function renderEmbedHtml(dataset, requestUrl) {
     const CHART_DATA = ${chartDataJson};
     const TOTAL_UNIQUES = ${totalUniquesJson};
     const TOTAL_REQUESTS = ${totalRequestsJson};
+    const IS_ZH = ${isZh ? 'true' : 'false'};
+    const ZH_DICT = ${zhDictJson};
 
     (async () => {
       const el = document.getElementById('chart');
@@ -559,7 +567,9 @@ function renderEmbedHtml(dataset, requestUrl) {
             formatter: (p) => {
               const value = getMetric(p);
               if (!p.name || value == null) return '';
-              return '<b>' + p.name + '</b><br/>Estimated visitors: ' + Number(value).toLocaleString('en-US');
+              const display = IS_ZH ? (ZH_DICT[p.name] || p.name) : p.name;
+              const label = IS_ZH ? '估算访客：' : 'Estimated visitors: ';
+              return '<b>' + display + '</b><br/>' + label + Number(value).toLocaleString('en-US');
             }
           },
           geo: {

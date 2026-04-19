@@ -422,7 +422,11 @@
                         })
                         .then((data) => {
                             if (data && typeof data.embed_url === 'string' && data.embed_url) {
-                                mountFrame(data.embed_url);
+                                const rawUrl = data.embed_url;
+                                const embedWithLang = pageLang.startsWith('zh')
+                                    ? rawUrl + (rawUrl.includes('?') ? '&' : '?') + 'lang=zh'
+                                    : rawUrl;
+                                mountFrame(embedWithLang);
                                 setStatus(data.description || (pageLang.startsWith('zh') ? '当前显示 Cloudflare 数据驱动的访问者地图。' : 'Displaying the Cloudflare-backed visitor map.'));
                                 return;
                             }
