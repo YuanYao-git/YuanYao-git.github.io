@@ -320,7 +320,7 @@ function renderEmbedHtml(dataset, requestUrl) {
     * { box-sizing: border-box; }
     body {
       margin: 0;
-      font-family: "Georgia", "Source Serif 4", serif;
+      font-family: "Kaiti SC", "STKaiti", "KaiTi", "楷体", "STKaitiTC", "Kaiti TC", serif;
       color: var(--ink);
       background:
         radial-gradient(circle at 20% 15%, rgba(196, 30, 58, 0.12), transparent 22%),
@@ -352,9 +352,9 @@ function renderEmbedHtml(dataset, requestUrl) {
       margin: 0 0 4px;
       font-size: 1rem;
       letter-spacing: 0.12em;
-      text-transform: uppercase;
       color: var(--accent);
       flex-shrink: 0;
+      font-weight: 400;
     }
     .map-subtitle {
       margin: 0 0 10px;
@@ -396,9 +396,9 @@ function renderEmbedHtml(dataset, requestUrl) {
       display: block;
       font-size: 0.72rem;
       letter-spacing: 0.12em;
-      text-transform: uppercase;
       color: var(--muted);
       margin-bottom: 8px;
+      font-weight: 400;
     }
     .stat-value {
       font-size: 1.15rem;

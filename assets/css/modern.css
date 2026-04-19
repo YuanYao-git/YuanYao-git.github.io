@@ -26,9 +26,9 @@
     --shadow-soft: 0 10px 30px rgba(0, 0, 0, 0.05);
     --shadow-medium: 0 16px 34px rgba(22, 23, 26, 0.08);
     --shadow-glass: 0 10px 30px rgba(15, 23, 42, 0.1);
-    --duration-fast: 180ms;
-    --duration-base: 280ms;
-    --duration-slow: 520ms;
+    --duration-fast: 240ms;
+    --duration-base: 360ms;
+    --duration-slow: 680ms;
     --ease-standard: cubic-bezier(0.22, 1, 0.36, 1);
     --ease-emphasis: cubic-bezier(0.19, 1, 0.22, 1);
     --heading-xl: clamp(2.8rem, 6vw, 4.4rem);
@@ -36,13 +36,13 @@
     --heading-md: clamp(1.35rem, 2vw, 1.7rem);
     --ui-text-sm: 0.9rem;
     --body-text-md: 1rem;
-    --font-body: "Source Serif 4", "Noto Serif SC", "Georgia", serif;
-    --font-heading: "Cormorant Garamond", "Noto Serif SC", "Georgia", serif;
-    --font-ui: "Source Serif 4", "Noto Serif SC", "Georgia", serif;
+    --font-body: "Source Serif 4", "Georgia", serif;
+    --font-heading: "Cormorant Garamond", "Georgia", serif;
+    --font-ui: "Source Serif 4", "Georgia", serif;
     /* 中文字体：正文楷体，标题宋体，引用书法体 */
-    --font-body-zh: "STKaiti", "Kaiti SC", "Kaiti TC", "KaiTi", "KaiTi_GB2312", "BiauKai", "DFKai-SB", "楷体", "STSong", "Songti SC", "SimSun", "Noto Serif SC", serif;
-    --font-heading-zh: "STSong", "Songti SC", "SimSun", "Noto Serif SC", "STKaiti", "Kaiti SC", "Kaiti TC", "KaiTi", "BiauKai", serif;
-    --font-ui-zh: "STKaiti", "Kaiti SC", "Kaiti TC", "KaiTi", "KaiTi_GB2312", "BiauKai", "DFKai-SB", "楷体", "STSong", "Songti SC", "SimSun", "Noto Serif SC", serif;
+    --font-body-zh: "Kaiti SC", "STKaiti", "KaiTi", "楷体", "STKaitiTC", "Kaiti TC", serif;
+    --font-heading-zh: "Kaiti SC", "STKaiti", "KaiTi", "楷体", "STKaitiTC", "Kaiti TC", serif;
+    --font-ui-zh: "Kaiti SC", "STKaiti", "KaiTi", "楷体", "STKaitiTC", "Kaiti TC", serif;
     --font-calligraphy-zh: "Zhi Mang Xing", "STFangsong", "FangSong", "仿宋", "STKaiti", "KaiTi", serif;
 }
 
@@ -608,7 +608,7 @@ html[lang^="zh"] .section-dot-label {
 .panel-container::after {
     right: 0;
     transform: translateX(35%);
-    animation-duration: 24s;
+    animation-duration: 32s;
     animation-direction: reverse;
 }
 
@@ -688,9 +688,9 @@ body.has-panels .panel .site-footer-main {
     opacity: 0;
     transform: translateY(18px);
     transition:
-        opacity 420ms var(--ease-emphasis),
-        transform 420ms var(--ease-emphasis);
-    transition-delay: calc(var(--reveal-index, 0) * 45ms);
+        opacity 560ms var(--ease-emphasis),
+        transform 560ms var(--ease-emphasis);
+    transition-delay: calc(var(--reveal-index, 0) * 60ms);
 }
 
 body.is-lightweight-effects .panel .achievement-card,
@@ -698,8 +698,8 @@ body.is-lightweight-effects .panel .blog-card,
 body.is-lightweight-effects .panel .map-container,
 body.is-lightweight-effects .panel .map-source-note,
 body.is-lightweight-effects .panel .site-footer-main {
-    transition-duration: 300ms;
-    transition-delay: calc(var(--reveal-index, 0) * 24ms);
+    transition-duration: 380ms;
+    transition-delay: calc(var(--reveal-index, 0) * 30ms);
 }
 
 body.is-wechat-browser .panel .achievement-card,
@@ -707,8 +707,8 @@ body.is-wechat-browser .panel .blog-card,
 body.is-wechat-browser .panel .map-container,
 body.is-wechat-browser .panel .map-source-note,
 body.is-wechat-browser .panel .site-footer-main {
-    transition-duration: 260ms;
-    transition-delay: calc(var(--reveal-index, 0) * 20ms);
+    transition-duration: 340ms;
+    transition-delay: calc(var(--reveal-index, 0) * 28ms);
 }
 
 body.is-wechat-browser .blog-card,
@@ -1069,7 +1069,7 @@ body.has-panels .panel.is-active .site-footer-main {
     }
 
     .click-ripple {
-        animation-duration: 0.62s;
+        animation-duration: 0.9s;
     }
 
     .site-header.is-scrolled,

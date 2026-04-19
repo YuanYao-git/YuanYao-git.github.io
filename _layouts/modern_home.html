@@ -25,7 +25,7 @@
     <link rel="stylesheet" href="{{ "/assets/css/modern.css" | relative_url }}">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;700&family=Noto+Serif+SC:wght@400;700&family=Source+Serif+4:ital,wght@0,400;0,700;1,400&family=Inter:wght@400;600;700&family=Zhi+Mang+Xing&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;700&family=Source+Serif+4:ital,wght@0,400;0,700;1,400&family=Inter:wght@400;600;700&family=Zhi+Mang+Xing&display=swap" rel="stylesheet">
 </head>
 
 {% assign body_classes = "" %}{% if page.fullwidth %}{% assign body_classes = "has-panels" %}{% endif %}{% if page.body_class %}{% assign body_classes = body_classes | append: " " | append: page.body_class | strip %}{% endif %}
@@ -353,7 +353,7 @@
                         const target = targetId ? document.querySelector(targetId) : null;
                         if (!target) return;
                         event.preventDefault();
-                        smoothScrollToY(getScrollTargetTop(target), { duration: 680 });
+                        smoothScrollToY(getScrollTargetTop(target), { duration: 820 });
                         setActiveSectionDot(dot.dataset.sectionTarget || '');
                     });
                 });
@@ -442,12 +442,12 @@
 
             const snapToNext = () => {
                 if (!firstContentSection || heroSnapping) return;
-                smoothScrollToY(getScrollTargetTop(firstContentSection), { duration: 560 });
+                smoothScrollToY(getScrollTargetTop(firstContentSection), { duration: 700 });
             };
 
             const snapToTop = () => {
                 if (heroSnapping) return;
-                smoothScrollToY(0, { duration: 520 });
+                smoothScrollToY(0, { duration: 660 });
             };
 
             window.addEventListener('wheel', (event) => {

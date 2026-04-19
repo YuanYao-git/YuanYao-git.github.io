@@ -76,6 +76,8 @@
     var isNarrowViewport = window.matchMedia && window.matchMedia('(max-width: 768px)').matches;
     var lowPowerMode = prefersReducedMotion || hasCoarsePointer || isNarrowViewport || isWeChatBrowser;
     var initialZoom = isWeChatBrowser ? 1.18 : (hasCoarsePointer ? 1.12 : 1);
+    var geoLayoutCenter = hasCoarsePointer ? ['47%', '52%'] : ['50%', '52%'];
+    var geoLayoutSize = hasCoarsePointer ? '128%' : '112%';
     var devicePixelRatio = window.devicePixelRatio || 1;
     var chartPixelRatio = hasCoarsePointer
       ? Math.min(devicePixelRatio, 2)
@@ -177,8 +179,8 @@
 
         chart.setOption({
           animation: !lowPowerMode,
-          animationDuration: lowPowerMode ? 0 : 500,
-          animationDurationUpdate: lowPowerMode ? 0 : 300,
+          animationDuration: lowPowerMode ? 0 : 700,
+          animationDurationUpdate: lowPowerMode ? 0 : 420,
           tooltip: {
             trigger: 'item',
             triggerOn: lowPowerMode ? 'click' : 'mousemove|click',
@@ -198,6 +200,8 @@
             roam: true,
             scaleLimit: { min: 1, max: 8 },
             zoom: initialZoom,
+            layoutCenter: geoLayoutCenter,
+            layoutSize: geoLayoutSize,
             itemStyle: { areaColor: '#f0ebe5', borderColor: '#c8c0b8', borderWidth: 0.5 },
             emphasis: {
               itemStyle: { areaColor: '#ead9cf' },
