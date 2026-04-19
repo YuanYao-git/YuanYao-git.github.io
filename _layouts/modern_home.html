@@ -6,13 +6,30 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>{% if page.title %}{{ page.title }} - {% endif %}{{ site.title }}</title>
+    <meta name="description" content="{{ site.description }}">
+
+    <!-- Open Graph / Social Sharing -->
+    <meta property="og:title" content="{% if page.title %}{{ page.title }} - {% endif %}{{ site.title }}">
+    <meta property="og:description" content="{{ site.description }}">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="{{ page.url | absolute_url }}">
+    <meta property="og:image" content="https://pub-435f283cdbe44123bb9e69b79358e329.r2.dev/images/chip-laser.png">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="{% if page.title %}{{ page.title }} - {% endif %}{{ site.title }}">
+    <meta name="twitter:description" content="{{ site.description }}">
+    <meta name="twitter:image" content="https://pub-435f283cdbe44123bb9e69b79358e329.r2.dev/images/chip-laser.png">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="{{ '/images/favicon.ico' | relative_url }}">
+
     <link rel="stylesheet" href="{{ "/assets/css/modern.css" | relative_url }}">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;700&family=Noto+Serif+SC:wght@400;700&family=Source+Serif+4:ital,wght@0,400;0,700;1,400&family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;700&family=Noto+Serif+SC:wght@400;700&family=Source+Serif+4:ital,wght@0,400;0,700;1,400&family=Inter:wght@400;600;700&family=Zhi+Mang+Xing&display=swap" rel="stylesheet">
 </head>
 
-<body{% if page.fullwidth or page.body_class %} class="{% if page.fullwidth %}has-panels{% endif %}{% if page.fullwidth and page.body_class %} {% endif %}{% if page.body_class %}{{ page.body_class }}{% endif %}"{% endif %}>
+{% assign body_classes = "" %}{% if page.fullwidth %}{% assign body_classes = "has-panels" %}{% endif %}{% if page.body_class %}{% assign body_classes = body_classes | append: " " | append: page.body_class | strip %}{% endif %}
+<body{% if body_classes != "" %} class="{{ body_classes }}"{% endif %}>
 
     <header class="site-header">
         <div class="wrapper">
@@ -420,6 +437,61 @@
                     requestAnimationFrame(updateFlowEffect);
                 };
                 requestAnimationFrame(updateFlowEffect);
+
+                // ── Blog scroll indicators ──
+                const blogCards = blogGrid.querySelectorAll('.blog-card');
+                const indicatorContainer = document.createElement('div');
+                indicatorContainer.className = 'blog-indicators';
+                blogCards.forEach((_, i) => {
+                    const dot = document.createElement('button');
+                    dot.className = 'dot' + (i === 0 ? ' active' : '');
+                    dot.setAttribute('aria-label', 'Go to card ' + (i + 1));
+                    dot.addEventListener('click', () => {
+                        const card = blogCards[i];
+                        const scrollTarget = card.offsetLeft - (blogGrid.clientWidth / 2) + (card.offsetWidth / 2);
+                        blogGrid.scrollTo({ left: scrollTarget, behavior: 'smooth' });
+                    });
+                    indicatorContainer.appendChild(dot);
+                });
+                blogGrid.parentNode.appendChild(indicatorContainer);
+
+                const updateIndicators = () => {
+                    const activeIdx = getClosestCardIndex();
+                    indicatorContainer.querySelectorAll('.dot').forEach((d, i) => {
+                        d.classList.toggle('active', i === activeIdx);
+                    });
+                };
+                blogGrid.addEventListener('scroll', updateIndicators, { passive: true });
+
+                // ── Mobile swipe guide animation ──
+                if (window.matchMedia('(max-width: 768px)').matches) {
+                    const swipeObserver = new IntersectionObserver((entries) => {
+                        entries.forEach(entry => {
+                            if (entry.isIntersecting) {
+                                blogGrid.classList.add('show-swipe-hint');
+                                swipeObserver.disconnect();
+
+                                // Inject a swipe arrow overlay
+                                const blogPanel = blogGrid.closest('.panel-blog');
+                                if (blogPanel) {
+                                    blogPanel.style.position = 'relative';
+                                    const overlay = document.createElement('div');
+                                    overlay.className = 'swipe-guide-overlay';
+                                    const isZh = (pageLang || '').indexOf('zh') === 0;
+                                    overlay.innerHTML = '<span class="swipe-arrow">👆</span><span class="swipe-text">' +
+                                        (isZh ? '← 左右滑动' : '← Swipe') + '</span>';
+                                    blogPanel.appendChild(overlay);
+                                    // Clean up after animation
+                                    setTimeout(() => overlay.remove(), 2500);
+                                }
+
+                                // Remove card animation class after completion
+                                setTimeout(() => blogGrid.classList.remove('show-swipe-hint'), 2500);
+                            }
+                        });
+                    }, { threshold: 0.3 });
+                    swipeObserver.observe(blogGrid);
+                }
             }
 
         });

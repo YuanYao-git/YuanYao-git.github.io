@@ -11,7 +11,7 @@ locale                   : "en-US"
 title                    : "Yuan Yao"
 title_separator          : "-"
 name                     : &name "Yuan Yao"
-description              : &description "personal description"
+description              : &description "Yuan Yao's academic website — Micro/Nano Fabrication, Laser Processing, MEMS. 姚远的个人学术主页。"
 url                      : https://yuan-yao.me # the base hostname & protocol for your site e.g. "https://[your GitHub username].github.io"
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
 repository               : #"academicpages/academicpages.github.io"
@@ -297,7 +297,7 @@ sass:
 permalink: /:categories/:title/
 # paginate: 5 # amount of posts to show
 # paginate_path: /page:num/
-timezone: Etc/CN # http://en.wikipedia.org/wiki/List_of_tz_database_time_zones
+timezone: Asia/Shanghai # http://en.wikipedia.org/wiki/List_of_tz_database_time_zones
 
 
 # Plugins

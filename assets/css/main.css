@@ -9,6 +9,9 @@
     --font-body: "Source Serif 4", "Georgia", "STKaiti", "KaiTi", "楷体", serif;
     --font-heading: "Cormorant Garamond", "Georgia", "STKaiti", "KaiTi", "楷体", serif;
     --font-display: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    /* 中文字体：楷体为主，宋体为辅 */
+    --font-body-zh: "STKaiti", "KaiTi", "Kaiti SC", "楷体", "STSong", "Songti SC", "SimSun", "Noto Serif SC", serif;
+    --font-heading-zh: "STKaiti", "KaiTi", "Kaiti SC", "楷体", "STSong", "Songti SC", "SimSun", "Noto Serif SC", serif;
 }
 
 body {
@@ -20,6 +23,28 @@ body {
     margin: 0;
     padding: 0;
     -webkit-font-smoothing: antialiased;
+}
+
+/* 中文页面全局字体覆盖 — 楷体为主，宋体为辅 */
+html[lang^="zh"] body {
+    font-family: var(--font-body-zh);
+}
+
+html[lang^="zh"] h1 {
+    font-family: var(--font-heading-zh);
+}
+
+html[lang^="zh"] h2,
+html[lang^="zh"] h3 {
+    font-family: var(--font-heading-zh);
+}
+
+html[lang^="zh"] p,
+html[lang^="zh"] li,
+html[lang^="zh"] a,
+html[lang^="zh"] blockquote,
+html[lang^="zh"] figcaption {
+    font-family: var(--font-body-zh);
 }
 
 .cursor-glow,

@@ -64,7 +64,7 @@ redirect_from:
           <div class="achievement-body">
             <p class="badge">IEEJ TEEE</p>
             <h3>Laser-enabled silicon layer separation</h3>
-            <p>Two-dimensional laser delamination removes the need for sacrificial layers, maintaining compatibility with high-temperature semiconductor flows.</p>
+            <p>Optimises the laser stealth-cut path to achieve layer separation without a sacrificial layer, remaining compatible with high-temperature semiconductor processes.</p>
             <a class="text-link" href="https://pub-435f283cdbe44123bb9e69b79358e329.r2.dev/files/IEEJ%20Transactions%20Elec%20Engng%20-%202025%20-%20Yao%20-%20Feasibility%20Study%20of%20Layer%20Separation%20Using%202D%20Patterned%20Internal%20Laser%20Damage.pdf">Paper ↗</a>
             <p class="citation">Citation: Yao, Y., Vergara, A., Tang, Z., Tanaka, S. “Feasibility Study of Layer Separation using 2D Patterned Internal Laser Damage in Silicon.” <em>IEEJ Transactions on Electrical and Electronic Engineering</em>. <a href="https://doi.org/10.1002/tee.70136">https://doi.org/10.1002/tee.70136</a>. © Open-access article</p>
           </div>
@@ -72,9 +72,9 @@ redirect_from:
         <article class="achievement-card">
           <img src="https://pub-435f283cdbe44123bb9e69b79358e329.r2.dev/images/fig2.png" alt="Conference slide">
           <div class="achievement-body">
-            <p class="badge">MNC2024 Oral</p>
-            <h3>International Microprocesses & Nanotechnology Conference</h3>
-            <p>Spoke in Kyoto (session 15D-2-3) about microfabrication methods for high-aspect-ratio silicon structures.</p>
+            <p class="badge">MNC2024</p>
+            <h3>International Microprocesses & Nanotechnology Conference — Oral Presentation</h3>
+            <p>Presented microfabrication solutions and experimental results at MNC 2024 in Kyoto (session 15D-2-3).</p>
             <a class="text-link" href="https://pub-435f283cdbe44123bb9e69b79358e329.r2.dev/files/MNC_slides.pdf">Slides ↗</a>
             <p class="citation">Citation: 37th International Microprocesses and Nanotechnology Conference (MNC 2024) oral presentation, Kyoto, The Japan Society of Applied Physics, 15 Nov 2024, session 15D-2-3. © Slides distributed lawfully by the author under the conference agreement.</p>
           </div>
@@ -84,7 +84,7 @@ redirect_from:
           <div class="achievement-body">
             <p class="badge">Actuators</p>
             <h3>Ultrasonic vibration scratch tester</h3>
-            <p>A thread–V-groove transfer path plus modal tuning enables stable ultrasonic excitation for scratch testing.</p>
+            <p>Proposes a thread–V-groove composite structure with a modal-matching strategy to achieve stable ultrasonic amplitude transmission.</p>
             <a class="text-link" href="https://pub-435f283cdbe44123bb9e69b79358e329.r2.dev/files/acatuators.pdf">Paper ↗</a>
             <p class="citation">Citation: Huang, Y.; Wu, H.; Yao, Y.; Zhao, H.; Huang, H. “An Ultrasonic Vibration Scratch Tester for Studying the Scratch Characteristics of Materials under Ultrasonic Vibration Contact Status.” <em>Actuators</em>. <a href="https://doi.org/10.3390/act13070262">https://doi.org/10.3390/act13070262</a>. © Open-access article</p>
           </div>
@@ -93,8 +93,8 @@ redirect_from:
           <img src="https://pub-435f283cdbe44123bb9e69b79358e329.r2.dev/images/fig3.png" alt="Ultrasonic device patent">
           <div class="achievement-body">
             <p class="badge">Utility patent</p>
-            <h3>Ultrasonic vibration device for scratch testing</h3>
-            <p>Co-invented a stable, adjustable ultrasonic source filed as CN 220649966U to support vibration-assisted scratch experiments.</p>
+            <h3>Ultrasonic vibration device for vibration-assisted scratch testing</h3>
+            <p>Features stable amplitude and easy adjustment, providing a reliable vibration source for vibration-assisted scratch experiments.</p>
             <a class="text-link" href="https://pub-435f283cdbe44123bb9e69b79358e329.r2.dev/files/patent.pdf">Patent ↗</a>
             <p class="citation">Citation: Hu Huang; Yuan Yao; Yaming Huang; Haoxiang Wu. “Ultrasonic Vibration Device for Vibration-Assisted Scratch Testing.” Utility Patent CN 220649966U, China, 22 Mar 2024. © Public record released by CNIPA.</p>
           </div>
@@ -119,90 +119,32 @@ redirect_from:
       </div>
     </div>
   </section>
-<section class="panel snap-section panel-map" style="background: var(--panel); min-height: 600px; display: flex; align-items: center; border-top: 1px solid var(--line);">
-  <div class="panel-inner" style="width: 100%; max-width: 1100px; margin: 0 auto; padding: 40px 20px;">
-    <p class="eyebrow" style="text-align: center; font-size: 1.1rem; letter-spacing: 0.2em; margin-bottom: 30px;">Visitor Geography</p>
+<section class="panel snap-section panel-map">
+  <div class="panel-inner">
+    <p class="eyebrow">Visitor Geography</p>
     
-    <div id="v-map-final" style="width: 100%; height: 450px; background: transparent;"></div>
+    <div id="v-map-final" class="map-container"></div>
 
-    <div style="text-align: center; margin-top: 35px; color: #888; font-size: 0.95rem; letter-spacing: 0.02em; line-height: 1.6;">
-      Data sourced from Cloudflare Unique Visitors over the last 7 days (includes some automated traffic).
+    <div class="map-source-note">
+      Data sourced from Cloudflare 7-day unique visitor stats (includes crawlers and indexing noise; true visitors ~1/10).
     </div>
 
-    <footer style="text-align: center; margin-top: 45px; color: #aaa; font-size: 0.95rem; border-top: 1px solid #eee; padding-top: 25px; line-height: 1.8;">
-      © 2026 Yuan Yao. Crafted with ✨ Vibe Coding.<br>
-      <span style="font-style: italic; font-size: 0.85rem; color: #999;">"Any sufficiently advanced technology is indistinguishable from magic." — Arthur C. Clarke</span>
+    <footer class="site-footer-main">
+      <div class="footer-quote-block">
+        <span class="quote-mark">&#10077;</span>
+        <span class="quote-text">Any sufficiently advanced technology is indistinguishable from magic.</span>
+        <span class="quote-mark quote-mark--close">&#10078;</span>
+        <span class="quote-author">&mdash; Arthur C. Clarke</span>
+      </div>
+      <span class="footer-copyright">&copy; 2026 Yuan Yao. Crafted with &#10024; Vibe Coding.</span>
     </footer>
   </div>
 </section>
 
-<script src="https://cdn.jsdelivr.net/npm/echarts@5.5.0/dist/echarts.min.js"></script>
+<script src="{{ '/assets/js/visitor-map.js' | relative_url }}"></script>
 <script>
-(function() {
-  const chart = echarts.init(document.getElementById('v-map-final'));
-  
-  // 1. Standard ISO code to GeoJSON English name mapping (core: ensure match with world.json)
-  const isoToGeoName = {
-    "US": "United States", "CN": "China", "HK": "China", "DE": "Germany", 
-    "NO": "Norway", "CA": "Canada", "FR": "France", "NL": "Netherlands", 
-    "IN": "India", "SG": "Singapore", "JP": "Japan", "GB": "United Kingdom",
-    "RU": "Russia", "KR": "Korea", "CH": "Switzerland", "IT": "Italy",
-    "AU": "Australia", "BR": "Brazil", "ES": "Spain"
-  };
-
-  fetch('https://raw.githubusercontent.com/apache/echarts/master/test/data/map/json/world.json')
-    .then(res => res.json())
-    .then(worldJson => {
-      echarts.registerMap('world', worldJson);
-      
-      const option = {
-        tooltip: { 
-          trigger: 'item', 
-          formatter: p => {
-            const name = p.name;
-            return p.data ? `<b>${name}</b><br/>Visitors: ${p.value}` : `<b>${name}</b>`;
-          }
-        },
-        visualMap: { 
-          show: false, min: 0, max: 200, 
-          inRange: { color: ['#f1f5f9', '#93c5fd', '#1d4ed8'] } 
-        },
-        series: [{
-          type: 'map', map: 'world', roam: false,
-          selectedMode: false, // 彻底禁用点击选中状态
-          emphasis: {
-            itemStyle: { areaColor: '#bfdbfe' }, // 鼠标划过显示淡蓝色，不再变黄
-            label: { show: false }
-          },
-          select: {
-            disabled: true // 禁用点击后的视觉反馈（变黄）
-          },
-          itemStyle: { areaColor: '#f8fafc', borderColor: '#cbd5e1', borderWidth: 0.5 },
-          data: []
-        }]
-      };
-      chart.setOption(option);
-
-      return fetch('https://visitor-map-api.a1393691489.workers.dev/');
-    })
-    .then(res => res.json())
-    .then(data => {
-      const rawList = data.countries || [];
-      const formatted = rawList.map(c => ({
-        name: isoToGeoName[c.name] || c.name, 
-        value: c.requests
-      }));
-
-      const maxVal = Math.max(...formatted.map(i => i.value), 20);
-      chart.setOption({ 
-        visualMap: { max: maxVal },
-        series: [{ data: formatted }] 
-      });
-    })
-    .catch(err => console.error("Map Pipeline Error:", err));
-
-  window.addEventListener('resize', () => chart.resize());
-})();
+  initVisitorMap({ containerId: 'v-map-final', lang: 'en' });
 </script>
 
 </div>
+

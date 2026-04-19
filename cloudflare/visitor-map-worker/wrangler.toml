@@ -6,3 +6,12 @@ compatibility_date = "2026-04-18"
 CF_ZONE_TAG = "554d1c0b1a010a2bda0df907ea7331ee"
 VISITOR_MAP_DAYS = "7"
 VISITOR_MAP_LIMIT = "8"
+CF_HOST_FILTER = "yaoyuan.org"
+
+# 在 Cloudflare Dashboard → Workers & Pages → KV 创建 namespace 后填入 id
+[[kv_namespaces]]
+binding = "VISITOR_CACHE"
+id = "8e1d76a735f24cdf96403d26482ee5d0"
+
+[triggers]
+crons = ["0 2 * * *"]
