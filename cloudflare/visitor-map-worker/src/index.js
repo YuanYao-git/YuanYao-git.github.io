@@ -502,6 +502,7 @@ function renderEmbedHtml(dataset, requestUrl, isZh = false) {
     const TOTAL_REQUESTS = ${totalRequestsJson};
     const IS_ZH = ${isZh ? 'true' : 'false'};
     const ZH_DICT = ${zhDictJson};
+    const isMobile = window.matchMedia('(max-width: 720px)').matches || (window.matchMedia('(hover: none) and (pointer: coarse)').matches);
 
     (async () => {
       const el = document.getElementById('chart');
@@ -576,6 +577,8 @@ function renderEmbedHtml(dataset, requestUrl, isZh = false) {
             map: 'world',
             roam: true,
             scaleLimit: { min: 1, max: 8 },
+            layoutCenter: isMobile ? ['44%', '52%'] : ['47%', '52%'],
+            layoutSize: isMobile ? '135%' : '118%',
             itemStyle: {
               areaColor: '#f0ebe5',
               borderColor: '#c8c0b8',
