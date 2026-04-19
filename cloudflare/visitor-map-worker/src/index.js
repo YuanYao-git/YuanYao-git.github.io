@@ -488,7 +488,7 @@ function renderEmbedHtml(dataset, requestUrl) {
       </div>
     </section>
   </div>
-  <script src="https://cdn.jsdelivr.net/npm/echarts@5.6.0/dist/echarts.min.js"></script>
+  <script src="https://lib.baomitu.com/echarts/5.5.0/echarts.min.js" onerror="document.head.appendChild(Object.assign(document.createElement('script'),{src:'https://cdn.jsdelivr.net/npm/echarts@5.6.0/dist/echarts.min.js'}))"></script>
   <script>
     const COORDS = ${coordsJson};
     const CHART_DATA = ${chartDataJson};
@@ -510,7 +510,7 @@ function renderEmbedHtml(dataset, requestUrl) {
 
         const geoUrl = new URL('/geo', location.origin).toString();
         const worldGeo = await fetch(geoUrl).then(r => r.ok ? r.json() : Promise.reject())
-          .catch(() => fetch('https://cdn.jsdelivr.net/npm/echarts@4.9.0/map/json/world.json').then(r => r.json()));
+          .catch(() => fetch('https://cdn.bootcdn.net/ajax/libs/echarts/4.9.0/map/json/world.json').then(r => r.json()));
         echarts.registerMap('world', worldGeo);
         chart.hideLoading();
 
