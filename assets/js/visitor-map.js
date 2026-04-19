@@ -75,6 +75,11 @@
     var hasCoarsePointer = window.matchMedia && window.matchMedia('(hover: none) and (pointer: coarse)').matches;
     var isNarrowViewport = window.matchMedia && window.matchMedia('(max-width: 768px)').matches;
     var lowPowerMode = prefersReducedMotion || hasCoarsePointer || isNarrowViewport || isWeChatBrowser;
+    var initialZoom = isWeChatBrowser ? 1.18 : (hasCoarsePointer ? 1.12 : 1);
+    var devicePixelRatio = window.devicePixelRatio || 1;
+    var chartPixelRatio = hasCoarsePointer
+      ? Math.min(devicePixelRatio, 2)
+      : Math.min(devicePixelRatio, 1.75);
 
     var el = document.getElementById(containerId);
     if (!el) return;
@@ -101,7 +106,7 @@
     function initChart() {
       var chart = echarts.init(el, null, {
         renderer: 'canvas',
-        devicePixelRatio: lowPowerMode ? 1 : Math.min(window.devicePixelRatio || 1, 1.75),
+        devicePixelRatio: chartPixelRatio,
         useDirtyRect: true
       });
       chart.showLoading({
@@ -190,8 +195,9 @@
           },
           geo: {
             map: 'world',
-            roam: !isWeChatBrowser,
+            roam: true,
             scaleLimit: { min: 1, max: 8 },
+            zoom: initialZoom,
             itemStyle: { areaColor: '#f0ebe5', borderColor: '#c8c0b8', borderWidth: 0.5 },
             emphasis: {
               itemStyle: { areaColor: '#ead9cf' },

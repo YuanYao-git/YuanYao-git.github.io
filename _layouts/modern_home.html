@@ -469,13 +469,24 @@
             }, { passive: false });
 
             let touchStartY = 0;
+            let touchStartedInMap = false;
             window.addEventListener('touchstart', (e) => {
+                touchStartedInMap = Boolean(e.target.closest('.map-container'));
+                if (e.touches.length > 1) {
+                    touchStartY = 0;
+                    return;
+                }
                 touchStartY = e.touches[0].clientY;
             }, { passive: true });
 
             window.addEventListener('touchend', (e) => {
                 if (programmaticScrollLock) return;
                 if (!heroSnapEnabled || !heroSection) return;
+                if (touchStartedInMap) {
+                    touchStartedInMap = false;
+                    return;
+                }
+                if (e.changedTouches.length !== 1 || !touchStartY) return;
                 const touchEndY = e.changedTouches[0].clientY;
                 const deltaY = touchStartY - touchEndY;
                 const heroHeight = heroSection.offsetHeight;
@@ -488,6 +499,7 @@
                         snapToTop();
                     }
                 }
+                touchStartY = 0;
             }, { passive: true });
 
             window.addEventListener('keydown', (event) => {
