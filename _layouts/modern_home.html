@@ -388,61 +388,24 @@
             if (visitorMap) {
                 const stage = visitorMap.querySelector('[data-visitor-map-stage]');
                 const placeholder = visitorMap.querySelector('[data-visitor-map-placeholder]');
-                const status = visitorMap.querySelector('[data-visitor-map-status]');
-                const embedUrl = visitorMap.dataset.embedUrl;
-                const endpoint = visitorMap.dataset.endpoint;
+                if (placeholder) placeholder.style.display = 'none';
 
-                const setStatus = (message) => {
-                    if (status) {
-                        status.textContent = message;
-                    }
-                };
-
-                const mountFrame = (url) => {
-                    if (!stage || !url) return;
+                // Create chart container inside stage
+                const chartEl = document.createElement('div');
+                chartEl.id = 'visitor-map-chart';
+                chartEl.style.cssText = 'width:100%;min-height:360px;';
+                if (stage) {
                     stage.innerHTML = '';
+                    stage.appendChild(chartEl);
+                }
 
-                    const frame = document.createElement('iframe');
-                    frame.className = 'visitor-map-frame';
-                    frame.src = url;
-                    frame.loading = 'lazy';
-                    frame.referrerPolicy = 'strict-origin-when-cross-origin';
-                    frame.title = pageLang.startsWith('zh') ? '网站访问者地图' : 'Website visitor map';
-                    stage.appendChild(frame);
-                };
-
-                if (embedUrl) {
-                    mountFrame(embedUrl);
-                    setStatus(pageLang.startsWith('zh') ? '当前显示公开地图嵌入。' : 'Displaying the configured public map embed.');
-                } else if (endpoint) {
-                    fetch(endpoint, { headers: { Accept: 'application/json' } })
-                        .then((response) => {
-                            if (!response.ok) throw new Error('Request failed');
-                            return response.json();
-                        })
-                        .then((data) => {
-                            if (data && typeof data.embed_url === 'string' && data.embed_url) {
-                                const rawUrl = data.embed_url;
-                                const embedWithLang = pageLang.startsWith('zh')
-                                    ? rawUrl + (rawUrl.includes('?') ? '&' : '?') + 'lang=zh'
-                                    : rawUrl;
-                                mountFrame(embedWithLang);
-                                setStatus(data.description || (pageLang.startsWith('zh') ? '当前显示 Cloudflare 数据驱动的访问者地图。' : 'Displaying the Cloudflare-backed visitor map.'));
-                                return;
-                            }
-
-                            throw new Error('Missing embed_url');
-                        })
-                        .catch(() => {
-                            if (placeholder) {
-                                placeholder.classList.add('is-idle');
-                            }
-                            setStatus(pageLang.startsWith('zh')
-                                ? '尚未获取到可公开嵌入的地图。若要使用 Cloudflare，请让 Worker 返回 { "embed_url": "..." }。'
-                                : 'No public map embed is available yet. For Cloudflare, let your Worker return { "embed_url": "..." }.');
-                        });
-                } else if (placeholder) {
-                    placeholder.classList.add('is-idle');
+                // Use inline visitor-map.js — no iframe, no external origin needed
+                if (typeof window.initVisitorMap === 'function') {
+                    window.initVisitorMap({
+                        containerId: 'visitor-map-chart',
+                        lang: pageLang,
+                        apiEndpoint: visitorMap.dataset.endpoint || 'https://api.yaoyuan.org/',
+                    });
                 }
             }
 
@@ -758,6 +721,8 @@
 
         });
     </script>
+
+    <script src="{{ '/assets/js/visitor-map.js' | relative_url }}"></script>
 
 </body>
 

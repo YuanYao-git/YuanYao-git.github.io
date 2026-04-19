@@ -89,9 +89,13 @@
     el.innerHTML = '<div style="display:flex;align-items:center;justify-content:center;height:100%;color:#aaa;font-size:0.9rem;">' +
       (isZh ? '加载地图数据中…' : 'Loading map data…') + '</div>';
 
-    // Primary: proxied through our own Worker edge cache; fallback: bootcdn (China-accessible)
-    var geoJsonUrl = apiEndpoint.replace(/\/*$/, '') + '/geo';
-    var geoFallbackUrl = 'https://cdn.bootcdn.net/ajax/libs/echarts/4.9.0/map/json/world.json';
+    // GeoJSON: same-origin static file first (China-safe), then Worker proxy, then BootCDN
+    var geoJsonUrl = '/assets/data/world.json';
+    var geoFallbackUrl = apiEndpoint.replace(/\/*$/, '') + '/geo';
+
+    // Visitor data: same-origin static cache first (China-safe), then live Worker API
+    var dataStaticUrl = '/assets/data/visitor-map.json';
+    var dataLiveUrl = apiEndpoint;
 
     function loadECharts(cb) {
       if (typeof echarts !== 'undefined') { cb(); return; }
@@ -129,9 +133,16 @@
         .then(function (r) { return r.ok ? r.json() : Promise.reject(r.status); })
         .catch(function () { return fetch(geoFallbackUrl).then(function (r) { return r.json(); }); });
 
+      // Visitor data: static cache (China-safe) with live API as non-blocking upgrade
+      var fetchData = fetch(dataStaticUrl)
+        .then(function (r) { return r.ok ? r.json() : Promise.reject('no-static'); })
+        .catch(function () {
+          return fetch(dataLiveUrl, { cache: 'no-cache' }).then(function (r) { return r.json(); });
+        });
+
       Promise.all([
         fetchGeo,
-        fetch(apiEndpoint, { cache: 'no-cache' }).then(function (r) { return r.json(); }),
+        fetchData,
       ]).then(function (results) {
         var worldJson = results[0];
         var data      = results[1];

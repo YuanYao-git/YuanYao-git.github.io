@@ -1,0 +1,42 @@
+name: Fetch Visitor Map Data
+
+on:
+  schedule:
+    # Run daily at 03:00 UTC (11:00 CST)
+    - cron: '0 3 * * *'
+  workflow_dispatch:
+
+jobs:
+  fetch:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Fetch visitor data from Cloudflare Worker
+        run: |
+          mkdir -p assets/data
+          HTTP_CODE=$(curl -s -o assets/data/visitor-map.json \
+            -w "%{http_code}" \
+            --max-time 20 \
+            "https://api.yaoyuan.org/")
+          if [ "$HTTP_CODE" != "200" ]; then
+            echo "Fetch failed with HTTP $HTTP_CODE, keeping existing file"
+            exit 0
+          fi
+          echo "Fetched successfully:"
+          head -c 200 assets/data/visitor-map.json
+
+      - name: Commit updated data
+        run: |
+          git config user.name  "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add assets/data/visitor-map.json
+          if git diff --cached --quiet; then
+            echo "No changes to commit"
+          else
+            git commit -m "chore: update visitor map data [skip ci]"
+            git push
+          fi
