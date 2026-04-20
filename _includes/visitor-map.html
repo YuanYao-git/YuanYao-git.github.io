@@ -6,7 +6,10 @@
     data-visitor-map
     data-embed-url="{{ visitor_map.embed_url | default: '' | escape }}"
     data-endpoint="{{ visitor_map.cloudflare_endpoint | default: '' | escape }}"
-    data-dashboard-url="{{ visitor_map.cloudflare_dashboard | default: 'https://dash.cloudflare.com/' | escape }}">
+    data-dashboard-url="{{ visitor_map.cloudflare_dashboard | default: 'https://dash.cloudflare.com/' | escape }}"
+    data-gaode-key="{{ visitor_map.gaode_key | default: '' | escape }}"
+    data-gaode-security="{{ visitor_map.gaode_security_key | default: '' | escape }}"
+    data-gaode-service-host="{{ visitor_map.gaode_service_host | default: '' | escape }}">
     <div class="visitor-map-copy">
         {% if is_zh %}
         <p class="visitor-map-kicker">访问者地图</p>

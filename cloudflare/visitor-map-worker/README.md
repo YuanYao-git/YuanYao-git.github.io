@@ -37,7 +37,13 @@ wrangler deploy
 visitor_map:
   enabled: true
   cloudflare_endpoint: https://visitor-map-api.<your-subdomain>.workers.dev
+  gaode_key: "YOUR_GAODE_WEB_KEY"
+  # 二选一（与高德「JS API 安全密钥」文档一致）:
+  # gaode_service_host: "https://your-domain.com/_AMapService"  # 代理（生产推荐）
+  gaode_security_key: "YOUR_SECURITY_JS_CODE"  # 明文（仅便捷开发）
 ```
+
+The homepage visitor map uses **AntV L7** with a **Gaode (高德)** basemap. Apply a [Web 端 (JS API) Key](https://lbs.amap.com/) and either **proxy** (`serviceHost` → `gaode_service_host`) or **plaintext** (`securityJsCode` → `gaode_security_key`). The layout sets `window._AMapSecurityConfig` in `<head>` **before** the L7 bundle (same order as official sync load). Run `npm run build:visitor-map` after editing [`assets/js/visitor-map.entry.js`](../../assets/js/visitor-map.entry.js).
 
 ## Notes
 

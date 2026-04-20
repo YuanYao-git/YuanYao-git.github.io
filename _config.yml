@@ -153,6 +153,14 @@ visitor_map:
   embed_url               :
   cloudflare_endpoint     : https://api.yaoyuan.org
   cloudflare_dashboard    : https://dash.cloudflare.com/?to=/:account/analytics/web-analytics
+  # Gaode Maps Web (JS API) key — https://lbs.amap.com/ — required for AntV L7 basemap
+  # Use quotes: hex keys often contain "e" + digits and can be mis-read by YAML as numbers.
+  gaode_key               : "fcf10fd2e104866de87fc959a304a538"
+  # 明文方式（仅建议开发/便捷）：与 Key 配对；须在 JS API 脚本前设置 _AMapSecurityConfig.securityJsCode
+  gaode_security_key      : "4d1b6734d189464a79fe12822b107e59"
+  # 代理方式（生产推荐）：Nginx 等在服务端附加 jscode；Web 端只设 serviceHost，路径须含 /_AMapService
+  # 示例：https://your-domain.com/_AMapService — 若填写此项则优先于 gaode_security_key（与官方文档一致）
+  gaode_service_host      : ""
 
 
 # Reading Files

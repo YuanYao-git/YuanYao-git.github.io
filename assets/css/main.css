@@ -6,12 +6,12 @@
     --secondary-text: #555;
     --border-color: #e5e5e5;
     --content-width: 760px;
-    --font-body: "Source Serif 4", "Georgia", "STKaiti", "KaiTi", "楷体", serif;
-    --font-heading: "Cormorant Garamond", "Georgia", "STKaiti", "KaiTi", "楷体", serif;
+    --font-body: "Source Serif 4", "Georgia", serif;
+    --font-heading: "Cormorant Garamond", "Georgia", serif;
     --font-display: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
-    /* 中文字体：楷体为主，宋体为辅 */
-    --font-body-zh: "Kaiti SC", "STKaiti", "KaiTi", "楷体", "STKaitiTC", "Kaiti TC", serif;
-    --font-heading-zh: "Kaiti SC", "STKaiti", "KaiTi", "楷体", "STKaitiTC", "Kaiti TC", serif;
+    /* 中文字体：正文仿宋，标题宋体 */
+    --font-body-zh: "STFangsong", "FangSong", "仿宋", serif;
+    --font-heading-zh: "Songti SC", "STSong", "SimSun", "宋体", serif;
 }
 
 body {
@@ -69,8 +69,8 @@ html[lang^="zh"] figcaption {
     height: 14px;
     border-radius: 50%;
     transform: translate(calc(var(--glow-x, 50vw) - 50%), calc(var(--glow-y, 50vh) - 50%));
-    background: #000;
-    box-shadow: 0 0 0 4px rgba(0, 0, 0, 0.08);
+    background: #1a1214;
+    box-shadow: 0 0 0 4px rgba(196, 30, 58, 0.1);
 }
 
 .cursor-glow.is-visible {
@@ -151,6 +151,19 @@ p {
     hyphens: auto;
 }
 
+a {
+    color: var(--accent-color);
+    text-decoration: underline;
+    text-decoration-color: rgba(196, 30, 58, 0.28);
+    text-underline-offset: 2px;
+    transition: color 200ms ease, text-decoration-color 200ms ease;
+}
+
+a:hover {
+    color: #a31930;
+    text-decoration-color: rgba(163, 25, 48, 0.6);
+}
+
 .wrapper {
     max-width: var(--content-width);
     margin-right: auto;
@@ -164,8 +177,9 @@ blockquote {
     border-left: 4px solid var(--accent-color);
     margin: 2.5em 0;
     padding: 0.5em 0 0.5em 1.8em;
-    font-style: italic;
-    font-size: 1.2em;
+    font-family: "Dancing Script", cursive;
+    font-style: normal;
+    font-size: 1.35em;
     color: #444;
     background: rgba(196, 30, 58, 0.03);
 }
@@ -467,4 +481,17 @@ figcaption {
     .page-404 .back-link {
         width: 100%;
     }
+}
+
+/* 中文博客页字体：正文仿宋，标题宋体 */
+html[lang^="zh"] body {
+    font-family: "STFangsong", "FangSong", "仿宋", serif;
+}
+
+html[lang^="zh"] h1,
+html[lang^="zh"] h2,
+html[lang^="zh"] h3,
+html[lang^="zh"] h4 {
+    font-family: "Songti SC", "STSong", "SimSun", "宋体", serif;
+    font-weight: 400;
 }

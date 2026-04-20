@@ -19,6 +19,24 @@
     <meta name="twitter:description" content="{{ site.description }}">
     <meta name="twitter:image" content="https://pub-435f283cdbe44123bb9e69b79358e329.r2.dev/images/chip-laser.png">
 
+    <!-- Visitor map: fallback for gaode_key if inline Liquid fails to inject -->
+    <meta name="visitor-map-gaode-key" content="{{ site.visitor_map.gaode_key | default: '' | escape }}">
+    <meta name="visitor-map-gaode-security" content="{{ site.visitor_map.gaode_security_key | default: '' | escape }}">
+    <meta name="visitor-map-gaode-service-host" content="{{ site.visitor_map.gaode_service_host | default: '' | escape }}">
+
+    <!-- 高德 JS API 安全密钥：须在 maps 脚本加载前设置（L7/amap-loader 等同）。代理优先，否则明文 securityJsCode。 -->
+    <script type="text/javascript">
+      (function () {
+        var host = {{ site.visitor_map.gaode_service_host | default: "" | jsonify }};
+        var sec = {{ site.visitor_map.gaode_security_key | default: "" | jsonify }};
+        if (host) {
+          window._AMapSecurityConfig = { serviceHost: host };
+        } else if (sec) {
+          window._AMapSecurityConfig = { securityJsCode: sec };
+        }
+      })();
+    </script>
+
     <!-- Favicon -->
     <link rel="icon" type="image/x-icon" href="{{ '/images/favicon.ico' | relative_url }}">
 
@@ -26,8 +44,8 @@
     <!-- Fonts: loli.net mirror (China-accessible); loaded async so page renders immediately with system fonts -->
     <link rel="preconnect" href="https://fonts.loli.net">
     <link rel="preconnect" href="https://gstatic.loli.net" crossorigin>
-    <link rel="stylesheet" href="https://fonts.loli.net/css2?family=Cormorant+Garamond:wght@400;700&family=Source+Serif+4:ital,wght@0,400;0,700;1,400&family=Inter:wght@400;600;700&family=Zhi+Mang+Xing&display=swap" media="print" onload="this.media='all'">
-    <noscript><link rel="stylesheet" href="https://fonts.loli.net/css2?family=Cormorant+Garamond:wght@400;700&family=Source+Serif+4:ital,wght@0,400;0,700;1,400&family=Inter:wght@400;600;700&family=Zhi+Mang+Xing&display=swap"></noscript>
+    <link rel="stylesheet" href="https://fonts.loli.net/css2?family=Cormorant+Garamond:wght@400;700&family=Source+Serif+4:ital,wght@0,400;0,700;1,400&family=Inter:wght@400;600;700&family=Zhi+Mang+Xing&family=Dancing+Script:wght@400;700&display=swap" media="print" onload="this.media='all'">
+    <noscript><link rel="stylesheet" href="https://fonts.loli.net/css2?family=Cormorant+Garamond:wght@400;700&family=Source+Serif+4:ital,wght@0,400;0,700;1,400&family=Inter:wght@400;600;700&family=Zhi+Mang+Xing&family=Dancing+Script:wght@400;700&display=swap"></noscript>
 </head>
 
 {% assign body_classes = "" %}{% if page.fullwidth %}{% assign body_classes = "has-panels" %}{% endif %}{% if page.body_class %}{% assign body_classes = body_classes | append: " " | append: page.body_class | strip %}{% endif %}
@@ -99,7 +117,21 @@
         </div>
     </main>
 
-
+    <footer class="site-footer-main">
+      <div class="footer-quote-block">
+        <span class="quote-mark">&#10077;</span>
+        {% if page_lang contains 'zh' %}
+        <span class="quote-text">任何足够先进的技术，初看都与魔法无异。</span>
+        <span class="quote-mark quote-mark--close">&#10078;</span>
+        <span class="quote-author">&mdash; 亚瑟·克拉克</span>
+        {% else %}
+        <span class="quote-text">Any sufficiently advanced technology is indistinguishable from magic.</span>
+        <span class="quote-mark quote-mark--close">&#10078;</span>
+        <span class="quote-author">&mdash; Arthur C. Clarke</span>
+        {% endif %}
+      </div>
+      <span class="footer-copyright">&copy; 2026 Yuan Yao. Crafted with &#10024; Vibe Coding.</span>
+    </footer>
 
     <script>
         document.addEventListener('DOMContentLoaded', function () {
@@ -399,12 +431,15 @@
                     stage.appendChild(chartEl);
                 }
 
-                // Use inline visitor-map.js — no iframe, no external origin needed
+                // visitor-map.bundle.js (AntV L7) — no iframe; needs gaode_key in _config.yml
                 if (typeof window.initVisitorMap === 'function') {
                     window.initVisitorMap({
                         containerId: 'visitor-map-chart',
                         lang: pageLang,
                         apiEndpoint: visitorMap.dataset.endpoint || 'https://api.yaoyuan.org/',
+                        gaodeKey: visitorMap.dataset.gaodeKey || '',
+                        gaodeSecurityKey: visitorMap.dataset.gaodeSecurity || '',
+                        gaodeServiceHost: visitorMap.dataset.gaodeServiceHost || '',
                     });
                 }
             }
@@ -688,41 +723,12 @@
                 };
                 blogGrid.addEventListener('scroll', updateIndicators, { passive: true });
 
-                // ── Mobile swipe guide animation ──
-                if (window.matchMedia('(max-width: 768px)').matches && !prefersReducedMotion) {
-                    const swipeObserver = new IntersectionObserver((entries) => {
-                        entries.forEach(entry => {
-                            if (entry.isIntersecting) {
-                                blogGrid.classList.add('show-swipe-hint');
-                                swipeObserver.disconnect();
-
-                                // Inject a swipe arrow overlay
-                                const blogPanel = blogGrid.closest('.panel-blog');
-                                if (blogPanel) {
-                                    blogPanel.style.position = 'relative';
-                                    const overlay = document.createElement('div');
-                                    overlay.className = 'swipe-guide-overlay';
-                                    const isZh = (pageLang || '').indexOf('zh') === 0;
-                                    overlay.innerHTML = '<span class="swipe-arrow">👆</span><span class="swipe-text">' +
-                                        (isZh ? '← 左右滑动' : '← Swipe') + '</span>';
-                                    blogPanel.appendChild(overlay);
-                                    // Clean up after animation
-                                    setTimeout(() => overlay.remove(), 2500);
-                                }
-
-                                // Remove card animation class after completion
-                                setTimeout(() => blogGrid.classList.remove('show-swipe-hint'), 2500);
-                            }
-                        });
-                    }, { threshold: 0.3 });
-                    swipeObserver.observe(blogGrid);
-                }
             }
 
         });
     </script>
 
-    <script src="{{ '/assets/js/visitor-map.js' | relative_url }}"></script>
+    <script src="{{ '/assets/js/visitor-map.bundle.js' | relative_url }}"></script>
 
 </body>
 

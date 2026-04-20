@@ -121,7 +121,7 @@ redirect_from:
   </section>
 <section id="map" class="panel snap-section panel-map" data-section-anchor="map">
   <div class="panel-inner">
-    <p class="eyebrow">Visitor Geography</p>
+    <h2>Visitor Geography</h2>
     
     <div id="v-map-final" class="map-container"></div>
 
@@ -129,21 +129,19 @@ redirect_from:
       Data sourced from Cloudflare 7-day unique visitor stats (includes crawlers and indexing noise; true visitors ~1/10).
     </div>
 
-    <footer class="site-footer-main">
-      <div class="footer-quote-block">
-        <span class="quote-mark">&#10077;</span>
-        <span class="quote-text">Any sufficiently advanced technology is indistinguishable from magic.</span>
-        <span class="quote-mark quote-mark--close">&#10078;</span>
-        <span class="quote-author">&mdash; Arthur C. Clarke</span>
-      </div>
-      <span class="footer-copyright">&copy; 2026 Yuan Yao. Crafted with &#10024; Vibe Coding.</span>
-    </footer>
   </div>
 </section>
 
-<script src="{{ '/assets/js/visitor-map.js' | relative_url }}"></script>
+<script src="{{ '/assets/js/visitor-map.bundle.js' | relative_url }}"></script>
 <script>
-  initVisitorMap({ containerId: 'v-map-final', lang: 'en' });
+  initVisitorMap({
+    containerId: 'v-map-final',
+    lang: 'en',
+    apiEndpoint: {{ site.visitor_map.cloudflare_endpoint | default: "https://api.yaoyuan.org" | jsonify }},
+    gaodeKey: {{ site.visitor_map.gaode_key | default: "" | jsonify }},
+    gaodeSecurityKey: {{ site.visitor_map.gaode_security_key | default: "" | jsonify }},
+    gaodeServiceHost: {{ site.visitor_map.gaode_service_host | default: "" | jsonify }}
+  });
 </script>
 
 </div>

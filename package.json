@@ -24,18 +24,23 @@
     "node": ">= 0.10.0"
   },
   "dependencies": {
+    "@antv/l7": "^2.25.4",
+    "@antv/l7-maps": "^2.25.4",
     "fitvids": "^2.1.1",
     "jquery": "^3.7.1",
     "jquery-smooth-scroll": "^2.2.0",
     "magnific-popup": "^1.2.0"
   },
   "devDependencies": {
+    "esbuild": "^0.28.0",
     "onchange": "^7.1.0",
     "uglify-js": "^3.17.4"
   },
   "scripts": {
     "uglify": "uglifyjs node_modules/jquery/dist/jquery.min.js node_modules/fitvids/dist/fitvids.min.js node_modules/magnific-popup/dist/jquery.magnific-popup.min.js node_modules/jquery-smooth-scroll/jquery.smooth-scroll.min.js assets/js/plugins/jquery.greedy-navigation.js assets/js/_main.js -c -m -o assets/js/main.min.js",
     "watch:js": "onchange \"assets/js/**/*.js\" -e \"assets/js/main.min.js\" -- npm run build:js",
-    "build:js": "npm run uglify"
+    "build:js": "npm run uglify",
+    "build:visitor-map": "esbuild assets/js/visitor-map.entry.js --bundle --outfile=assets/js/visitor-map.bundle.js --format=iife --platform=browser --target=es2017 --legal-comments=none --loader:.less=empty",
+    "verify:visitor-map-config": "ruby scripts/verify-visitor-map-config.rb"
   }
 }

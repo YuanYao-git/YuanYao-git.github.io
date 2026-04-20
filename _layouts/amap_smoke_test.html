@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex, nofollow">
+  <title>高德 JS API 冒烟测试 · {{ site.title }}</title>
+  <style>
+    body { font-family: system-ui, sans-serif; margin: 0; padding: 16px; background: #f5f2ee; }
+    #container { width: 100%; height: 420px; border: 1px solid #ccc; border-radius: 8px; background: #e8e4df; }
+    #log { margin-top: 12px; padding: 12px; background: #fff; border-radius: 8px; font-size: 13px; white-space: pre-wrap; word-break: break-all; }
+    .ok { color: #0a0; }
+    .err { color: #c00; }
+  </style>
+  <!-- 与高德文档「明文」一致：必须在 maps 脚本之前 -->
+  <script type="text/javascript">
+    window._AMapSecurityConfig = {
+      securityJsCode: {{ site.visitor_map.gaode_security_key | default: "" | jsonify }}
+    };
+  </script>
+  <script
+    type="text/javascript"
+    src="https://webapi.amap.com/maps?v=2.0&key={{ site.visitor_map.gaode_key | default: "" }}"></script>
+</head>
+<body>
+  <h1>高德 JS API 2.0 冒烟测试（无 L7）</h1>
+  <p>若此处能正常显示底图，说明 Key + 安全密钥 + 控制台域名白名单有效；若仍空白，请打开浏览器控制台查看报错。</p>
+  <div id="container"></div>
+  <div id="log"></div>
+  <script type="text/javascript">
+    (function () {
+      var logEl = document.getElementById('log');
+      function log(msg, isErr) {
+        var line = document.createElement('div');
+        line.className = isErr ? 'err' : 'ok';
+        line.textContent = new Date().toISOString() + ' ' + msg;
+        logEl.appendChild(line);
+      }
+      log('渲染后 Key = [{{ site.visitor_map.gaode_key | default: "(空)" }}]');
+      log('脚本执行；typeof AMap = ' + (typeof AMap));
+      if (typeof AMap === 'undefined') {
+        log('FAIL: AMap 未定义（maps 脚本未加载或被拦截）', true);
+        return;
+      }
+      try {
+        var map = new AMap.Map('container', {
+          zoom: 2,
+          center: [15, 25],
+          viewMode: '2D'
+        });
+        log('OK: new AMap.Map() 已执行');
+        map.on('complete', function () {
+          log('OK: map complete 事件（底图资源已就绪）');
+        });
+        map.on('error', function (e) {
+          log('map error: ' + (e && (e.message || JSON.stringify(e)) || 'unknown'), true);
+        });
+      } catch (e) {
+        log('FAIL: ' + (e && e.message ? e.message : String(e)), true);
+      }
+    })();
+  </script>
+</body>
+</html>
