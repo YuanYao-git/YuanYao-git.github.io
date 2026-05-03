@@ -1,0 +1,5 @@
+User-agent: *
+Disallow: /amap-smoke-test/
+Disallow: /non-menu-page/
+
+Sitemap: https://yaoyuan.org/sitemap.xml
