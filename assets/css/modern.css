@@ -1242,6 +1242,14 @@ body.has-panels .panel.is-active .site-footer-main {
         font-size: 1.35rem;
     }
 
+    .visitor-map-stage {
+        height: 200px;
+    }
+
+    .visitor-map-frame {
+        min-height: 260px;
+    }
+
     .panel p {
         text-align: left;
     }
@@ -1730,8 +1738,11 @@ body.has-panels .panel.is-active .site-footer-main {
     }
 
     .map-container {
-        aspect-ratio: 1 / 0.618;
+        max-width: 96%;
+        aspect-ratio: 1 / 0.72;
         height: auto;
+        padding: 8px;
+        border-radius: 14px;
     }
 }
 
