@@ -363,8 +363,8 @@ function createL7Map(el, worldJson, data, lang, token, serviceHost, securityJsCo
         showLabel: false,
         center: [104, 35],
         pitch: 0,
-        zoom: 2,
-        minZoom: 2,
+        zoom: 1,
+        minZoom: 1,
         maxZoom: 8,
       }),
     });

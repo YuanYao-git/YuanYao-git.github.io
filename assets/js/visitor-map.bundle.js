@@ -29,9 +29,9 @@
     mod
   ));
 
-  // node_modules/eventemitter3/index.js
+  // ../../../node_modules/eventemitter3/index.js
   var require_eventemitter3 = __commonJS({
-    "node_modules/eventemitter3/index.js"(exports, module) {
+    "../../../node_modules/eventemitter3/index.js"(exports, module) {
       "use strict";
       var has = Object.prototype.hasOwnProperty;
       var prefix = "~";
@@ -191,9 +191,9 @@
     }
   });
 
-  // node_modules/supercluster/dist/supercluster.js
+  // ../../../node_modules/supercluster/dist/supercluster.js
   var require_supercluster = __commonJS({
-    "node_modules/supercluster/dist/supercluster.js"(exports, module) {
+    "../../../node_modules/supercluster/dist/supercluster.js"(exports, module) {
       (function(global, factory) {
         typeof exports === "object" && typeof module !== "undefined" ? module.exports = factory() : typeof define === "function" && define.amd ? define(factory) : (global = typeof globalThis !== "undefined" ? globalThis : global || self, global.Supercluster = factory());
       })(exports, (function() {
@@ -782,9 +782,9 @@
     }
   });
 
-  // node_modules/@mapbox/geojson-rewind/index.js
+  // ../../../node_modules/@mapbox/geojson-rewind/index.js
   var require_geojson_rewind = __commonJS({
-    "node_modules/@mapbox/geojson-rewind/index.js"(exports, module) {
+    "../../../node_modules/@mapbox/geojson-rewind/index.js"(exports, module) {
       module.exports = rewind3;
       function rewind3(gj, outer) {
         var type = gj && gj.type, i;
@@ -821,9 +821,9 @@
     }
   });
 
-  // node_modules/@mapbox/point-geometry/index.js
+  // ../../../node_modules/@mapbox/point-geometry/index.js
   var require_point_geometry = __commonJS({
-    "node_modules/@mapbox/point-geometry/index.js"(exports, module) {
+    "../../../node_modules/@mapbox/point-geometry/index.js"(exports, module) {
       "use strict";
       module.exports = Point;
       function Point(x, y) {
@@ -1097,9 +1097,9 @@
     }
   });
 
-  // node_modules/@mapbox/vector-tile/lib/vectortilefeature.js
+  // ../../../node_modules/@mapbox/vector-tile/lib/vectortilefeature.js
   var require_vectortilefeature = __commonJS({
-    "node_modules/@mapbox/vector-tile/lib/vectortilefeature.js"(exports, module) {
+    "../../../node_modules/@mapbox/vector-tile/lib/vectortilefeature.js"(exports, module) {
       "use strict";
       var Point = require_point_geometry();
       module.exports = VectorTileFeature;
@@ -1263,9 +1263,9 @@
     }
   });
 
-  // node_modules/@mapbox/vector-tile/lib/vectortilelayer.js
+  // ../../../node_modules/@mapbox/vector-tile/lib/vectortilelayer.js
   var require_vectortilelayer = __commonJS({
-    "node_modules/@mapbox/vector-tile/lib/vectortilelayer.js"(exports, module) {
+    "../../../node_modules/@mapbox/vector-tile/lib/vectortilelayer.js"(exports, module) {
       "use strict";
       var VectorTileFeature = require_vectortilefeature();
       module.exports = VectorTileLayer;
@@ -1306,9 +1306,9 @@
     }
   });
 
-  // node_modules/@mapbox/vector-tile/lib/vectortile.js
+  // ../../../node_modules/@mapbox/vector-tile/lib/vectortile.js
   var require_vectortile = __commonJS({
-    "node_modules/@mapbox/vector-tile/lib/vectortile.js"(exports, module) {
+    "../../../node_modules/@mapbox/vector-tile/lib/vectortile.js"(exports, module) {
       "use strict";
       var VectorTileLayer = require_vectortilelayer();
       module.exports = VectorTile3;
@@ -1324,18 +1324,18 @@
     }
   });
 
-  // node_modules/@mapbox/vector-tile/index.js
+  // ../../../node_modules/@mapbox/vector-tile/index.js
   var require_vector_tile = __commonJS({
-    "node_modules/@mapbox/vector-tile/index.js"(exports, module) {
+    "../../../node_modules/@mapbox/vector-tile/index.js"(exports, module) {
       module.exports.VectorTile = require_vectortile();
       module.exports.VectorTileFeature = require_vectortilefeature();
       module.exports.VectorTileLayer = require_vectortilelayer();
     }
   });
 
-  // node_modules/ieee754/index.js
+  // ../../../node_modules/ieee754/index.js
   var require_ieee754 = __commonJS({
-    "node_modules/ieee754/index.js"(exports) {
+    "../../../node_modules/ieee754/index.js"(exports) {
       exports.read = function(buffer, offset, isLE, mLen, nBytes) {
         var e, m;
         var eLen = nBytes * 8 - mLen - 1;
@@ -1416,9 +1416,9 @@
     }
   });
 
-  // node_modules/pbf/index.js
+  // ../../../node_modules/pbf/index.js
   var require_pbf = __commonJS({
-    "node_modules/pbf/index.js"(exports, module) {
+    "../../../node_modules/pbf/index.js"(exports, module) {
       "use strict";
       module.exports = Pbf;
       var ieee754 = require_ieee754();
@@ -2007,9 +2007,9 @@
     }
   });
 
-  // node_modules/@mapbox/tiny-sdf/index.js
+  // ../../../node_modules/@mapbox/tiny-sdf/index.js
   var require_tiny_sdf = __commonJS({
-    "node_modules/@mapbox/tiny-sdf/index.js"(exports, module) {
+    "../../../node_modules/@mapbox/tiny-sdf/index.js"(exports, module) {
       "use strict";
       module.exports = TinySDF2;
       module.exports.default = TinySDF2;
@@ -2155,9 +2155,9 @@
     }
   });
 
-  // node_modules/hammerjs/hammer.js
+  // ../../../node_modules/hammerjs/hammer.js
   var require_hammer = __commonJS({
-    "node_modules/hammerjs/hammer.js"(exports, module) {
+    "../../../node_modules/hammerjs/hammer.js"(exports, module) {
       (function(window2, document2, exportName, undefined2) {
         "use strict";
         var VENDOR_PREFIXES = ["", "webkit", "Moz", "MS", "ms", "o"];
@@ -3951,9 +3951,9 @@
     }
   });
 
-  // node_modules/earcut/src/earcut.js
+  // ../../../node_modules/earcut/src/earcut.js
   var require_earcut = __commonJS({
-    "node_modules/earcut/src/earcut.js"(exports, module) {
+    "../../../node_modules/earcut/src/earcut.js"(exports, module) {
       "use strict";
       module.exports = earcut5;
       module.exports.default = earcut5;
@@ -4380,9 +4380,9 @@
     }
   });
 
-  // node_modules/polygon-clipping/dist/polygon-clipping.umd.js
+  // ../../../node_modules/polygon-clipping/dist/polygon-clipping.umd.js
   var require_polygon_clipping_umd = __commonJS({
-    "node_modules/polygon-clipping/dist/polygon-clipping.umd.js"(exports, module) {
+    "../../../node_modules/polygon-clipping/dist/polygon-clipping.umd.js"(exports, module) {
       (function(global, factory) {
         typeof exports === "object" && typeof module !== "undefined" ? module.exports = factory() : typeof define === "function" && define.amd ? define(factory) : (global = typeof globalThis !== "undefined" ? globalThis : global || self, global.polygonClipping = factory());
       })(exports, (function() {
@@ -6445,9 +6445,9 @@
     }
   });
 
-  // node_modules/@amap/amap-jsapi-loader/dist/index.js
+  // ../../../node_modules/@amap/amap-jsapi-loader/dist/index.js
   var require_dist = __commonJS({
-    "node_modules/@amap/amap-jsapi-loader/dist/index.js"(exports, module) {
+    "../../../node_modules/@amap/amap-jsapi-loader/dist/index.js"(exports, module) {
       "use strict";
       (function(m, p) {
         "object" === typeof exports && "undefined" !== typeof module ? module.exports = p() : "function" === typeof define && define.amd ? define(p) : (m = m || self, m.AMapLoader = p());
@@ -6605,9 +6605,9 @@
     }
   });
 
-  // node_modules/@antv/g-device-api/node_modules/eventemitter3/index.js
+  // ../../../node_modules/@antv/g-device-api/node_modules/eventemitter3/index.js
   var require_eventemitter32 = __commonJS({
-    "node_modules/@antv/g-device-api/node_modules/eventemitter3/index.js"(exports, module) {
+    "../../../node_modules/@antv/g-device-api/node_modules/eventemitter3/index.js"(exports, module) {
       "use strict";
       var has = Object.prototype.hasOwnProperty;
       var prefix = "~";
@@ -6767,9 +6767,9 @@
     }
   });
 
-  // node_modules/regl/dist/regl.js
+  // ../../../node_modules/regl/dist/regl.js
   var require_regl = __commonJS({
-    "node_modules/regl/dist/regl.js"(exports, module) {
+    "../../../node_modules/regl/dist/regl.js"(exports, module) {
       (function(global, factory) {
         typeof exports === "object" && typeof module !== "undefined" ? module.exports = factory() : typeof define === "function" && define.amd ? define(factory) : global.createREGL = factory();
       })(exports, (function() {
@@ -16095,7 +16095,7 @@
     }
   });
 
-  // node_modules/@antv/async-hook/es/index.js
+  // ../../../node_modules/@antv/async-hook/es/index.js
   function __awaiter(thisArg, _arguments, P, generator) {
     function adopt(value) {
       return value instanceof P ? value : new P(function(resolve) {
@@ -17078,12 +17078,12 @@
     return AsyncWaterfallHook2;
   })();
 
-  // node_modules/@antv/l7-utils/es/config.js
+  // ../../../node_modules/@antv/l7-utils/es/config.js
   var SceneConifg = {
     REGISTERED_PROTOCOLS: {}
   };
 
-  // node_modules/@antv/l7-utils/es/ajax.js
+  // ../../../node_modules/@antv/l7-utils/es/ajax.js
   var __defProp2 = Object.defineProperty;
   var __defProps = Object.defineProperties;
   var __getOwnPropDescs = Object.getOwnPropertyDescriptors;
@@ -17258,7 +17258,7 @@
     }
   };
 
-  // node_modules/@antv/l7-utils/es/color-parser.js
+  // ../../../node_modules/@antv/l7-utils/es/color-parser.js
   var CSS_COLORS = {
     // 基础颜色
     white: [255, 255, 255],
@@ -17582,7 +17582,7 @@
     };
   }
 
-  // node_modules/@antv/l7-utils/es/color.js
+  // ../../../node_modules/@antv/l7-utils/es/color.js
   var colorCache = /* @__PURE__ */ new Map();
   var COLOR_CACHE_MAX_SIZE = 1e3;
   function rgb2arr(str5) {
@@ -17748,7 +17748,7 @@
     }
   }
 
-  // node_modules/@antv/l7-utils/es/dom.js
+  // ../../../node_modules/@antv/l7-utils/es/dom.js
   var dom_exports = {};
   __export(dom_exports, {
     DPR: () => DPR,
@@ -17780,7 +17780,7 @@
     trim: () => trim
   });
 
-  // node_modules/@antv/l7-utils/es/lodash-adapter.js
+  // ../../../node_modules/@antv/l7-utils/es/lodash-adapter.js
   var isNil = (value) => {
     return value == null;
   };
@@ -18147,7 +18147,7 @@
     extent
   };
 
-  // node_modules/@antv/l7-utils/es/dom.js
+  // ../../../node_modules/@antv/l7-utils/es/dom.js
   var { pull: pull2 } = lodashUtil;
   function getContainer(domId) {
     let $dom = domId;
@@ -18349,7 +18349,7 @@
     return void 0;
   }
 
-  // node_modules/@antv/l7-utils/es/env.js
+  // ../../../node_modules/@antv/l7-utils/es/env.js
   function isImageBitmap(image2) {
     return typeof ImageBitmap !== "undefined" && image2 instanceof ImageBitmap;
   }
@@ -18361,7 +18361,7 @@
   var isiOS = !!userAgent.match(/\(i[^;]+;( U;)? CPU.+Mac OS X/);
   var isAndroid = userAgent.indexOf("Android") > -1 || userAgent.indexOf("Adr") > -1;
 
-  // node_modules/@turf/helpers/dist/es/index.js
+  // ../../../node_modules/@turf/helpers/dist/es/index.js
   var earthRadius = 63710088e-1;
   var factors = {
     centimeters: earthRadius * 100,
@@ -18471,7 +18471,7 @@
     return feature(geom, properties, options);
   }
 
-  // node_modules/@turf/meta/dist/es/index.js
+  // ../../../node_modules/@turf/meta/dist/es/index.js
   function coordEach(geojson, callback, excludeWrapCoord) {
     if (geojson === null) return;
     var j, k, l, geometry, stopG, coords, geometryMaybeCollection, wrapShrink = 0, coordIndex = 0, isGeometryCollection, type = geojson.type, isFeatureCollection = type === "FeatureCollection", isFeature = type === "Feature", stop = isFeatureCollection ? geojson.features.length : 1;
@@ -18667,7 +18667,7 @@
     });
   }
 
-  // node_modules/@turf/bbox/dist/es/index.js
+  // ../../../node_modules/@turf/bbox/dist/es/index.js
   function bbox(geojson) {
     var result = [Infinity, Infinity, -Infinity, -Infinity];
     coordEach(geojson, function(coord) {
@@ -18689,7 +18689,7 @@
   bbox["default"] = bbox;
   var es_default = bbox;
 
-  // node_modules/@antv/l7-utils/es/math.js
+  // ../../../node_modules/@antv/l7-utils/es/math.js
   function isNumber2(n) {
     return typeof n === "number";
   }
@@ -18697,7 +18697,7 @@
     return x - Math.fround(x);
   }
 
-  // node_modules/@antv/l7-utils/es/geo.js
+  // ../../../node_modules/@antv/l7-utils/es/geo.js
   var originShift = 2 * Math.PI * 6378137 / 2;
   function lngLatInExtent(lngLat, bounds) {
     const [minLng, minLat, maxLng, maxLat] = bounds;
@@ -18897,7 +18897,7 @@
     return es_default(featureCollection([lineString(pointList)]));
   }
 
-  // node_modules/@antv/l7-utils/es/hash.js
+  // ../../../node_modules/@antv/l7-utils/es/hash.js
   function guid() {
     return "xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx".replace(/[xy]/g, (c) => {
       const r = Math.random() * 16 | 0;
@@ -18906,7 +18906,7 @@
     });
   }
 
-  // node_modules/@antv/l7-utils/es/lru_cache.js
+  // ../../../node_modules/@antv/l7-utils/es/lru_cache.js
   var LRUCache = class {
     constructor(limit = 50, destroy) {
       this.limit = limit;
@@ -18968,7 +18968,7 @@
     }
   };
 
-  // node_modules/@antv/l7-utils/es/statistics.js
+  // ../../../node_modules/@antv/l7-utils/es/statistics.js
   var statistics_exports = {};
   __export(statistics_exports, {
     count: () => count,
@@ -19067,7 +19067,7 @@
     return statMap[type](column);
   }
 
-  // node_modules/@turf/bbox-polygon/dist/es/index.js
+  // ../../../node_modules/@turf/bbox-polygon/dist/es/index.js
   function bboxPolygon(bbox2, options) {
     if (options === void 0) {
       options = {};
@@ -19086,10 +19086,10 @@
     return polygon([[lowLeft, lowRight, topRight, topLeft, lowLeft]], options.properties, { bbox: bbox2, id: options.id });
   }
 
-  // node_modules/@antv/l7-utils/es/tileset-manager/tile.js
+  // ../../../node_modules/@antv/l7-utils/es/tileset-manager/tile.js
   var import_eventemitter3 = __toESM(require_eventemitter3());
 
-  // node_modules/@antv/l7-utils/es/tileset-manager/types.js
+  // ../../../node_modules/@antv/l7-utils/es/tileset-manager/types.js
   var UpdateTileStrategy = /* @__PURE__ */ ((UpdateTileStrategy2) => {
     UpdateTileStrategy2["Realtime"] = "realtime";
     UpdateTileStrategy2["Overlap"] = "overlap";
@@ -19104,7 +19104,7 @@
     return LoadTileDataStatus2;
   })(LoadTileDataStatus || {});
 
-  // node_modules/@antv/l7-utils/es/tileset-manager/utils/strategies.js
+  // ../../../node_modules/@antv/l7-utils/es/tileset-manager/utils/strategies.js
   var TILE_STATE_DEFAULT = 0;
   var TILE_STATE_VISITED = 1;
   var TILE_STATE_VISIBLE = 2;
@@ -19169,7 +19169,7 @@
     });
   }
 
-  // node_modules/@antv/l7-utils/es/tileset-manager/const.js
+  // ../../../node_modules/@antv/l7-utils/es/tileset-manager/const.js
   var DEFAULT_EXTENT = [-Infinity, -Infinity, Infinity, Infinity];
   var BOUNDS_BUFFER_SCALE = 0.2;
   var DEFAULT_CACHE_SCALE = 5;
@@ -19181,7 +19181,7 @@
   var NOOP = () => {
   };
 
-  // node_modules/@antv/l7-utils/es/tileset-manager/utils/lonlat-tile.js
+  // ../../../node_modules/@antv/l7-utils/es/tileset-manager/utils/lonlat-tile.js
   function osmLonLat2TileXY(lon, lat, zoom) {
     const x = Math.floor((lon + 180) / 360 * Math.pow(2, zoom));
     const y = Math.floor(
@@ -19252,7 +19252,7 @@
     return { warpX, warpY };
   };
 
-  // node_modules/@antv/l7-utils/es/tileset-manager/tile.js
+  // ../../../node_modules/@antv/l7-utils/es/tileset-manager/tile.js
   var __async = (__this, __arguments, generator) => {
     return new Promise((resolve, reject) => {
       var fulfilled = (value) => {
@@ -19419,10 +19419,10 @@
     }
   };
 
-  // node_modules/@antv/l7-utils/es/tileset-manager/tileset-manager.js
+  // ../../../node_modules/@antv/l7-utils/es/tileset-manager/tileset-manager.js
   var import_eventemitter32 = __toESM(require_eventemitter3());
 
-  // node_modules/@antv/l7-utils/es/tileset-manager/utils/bound-buffer.js
+  // ../../../node_modules/@antv/l7-utils/es/tileset-manager/utils/bound-buffer.js
   var getLatLonBoundsBuffer = (latLonBounds, bufferRatio) => {
     const bounds = bBoxToBounds(latLonBounds);
     const newBounds = padBounds(bounds, bufferRatio);
@@ -19443,7 +19443,7 @@
     return isContains;
   };
 
-  // node_modules/@antv/l7-utils/es/tileset-manager/tileset-manager.js
+  // ../../../node_modules/@antv/l7-utils/es/tileset-manager/tileset-manager.js
   var __defProp3 = Object.defineProperty;
   var __defProps2 = Object.defineProperties;
   var __getOwnPropDescs2 = Object.getOwnPropertyDescriptors;
@@ -19792,7 +19792,7 @@
     }
   };
 
-  // node_modules/@antv/l7-utils/es/tileset-manager/utils/tile-url.js
+  // ../../../node_modules/@antv/l7-utils/es/tileset-manager/utils/tile-url.js
   function expandUrl(url) {
     const urls = [];
     let match = /\{([a-z])-([a-z])\}/.exec(url);
@@ -19844,7 +19844,7 @@
     return url;
   }
 
-  // node_modules/@antv/l7-utils/es/index.js
+  // ../../../node_modules/@antv/l7-utils/es/index.js
   function defaultValue(v1, v2) {
     if (v1 === void 0 || v1 === null) {
       return v2;
@@ -19852,10 +19852,10 @@
     return v1;
   }
 
-  // node_modules/@antv/l7-source/es/base-source.js
+  // ../../../node_modules/@antv/l7-source/es/base-source.js
   var import_eventemitter33 = __toESM(require_eventemitter3());
 
-  // node_modules/@antv/l7-source/es/factory.js
+  // ../../../node_modules/@antv/l7-source/es/factory.js
   var TRANSFORMS = {};
   var PARSERS = {};
   var getParser = (type) => PARSERS[type];
@@ -19867,7 +19867,7 @@
     TRANSFORMS[type] = transFunction;
   };
 
-  // node_modules/@antv/l7-source/es/transform/cluster.js
+  // ../../../node_modules/@antv/l7-source/es/transform/cluster.js
   var import_supercluster = __toESM(require_supercluster());
   var __defProp4 = Object.defineProperty;
   var __getOwnPropSymbols3 = Object.getOwnPropertySymbols;
@@ -19923,7 +19923,7 @@
     });
   }
 
-  // node_modules/@antv/l7-source/es/utils/statistics.js
+  // ../../../node_modules/@antv/l7-source/es/utils/statistics.js
   function max2(x) {
     if (x.length === 0) {
       throw new Error("max requires at least one data point");
@@ -19979,7 +19979,7 @@
     sum: sum2
   };
 
-  // node_modules/@antv/l7-source/es/utils/util.js
+  // ../../../node_modules/@antv/l7-source/es/utils/util.js
   var import_geojson_rewind = __toESM(require_geojson_rewind());
   function getColumn2(data, columnName) {
     return data.map((item) => {
@@ -20013,7 +20013,7 @@
     ];
   }
 
-  // node_modules/@antv/l7-source/es/base-source.js
+  // ../../../node_modules/@antv/l7-source/es/base-source.js
   var __defProp5 = Object.defineProperty;
   var __getOwnPropSymbols4 = Object.getOwnPropertySymbols;
   var __hasOwnProp5 = Object.prototype.hasOwnProperty;
@@ -20326,7 +20326,7 @@
     }
   };
 
-  // node_modules/@antv/l7-source/es/utils/csv.js
+  // ../../../node_modules/@antv/l7-source/es/utils/csv.js
   function csvParse(csvString) {
     const lines = parseCSVLines(csvString);
     if (lines.length === 0) {
@@ -20410,7 +20410,7 @@
     return result;
   }
 
-  // node_modules/@turf/invariant/dist/es/index.js
+  // ../../../node_modules/@turf/invariant/dist/es/index.js
   function getCoords(coords) {
     if (Array.isArray(coords)) {
       return coords;
@@ -20433,7 +20433,7 @@
     return geojson;
   }
 
-  // node_modules/@antv/l7-source/es/parser/json.js
+  // ../../../node_modules/@antv/l7-source/es/parser/json.js
   var __defProp6 = Object.defineProperty;
   var __defProps3 = Object.defineProperties;
   var __getOwnPropDescs3 = Object.getOwnPropertyDescriptors;
@@ -20513,13 +20513,13 @@
     };
   }
 
-  // node_modules/@antv/l7-source/es/parser/csv.js
+  // ../../../node_modules/@antv/l7-source/es/parser/csv.js
   function csv(data, cfg) {
     const csvData = csvParse(data);
     return json(csvData, cfg);
   }
 
-  // node_modules/@antv/l7-source/es/parser/geojson.js
+  // ../../../node_modules/@antv/l7-source/es/parser/geojson.js
   var __defProp7 = Object.defineProperty;
   var __defProps4 = Object.defineProperties;
   var __getOwnPropDescs4 = Object.getOwnPropertyDescriptors;
@@ -20599,7 +20599,7 @@
     };
   }
 
-  // node_modules/geojson-vt/src/simplify.js
+  // ../../../node_modules/geojson-vt/src/simplify.js
   function simplify(coords, first, last, sqTolerance) {
     var maxSqDist = sqTolerance;
     var mid = last - first >> 1;
@@ -20646,7 +20646,7 @@
     return dx * dx + dy * dy;
   }
 
-  // node_modules/geojson-vt/src/feature.js
+  // ../../../node_modules/geojson-vt/src/feature.js
   function createFeature(id, type, geom, tags) {
     var feature2 = {
       id: typeof id === "undefined" ? null : id,
@@ -20687,7 +20687,7 @@
     }
   }
 
-  // node_modules/geojson-vt/src/convert.js
+  // ../../../node_modules/geojson-vt/src/convert.js
   function convert(data, options) {
     var features = [];
     if (data.type === "FeatureCollection") {
@@ -20802,7 +20802,7 @@
     return y2 < 0 ? 0 : y2 > 1 ? 1 : y2;
   }
 
-  // node_modules/geojson-vt/src/clip.js
+  // ../../../node_modules/geojson-vt/src/clip.js
   function clip(features, scale5, k1, k2, axis, minAll, maxAll, options) {
     k1 /= scale5;
     k2 /= scale5;
@@ -20961,7 +20961,7 @@
     return t;
   }
 
-  // node_modules/geojson-vt/src/wrap.js
+  // ../../../node_modules/geojson-vt/src/wrap.js
   function wrap2(features, options) {
     var buffer = options.buffer / options.extent;
     var merged = features;
@@ -21013,7 +21013,7 @@
     return newPoints;
   }
 
-  // node_modules/geojson-vt/src/transform.js
+  // ../../../node_modules/geojson-vt/src/transform.js
   function transformTile(tile, extent4) {
     if (tile.transformed) return tile;
     var z2 = 1 << tile.z, tx = tile.x, ty = tile.y, i, j, k;
@@ -21044,7 +21044,7 @@
     ];
   }
 
-  // node_modules/geojson-vt/src/tile.js
+  // ../../../node_modules/geojson-vt/src/tile.js
   function createTile(features, z, tx, ty, options) {
     var tolerance = z === options.maxZoom ? 0 : options.tolerance / ((1 << z) * options.extent);
     var tile = {
@@ -21153,7 +21153,7 @@
     }
   }
 
-  // node_modules/geojson-vt/src/index.js
+  // ../../../node_modules/geojson-vt/src/index.js
   function geojsonvt(data, options) {
     return new GeoJSONVT(data, options);
   }
@@ -21296,7 +21296,7 @@
     return dest;
   }
 
-  // node_modules/@antv/l7-source/es/source/geojsonvt.js
+  // ../../../node_modules/@antv/l7-source/es/source/geojsonvt.js
   var VectorSource = class {
     constructor(vector, x, y, z) {
       this.vectorLayerCache = {};
@@ -21320,7 +21320,7 @@
     }
   };
 
-  // node_modules/@antv/l7-source/es/parser/geojsonvt.js
+  // ../../../node_modules/@antv/l7-source/es/parser/geojsonvt.js
   var __defProp8 = Object.defineProperty;
   var __defProps5 = Object.defineProperties;
   var __getOwnPropDescs5 = Object.getOwnPropertyDescriptors;
@@ -21536,7 +21536,7 @@
     };
   }
 
-  // node_modules/@antv/l7-source/es/parser/image.js
+  // ../../../node_modules/@antv/l7-source/es/parser/image.js
   var __defProp9 = Object.defineProperty;
   var __defProps6 = Object.defineProperties;
   var __getOwnPropDescs6 = Object.getOwnPropertyDescriptors;
@@ -21612,7 +21612,7 @@
     return image;
   }
 
-  // node_modules/@antv/l7-source/es/parser/jsonTile.js
+  // ../../../node_modules/@antv/l7-source/es/parser/jsonTile.js
   var __defProp10 = Object.defineProperty;
   var __defProps7 = Object.defineProperties;
   var __getOwnPropDescs7 = Object.getOwnPropertyDescriptors;
@@ -21719,7 +21719,7 @@
     };
   }
 
-  // node_modules/@antv/l7-source/es/source/vector.js
+  // ../../../node_modules/@antv/l7-source/es/source/vector.js
   var import_vector_tile = __toESM(require_vector_tile());
   var import_pbf = __toESM(require_pbf());
   var __defProp11 = Object.defineProperty;
@@ -21779,7 +21779,7 @@
     }
   };
 
-  // node_modules/@antv/l7-source/es/parser/mvt.js
+  // ../../../node_modules/@antv/l7-source/es/parser/mvt.js
   var __defProp12 = Object.defineProperty;
   var __defProps9 = Object.defineProperties;
   var __getOwnPropDescs9 = Object.getOwnPropertyDescriptors;
@@ -21877,7 +21877,7 @@
     };
   }
 
-  // node_modules/@antv/l7-source/es/utils/bandOperation/math.js
+  // ../../../node_modules/@antv/l7-source/es/utils/bandOperation/math.js
   function mathematical(symbol, n1, n2) {
     switch (symbol) {
       case "+":
@@ -21984,7 +21984,7 @@
     return rasterData;
   }
 
-  // node_modules/@antv/l7-source/es/utils/bandOperation/operationSchema.js
+  // ../../../node_modules/@antv/l7-source/es/utils/bandOperation/operationSchema.js
   var operationsSchema = {
     nd: {
       type: "operation",
@@ -22058,7 +22058,7 @@
     return [min6, max6];
   }
 
-  // node_modules/@antv/l7-source/es/utils/bandOperation/bands.js
+  // ../../../node_modules/@antv/l7-source/es/utils/bandOperation/bands.js
   var __defProp13 = Object.defineProperty;
   var __defProps10 = Object.defineProperties;
   var __getOwnPropDescs10 = Object.getOwnPropertyDescriptors;
@@ -22170,7 +22170,7 @@
     });
   }
 
-  // node_modules/@antv/l7-source/es/parser/raster.js
+  // ../../../node_modules/@antv/l7-source/es/parser/raster.js
   function raster(data, cfg) {
     const {
       extent: extent4 = [121.168, 30.2828, 121.384, 30.4219],
@@ -22211,7 +22211,7 @@
     return resultData;
   }
 
-  // node_modules/@babel/runtime/helpers/esm/typeof.js
+  // ../../../node_modules/@babel/runtime/helpers/esm/typeof.js
   function _typeof(o) {
     "@babel/helpers - typeof";
     return _typeof = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? function(o2) {
@@ -22221,7 +22221,7 @@
     }, _typeof(o);
   }
 
-  // node_modules/@babel/runtime/helpers/esm/toPrimitive.js
+  // ../../../node_modules/@babel/runtime/helpers/esm/toPrimitive.js
   function toPrimitive(t, r) {
     if ("object" != _typeof(t) || !t) return t;
     var e = t[Symbol.toPrimitive];
@@ -22233,13 +22233,13 @@
     return ("string" === r ? String : Number)(t);
   }
 
-  // node_modules/@babel/runtime/helpers/esm/toPropertyKey.js
+  // ../../../node_modules/@babel/runtime/helpers/esm/toPropertyKey.js
   function toPropertyKey(t) {
     var i = toPrimitive(t, "string");
     return "symbol" == _typeof(i) ? i : i + "";
   }
 
-  // node_modules/@babel/runtime/helpers/esm/defineProperty.js
+  // ../../../node_modules/@babel/runtime/helpers/esm/defineProperty.js
   function _defineProperty(e, r, t) {
     return (r = toPropertyKey(r)) in e ? Object.defineProperty(e, r, {
       value: t,
@@ -22249,7 +22249,7 @@
     }) : e[r] = t, e;
   }
 
-  // node_modules/@babel/runtime/helpers/esm/objectSpread2.js
+  // ../../../node_modules/@babel/runtime/helpers/esm/objectSpread2.js
   function ownKeys(e, r) {
     var t = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -22272,14 +22272,14 @@
     return e;
   }
 
-  // node_modules/@antv/l7-core/es/services/renderer/IMultiPassRenderer.js
+  // ../../../node_modules/@antv/l7-core/es/services/renderer/IMultiPassRenderer.js
   var PassType = /* @__PURE__ */ (function(PassType2) {
     PassType2["Normal"] = "normal";
     PassType2["PostProcessing"] = "post-processing";
     return PassType2;
   })({});
 
-  // node_modules/@antv/l7-core/es/services/renderer/gl.js
+  // ../../../node_modules/@antv/l7-core/es/services/renderer/gl.js
   var gl = /* @__PURE__ */ (function(gl2) {
     gl2[gl2["DEPTH_BUFFER_BIT"] = 256] = "DEPTH_BUFFER_BIT";
     gl2[gl2["STENCIL_BUFFER_BIT"] = 1024] = "STENCIL_BUFFER_BIT";
@@ -22582,7 +22582,7 @@
     return gl2;
   })({});
 
-  // node_modules/@antv/l7-core/es/services/renderer/passes/BasePostProcessingPass.js
+  // ../../../node_modules/@antv/l7-core/es/services/renderer/passes/BasePostProcessingPass.js
   var quad = "attribute vec2 a_Position;\n\nvarying vec2 v_UV;\n\nvoid main() {\n  v_UV = 0.5 * (a_Position + 1.0);\n  gl_Position = vec4(a_Position, 0.0, 1.0);\n}\n";
   var {
     camelCase: camelCase2,
@@ -22712,7 +22712,7 @@
     }
   };
 
-  // node_modules/@antv/l7-core/es/utils/shader-module.js
+  // ../../../node_modules/@antv/l7-core/es/utils/shader-module.js
   function getUniformLengthByType(type) {
     let arrayLength = 0;
     switch (type) {
@@ -22823,14 +22823,14 @@ ${cc}
     });
   }
 
-  // node_modules/@antv/l7-core/es/utils/vertex-compression.js
+  // ../../../node_modules/@antv/l7-core/es/utils/vertex-compression.js
   var {
     clamp: clamp2
   } = lodashUtil;
   var LEFT_SHIFT16 = 32768 * 2;
   var LEFT_SHIFT25 = 16777216 * 2;
 
-  // node_modules/@antv/l7-core/es/services/camera/ICameraService.js
+  // ../../../node_modules/@antv/l7-core/es/services/camera/ICameraService.js
   var CameraUniform = {
     ProjectionMatrix: "u_ProjectionMatrix",
     ViewMatrix: "u_ViewMatrix",
@@ -22841,7 +22841,7 @@ ${cc}
     CameraPosition: "u_CameraPosition"
   };
 
-  // node_modules/@antv/l7-core/es/services/component/IControlService.js
+  // ../../../node_modules/@antv/l7-core/es/services/component/IControlService.js
   var PositionType = /* @__PURE__ */ (function(PositionType2) {
     PositionType2["TOPRIGHT"] = "topright";
     PositionType2["TOPLEFT"] = "topleft";
@@ -22858,7 +22858,7 @@ ${cc}
     return PositionType2;
   })({});
 
-  // node_modules/@antv/l7-core/es/services/coordinate/ICoordinateSystemService.js
+  // ../../../node_modules/@antv/l7-core/es/services/coordinate/ICoordinateSystemService.js
   var CoordinateSystem = /* @__PURE__ */ (function(CoordinateSystem2) {
     CoordinateSystem2[CoordinateSystem2["LNGLAT"] = 1] = "LNGLAT";
     CoordinateSystem2[CoordinateSystem2["LNGLAT_OFFSET"] = 2] = "LNGLAT_OFFSET";
@@ -22877,7 +22877,7 @@ ${cc}
     RelativeOrigin: "u_RelativeOrigin"
   };
 
-  // node_modules/@antv/l7-core/es/services/debug/IDebugService.js
+  // ../../../node_modules/@antv/l7-core/es/services/debug/IDebugService.js
   var IDebugLog = {
     MapInitStart: "mapInitStart",
     LayerInitStart: "layerInitStart",
@@ -22892,7 +22892,7 @@ ${cc}
     BuildModelEnd: "buildModelEnd"
   };
 
-  // node_modules/@antv/l7-core/es/services/interaction/IInteractionService.js
+  // ../../../node_modules/@antv/l7-core/es/services/interaction/IInteractionService.js
   var InteractionEvent = /* @__PURE__ */ (function(InteractionEvent2) {
     InteractionEvent2["Hover"] = "hover";
     InteractionEvent2["Click"] = "click";
@@ -22904,7 +22904,7 @@ ${cc}
     return InteractionEvent2;
   })({});
 
-  // node_modules/@antv/l7-core/es/services/layer/ILayerService.js
+  // ../../../node_modules/@antv/l7-core/es/services/layer/ILayerService.js
   var BlendType = /* @__PURE__ */ (function(BlendType2) {
     BlendType2["normal"] = "normal";
     BlendType2["additive"] = "additive";
@@ -22930,7 +22930,7 @@ ${cc}
     return ILayerStage2;
   })({});
 
-  // node_modules/@antv/l7-core/es/services/layer/IStyleAttributeService.js
+  // ../../../node_modules/@antv/l7-core/es/services/layer/IStyleAttributeService.js
   var ScaleTypes = /* @__PURE__ */ (function(ScaleTypes2) {
     ScaleTypes2["LINEAR"] = "linear";
     ScaleTypes2["SEQUENTIAL"] = "sequential";
@@ -22958,14 +22958,14 @@ ${cc}
     return AttributeType2;
   })({});
 
-  // node_modules/@antv/l7-core/es/services/map/IMapService.js
+  // ../../../node_modules/@antv/l7-core/es/services/map/IMapService.js
   var MapServiceEvent = ["mapload", "mapchange", "mapAfterFrameChange"];
 
-  // node_modules/@antv/l7-core/es/services/asset/FontService.js
+  // ../../../node_modules/@antv/l7-core/es/services/asset/FontService.js
   var import_tiny_sdf = __toESM(require_tiny_sdf());
   var import_eventemitter34 = __toESM(require_eventemitter3());
 
-  // node_modules/@antv/l7-core/es/utils/font_util.js
+  // ../../../node_modules/@antv/l7-core/es/utils/font_util.js
   var glyphSizeInSDF = 30;
   function buildMapping({
     characterSet,
@@ -23058,7 +23058,7 @@ ${cc}
     return Math.pow(2, Math.ceil(Math.log2(num)));
   }
 
-  // node_modules/@antv/l7-core/es/services/asset/FontService.js
+  // ../../../node_modules/@antv/l7-core/es/services/asset/FontService.js
   var DEFAULT_CHAR_SET = getDefaultCharacterSet();
   var DEFAULT_FONT_FAMILY = "sans-serif";
   var DEFAULT_FONT_WEIGHT = "normal";
@@ -23307,7 +23307,7 @@ ${cc}
     }
   };
 
-  // node_modules/@babel/runtime/helpers/esm/asyncToGenerator.js
+  // ../../../node_modules/@babel/runtime/helpers/esm/asyncToGenerator.js
   function asyncGeneratorStep(n, t, e, r, o, a, c) {
     try {
       var i = n[a](c), u = i.value;
@@ -23332,7 +23332,7 @@ ${cc}
     };
   }
 
-  // node_modules/@antv/l7-core/es/services/asset/IconService.js
+  // ../../../node_modules/@antv/l7-core/es/services/asset/IconService.js
   var import_eventemitter35 = __toESM(require_eventemitter3());
   var BUFFER = 3;
   var MAX_CANVAS_WIDTH2 = 1024;
@@ -23521,7 +23521,7 @@ ${cc}
     }
   };
 
-  // node_modules/gl-matrix/esm/common.js
+  // ../../../node_modules/gl-matrix/esm/common.js
   var EPSILON = 1e-6;
   var ARRAY_TYPE = typeof Float32Array !== "undefined" ? Float32Array : Array;
   var RANDOM = Math.random;
@@ -23532,7 +23532,7 @@ ${cc}
   var degree = Math.PI / 180;
   var radian = 180 / Math.PI;
 
-  // node_modules/gl-matrix/esm/mat4.js
+  // ../../../node_modules/gl-matrix/esm/mat4.js
   var mat4_exports = {};
   __export(mat4_exports, {
     add: () => add,
@@ -24852,7 +24852,7 @@ ${cc}
   var mul = multiply;
   var sub = subtract;
 
-  // node_modules/gl-matrix/esm/vec3.js
+  // ../../../node_modules/gl-matrix/esm/vec3.js
   var vec3_exports = {};
   __export(vec3_exports, {
     add: () => add2,
@@ -25244,7 +25244,7 @@ ${cc}
     };
   })();
 
-  // node_modules/gl-matrix/esm/vec4.js
+  // ../../../node_modules/gl-matrix/esm/vec4.js
   var vec4_exports = {};
   __export(vec4_exports, {
     add: () => add3,
@@ -25587,7 +25587,7 @@ ${cc}
     };
   })();
 
-  // node_modules/gl-matrix/esm/vec2.js
+  // ../../../node_modules/gl-matrix/esm/vec2.js
   var vec2_exports = {};
   __export(vec2_exports, {
     add: () => add4,
@@ -25868,7 +25868,7 @@ ${cc}
     };
   })();
 
-  // node_modules/@antv/l7-core/es/services/camera/CameraService.js
+  // ../../../node_modules/@antv/l7-core/es/services/camera/CameraService.js
   var CameraService = class {
     constructor() {
       _defineProperty(this, "viewport", void 0);
@@ -25932,7 +25932,7 @@ ${cc}
     }
   };
 
-  // node_modules/@antv/l7-core/es/services/component/ControlService.js
+  // ../../../node_modules/@antv/l7-core/es/services/component/ControlService.js
   var ControlDirectionConfig = {
     topleft: "column",
     topright: "column",
@@ -26052,7 +26052,7 @@ ${cc}
     }
   };
 
-  // node_modules/@antv/l7-core/es/services/component/MarkerService.js
+  // ../../../node_modules/@antv/l7-core/es/services/component/MarkerService.js
   var MarkerService = class {
     constructor() {
       _defineProperty(this, "container", void 0);
@@ -26163,7 +26163,7 @@ ${cc}
     }
   };
 
-  // node_modules/@antv/l7-core/es/services/component/PopupService.js
+  // ../../../node_modules/@antv/l7-core/es/services/component/PopupService.js
   var PopupService = class {
     constructor() {
       _defineProperty(this, "scene", void 0);
@@ -26222,14 +26222,14 @@ ${cc}
     }
   };
 
-  // node_modules/@antv/l7-core/es/services/config/warnInfo.js
+  // ../../../node_modules/@antv/l7-core/es/services/config/warnInfo.js
   var WarnInfo = {
     MapToken: "\u60A8\u6B63\u5728\u4F7F\u7528 Demo \u6D4B\u8BD5 Token, \u751F\u4EA7\u73AF\u5883\u52A1\u5FC5\u81EA\u884C\u6CE8\u518C Token \u786E\u4FDD\u670D\u52A1\u7A33\u5B9A \u9AD8\u5FB7\u5730\u56FE\u7533\u8BF7\u5730\u5740 https://lbs.amap.com/api/javascript-api/guide/abc/prepare  Mapbox\u5730\u56FE\u7533\u8BF7\u5730\u5740 https://docs.mapbox.com/help/glossary/access-token/",
     SDK: "\u8BF7\u786E\u8BA4\u5F15\u5165\u4E86mapbox-gl api\u4E14\u5728L7\u4E4B\u524D\u5F15\u5165"
   };
   var warnInfo_default = WarnInfo;
 
-  // node_modules/@antv/l7-core/es/services/config/ConfigService.js
+  // ../../../node_modules/@antv/l7-core/es/services/config/ConfigService.js
   var {
     merge: merge2
   } = lodashUtil;
@@ -26354,7 +26354,7 @@ ${cc}
     // }
   };
 
-  // node_modules/@antv/l7-core/es/utils/project.js
+  // ../../../node_modules/@antv/l7-core/es/utils/project.js
   var DEGREES_TO_RADIANS = Math.PI / 180;
   var TILE_SIZE = 512;
   var EARTH_CIRCUMFERENCE = 4003e4;
@@ -26397,7 +26397,7 @@ ${cc}
     return result;
   }
 
-  // node_modules/@antv/l7-core/es/services/coordinate/CoordinateSystemService.js
+  // ../../../node_modules/@antv/l7-core/es/services/coordinate/CoordinateSystemService.js
   var VECTOR_TO_POINT_MATRIX = [1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0];
   var CoordinateSystemService = class {
     constructor(cameraService) {
@@ -26489,7 +26489,7 @@ ${cc}
     }
   };
 
-  // node_modules/@antv/l7-core/es/services/debug/DebugService.js
+  // ../../../node_modules/@antv/l7-core/es/services/debug/DebugService.js
   var import_eventemitter36 = __toESM(require_eventemitter3());
   var DebugService = class extends import_eventemitter36.EventEmitter {
     constructor(...args) {
@@ -26589,7 +26589,7 @@ ${cc}
     }
   };
 
-  // node_modules/@antv/l7-core/es/services/interaction/InteractionService.js
+  // ../../../node_modules/@antv/l7-core/es/services/interaction/InteractionService.js
   var import_eventemitter37 = __toESM(require_eventemitter3());
   var import_hammerjs = __toESM(require_hammer());
   var DragEventMap = {
@@ -26824,7 +26824,7 @@ ${cc}
     }
   };
 
-  // node_modules/@antv/l7-core/es/utils/dom.js
+  // ../../../node_modules/@antv/l7-core/es/utils/dom.js
   var containerCounter = 0;
   function createRendererContainer(domId) {
     let $wrapper = domId;
@@ -26866,14 +26866,14 @@ ${cc}
     return notCrash;
   }
 
-  // node_modules/@antv/l7-core/es/services/renderer/ITexture2D.js
+  // ../../../node_modules/@antv/l7-core/es/services/renderer/ITexture2D.js
   var TextureUsage = /* @__PURE__ */ (function(TextureUsage3) {
     TextureUsage3[TextureUsage3["SAMPLED"] = 0] = "SAMPLED";
     TextureUsage3[TextureUsage3["RENDER_TARGET"] = 1] = "RENDER_TARGET";
     return TextureUsage3;
   })({});
 
-  // node_modules/@antv/l7-core/es/services/interaction/PickingService.js
+  // ../../../node_modules/@antv/l7-core/es/services/interaction/PickingService.js
   var PickingService = class {
     constructor(container) {
       var _this = this;
@@ -27209,10 +27209,10 @@ ${cc}
     }
   };
 
-  // node_modules/@antv/l7-core/es/services/layer/LayerService.js
+  // ../../../node_modules/@antv/l7-core/es/services/layer/LayerService.js
   var import_eventemitter38 = __toESM(require_eventemitter3());
 
-  // node_modules/@antv/l7-core/es/utils/clock.js
+  // ../../../node_modules/@antv/l7-core/es/utils/clock.js
   var Clock = class {
     constructor(autoStart = true) {
       _defineProperty(this, "autoStart", void 0);
@@ -27253,7 +27253,7 @@ ${cc}
     }
   };
 
-  // node_modules/@antv/l7-core/es/services/layer/LayerService.js
+  // ../../../node_modules/@antv/l7-core/es/services/layer/LayerService.js
   var {
     throttle: throttle3
   } = lodashUtil;
@@ -27533,7 +27533,7 @@ ${cc}
     }
   };
 
-  // node_modules/@babel/runtime/helpers/esm/objectWithoutPropertiesLoose.js
+  // ../../../node_modules/@babel/runtime/helpers/esm/objectWithoutPropertiesLoose.js
   function _objectWithoutPropertiesLoose(r, e) {
     if (null == r) return {};
     var t = {};
@@ -27544,7 +27544,7 @@ ${cc}
     return t;
   }
 
-  // node_modules/@babel/runtime/helpers/esm/objectWithoutProperties.js
+  // ../../../node_modules/@babel/runtime/helpers/esm/objectWithoutProperties.js
   function _objectWithoutProperties(e, t) {
     if (null == e) return {};
     var o, r, i = _objectWithoutPropertiesLoose(e, t);
@@ -27555,7 +27555,7 @@ ${cc}
     return i;
   }
 
-  // node_modules/@antv/l7-core/es/services/layer/StyleAttribute.js
+  // ../../../node_modules/@antv/l7-core/es/services/layer/StyleAttribute.js
   var {
     isNil: isNil3
   } = lodashUtil;
@@ -27609,7 +27609,7 @@ ${cc}
     }
   };
 
-  // node_modules/@antv/l7-core/es/services/layer/StyleAttributeService.js
+  // ../../../node_modules/@antv/l7-core/es/services/layer/StyleAttributeService.js
   var _excluded = ["buffer", "update", "name"];
   var _excluded2 = ["buffer", "update", "name"];
   var bytesPerElementMap = {
@@ -27933,7 +27933,7 @@ ${cc}
     }
   };
 
-  // node_modules/@antv/l7-core/es/services/scene/SceneService.js
+  // ../../../node_modules/@antv/l7-core/es/services/scene/SceneService.js
   var import_eventemitter39 = __toESM(require_eventemitter3());
   var Scene = class extends import_eventemitter39.EventEmitter {
     /**
@@ -28226,7 +28226,7 @@ ${cc}
     }
   };
 
-  // node_modules/@antv/l7-core/es/services/shader/ShaderModuleService.js
+  // ../../../node_modules/@antv/l7-core/es/services/shader/ShaderModuleService.js
   var {
     uniq: uniq2
   } = lodashUtil;
@@ -28613,7 +28613,7 @@ bool isEqual(float a, float b) {
     return defineStr2;
   }
 
-  // node_modules/@antv/l7-core/es/services/renderer/passes/BaseNormalPass.js
+  // ../../../node_modules/@antv/l7-core/es/services/renderer/passes/BaseNormalPass.js
   var BaseNormalPass = class {
     constructor() {
       _defineProperty(this, "shaderModuleService", void 0);
@@ -28643,7 +28643,7 @@ bool isEqual(float a, float b) {
     }
   };
 
-  // node_modules/@antv/l7-core/es/services/renderer/passes/ClearPass.js
+  // ../../../node_modules/@antv/l7-core/es/services/renderer/passes/ClearPass.js
   var ClearPass = class extends BaseNormalPass {
     getName() {
       return "clear";
@@ -28660,7 +28660,7 @@ bool isEqual(float a, float b) {
     }
   };
 
-  // node_modules/@antv/l7-core/es/services/renderer/passes/MultiPassRenderer.js
+  // ../../../node_modules/@antv/l7-core/es/services/renderer/passes/MultiPassRenderer.js
   var MultiPassRenderer = class {
     constructor(postProcessor) {
       _defineProperty(this, "passes", []);
@@ -28715,7 +28715,7 @@ bool isEqual(float a, float b) {
     }
   };
 
-  // node_modules/@antv/l7-core/es/services/renderer/passes/PixelPickingPass.js
+  // ../../../node_modules/@antv/l7-core/es/services/renderer/passes/PixelPickingPass.js
   var PixelPickingPass = class extends BaseNormalPass {
     constructor(...args) {
       var _this;
@@ -28915,7 +28915,7 @@ bool isEqual(float a, float b) {
     }
   };
 
-  // node_modules/@antv/l7-core/es/services/renderer/passes/PostProcessor.js
+  // ../../../node_modules/@antv/l7-core/es/services/renderer/passes/PostProcessor.js
   var PostProcessor = class {
     constructor(rendererService) {
       _defineProperty(this, "passes", []);
@@ -29055,7 +29055,7 @@ bool isEqual(float a, float b) {
     }
   };
 
-  // node_modules/@antv/l7-core/es/services/renderer/passes/RenderPass.js
+  // ../../../node_modules/@antv/l7-core/es/services/renderer/passes/RenderPass.js
   var RenderPass = class extends BaseNormalPass {
     getType() {
       return PassType.Normal;
@@ -29090,7 +29090,7 @@ bool isEqual(float a, float b) {
     }
   };
 
-  // node_modules/@antv/l7-core/es/services/renderer/passes/post-processing/BloomPass.js
+  // ../../../node_modules/@antv/l7-core/es/services/renderer/passes/post-processing/BloomPass.js
   var blur = "varying vec2 v_UV;\n\nuniform float u_BloomFinal: 0.0;\nuniform sampler2D u_Texture;\nuniform sampler2D u_Texture2;\n\nuniform vec2 u_ViewportSize: [1.0, 1.0];\nuniform float u_radius: 5.0;\nuniform float u_intensity: 0.3;\nuniform float u_baseRadio: 0.5;\n\n// https://github.com/Jam3/glsl-fast-gaussian-blur/blob/master/9.glsl\nvec4 blur9(sampler2D image, vec2 uv, vec2 resolution, vec2 direction) {\n  vec4 color = vec4(0.0);\n  vec2 off1 = vec2(1.3846153846) * direction;\n  vec2 off2 = vec2(3.2307692308) * direction;\n  color += texture2D(image, uv) * 0.2270270270;\n  color += texture2D(image, uv + (off1 / resolution)) * 0.3162162162;\n  color += texture2D(image, uv - (off1 / resolution)) * 0.3162162162;\n  color += texture2D(image, uv + (off2 / resolution)) * 0.0702702703;\n  color += texture2D(image, uv - (off2 / resolution)) * 0.0702702703;\n  return color;\n}\n\nfloat luminance(vec4 color) {\n  return  0.2125 * color.r + 0.7154 * color.g + 0.0721 * color.b;\n}\n\nvoid main() {\n  // vec4 baseColor = texture2D(u_Texture, v_UV);\n\n  float r = sqrt(u_radius);\n\n  vec4 c1 = blur9(u_Texture, v_UV, u_ViewportSize, vec2(u_radius, 0.0));\n  // c1 *= luminance(c1);\n  vec4 c2 = blur9(u_Texture, v_UV, u_ViewportSize, vec2(0.0, u_radius));\n  // c2 *= luminance(c2);\n  vec4 c3 = blur9(u_Texture, v_UV, u_ViewportSize, vec2(r, r));\n  // c3 *= luminance(c3);\n  vec4 c4 = blur9(u_Texture, v_UV, u_ViewportSize, vec2(r, -r));\n  // c4 *= luminance(c4);\n  vec4 inbloomColor = (c1 + c2 + c3 + c4) * 0.25;\n\n  // float lum = luminance(inbloomColor);\n  // inbloomColor.rgb *= lum;\n\n  if(u_BloomFinal > 0.0) {\n    vec4 baseColor = texture2D(u_Texture2, v_UV);\n    float baselum = luminance(baseColor);\n    gl_FragColor = mix(inbloomColor, baseColor, u_baseRadio);\n    if(baselum <= 0.2) {\n      gl_FragColor = inbloomColor * u_intensity;\n    }\n  } else {\n    gl_FragColor = inbloomColor;\n  }\n}";
   var quad2 = "attribute vec2 a_Position;\n\nvarying vec2 v_UV;\n\nvoid main() {\n  v_UV = 0.5 * (a_Position + 1.0);\n  gl_Position = vec4(a_Position, 0.0, 1.0);\n}\n";
   var {
@@ -29134,7 +29134,7 @@ bool isEqual(float a, float b) {
     }
   };
 
-  // node_modules/@antv/l7-core/es/services/renderer/passes/post-processing/BlurHPass.js
+  // ../../../node_modules/@antv/l7-core/es/services/renderer/passes/post-processing/BlurHPass.js
   var blur2 = "varying vec2 v_UV;\n\nuniform sampler2D u_Texture;\n\nuniform vec2 u_ViewportSize: [1.0, 1.0];\nuniform vec2 u_BlurDir: [1.0, 0.0];\n\n// https://github.com/Jam3/glsl-fast-gaussian-blur/blob/master/9.glsl\nvec4 blur9(sampler2D image, vec2 uv, vec2 resolution, vec2 direction) {\n  vec4 color = vec4(0.0);\n  vec2 off1 = vec2(1.3846153846) * direction;\n  vec2 off2 = vec2(3.2307692308) * direction;\n  color += texture2D(image, uv) * 0.2270270270;\n  color += texture2D(image, uv + (off1 / resolution)) * 0.3162162162;\n  color += texture2D(image, uv - (off1 / resolution)) * 0.3162162162;\n  color += texture2D(image, uv + (off2 / resolution)) * 0.0702702703;\n  color += texture2D(image, uv - (off2 / resolution)) * 0.0702702703;\n  return color;\n}\n\nvoid main() {\n  gl_FragColor = blur9(u_Texture, v_UV, u_ViewportSize, u_BlurDir);\n}";
   var quad3 = "attribute vec2 a_Position;\n\nvarying vec2 v_UV;\n\nvoid main() {\n  v_UV = 0.5 * (a_Position + 1.0);\n  gl_Position = vec4(a_Position, 0.0, 1.0);\n}\n";
   var {
@@ -29172,7 +29172,7 @@ bool isEqual(float a, float b) {
     }
   };
 
-  // node_modules/@antv/l7-core/es/services/renderer/passes/post-processing/BlurVPass.js
+  // ../../../node_modules/@antv/l7-core/es/services/renderer/passes/post-processing/BlurVPass.js
   var blur3 = "varying vec2 v_UV;\n\nuniform sampler2D u_Texture;\n\nuniform vec2 u_ViewportSize: [1.0, 1.0];\nuniform vec2 u_BlurDir: [1.0, 0.0];\n\n// https://github.com/Jam3/glsl-fast-gaussian-blur/blob/master/9.glsl\nvec4 blur9(sampler2D image, vec2 uv, vec2 resolution, vec2 direction) {\n  vec4 color = vec4(0.0);\n  vec2 off1 = vec2(1.3846153846) * direction;\n  vec2 off2 = vec2(3.2307692308) * direction;\n  color += texture2D(image, uv) * 0.2270270270;\n  color += texture2D(image, uv + (off1 / resolution)) * 0.3162162162;\n  color += texture2D(image, uv - (off1 / resolution)) * 0.3162162162;\n  color += texture2D(image, uv + (off2 / resolution)) * 0.0702702703;\n  color += texture2D(image, uv - (off2 / resolution)) * 0.0702702703;\n  return color;\n}\n\nvoid main() {\n  gl_FragColor = blur9(u_Texture, v_UV, u_ViewportSize, u_BlurDir);\n}";
   var quad4 = "attribute vec2 a_Position;\n\nvarying vec2 v_UV;\n\nvoid main() {\n  v_UV = 0.5 * (a_Position + 1.0);\n  gl_Position = vec4(a_Position, 0.0, 1.0);\n}\n";
   var {
@@ -29210,7 +29210,7 @@ bool isEqual(float a, float b) {
     }
   };
 
-  // node_modules/@antv/l7-core/es/services/renderer/passes/post-processing/ColorHalfTonePass.js
+  // ../../../node_modules/@antv/l7-core/es/services/renderer/passes/post-processing/ColorHalfTonePass.js
   var colorHalftone = 'varying vec2 v_UV;\n\nuniform sampler2D u_Texture;\nuniform vec2 u_ViewportSize: [1.0, 1.0];\nuniform vec2 u_Center : [0.5, 0.5];\nuniform float u_Angle : 0;\nuniform float u_Size : 8;\n\n#pragma include "common"\n\nfloat scale = PI / u_Size;\n\nfloat pattern(float u_Angle, vec2 texSize, vec2 texCoord) {\n  float s = sin(u_Angle), c = cos(u_Angle);\n  vec2 tex = texCoord * texSize - u_Center * texSize;\n  vec2 point = vec2(\n    c * tex.x - s * tex.y,\n    s * tex.x + c * tex.y\n  ) * scale;\n  return (sin(point.x) * sin(point.y)) * 4.0;\n}\n\n// https://github.com/evanw/glfx.js/blob/master/src/filters/fun/colorhalftone.js\nvec4 colorHalftone_filterColor(vec4 color, vec2 texSize, vec2 texCoord) {\n  vec3 cmy = 1.0 - color.rgb;\n  float k = min(cmy.x, min(cmy.y, cmy.z));\n  cmy = (cmy - k) / (1.0 - k);\n  cmy = clamp(\n    cmy * 10.0 - 3.0 + vec3(\n      pattern(u_Angle + 0.26179, texSize, texCoord),\n      pattern(u_Angle + 1.30899, texSize, texCoord),\n      pattern(u_Angle, texSize, texCoord)\n    ),\n    0.0,\n    1.0\n  );\n  k = clamp(k * 10.0 - 5.0 + pattern(u_Angle + 0.78539, texSize, texCoord), 0.0, 1.0);\n  return vec4(1.0 - cmy - k, color.a);\n}\n\nvoid main() {\n  gl_FragColor = vec4(texture2D(u_Texture, v_UV));\n  gl_FragColor = colorHalftone_filterColor(gl_FragColor, u_ViewportSize, v_UV);\n}';
   var quad5 = "attribute vec2 a_Position;\n\nvarying vec2 v_UV;\n\nvoid main() {\n  v_UV = 0.5 * (a_Position + 1.0);\n  gl_Position = vec4(a_Position, 0.0, 1.0);\n}\n";
   var ColorHalftonePass = class extends BasePostProcessingPass {
@@ -29238,7 +29238,7 @@ bool isEqual(float a, float b) {
     }
   };
 
-  // node_modules/@antv/l7-core/es/services/renderer/passes/post-processing/CopyPass.js
+  // ../../../node_modules/@antv/l7-core/es/services/renderer/passes/post-processing/CopyPass.js
   var copy5 = "varying vec2 v_UV;\n\nuniform sampler2D u_Texture;\n\nvoid main() {\n  gl_FragColor = vec4(texture2D(u_Texture, v_UV));\n}\n";
   var quad6 = "attribute vec2 a_Position;\n\nvarying vec2 v_UV;\n\nvoid main() {\n  v_UV = 0.5 * (a_Position + 1.0);\n  gl_Position = vec4(a_Position, 0.0, 1.0);\n}\n";
   var CopyPass = class extends BasePostProcessingPass {
@@ -29251,7 +29251,7 @@ bool isEqual(float a, float b) {
     }
   };
 
-  // node_modules/@antv/l7-core/es/services/renderer/passes/post-processing/HexagonalPixelatePass.js
+  // ../../../node_modules/@antv/l7-core/es/services/renderer/passes/post-processing/HexagonalPixelatePass.js
   var hexagonalPixelate = "varying vec2 v_UV;\n\nuniform sampler2D u_Texture;\nuniform vec2 u_ViewportSize: [1.0, 1.0];\nuniform vec2 u_Center : [0.5, 0.5];\nuniform float u_Scale : 10;\n\n// https://github.com/evanw/glfx.js/blob/master/src/filters/fun/hexagonalpixelate.js\nvec4 hexagonalPixelate_sampleColor(sampler2D texture, vec2 texSize, vec2 texCoord) {\n  vec2 tex = (texCoord * texSize - u_Center * texSize) / u_Scale;\n  tex.y /= 0.866025404;\n  tex.x -= tex.y * 0.5;\n  vec2 a;\n  if (tex.x + tex.y - floor(tex.x) - floor(tex.y) < 1.0) {\n    a = vec2(floor(tex.x), floor(tex.y));\n  }\n  else a = vec2(ceil(tex.x), ceil(tex.y));\n  vec2 b = vec2(ceil(tex.x), floor(tex.y));\n  vec2 c = vec2(floor(tex.x), ceil(tex.y));\n  vec3 TEX = vec3(tex.x, tex.y, 1.0 - tex.x - tex.y);\n  vec3 A = vec3(a.x, a.y, 1.0 - a.x - a.y);\n  vec3 B = vec3(b.x, b.y, 1.0 - b.x - b.y);\n  vec3 C = vec3(c.x, c.y, 1.0 - c.x - c.y);\n  float alen = length(TEX - A);\n  float blen = length(TEX - B);\n  float clen = length(TEX - C);\n  vec2 choice;\n  if (alen < blen) {\n    if (alen < clen) choice = a;\n    else choice = c;\n  } else {\n    if (blen < clen) choice = b;\n    else choice = c;\n  }\n  choice.x += choice.y * 0.5;\n  choice.y *= 0.866025404;\n  choice *= u_Scale / texSize;\n  return texture2D(texture, choice + u_Center);\n}\n\nvoid main() {\n  gl_FragColor = vec4(texture2D(u_Texture, v_UV));\n  gl_FragColor = hexagonalPixelate_sampleColor(u_Texture, u_ViewportSize, v_UV);\n}";
   var quad7 = "attribute vec2 a_Position;\n\nvarying vec2 v_UV;\n\nvoid main() {\n  v_UV = 0.5 * (a_Position + 1.0);\n  gl_Position = vec4(a_Position, 0.0, 1.0);\n}\n";
   var HexagonalPixelatePass = class extends BasePostProcessingPass {
@@ -29279,7 +29279,7 @@ bool isEqual(float a, float b) {
     }
   };
 
-  // node_modules/@antv/l7-core/es/services/renderer/passes/post-processing/InkPass.js
+  // ../../../node_modules/@antv/l7-core/es/services/renderer/passes/post-processing/InkPass.js
   var ink = "varying vec2 v_UV;\n\nuniform sampler2D u_Texture;\nuniform vec2 u_ViewportSize: [1.0, 1.0];\nuniform float u_Strength : 0.6;\n\nvec4 ink_sampleColor(sampler2D texture, vec2 texSize, vec2 texCoord) {\n  vec2 dx = vec2(1.0 / texSize.x, 0.0);\n  vec2 dy = vec2(0.0, 1.0 / texSize.y);\n  vec4 color = texture2D(texture, texCoord);\n  float bigTotal = 0.0;\n  float smallTotal = 0.0;\n  vec3 bigAverage = vec3(0.0);\n  vec3 smallAverage = vec3(0.0);\n  for (float x = -2.0; x <= 2.0; x += 1.0) {\n    for (float y = -2.0; y <= 2.0; y += 1.0) {\n      vec3 sample = texture2D(texture, texCoord + dx * x + dy * y).rgb;\n      bigAverage += sample;\n      bigTotal += 1.0;\n      if (abs(x) + abs(y) < 2.0) {\n        smallAverage += sample;\n        smallTotal += 1.0;\n      }\n    }\n  }\n  vec3 edge = max(vec3(0.0), bigAverage / bigTotal - smallAverage / smallTotal);\n  float power = u_Strength * u_Strength * u_Strength * u_Strength * u_Strength;\n  return vec4(color.rgb - dot(edge, edge) * power * 100000.0, color.a);\n}\n\nvoid main() {\n  gl_FragColor = vec4(texture2D(u_Texture, v_UV));\n  gl_FragColor = ink_sampleColor(u_Texture, u_ViewportSize, v_UV);\n}";
   var quad8 = "attribute vec2 a_Position;\n\nvarying vec2 v_UV;\n\nvoid main() {\n  v_UV = 0.5 * (a_Position + 1.0);\n  gl_Position = vec4(a_Position, 0.0, 1.0);\n}\n";
   var InkPass = class extends BasePostProcessingPass {
@@ -29307,7 +29307,7 @@ bool isEqual(float a, float b) {
     }
   };
 
-  // node_modules/@antv/l7-core/es/services/renderer/passes/post-processing/NoisePass.js
+  // ../../../node_modules/@antv/l7-core/es/services/renderer/passes/post-processing/NoisePass.js
   var noise = "varying vec2 v_UV;\n\nuniform sampler2D u_Texture;\nuniform float u_Amount : 0.5;\n\nfloat rand(vec2 co) {\n  return fract(sin(dot(co.xy ,vec2(12.9898,78.233))) * 43758.5453);\n}\n\n// https://github.com/evanw/glfx.js/blob/master/src/filters/adjust/noise.js\nvec4 noise_filterColor(vec4 color, vec2 texCoord) {\n  float diff = (rand(texCoord) - 0.5) * u_Amount;\n  color.r += diff;\n  color.g += diff;\n  color.b += diff;\n  return color;\n}\n\nvoid main() {\n  gl_FragColor = vec4(texture2D(u_Texture, v_UV));\n  gl_FragColor = noise_filterColor(gl_FragColor, v_UV);\n}";
   var quad9 = "attribute vec2 a_Position;\n\nvarying vec2 v_UV;\n\nvoid main() {\n  v_UV = 0.5 * (a_Position + 1.0);\n  gl_Position = vec4(a_Position, 0.0, 1.0);\n}\n";
   var NoisePass = class extends BasePostProcessingPass {
@@ -29320,7 +29320,7 @@ bool isEqual(float a, float b) {
     }
   };
 
-  // node_modules/@antv/l7-core/es/services/renderer/passes/post-processing/SepiaPass.js
+  // ../../../node_modules/@antv/l7-core/es/services/renderer/passes/post-processing/SepiaPass.js
   var quad10 = "attribute vec2 a_Position;\n\nvarying vec2 v_UV;\n\nvoid main() {\n  v_UV = 0.5 * (a_Position + 1.0);\n  gl_Position = vec4(a_Position, 0.0, 1.0);\n}\n";
   var sepia = "varying vec2 v_UV;\n\nuniform sampler2D u_Texture;\n\nuniform float u_Amount : 0.5;\n\n// https://github.com/evanw/glfx.js/blob/master/src/filters/adjust/sepia.js\nvec4 sepia_filterColor(vec4 color) {\n  float r = color.r;\n  float g = color.g;\n  float b = color.b;\n  color.r =\n    min(1.0, (r * (1.0 - (0.607 * u_Amount))) + (g * (0.769 * u_Amount)) + (b * (0.189 * u_Amount)));\n  color.g = min(1.0, (r * 0.349 * u_Amount) + (g * (1.0 - (0.314 * u_Amount))) + (b * 0.168 * u_Amount));\n  color.b = min(1.0, (r * 0.272 * u_Amount) + (g * 0.534 * u_Amount) + (b * (1.0 - (0.869 * u_Amount))));\n  return color;\n}\n\nvoid main() {\n  gl_FragColor = vec4(texture2D(u_Texture, v_UV));\n  gl_FragColor = sepia_filterColor(gl_FragColor);\n}";
   var SepiaPass = class extends BasePostProcessingPass {
@@ -29333,7 +29333,7 @@ bool isEqual(float a, float b) {
     }
   };
 
-  // node_modules/@antv/l7-core/es/inversify.config.js
+  // ../../../node_modules/@antv/l7-core/es/inversify.config.js
   var globalConfigService = new GlobalConfigService();
   var sceneIdCounter = 0;
   function createSceneContainer() {
@@ -29401,10 +29401,10 @@ bool isEqual(float a, float b) {
     return layerContainer;
   }
 
-  // node_modules/@antv/l7-core/es/services/scene/ISceneService.js
+  // ../../../node_modules/@antv/l7-core/es/services/scene/ISceneService.js
   var SceneEventList = ["loaded", "fontloaded", "maploaded", "resize", "destroy", "dragstart", "dragging", "dragend", "dragcancel"];
 
-  // node_modules/@antv/l7-core/es/services/source/ISourceService.js
+  // ../../../node_modules/@antv/l7-core/es/services/source/ISourceService.js
   var RasterTileType = /* @__PURE__ */ (function(RasterTileType2) {
     RasterTileType2["IMAGE"] = "image";
     RasterTileType2["CUSTOMIMAGE"] = "customImage";
@@ -29417,7 +29417,7 @@ bool isEqual(float a, float b) {
     return RasterTileType2;
   })({});
 
-  // node_modules/@antv/l7-source/es/utils/tile/getCustomData.js
+  // ../../../node_modules/@antv/l7-source/es/utils/tile/getCustomData.js
   var __async7 = (__this, __arguments, generator) => {
     return new Promise((resolve, reject) => {
       var fulfilled = (value) => {
@@ -29499,7 +29499,7 @@ bool isEqual(float a, float b) {
     });
   });
 
-  // node_modules/@antv/l7-source/es/utils/tile/request.js
+  // ../../../node_modules/@antv/l7-source/es/utils/tile/request.js
   function getTileUrl(url, tileParams) {
     if (Array.isArray(url)) {
       if (typeof url[0] === "string") {
@@ -29543,7 +29543,7 @@ bool isEqual(float a, float b) {
     };
   }
 
-  // node_modules/@antv/l7-source/es/utils/tile/getRasterData.js
+  // ../../../node_modules/@antv/l7-source/es/utils/tile/getRasterData.js
   var __defProp14 = Object.defineProperty;
   var __defProps11 = Object.defineProperties;
   var __getOwnPropDescs11 = Object.getOwnPropertyDescriptors;
@@ -29651,7 +29651,7 @@ bool isEqual(float a, float b) {
     });
   }
 
-  // node_modules/@antv/l7-source/es/utils/tile/getRasterTile.js
+  // ../../../node_modules/@antv/l7-source/es/utils/tile/getRasterTile.js
   var __defProp15 = Object.defineProperty;
   var __defProps12 = Object.defineProperties;
   var __getOwnPropDescs12 = Object.getOwnPropertyDescriptors;
@@ -29750,7 +29750,7 @@ bool isEqual(float a, float b) {
     };
   };
 
-  // node_modules/@antv/l7-source/es/parser/raster-tile.js
+  // ../../../node_modules/@antv/l7-source/es/parser/raster-tile.js
   var __defProp16 = Object.defineProperty;
   var __defProps13 = Object.defineProperties;
   var __getOwnPropDescs13 = Object.getOwnPropertyDescriptors;
@@ -29838,7 +29838,7 @@ bool isEqual(float a, float b) {
     };
   }
 
-  // node_modules/@antv/l7-source/es/parser/raster/ndi.js
+  // ../../../node_modules/@antv/l7-source/es/parser/raster/ndi.js
   var __defProp17 = Object.defineProperty;
   var __defProps14 = Object.defineProperties;
   var __getOwnPropDescs14 = Object.getOwnPropertyDescriptors;
@@ -29908,7 +29908,7 @@ bool isEqual(float a, float b) {
     return resultData;
   }
 
-  // node_modules/@antv/l7-source/es/parser/raster/rgb.js
+  // ../../../node_modules/@antv/l7-source/es/parser/raster/rgb.js
   var __defProp18 = Object.defineProperty;
   var __defProps15 = Object.defineProperties;
   var __getOwnPropDescs15 = Object.getOwnPropertyDescriptors;
@@ -29977,7 +29977,7 @@ bool isEqual(float a, float b) {
     return resultData;
   }
 
-  // node_modules/@antv/l7-source/es/parser/rasterRgb.js
+  // ../../../node_modules/@antv/l7-source/es/parser/rasterRgb.js
   var __defProp19 = Object.defineProperty;
   var __defProps16 = Object.defineProperties;
   var __getOwnPropDescs16 = Object.getOwnPropertyDescriptors;
@@ -30037,7 +30037,7 @@ bool isEqual(float a, float b) {
     return resultData;
   }
 
-  // node_modules/@antv/l7-source/es/parser/testTile.js
+  // ../../../node_modules/@antv/l7-source/es/parser/testTile.js
   var __defProp20 = Object.defineProperty;
   var __defProps17 = Object.defineProperties;
   var __getOwnPropDescs17 = Object.getOwnPropertyDescriptors;
@@ -30128,7 +30128,7 @@ bool isEqual(float a, float b) {
     };
   }
 
-  // node_modules/@antv/l7-source/es/transform/filter.js
+  // ../../../node_modules/@antv/l7-source/es/transform/filter.js
   function filter(data, options) {
     const { callback } = options;
     if (callback) {
@@ -30137,7 +30137,7 @@ bool isEqual(float a, float b) {
     return data;
   }
 
-  // node_modules/@antv/l7-source/es/transform/grid.js
+  // ../../../node_modules/@antv/l7-source/es/transform/grid.js
   var __defProp21 = Object.defineProperty;
   var __defProps18 = Object.defineProperties;
   var __getOwnPropDescs18 = Object.getOwnPropertyDescriptors;
@@ -30209,7 +30209,7 @@ bool isEqual(float a, float b) {
     };
   }
 
-  // node_modules/@antv/l7-source/es/utils/hexbin.js
+  // ../../../node_modules/@antv/l7-source/es/utils/hexbin.js
   var THIRD_PI = Math.PI / 3;
   function hexbin() {
     let r = 1;
@@ -30282,7 +30282,7 @@ bool isEqual(float a, float b) {
     return hexbinImpl;
   }
 
-  // node_modules/@antv/l7-source/es/transform/hexagon.js
+  // ../../../node_modules/@antv/l7-source/es/transform/hexagon.js
   var __defProp22 = Object.defineProperty;
   var __defProps19 = Object.defineProperties;
   var __getOwnPropDescs19 = Object.getOwnPropertyDescriptors;
@@ -30339,7 +30339,7 @@ bool isEqual(float a, float b) {
     return result;
   }
 
-  // node_modules/@antv/l7-source/es/transform/join.js
+  // ../../../node_modules/@antv/l7-source/es/transform/join.js
   var __defProp23 = Object.defineProperty;
   var __getOwnPropSymbols22 = Object.getOwnPropertySymbols;
   var __hasOwnProp23 = Object.prototype.hasOwnProperty;
@@ -30369,7 +30369,7 @@ bool isEqual(float a, float b) {
     return geoData;
   }
 
-  // node_modules/@antv/l7-source/es/transform/map.js
+  // ../../../node_modules/@antv/l7-source/es/transform/map.js
   function map(data, options) {
     const { callback } = options;
     if (callback) {
@@ -30378,7 +30378,7 @@ bool isEqual(float a, float b) {
     return data;
   }
 
-  // node_modules/@antv/l7-source/es/utils/relative-coordinates.js
+  // ../../../node_modules/@antv/l7-source/es/utils/relative-coordinates.js
   var __defProp24 = Object.defineProperty;
   var __defProps20 = Object.defineProperties;
   var __getOwnPropDescs20 = Object.getOwnPropertyDescriptors;
@@ -30484,7 +30484,7 @@ bool isEqual(float a, float b) {
     };
   }
 
-  // node_modules/@antv/l7-source/es/index.js
+  // ../../../node_modules/@antv/l7-source/es/index.js
   registerParser("rasterTile", rasterTile);
   registerParser("mvt", mapboxVectorTile);
   registerParser("geojsonvt", geojsonVTTile);
@@ -30506,7 +30506,7 @@ bool isEqual(float a, float b) {
   registerTransform("hexagon", pointToHexbin);
   var src_default = Source;
 
-  // node_modules/@antv/l7-component/es/control/baseControl/control.js
+  // ../../../node_modules/@antv/l7-component/es/control/baseControl/control.js
   var import_eventemitter310 = __toESM(require_eventemitter3());
   var Control = class _Control extends import_eventemitter310.default {
     constructor(option) {
@@ -30722,7 +30722,7 @@ bool isEqual(float a, float b) {
   };
   _defineProperty(Control, "controlCount", 0);
 
-  // node_modules/@antv/l7-component/es/control/logo.js
+  // ../../../node_modules/@antv/l7-component/es/control/logo.js
   var Logo = class extends Control {
     getDefault() {
       return {
@@ -30770,10 +30770,10 @@ bool isEqual(float a, float b) {
     }
   };
 
-  // node_modules/@antv/l7-layers/es/core/BaseLayer.js
+  // ../../../node_modules/@antv/l7-layers/es/core/BaseLayer.js
   var import_eventemitter311 = __toESM(require_eventemitter3());
 
-  // node_modules/@antv/l7-layers/es/plugins/DataMappingPlugin.js
+  // ../../../node_modules/@antv/l7-layers/es/plugins/DataMappingPlugin.js
   var DataMappingPlugin = class {
     constructor() {
       _defineProperty(this, "mapService", void 0);
@@ -30964,7 +30964,7 @@ bool isEqual(float a, float b) {
     }
   };
 
-  // node_modules/@antv/l7-layers/es/plugins/DataSourcePlugin.js
+  // ../../../node_modules/@antv/l7-layers/es/plugins/DataSourcePlugin.js
   var DataSourcePlugin = class {
     constructor() {
       _defineProperty(this, "mapService", void 0);
@@ -31031,7 +31031,7 @@ bool isEqual(float a, float b) {
     }
   };
 
-  // node_modules/@antv/l7-layers/es/utils/identityScale.js
+  // ../../../node_modules/@antv/l7-layers/es/utils/identityScale.js
   function identity2(d) {
     let unknown;
     let domain = [];
@@ -31059,7 +31059,7 @@ bool isEqual(float a, float b) {
     return scale5;
   }
 
-  // node_modules/@antv/l7-layers/es/utils/scale.js
+  // ../../../node_modules/@antv/l7-layers/es/utils/scale.js
   function bisect(a, x, lo = 0, hi = a.length) {
     while (lo < hi) {
       const mid = lo + hi >>> 1;
@@ -31609,7 +31609,7 @@ bool isEqual(float a, float b) {
     return scale5;
   }
 
-  // node_modules/@antv/l7-layers/es/plugins/FeatureScalePlugin.js
+  // ../../../node_modules/@antv/l7-layers/es/plugins/FeatureScalePlugin.js
   var {
     isNil: isNil7,
     isString: isString3,
@@ -31874,7 +31874,7 @@ bool isEqual(float a, float b) {
     }
   };
 
-  // node_modules/@antv/l7-layers/es/plugins/LayerAnimateStylePlugin.js
+  // ../../../node_modules/@antv/l7-layers/es/plugins/LayerAnimateStylePlugin.js
   var LayerAnimateStylePlugin = class {
     apply(layer) {
       layer.hooks.beforeRender.tap("LayerAnimateStylePlugin", () => {
@@ -31888,7 +31888,7 @@ bool isEqual(float a, float b) {
     }
   };
 
-  // node_modules/@antv/l7-layers/es/plugins/LayerMaskPlugin.js
+  // ../../../node_modules/@antv/l7-layers/es/plugins/LayerMaskPlugin.js
   var LayerStylePlugin = class {
     apply(layer) {
       layer.hooks.afterInit.tap("LayerMaskPlugin", () => {
@@ -31905,7 +31905,7 @@ bool isEqual(float a, float b) {
     }
   };
 
-  // node_modules/@antv/l7-layers/es/plugins/LayerModelPlugin.js
+  // ../../../node_modules/@antv/l7-layers/es/plugins/LayerModelPlugin.js
   var LayerModelPlugin = class {
     build(layer) {
       return _asyncToGenerator(function* () {
@@ -31958,7 +31958,7 @@ bool isEqual(float a, float b) {
     }
   };
 
-  // node_modules/@antv/l7-layers/es/plugins/LayerStylePlugin.js
+  // ../../../node_modules/@antv/l7-layers/es/plugins/LayerStylePlugin.js
   var LayerStylePlugin2 = class {
     apply(layer) {
       layer.hooks.afterInit.tap("LayerStylePlugin", () => {
@@ -31974,7 +31974,7 @@ bool isEqual(float a, float b) {
     }
   };
 
-  // node_modules/@antv/l7-layers/es/plugins/LightingPlugin.js
+  // ../../../node_modules/@antv/l7-layers/es/plugins/LightingPlugin.js
   var _excluded3 = ["type"];
   var lightTypeUniformMap = {
     directional: {
@@ -32050,7 +32050,7 @@ bool isEqual(float a, float b) {
     }
   };
 
-  // node_modules/@antv/l7-layers/es/utils/multiPassRender.js
+  // ../../../node_modules/@antv/l7-layers/es/utils/multiPassRender.js
   function normalizePasses(passes) {
     return passes.map((pass) => {
       if (typeof pass === "string") {
@@ -32070,7 +32070,7 @@ bool isEqual(float a, float b) {
     return multiPassRenderer;
   }
 
-  // node_modules/@antv/l7-layers/es/plugins/MultiPassRendererPlugin.js
+  // ../../../node_modules/@antv/l7-layers/es/plugins/MultiPassRendererPlugin.js
   var MultiPassRendererPlugin = class {
     constructor() {
       _defineProperty(this, "enabled", void 0);
@@ -32103,7 +32103,7 @@ bool isEqual(float a, float b) {
     }
   };
 
-  // node_modules/@antv/l7-layers/es/core/CommonStyleAttribute.js
+  // ../../../node_modules/@antv/l7-layers/es/core/CommonStyleAttribute.js
   var COMMON_ATTRIBUTE_LOCATION = {
     // common attribute in RegisterStyleAttributePlugin
     POSITION: 0,
@@ -32214,7 +32214,7 @@ bool isEqual(float a, float b) {
     }
   }
 
-  // node_modules/@antv/l7-layers/es/plugins/PixelPickingPlugin.js
+  // ../../../node_modules/@antv/l7-layers/es/plugins/PixelPickingPlugin.js
   var {
     isNumber: isNumber4
   } = lodashUtil;
@@ -32348,14 +32348,14 @@ bool isEqual(float a, float b) {
     }
   };
 
-  // node_modules/@antv/l7-layers/es/tile/utils/utils.js
+  // ../../../node_modules/@antv/l7-layers/es/tile/utils/utils.js
   var tileVectorParser = ["mvt", "geojsonvt", "testTile"];
   function isTileGroup(layer) {
     const source = layer.getSource();
     return tileVectorParser.includes(source.parser.type);
   }
 
-  // node_modules/@antv/l7-layers/es/plugins/RegisterStyleAttributePlugin.js
+  // ../../../node_modules/@antv/l7-layers/es/plugins/RegisterStyleAttributePlugin.js
   var RegisterStyleAttributePlugin = class {
     apply(layer, {
       styleAttributeService
@@ -32418,7 +32418,7 @@ bool isEqual(float a, float b) {
     }
   };
 
-  // node_modules/@antv/l7-layers/es/plugins/ShaderUniformPlugin.js
+  // ../../../node_modules/@antv/l7-layers/es/plugins/ShaderUniformPlugin.js
   var ShaderUniformPlugin = class {
     constructor() {
       _defineProperty(this, "cameraService", void 0);
@@ -32552,7 +32552,7 @@ bool isEqual(float a, float b) {
     }
   };
 
-  // node_modules/@antv/l7-layers/es/plugins/UpdateModelPlugin.js
+  // ../../../node_modules/@antv/l7-layers/es/plugins/UpdateModelPlugin.js
   var UpdateModelPlugin = class {
     apply(layer) {
       layer.hooks.beforeRender.tap("UpdateModelPlugin", () => {
@@ -32570,7 +32570,7 @@ bool isEqual(float a, float b) {
     }
   };
 
-  // node_modules/@antv/l7-layers/es/plugins/UpdateStyleAttributePlugin.js
+  // ../../../node_modules/@antv/l7-layers/es/plugins/UpdateStyleAttributePlugin.js
   var UpdateStyleAttributePlugin = class {
     apply(layer, {
       styleAttributeService
@@ -32630,12 +32630,12 @@ bool isEqual(float a, float b) {
     }
   };
 
-  // node_modules/@antv/l7-layers/es/plugins/index.js
+  // ../../../node_modules/@antv/l7-layers/es/plugins/index.js
   function createPlugins() {
     return [new DataSourcePlugin(), new RegisterStyleAttributePlugin(), new FeatureScalePlugin(), new DataMappingPlugin(), new LayerStylePlugin2(), new LayerStylePlugin(), new UpdateStyleAttributePlugin(), new UpdateModelPlugin(), new MultiPassRendererPlugin(), new ShaderUniformPlugin(), new LayerAnimateStylePlugin(), new LightingPlugin(), new PixelPickingPlugin(), new LayerModelPlugin()];
   }
 
-  // node_modules/@antv/l7-layers/es/utils/blend.js
+  // ../../../node_modules/@antv/l7-layers/es/utils/blend.js
   var BlendTypes = {
     [BlendType.additive]: {
       enable: true,
@@ -32693,7 +32693,7 @@ bool isEqual(float a, float b) {
     }
   };
 
-  // node_modules/@antv/l7-layers/es/core/LayerPickService.js
+  // ../../../node_modules/@antv/l7-layers/es/core/LayerPickService.js
   var BaseLayerPickService = class {
     constructor(layer) {
       _defineProperty(this, "layer", void 0);
@@ -32790,7 +32790,7 @@ bool isEqual(float a, float b) {
     }
   };
 
-  // node_modules/@antv/l7-layers/es/core/TextureService.js
+  // ../../../node_modules/@antv/l7-layers/es/core/TextureService.js
   var TextureService = class {
     constructor(layer) {
       _defineProperty(this, "layer", void 0);
@@ -32854,7 +32854,7 @@ bool isEqual(float a, float b) {
     }
   };
 
-  // node_modules/@antv/l7-layers/es/core/BaseLayer.js
+  // ../../../node_modules/@antv/l7-layers/es/core/BaseLayer.js
   var _excluded4 = ["passes"];
   var _excluded22 = ["moduleName", "vertexShader", "fragmentShader", "defines", "inject", "triangulation", "styleOption", "pickingEnabled"];
   var {
@@ -34021,7 +34021,7 @@ bool isEqual(float a, float b) {
     }
   };
 
-  // node_modules/@antv/l7-layers/es/utils/stencil.js
+  // ../../../node_modules/@antv/l7-layers/es/utils/stencil.js
   function getStencil(mask, maskInside) {
     return {
       enable: mask,
@@ -34067,7 +34067,7 @@ bool isEqual(float a, float b) {
     };
   }
 
-  // node_modules/@antv/l7-layers/es/core/constant.js
+  // ../../../node_modules/@antv/l7-layers/es/core/constant.js
   var DefaultUniformStyleValue = {
     opacity: 1,
     stroke: [1, 0, 0, 1],
@@ -34088,7 +34088,7 @@ bool isEqual(float a, float b) {
     thetaOffset: "float"
   };
 
-  // node_modules/@antv/l7-layers/es/core/utils.js
+  // ../../../node_modules/@antv/l7-layers/es/core/utils.js
   var import_earcut = __toESM(require_earcut());
   function MultipleOfFourNumber(num) {
     return Math.max(Math.ceil(num / 4) * 4, 4);
@@ -34119,7 +34119,7 @@ bool isEqual(float a, float b) {
     return indices;
   }
 
-  // node_modules/@antv/l7-layers/es/core/BaseModel.js
+  // ../../../node_modules/@antv/l7-layers/es/core/BaseModel.js
   var DEFINE_ATTRIBUTE_LOCATION_PREFIX = "ATTRIBUTE_LOCATION_";
   var BaseModel = class {
     /**
@@ -34443,7 +34443,7 @@ layout(std140) uniform AttributeUniforms {
     };
   }
 
-  // node_modules/@antv/l7-layers/es/core/interface.js
+  // ../../../node_modules/@antv/l7-layers/es/core/interface.js
   var LinearDir = /* @__PURE__ */ (function(LinearDir2) {
     LinearDir2["VERTICAL"] = "vertical";
     LinearDir2["HORIZONTAL"] = "horizontal";
@@ -34460,10 +34460,10 @@ layout(std140) uniform AttributeUniforms {
     return SizeUnitType2;
   })({});
 
-  // node_modules/@antv/l7-layers/es/core/triangulation.js
+  // ../../../node_modules/@antv/l7-layers/es/core/triangulation.js
   var import_earcut3 = __toESM(require_earcut());
 
-  // node_modules/@antv/l7-layers/es/earth/utils.js
+  // ../../../node_modules/@antv/l7-layers/es/earth/utils.js
   var EARTH_RADIUS = 100;
   function torad(deg) {
     return deg / 180 * Math.acos(-1);
@@ -34478,7 +34478,7 @@ layout(std140) uniform AttributeUniforms {
     return [x, y, z];
   }
 
-  // node_modules/@antv/l7-layers/es/utils/extrude_polyline.js
+  // ../../../node_modules/@antv/l7-layers/es/utils/extrude_polyline.js
   var tmp = vec2_exports.create();
   var capEnd = vec2_exports.create();
   var lineA = vec2_exports.create();
@@ -34742,7 +34742,7 @@ layout(std140) uniform AttributeUniforms {
     }
   };
 
-  // node_modules/@antv/l7-layers/es/core/shape/Path.js
+  // ../../../node_modules/@antv/l7-layers/es/core/shape/Path.js
   var ShapeType3D = /* @__PURE__ */ (function(ShapeType3D2) {
     ShapeType3D2["CYLINDER"] = "cylinder";
     ShapeType3D2["SQUARECOLUMN"] = "squareColumn";
@@ -34801,7 +34801,7 @@ layout(std140) uniform AttributeUniforms {
     [ShapeType3D.PENTAGONCOLUMN]: pentagon
   };
 
-  // node_modules/@antv/l7-layers/es/core/shape/extrude.js
+  // ../../../node_modules/@antv/l7-layers/es/core/shape/extrude.js
   var import_earcut2 = __toESM(require_earcut());
   function extrude_PolygonNormal(path, needFlat = false) {
     const p1 = path[0][0];
@@ -34897,7 +34897,7 @@ layout(std140) uniform AttributeUniforms {
     return newNormal;
   }
 
-  // node_modules/@antv/l7-layers/es/core/triangulation.js
+  // ../../../node_modules/@antv/l7-layers/es/core/triangulation.js
   var centroidCache = {};
   var CENTROID_CACHE_MAX_SIZE = 500;
   function getCoordinateKey(coordinates) {
@@ -35178,7 +35178,7 @@ layout(std140) uniform AttributeUniforms {
     return geometry;
   }
 
-  // node_modules/@antv/l7-layers/es/utils/rampcolor_legend.js
+  // ../../../node_modules/@antv/l7-layers/es/utils/rampcolor_legend.js
   function rampColor2legend(rampColors, name) {
     return {
       type: rampColors.type,
@@ -35192,7 +35192,7 @@ layout(std140) uniform AttributeUniforms {
     };
   }
 
-  // node_modules/@antv/l7-layers/es/image/models/image.js
+  // ../../../node_modules/@antv/l7-layers/es/image/models/image.js
   var ImageFrag = "uniform sampler2D u_texture;\nlayout(std140) uniform commonUniforms {\n    float u_opacity:1.0;\n    float u_brightness:1.0;\n    float u_contrast:1.0;\n    float u_saturation:1.0;\n    float u_gamma:1.0;\n};\n\nin vec2 v_texCoord;\nout vec4 outputColor;\nvec3 setContrast(vec3 rgb, float contrast) {\n  vec3 color = mix(vec3(0.5), rgb, contrast);\n  color = clamp(color, 0.0, 1.0);\n  return color;\n}\nvec3 setSaturation(vec3 rgb, float adjustment) {\n  const vec3 grayVector = vec3(0.2125, 0.7154, 0.0721);\n  vec3 intensity = vec3(dot(rgb, grayVector));\n  vec3 color = mix(intensity, rgb, adjustment);\n  color = clamp(color, 0.0, 1.0);\n  return color;\n}\nvoid main() {\n  vec4 color = texture(SAMPLER_2D(u_texture),vec2(v_texCoord.x,v_texCoord.y));\n  //brightness\n  color.rgb = mix(vec3(0.0, 0.0, 0.0), color.rgb, u_brightness);\n  //contrast\n  color.rgb = setContrast(color.rgb, u_contrast);\n  // saturation\n  color.rgb = setSaturation(color.rgb, u_saturation);\n  // gamma\n  color.rgb = pow(color.rgb, vec3(u_gamma));\n  outputColor = color;\n  outputColor.a *= u_opacity;\n  if(outputColor.a < 0.01)\n    discard;\n}\n";
   var ImageVert = 'layout(location = ATTRIBUTE_LOCATION_POSITION) in vec3 a_Position;\nlayout(location = ATTRIBUTE_LOCATION_POSITION_64LOW) in vec2 a_Position64Low;\nlayout(location = ATTRIBUTE_LOCATION_UV) in vec2 a_Uv;\n\nlayout(std140) uniform commonUniforms {\n    float u_opacity:1.0;\n    float u_brightness:1.0;\n    float u_contrast:1.0;\n    float u_saturation:1.0;\n    float u_gamma:1.0;\n};\n\nout vec2 v_texCoord;\n#pragma include "projection"\n\nvoid main() {\n  v_texCoord = a_Uv;\n  vec4 project_pos = project_position(vec4(a_Position, 1.0), a_Position64Low);\n  gl_Position = project_common_position_to_clipspace(vec4(project_pos.xy, 0.0, 1.0));\n}\n';
   var ImageModel = class extends BaseModel {
@@ -35298,13 +35298,13 @@ layout(std140) uniform AttributeUniforms {
     }
   };
 
-  // node_modules/@antv/l7-layers/es/image/models/index.js
+  // ../../../node_modules/@antv/l7-layers/es/image/models/index.js
   var ImageModels = {
     image: ImageModel
   };
   var models_default = ImageModels;
 
-  // node_modules/@antv/l7-layers/es/image/index.js
+  // ../../../node_modules/@antv/l7-layers/es/image/index.js
   var ImageLayer = class extends BaseLayer {
     constructor(...args) {
       super(...args);
@@ -35330,7 +35330,7 @@ layout(std140) uniform AttributeUniforms {
     }
   };
 
-  // node_modules/@antv/l7-layers/es/line/models/arc.js
+  // ../../../node_modules/@antv/l7-layers/es/line/models/arc.js
   var arc_line_frag = '\n#define Animate 0.0\n#define LineTexture 1.0\nuniform sampler2D u_texture;\nlayout(std140) uniform commonUniorm {\n  vec4 u_animate: [ 1., 2., 1.0, 0.2 ];\n  vec4 u_dash_array;\n  vec4 u_sourceColor;\n  vec4 u_targetColor;\n  vec2 u_textSize;\n  float segmentNumber;\n  float u_lineDir: 1.0;\n  float u_icon_step: 100;\n  float u_line_texture: 0.0;\n  float u_textureBlend;\n  float u_blur : 0.9;\n  float u_line_type: 0.0;\n  float u_time;\n  float u_linearColor: 0.0;\n};\n\nin vec4 v_color;\nin vec2 v_iconMapUV;\nin vec4 v_lineData;\n//dash\nin vec4 v_dash_array;\nin float v_distance_ratio;\n\nout vec4 outputColor;\n#pragma include "picking"\n\nvoid main() {\n  if(u_dash_array!=vec4(0.0)){\n    float dashLength = mod(v_distance_ratio, v_dash_array.x + v_dash_array.y + v_dash_array.z + v_dash_array.w);\n    if(!(dashLength < v_dash_array.x || (dashLength > (v_dash_array.x + v_dash_array.y) && dashLength <  v_dash_array.x + v_dash_array.y + v_dash_array.z))) {\n      discard;\n    };\n  }\n  float animateSpeed = 0.0; // \u8FD0\u52A8\u901F\u5EA6\n  outputColor = v_color;\n  if(u_animate.x == Animate && u_line_texture != LineTexture) {\n      animateSpeed = u_time / u_animate.y;\n      float alpha =1.0 - fract( mod(1.0- v_lineData.b, u_animate.z)* (1.0/ u_animate.z) + u_time / u_animate.y);\n      alpha = (alpha + u_animate.w -1.0) / u_animate.w;\n      // alpha = smoothstep(0., 1., alpha);\n      alpha = clamp(alpha, 0.0, 1.0);\n      outputColor.a *= alpha;\n  }\n\n  // \u5F53\u5B58\u5728\u8D34\u56FE\u65F6\u5728\u5E95\u8272\u4E0A\u8D34\u4E0A\u8D34\u56FE\n  if(u_line_texture == LineTexture) { // while load texture\n    float arcRadio = smoothstep( 0.0, 1.0, (v_lineData.r / segmentNumber));\n    // float arcRadio = smoothstep( 0.0, 1.0, d_distance_ratio);\n\n    float count = v_lineData.g; // \u8D34\u56FE\u5728\u5F27\u7EBF\u4E0A\u91CD\u590D\u7684\u6570\u91CF\n\n    float time = 0.0;\n    if(u_animate.x == Animate) {\n      time = u_time / u_animate.y;\n    }\n    float redioCount = arcRadio * count;\n\n    float u = fract(redioCount - time);\n    float v = v_lineData.a; // \u6A2A\u5411 v\n    vec2 uv= v_iconMapUV / u_textSize + vec2(u, v) / u_textSize * 64.;\n\n    vec4 pattern = texture(SAMPLER_2D(u_texture), uv);\n\n    if(u_animate.x == Animate) {\n      float currentPlane = floor(redioCount - time);\n      float textureStep = floor(count * u_animate.z);\n      float a = mod(currentPlane, textureStep);\n      if(a < textureStep - 1.0) {\n        pattern = vec4(0.0);\n      }\n    }\n\n    if(u_textureBlend == 0.0) { // normal\n      pattern.a = 0.0;\n      outputColor = filterColor(outputColor + pattern);\n    } else { // replace\n        pattern.a *= v_color.a;\n        if(outputColor.a <= 0.0) {\n          pattern.a = 0.0;\n        }\n        outputColor = filterColor(pattern);\n    }\n    \n  } else {\n     outputColor = filterColor(outputColor);\n  }\n}';
   var arc_line_vert = '#define Animate (0.0)\n#define LineTexture (1.0)\n\nlayout(location = ATTRIBUTE_LOCATION_POSITION) in vec3 a_Position;\nlayout(location = ATTRIBUTE_LOCATION_COLOR) in vec4 a_Color;\nlayout(location = ATTRIBUTE_LOCATION_SIZE) in float a_Size;\nlayout(location = ATTRIBUTE_LOCATION_INSTANCE) in vec4 a_Instance;\nlayout(location = ATTRIBUTE_LOCATION_INSTANCE_64LOW) in vec4 a_Instance64Low;\nlayout(location = ATTRIBUTE_LOCATION_UV) in vec2 a_iconMapUV;\n\nlayout(std140) uniform commonUniorm {\n  vec4 u_animate: [ 1., 2., 1.0, 0.2 ];\n  vec4 u_dash_array;\n  vec4 u_sourceColor;\n  vec4 u_targetColor;\n  vec2 u_textSize;\n  float segmentNumber;\n  float u_lineDir: 1.0;\n  float u_icon_step: 100;\n  float u_line_texture: 0.0;\n  float u_textureBlend;\n  float u_blur : 0.9;\n  float u_line_type: 0.0;\n  float u_time;\n  float u_linearColor: 0.0;\n};\n\nout vec4 v_color;\nout vec2 v_iconMapUV;\nout vec4 v_lineData;\n//dash\nout vec4 v_dash_array;\nout float v_distance_ratio;\n\n#pragma include "projection"\n#pragma include "project"\n#pragma include "picking"\n\nfloat bezier3(vec3 arr, float t) {\n  float ut = 1.0 - t;\n  return (arr.x * ut + arr.y * t) * ut + (arr.y * ut + arr.z * t) * t;\n}\nvec2 midPoint(vec2 source, vec2 target, float arcThetaOffset) {\n  vec2 center = target - source;\n  float r = length(center);\n  float theta = atan(center.y, center.x);\n  float thetaOffset = arcThetaOffset;\n  float r2 = r / 2.0 / cos(thetaOffset);\n  float theta2 = theta + thetaOffset;\n  vec2 mid = vec2(r2 * cos(theta2) + source.x, r2 * sin(theta2) + source.y);\n  if (u_lineDir == 1.0) {\n    // \u6B63\u5411\n    return mid;\n  } else {\n    // \u9006\u5411\n    // (mid + vmin)/2 = (s + t)/2\n    vec2 vmid = source + target - mid;\n    return vmid;\n  }\n  // return mid;\n}\nfloat getSegmentRatio(float index) {\n  // dash: index / (segmentNumber - 1.);\n  // normal: smoothstep(0.0, 1.0, index / (segmentNumber - 1.));\n  return smoothstep(0.0, 1.0, index / (segmentNumber - 1.0));\n  //  return index / (segmentNumber - 1.);\n}\nvec2 interpolate(vec2 source, vec2 target, float t, float arcThetaOffset) {\n  // if the angularDist is PI, linear interpolation is applied. otherwise, use spherical interpolation\n  vec2 mid = midPoint(source, target, arcThetaOffset);\n  vec3 x = vec3(source.x, mid.x, target.x);\n  vec3 y = vec3(source.y, mid.y, target.y);\n  return vec2(bezier3(x, t), bezier3(y, t));\n}\nvec2 getExtrusionOffset(vec2 line_clipspace, float offset_direction) {\n  // normalized direction of the line\n  vec2 dir_screenspace = normalize(line_clipspace);\n  // rotate by 90 degrees\n  dir_screenspace = vec2(-dir_screenspace.y, dir_screenspace.x);\n  vec2 offset = dir_screenspace * offset_direction * setPickingSize(a_Size) / 2.0;\n  return offset;\n}\nvec2 getNormal(vec2 line_clipspace, float offset_direction) {\n  // normalized direction of the line\n  vec2 dir_screenspace = normalize(line_clipspace);\n  // rotate by 90 degrees\n   dir_screenspace = vec2(-dir_screenspace.y, dir_screenspace.x);\n   return dir_screenspace.xy * sign(offset_direction);\n}\n\nvoid main() {\n  //vs\u4E2D\u8BA1\u7B97\u6E10\u53D8\u8272\n  if (u_linearColor == 1.0) {\n    float d_segmentIndex = a_Position.x + 1.0; // \u5F53\u524D\u9876\u70B9\u5728\u5F27\u7EBF\u4E2D\u6240\u5904\u7684\u5206\u6BB5\u4F4D\u7F6E\n    v_color = mix(u_sourceColor, u_targetColor, d_segmentIndex / segmentNumber);\n  } else {\n    v_color = a_Color;\n  }\n  v_color.a = v_color.a * opacity;\n\n  vec2 source_world = a_Instance.rg; // \u8D77\u59CB\u70B9\n  vec2 target_world = a_Instance.ba; // \u7EC8\u70B9\n\n  float segmentIndex = a_Position.x;\n  float segmentRatio = getSegmentRatio(segmentIndex);\n\n  // \u8BA1\u7B97 dashArray \u548C distanceRatio \u8F93\u51FA\u5230\u7247\u5143\n  float total_Distance = pixelDistance(source_world, target_world) / 2.0 * PI;\n  v_dash_array = pow(2.0, 20.0 - u_Zoom) * u_dash_array / total_Distance;\n  v_distance_ratio = segmentIndex / segmentNumber;\n\n  float indexDir = mix(-1.0, 1.0, step(segmentIndex, 0.0));\n  float nextSegmentRatio = getSegmentRatio(segmentIndex + indexDir);\n  float d_distance_ratio;\n\n  if(u_animate.x == Animate) {\n      d_distance_ratio = segmentIndex / segmentNumber;\n      if(u_lineDir != 1.0) {\n        d_distance_ratio = 1.0 - d_distance_ratio;\n      }\n  }\n\n  v_lineData.b = d_distance_ratio;\n\n  vec4 source = project_position(vec4(source_world, 0, 1.), a_Instance64Low.xy);\n  vec4 target = project_position(vec4(target_world, 0, 1.), a_Instance64Low.zw);\n\n  vec2 currPos = interpolate(source.xy, target.xy, segmentRatio, thetaOffset);\n  vec2 nextPos = interpolate(source.xy, target.xy, nextSegmentRatio, thetaOffset);\n\n  vec2 offset = project_pixel(\n    getExtrusionOffset((nextPos.xy - currPos.xy) * indexDir, a_Position.y)\n  );\n\n  float d_segmentIndex = a_Position.x + 1.0; // \u5F53\u524D\u9876\u70B9\u5728\u5F27\u7EBF\u4E2D\u6240\u5904\u7684\u5206\u6BB5\u4F4D\u7F6E\n  v_lineData.r = d_segmentIndex;\n\n  if(LineTexture == u_line_texture) { // \u5F00\u542F\u8D34\u56FE\u6A21\u5F0F\n    float arcDistrance = length(source - target); // \u8D77\u59CB\u70B9\u548C\u7EC8\u70B9\u7684\u8DDD\u79BB\n    arcDistrance = project_pixel(arcDistrance);\n\n    v_iconMapUV = a_iconMapUV;\n\n    float pixelLen = project_pixel_texture(u_icon_step); // \u8D34\u56FE\u6CBF\u5F27\u7EBF\u65B9\u5411\u7684\u957F\u5EA6 - \u968F\u5730\u56FE\u7F29\u653E\u6539\u53D8\n    float texCount = floor(arcDistrance / pixelLen); // \u8D34\u56FE\u5728\u5F27\u7EBF\u4E0A\u91CD\u590D\u7684\u6570\u91CF\n    v_lineData.g = texCount;\n\n    float lineOffsetWidth = length(offset + offset * sign(a_Position.y)); // \u7EBF\u6A2A\u5411\u504F\u79FB\u7684\u8DDD\u79BB\n    float linePixelSize = project_pixel(a_Size); // \u5B9A\u70B9\u4F4D\u7F6E\u504F\u79FB\n    v_lineData.a = lineOffsetWidth / linePixelSize; // \u7EBF\u56FE\u5C42\u8D34\u56FE\u90E8\u5206\u7684 v \u5750\u6807\u503C\n  }\n\n  gl_Position = project_common_position_to_clipspace(vec4(currPos.xy + offset, 0, 1.0));\n\n  setPickingColor(a_PickingColor);\n}\n';
   var lineStyleObj = {
@@ -35594,7 +35594,7 @@ layout(std140) uniform AttributeUniforms {
     }
   };
 
-  // node_modules/@antv/l7-layers/es/line/models/arc_3d.js
+  // ../../../node_modules/@antv/l7-layers/es/line/models/arc_3d.js
   var arc3d_line_frag = '#define LineTypeSolid 0.0\n#define LineTypeDash 1.0\n#define Animate 0.0\n#define LineTexture 1.0\n\nuniform sampler2D u_texture;\n\nlayout(std140) uniform commonUniorm {\n  vec4 u_animate: [ 1., 2., 1.0, 0.2 ];\n  vec4 u_dash_array: [10.0, 5., 0, 0];\n  vec4 u_sourceColor;\n  vec4 u_targetColor;\n  vec2 u_textSize;\n  float u_globel;\n  float u_globel_radius;\n  float u_global_height: 10;\n  float segmentNumber;\n  float u_line_type: 0.0;\n  float u_icon_step: 100;\n  float u_line_texture: 0.0;\n  float u_textureBlend;\n  float u_time;\n  float u_linearColor: 0.0;\n};\n\nin vec4 v_color;\nin vec4 v_dash_array;\nin float v_segmentIndex;\nin vec2 v_iconMapUV;\nin vec4 v_line_data;\n\nout vec4 outputColor;\n\n#pragma include "picking"\n\nvoid main() {\n  float animateSpeed = 0.0; // \u8FD0\u52A8\u901F\u5EA6\n  float d_distance_ratio = v_line_data.g; // \u5F53\u524D\u70B9\u4F4D\u8DDD\u79BB\u5360\u7EBF\u603B\u957F\u7684\u6BD4\u4F8B\n  outputColor = v_color;\n\n  if(u_line_type == LineTypeDash) {\n    float flag = 0.;\n    float dashLength = mod(d_distance_ratio, v_dash_array.x + v_dash_array.y + v_dash_array.z + v_dash_array.w);\n    if(dashLength < v_dash_array.x || (dashLength > (v_dash_array.x + v_dash_array.y) && dashLength <  v_dash_array.x + v_dash_array.y + v_dash_array.z)) {\n      flag = 1.;\n    }\n    outputColor.a *=flag;\n  }\n\n  if(u_animate.x == Animate && u_line_texture != LineTexture) {\n      animateSpeed = u_time / u_animate.y;\n      float alpha =1.0 - fract( mod(1.0- d_distance_ratio, u_animate.z)* (1.0/ u_animate.z) + u_time / u_animate.y);\n\n      alpha = (alpha + u_animate.w -1.0) / u_animate.w;\n      // alpha = smoothstep(0., 1., alpha);\n      alpha = clamp(alpha, 0.0, 1.0);\n      outputColor.a *= alpha;\n\n      // u_animate\n      // x enable\n      // y duration\n      // z interval\n      // w trailLength\n  }\n\n  if(u_line_texture == LineTexture && u_line_type != LineTypeDash) { // while load texture\n    // float arcRadio = smoothstep( 0.0, 1.0, (v_segmentIndex / segmentNumber));\n    float arcRadio = v_segmentIndex / (segmentNumber - 1.0);\n    float count = v_line_data.b; // // \u8D34\u56FE\u5728\u5F27\u7EBF\u4E0A\u91CD\u590D\u7684\u6570\u91CF\n\n    float time = 0.0;\n    if(u_animate.x == Animate) {\n      time = u_time / u_animate.y;\n    }\n    float redioCount = arcRadio * count;\n\n    float u = fract(redioCount - time);\n\n    float v = v_line_data.a;  // \u7EBF\u56FE\u5C42\u8D34\u56FE\u90E8\u5206\u7684 v \u5750\u6807\u503C\n    vec2 uv= v_iconMapUV / u_textSize + vec2(u, v) / u_textSize * 64.;\n    vec4 pattern = texture(SAMPLER_2D(u_texture), uv);\n\n    if(u_animate.x == Animate) {\n      float currentPlane = floor(redioCount - time);\n      float textureStep = floor(count * u_animate.z);\n      float a = mod(currentPlane, textureStep);\n      if(a < textureStep - 1.0) {\n        pattern = vec4(0.0);\n      }\n    }\n\n    if(u_textureBlend == 0.0) { // normal\n      pattern.a = 0.0;\n      outputColor = filterColor(outputColor + pattern);\n    } else { // replace\n        pattern.a *= v_color.a;\n        if(outputColor.a <= 0.0) {\n          pattern.a = 0.0;\n          discard;\n        } else {\n          outputColor = filterColor(pattern);\n        }\n    }\n\n  } else {\n    outputColor = filterColor(outputColor);\n  }\n}\n';
   var arc3d_line_vert = '#define LineTypeSolid 0.0\n#define LineTypeDash 1.0\n#define Animate 0.0\n#define LineTexture 1.0\n\nlayout(location = ATTRIBUTE_LOCATION_POSITION) in vec3 a_Position;\nlayout(location = ATTRIBUTE_LOCATION_COLOR) in vec4 a_Color;\nlayout(location = ATTRIBUTE_LOCATION_SIZE) in float a_Size;\nlayout(location = ATTRIBUTE_LOCATION_INSTANCE) in vec4 a_Instance;\nlayout(location = ATTRIBUTE_LOCATION_INSTANCE_64LOW) in vec4 a_Instance64Low;\nlayout(location = ATTRIBUTE_LOCATION_UV) in vec2 a_iconMapUV;\n\n\nlayout(std140) uniform commonUniorm {\n  vec4 u_animate: [ 1., 2., 1.0, 0.2 ];\n  vec4 u_dash_array: [10.0, 5., 0, 0];\n  vec4 u_sourceColor;\n  vec4 u_targetColor;\n  vec2 u_textSize;\n  float u_globel;\n  float u_globel_radius;\n  float u_global_height: 10;\n  float segmentNumber;\n  float u_line_type: 0.0;\n  float u_icon_step: 100;\n  float u_line_texture: 0.0;\n  float u_textureBlend;\n  float u_time;\n  float u_linearColor: 0.0;\n};\nout vec4 v_color;\nout vec4 v_dash_array;\nout float v_segmentIndex;\nout vec2 v_iconMapUV;\nout vec4 v_line_data;\n\n#pragma include "projection"\n#pragma include "project"\n#pragma include "picking"\n\nfloat maps (float value, float start1, float stop1, float start2, float stop2) {\n  return start2 + (stop2 - start2) * ((value - start1) / (stop1 - start1));\n}\n\nfloat getSegmentRatio(float index) {\n  return smoothstep(0.0, 1.0, index / (segmentNumber - 1.0));\n}\n\nfloat paraboloid(vec2 source, vec2 target, float ratio) {\n  vec2 x = mix(source, target, ratio);\n  vec2 center = mix(source, target, 0.5);\n  float dSourceCenter = distance(source, center);\n  float dXCenter = distance(x, center);\n  return (dSourceCenter + dXCenter) * (dSourceCenter - dXCenter);\n}\n\nvec3 getPos(vec2 source, vec2 target, float segmentRatio) {\n  float vertex_height = paraboloid(source, target, segmentRatio);\n\n  return vec3(\n    mix(source, target, segmentRatio),\n    sqrt(max(0.0, vertex_height))\n  );\n}\nvec2 getExtrusionOffset(vec2 line_clipspace, float offset_direction) {\n  // normalized direction of the line\n  vec2 dir_screenspace = normalize(line_clipspace);\n  // rotate by 90 degrees\n  dir_screenspace = vec2(-dir_screenspace.y, dir_screenspace.x);\n\n  vec2 offset = dir_screenspace * offset_direction * setPickingSize(a_Size) / 2.0;\n\n  return offset;\n}\nvec2 getNormal(vec2 line_clipspace, float offset_direction) {\n  // normalized direction of the line\n  vec2 dir_screenspace = normalize(line_clipspace);\n  // rotate by 90 degrees\n  dir_screenspace = vec2(-dir_screenspace.y, dir_screenspace.x);\n  return dir_screenspace.xy * sign(offset_direction);\n}\n\nfloat torad(float deg) {\n  return (deg / 180.0) * acos(-1.0);\n}\n\nvec3 lglt2xyz(vec2 lnglat) {\n  float pi = 3.1415926;\n  // + Math.PI/2 \u662F\u4E3A\u4E86\u5BF9\u9F50\u5750\u6807\n  float lng = torad(lnglat.x) + pi / 2.0;\n  float lat = torad(lnglat.y);\n\n  // \u624B\u52A8\u589E\u52A0\u4E00\u4E9B\u504F\u79FB\uFF0C\u51CF\u8F7B\u9762\u7684\u51B2\u7A81\n  float radius = u_globel_radius;\n\n  float z = radius * cos(lat) * cos(lng);\n  float x = radius * cos(lat) * sin(lng);\n  float y = radius * sin(lat);\n  return vec3(x, y, z);\n}\n\nvoid main() {\n  //vs\u4E2D\u8BA1\u7B97\u6E10\u53D8\u8272\n  if(u_linearColor==1.0){\n    float d_segmentIndex = a_Position.x + 1.0; // \u5F53\u524D\u9876\u70B9\u5728\u5F27\u7EBF\u4E2D\u6240\u5904\u7684\u5206\u6BB5\u4F4D\u7F6E\n    v_color = mix(u_sourceColor, u_targetColor, d_segmentIndex/segmentNumber);\n  }\n  else{\n    v_color = a_Color;\n  }\n  v_color.a = v_color.a * opacity;\n  vec2 source = project_position(vec4(a_Instance.rg, 0, 0), a_Instance64Low.xy).xy;\n  vec2 target = project_position(vec4(a_Instance.ba, 0, 0), a_Instance64Low.zw).xy;\n  float segmentIndex = a_Position.x;\n  float segmentRatio = getSegmentRatio(segmentIndex);\n  float indexDir = mix(-1.0, 1.0, step(segmentIndex, 0.0));\n\n  float d_distance_ratio;\n   if(u_line_type == LineTypeDash) {\n    d_distance_ratio = segmentIndex / segmentNumber;\n    float total_Distance = pixelDistance(source, target) / 2.0 * PI;\n    v_dash_array = pow(2.0, 20.0 - u_Zoom) * u_dash_array / (total_Distance / segmentNumber * segmentIndex);\n  }\n    if(u_animate.x == Animate) {\n      d_distance_ratio = segmentIndex / segmentNumber;\n  }\n  v_line_data.g = d_distance_ratio; // \u5F53\u524D\u70B9\u4F4D\u8DDD\u79BB\u5360\u7EBF\u603B\u957F\u7684\u6BD4\u4F8B\n\n  float nextSegmentRatio = getSegmentRatio(segmentIndex + indexDir);\n  vec3 curr = getPos(source, target, segmentRatio);\n  vec3 next = getPos(source, target, nextSegmentRatio);\n  vec2 offset = getExtrusionOffset((next.xy - curr.xy) * indexDir, a_Position.y);\n  // v_normal = getNormal((next.xy - curr.xy) * indexDir, a_Position.y);\n\n\n  v_segmentIndex = a_Position.x;\n  if(LineTexture == u_line_texture && u_line_type != LineTypeDash) { // \u5F00\u542F\u8D34\u56FE\u6A21\u5F0F\n\n    float arcDistrance = length(source - target);\n    float pixelLen =  project_pixel_texture(u_icon_step);\n    v_line_data.b = floor(arcDistrance/pixelLen); // \u8D34\u56FE\u5728\u5F27\u7EBF\u4E0A\u91CD\u590D\u7684\u6570\u91CF\n\n    vec2 projectOffset = project_pixel(offset);\n    float lineOffsetWidth = length(projectOffset + projectOffset * sign(a_Position.y)); // \u7EBF\u6A2A\u5411\u504F\u79FB\u7684\u8DDD\u79BB\n    float linePixelSize = project_pixel(a_Size);  // \u5B9A\u70B9\u4F4D\u7F6E\u504F\u79FB\uFF0C\u6309\u5730\u56FE\u7B49\u7EA7\u7F29\u653E\u540E\u7684\u8DDD\u79BB\n    v_line_data.a = lineOffsetWidth/linePixelSize;  // \u7EBF\u56FE\u5C42\u8D34\u56FE\u90E8\u5206\u7684 v \u5750\u6807\u503C\n\n    v_iconMapUV = a_iconMapUV;\n  }\n\n\n  gl_Position = project_common_position_to_clipspace(vec4(curr.xy + project_pixel(offset), curr.z * thetaOffset, 1.0));\n\n  // \u5730\u7403\u6A21\u5F0F\n  if(u_globel > 0.0) {\n    vec3 startLngLat = lglt2xyz(a_Instance.rg);\n    vec3 endLngLat = lglt2xyz(a_Instance.ba);\n    float globalRadius = length(startLngLat);\n\n    vec3 lineDir = normalize(endLngLat - startLngLat);\n    vec3 midPointDir = normalize((startLngLat + endLngLat)/2.0);\n\n    // \u7EBF\u7684\u504F\u79FB\n    vec3 lnglatOffset = cross(lineDir, midPointDir) * a_Position.y;\n    // \u8BA1\u7B97\u8D77\u59CB\u70B9\u548C\u7EC8\u6B62\u70B9\u7684\u8DDD\u79BB\n    float lnglatLength = length(a_Instance.rg - a_Instance.ba)/50.0;\n    // \u8BA1\u7B97\u98DE\u7EBF\u5404\u4E2A\u8282\u70B9\u76F8\u5E94\u7684\u9AD8\u5EA6\n    float lineHeight = u_global_height * (-4.0*segmentRatio*segmentRatio + 4.0 * segmentRatio) * lnglatLength;\n    // \u5730\u7403\u70B9\u4F4D\n    vec3 globalPoint = normalize(mix(startLngLat, endLngLat, segmentRatio)) * (globalRadius + lineHeight) + lnglatOffset * a_Size;\n\n    gl_Position = u_ViewProjectionMatrix * vec4(globalPoint, 1.0);\n  }\n\n\n  setPickingColor(a_PickingColor);\n}\n';
   var lineStyleObj2 = {
@@ -35851,7 +35851,7 @@ layout(std140) uniform AttributeUniforms {
     }
   };
 
-  // node_modules/@antv/l7-layers/es/core/shape/arrow.js
+  // ../../../node_modules/@antv/l7-layers/es/core/shape/arrow.js
   var import_earcut4 = __toESM(require_earcut());
   var maxArrowWidthMap = {
     circle: 2,
@@ -36015,7 +36015,7 @@ layout(std140) uniform AttributeUniforms {
     }
   }
 
-  // node_modules/@antv/l7-layers/es/core/line_trangluation.js
+  // ../../../node_modules/@antv/l7-layers/es/core/line_trangluation.js
   function FlowHalfArrowFillTriangulation(feature2) {
     const coord = feature2.coordinates.flat();
     const tin = 1;
@@ -36152,7 +36152,7 @@ layout(std140) uniform AttributeUniforms {
     });
   }
 
-  // node_modules/@antv/l7-layers/es/line/models/flow.js
+  // ../../../node_modules/@antv/l7-layers/es/line/models/flow.js
   var flow_line_frag = '// #extension GL_OES_standard_derivatives : enable\n\nin vec4 v_color;\nout vec4 outputColor;\n\n// line texture\n\n#pragma include "picking"\n\nvoid main() {\n  outputColor = v_color;\n  outputColor = filterColor(outputColor);\n}\n';
   var flow_line_vert = 'layout(location = ATTRIBUTE_LOCATION_POSITION) in vec3 a_Position;\nlayout(location = ATTRIBUTE_LOCATION_COLOR) in vec4 a_Color;\nlayout(location = ATTRIBUTE_LOCATION_SIZE) in vec2 a_Size;\nlayout(location = ATTRIBUTE_LOCATION_INSTANCE) in vec4 a_Instance;\nlayout(location = ATTRIBUTE_LOCATION_INSTANCE_64LOW) in vec4 a_Instance64Low;\nlayout(location = ATTRIBUTE_LOCATION_NORMAL) in vec3 a_Normal;\n\nlayout(std140) uniform commonUniorm {\n  float u_gap_width: 1.0;\n  float u_stroke_width: 1.0;\n  float u_stroke_opacity: 1.0;\n};\n\n#pragma include "projection"\n#pragma include "project"\n#pragma include "picking"\n\nout vec4 v_color;\n\nvec2 project_pixel_offset(vec2 offsets) {\n  vec2 data = project_pixel(offsets);\n\n  return vec2(data.x, -data.y);\n}\n\nvec2 line_dir(vec2 target, vec2 source) {\n  return normalize(ProjectFlat(target) - ProjectFlat(source));\n}\n\n\nvoid main() {\n  // \u900F\u660E\u5EA6\u8BA1\u7B97\n  vec2 source_world = a_Instance.rg; // \u8D77\u70B9\n  vec2 target_world = a_Instance.ba; // \u7EC8\u70B9\n  vec2 flowlineDir = line_dir(target_world, source_world);\n  vec2 perpendicularDir = vec2(-flowlineDir.y, flowlineDir.x);\n\n  vec2 position = mix(source_world, target_world, a_Position.x);\n  vec2 position64Low = mix(a_Instance64Low.rg, a_Instance64Low.ba, a_Position.x);\n\n  float lengthCommon = length(\n    project_position(vec4(target_world, 0, 1)) - project_position(vec4(source_world, 0, 1))\n  );\n  vec2 offsetDistances = a_Size.x * project_pixel_offset(vec2(a_Position.y, a_Position.z)); // Mapbox || \u9AD8\u5FB7\n  vec2 limitedOffsetDistances = clamp(\n    offsetDistances,\n    project_pixel(-lengthCommon * 0.2),\n    project_pixel(lengthCommon * 0.2)\n  );\n\n  float startOffsetCommon = project_pixel(offsets[0]);\n  float endOffsetCommon = project_pixel(offsets[1]);\n  float endpointOffset = mix(\n    clamp(startOffsetCommon, 0.0, lengthCommon * 0.2),\n    -clamp(endOffsetCommon, 0.0, lengthCommon * 0.2),\n    a_Position.x\n  );\n\n  vec2 normalsCommon = u_stroke_width * project_pixel_offset(vec2(a_Normal.x, a_Normal.y));\n\n  float gapCommon = -1. * project_pixel(u_gap_width);\n  vec3 offsetCommon = vec3(\n    flowlineDir * (limitedOffsetDistances[1] + normalsCommon.y + endpointOffset * 1.05) -\n      perpendicularDir * (limitedOffsetDistances[0] + gapCommon + normalsCommon.x),\n    0.0\n  );\n\n  vec4 project_pos = project_position(vec4(position.xy, 0, 1.0), position64Low);\n\n  vec4 fillColor = vec4(a_Color.rgb, a_Color.a * opacity);\n  v_color = mix(fillColor, vec4(u_stroke.xyz, u_stroke.w * fillColor.w * u_stroke_opacity), a_Normal.z);\n\n  gl_Position = project_common_position_to_clipspace(vec4(project_pos.xy +  offsetCommon.xy, 0., 1.0));\n\n  setPickingColor(a_PickingColor);\n}\n';
   var FlowLineModel = class extends BaseModel {
@@ -36284,7 +36284,7 @@ layout(std140) uniform AttributeUniforms {
     }
   };
 
-  // node_modules/@antv/l7-layers/es/line/models/great_circle.js
+  // ../../../node_modules/@antv/l7-layers/es/line/models/great_circle.js
   var line_arc_frag = '#define LineTypeSolid 0.0\n#define LineTypeDash 1.0\n#define Animate 0.0\n#define LineTexture 1.0\n\nuniform sampler2D u_texture;\nlayout(std140) uniform commonUniorm {\n  vec4 u_animate: [ 1., 2., 1.0, 0.2 ];\n  vec4 u_dash_array: [10.0, 5., 0, 0];\n  vec4 u_sourceColor;\n  vec4 u_targetColor;\n  vec2 u_textSize;\n  float segmentNumber;\n  float u_line_type: 0.0;\n  float u_icon_step: 100;\n  float u_line_texture: 0.0;\n  float u_textureBlend;\n  float u_time;\n  float u_linearColor: 0;\n};\n\nin vec4 v_dash_array;\nin vec4 v_color;\nin vec2 v_iconMapUV;\nin vec4 v_line_data;\nin float v_distance_ratio;\n\nout vec4 outputColor;\n#pragma include "picking"\n#pragma include "project"\n#pragma include "projection"\n\nvoid main() {\n\n  float animateSpeed = 0.0;\n  float d_segmentIndex = v_line_data.g;\n\n  // \u8BBE\u7F6E\u5F27\u7EBF\u7684\u5E95\u8272\n  if(u_linearColor == 1.0) { // \u4F7F\u7528\u6E10\u53D8\u989C\u8272\n    outputColor = mix(u_sourceColor, u_targetColor, d_segmentIndex/segmentNumber);\n    outputColor.a *= v_color.a;\n  } else { // \u4F7F\u7528 color \u65B9\u6CD5\u4F20\u5165\u7684\u989C\u8272\n    outputColor = v_color;\n  }\n\n  // float blur = 1.- smoothstep(u_blur, 1., length(v_normal.xy));\n  // float blur = smoothstep(1.0, u_blur, length(v_normal.xy));\n  if(u_line_type == LineTypeDash) {\n    float dashLength = mod(v_distance_ratio, v_dash_array.x + v_dash_array.y + v_dash_array.z + v_dash_array.w);\n    if(dashLength < v_dash_array.x || (dashLength > (v_dash_array.x + v_dash_array.y) && dashLength <  v_dash_array.x + v_dash_array.y + v_dash_array.z)) {\n      // \u5B9E\u7EBF\u90E8\u5206\n    } else {\n      // \u865A\u7EBF\u90E8\u5206\n      discard;\n    };\n  }\n\n  // \u8BBE\u7F6E\u5F27\u7EBF\u7684\u52A8\u753B\u6A21\u5F0F\n  if(u_animate.x == Animate) {\n      animateSpeed = u_time / u_animate.y;\n      float alpha =1.0 - fract( mod(1.0- v_distance_ratio, u_animate.z)* (1.0/ u_animate.z) + u_time / u_animate.y);\n      alpha = (alpha + u_animate.w -1.0) / u_animate.w;\n      alpha = smoothstep(0., 1., alpha);\n      outputColor.a *= alpha;\n  }\n\n  // \u8BBE\u7F6E\u5F27\u7EBF\u7684\u8D34\u56FE\n  if(LineTexture == u_line_texture && u_line_type != LineTypeDash) {\n    float arcRadio = smoothstep( 0.0, 1.0, (d_segmentIndex / (segmentNumber - 1.0)));\n    // float arcRadio = d_segmentIndex / (segmentNumber - 1.0);\n    float count = v_line_data.b; // \u8D34\u56FE\u5728\u5F27\u7EBF\u4E0A\u91CD\u590D\u7684\u6570\u91CF\n    float u = fract(arcRadio * count - animateSpeed * count);\n    // float u = fract(arcRadio * count - animateSpeed);\n    if(u_animate.x == Animate) {\n      u = outputColor.a/v_color.a;\n    }\n\n    float v = v_line_data.a; // \u7EBF\u56FE\u5C42\u8D34\u56FE\u90E8\u5206\u7684 v \u5750\u6807\u503C\n\n    vec2 uv= v_iconMapUV / u_textSize + vec2(u, v) / u_textSize * 64.;\n    vec4 pattern = texture(SAMPLER_2D(u_texture), uv);\n\n    // \u8BBE\u7F6E\u8D34\u56FE\u548C\u5E95\u8272\u7684\u53E0\u52A0\u6A21\u5F0F\n    if(u_textureBlend == 0.0) { // normal\n      pattern.a = 0.0;\n      outputColor = filterColor(outputColor + pattern);\n    } else { // replace\n        pattern.a *= v_color.a;\n        if(outputColor.a <= 0.0) {\n          pattern.a = 0.0;\n        }\n        outputColor = filterColor(pattern);\n    }\n  } else {\n    outputColor = filterColor(outputColor);\n  }\n\n  // gl_FragColor = filterColor(gl_FragColor);\n}\n';
   var line_arc2d_vert = '#define LineTypeSolid (0.0)\n#define LineTypeDash (1.0)\n#define Animate (0.0)\n#define LineTexture (1.0)\n\nlayout(location = ATTRIBUTE_LOCATION_POSITION) in vec3 a_Position;\nlayout(location = ATTRIBUTE_LOCATION_COLOR) in vec4 a_Color;\nlayout(location = ATTRIBUTE_LOCATION_SIZE) in float a_Size;\nlayout(location = ATTRIBUTE_LOCATION_INSTANCE) in vec4 a_Instance;\nlayout(location = ATTRIBUTE_LOCATION_INSTANCE_64LOW) in vec4 a_Instance64Low;\nlayout(location = ATTRIBUTE_LOCATION_UV) in vec2 a_iconMapUV;\n\nlayout(std140) uniform commonUniorm {\n  vec4 u_animate: [ 1., 2., 1.0, 0.2 ];\n  vec4 u_dash_array: [10.0, 5., 0, 0];\n  vec4 u_sourceColor;\n  vec4 u_targetColor;\n  vec2 u_textSize;\n  float segmentNumber;\n  float u_line_type: 0.0;\n  float u_icon_step: 100;\n  float u_line_texture: 0.0;\n  float u_textureBlend;\n  float u_time;\n  float u_linearColor: 0;\n};\n\nout vec4 v_dash_array;\nout vec4 v_color;\nout vec2 v_iconMapUV;\nout vec4 v_line_data;\nout float v_distance_ratio;\n\n#pragma include "projection"\n#pragma include "project"\n#pragma include "picking"\n\nfloat maps(float value, float start1, float stop1, float start2, float stop2) {\n  return start2 + (stop2 - start2) * ((value - start1) / (stop1 - start1));\n}\n\nfloat getSegmentRatio(float index) {\n  return index / (segmentNumber - 1.0);\n}\n\nfloat paraboloid(vec2 source, vec2 target, float ratio) {\n  vec2 x = mix(source, target, ratio);\n  vec2 center = mix(source, target, 0.5);\n  float dSourceCenter = distance(source, center);\n  float dXCenter = distance(x, center);\n  return (dSourceCenter + dXCenter) * (dSourceCenter - dXCenter);\n}\n\nvec3 getPos(vec2 source, vec2 target, float segmentRatio) {\n  float vertex_height = paraboloid(source, target, segmentRatio);\n\n  return vec3(mix(source, target, segmentRatio), sqrt(max(0.0, vertex_height)));\n}\nvec2 getExtrusionOffset(vec2 line_clipspace, float offset_direction) {\n  // normalized direction of the line\n  vec2 dir_screenspace = normalize(line_clipspace);\n  // rotate by 90 degrees\n  dir_screenspace = vec2(-dir_screenspace.y, dir_screenspace.x);\n  vec2 offset = dir_screenspace * offset_direction * setPickingSize(a_Size) / 2.0;\n  return offset;\n}\nvec2 getNormal(vec2 line_clipspace, float offset_direction) {\n  // normalized direction of the line\n  vec2 dir_screenspace = normalize(line_clipspace);\n  // rotate by 90 degrees\n  dir_screenspace = vec2(-dir_screenspace.y, dir_screenspace.x);\n  return dir_screenspace.xy * sign(offset_direction);\n}\nfloat getAngularDist(vec2 source, vec2 target) {\n  vec2 delta = source - target;\n  vec2 sin_half_delta = sin(delta / 2.0);\n  float a =\n    sin_half_delta.y * sin_half_delta.y +\n    cos(source.y) * cos(target.y) * sin_half_delta.x * sin_half_delta.x;\n  return 2.0 * atan(sqrt(a), sqrt(1.0 - a));\n}\n\nvec2 midPoint(vec2 source, vec2 target) {\n  vec2 center = target - source;\n  float r = length(center);\n  float theta = atan(center.y, center.x);\n  float thetaOffset = 0.314;\n  float r2 = r / 2.0 / cos(thetaOffset);\n  float theta2 = theta + thetaOffset;\n  vec2 mid = vec2(r2 * cos(theta2) + source.x, r2 * sin(theta2) + source.y);\n  return mid;\n}\nfloat bezier3(vec3 arr, float t) {\n  float ut = 1.0 - t;\n  return (arr.x * ut + arr.y * t) * ut + (arr.y * ut + arr.z * t) * t;\n}\n\nvec2 interpolate(vec2 source, vec2 target, float angularDist, float t) {\n  if (abs(angularDist - PI) < 0.001) {\n    return (1.0 - t) * source + t * target;\n  }\n  float a = sin((1.0 - t) * angularDist) / sin(angularDist);\n  float b = sin(t * angularDist) / sin(angularDist);\n  vec2 sin_source = sin(source);\n  vec2 cos_source = cos(source);\n  vec2 sin_target = sin(target);\n  vec2 cos_target = cos(target);\n  float x = a * cos_source.y * cos_source.x + b * cos_target.y * cos_target.x;\n  float y = a * cos_source.y * sin_source.x + b * cos_target.y * sin_target.x;\n  float z = a * sin_source.y + b * sin_target.y;\n  return vec2(atan(y, x), atan(z, sqrt(x * x + y * y)));\n\n}\n\nvoid main() {\n  v_color = a_Color;\n  v_color.a = v_color.a * opacity;\n  vec2 source = radians(a_Instance.rg);\n  vec2 target = radians(a_Instance.ba);\n  float angularDist = getAngularDist(source, target);\n  float segmentIndex = a_Position.x;\n  float segmentRatio = getSegmentRatio(segmentIndex);\n  float indexDir = mix(-1.0, 1.0, step(segmentIndex, 0.0));\n\n  if (u_line_type == LineTypeDash) {\n    v_distance_ratio = segmentIndex / segmentNumber;\n    float total_Distance = pixelDistance(source, target) / 2.0 * PI;\n    total_Distance = total_Distance * 16.0; // total_Distance*16.0 \u8C03\u6574\u9ED8\u8BA4\u7684\u6548\u679C\n    v_dash_array = pow(2.0, 20.0 - u_Zoom) * u_dash_array / total_Distance;\n  }\n\n  if (u_animate.x == Animate) {\n    v_distance_ratio = segmentIndex / segmentNumber;\n  }\n\n  float nextSegmentRatio = getSegmentRatio(segmentIndex + indexDir);\n  v_distance_ratio = segmentIndex / segmentNumber;\n\n  vec4 curr = project_position(vec4(degrees(interpolate(source, target, angularDist, segmentRatio)), 0.0, 1.0), a_Instance64Low.xy);\n  vec4 next = project_position(vec4(degrees(interpolate(source, target, angularDist, nextSegmentRatio)), 0.0, 1.0), a_Instance64Low.zw);\n\n  // v_normal = getNormal((next.xy - curr.xy) * indexDir, a_Position.y);\n  vec2 offset = project_pixel(getExtrusionOffset((next.xy - curr.xy) * indexDir, a_Position.y));\n  //  vec4 project_pos = project_position(vec4(curr.xy, 0, 1.0));\n  // gl_Position = project_common_position_to_clipspace(vec4(curr.xy + offset, curr.z, 1.0));\n\n  v_line_data.g = a_Position.x; // \u8BE5\u9876\u70B9\u5728\u5F27\u7EBF\u4E0A\u7684\u5206\u6BB5\u6392\u5E8F\n  if (LineTexture == u_line_texture) {\n    float d_arcDistrance = length(source - target);\n    d_arcDistrance = project_pixel(d_arcDistrance);\n\n    float d_pixelLen = project_pixel(u_icon_step) / 8.0;\n    v_line_data.b = floor(d_arcDistrance / d_pixelLen); // \u8D34\u56FE\u5728\u5F27\u7EBF\u4E0A\u91CD\u590D\u7684\u6570\u91CF\n\n    float lineOffsetWidth = length(offset + offset * sign(a_Position.y)); // \u7EBF\u6A2A\u5411\u504F\u79FB\u7684\u8DDD\u79BB\n    float linePixelSize = project_pixel(a_Size); // \u5B9A\u70B9\u4F4D\u7F6E\u504F\u79FB\uFF0C\u6309\u5730\u56FE\u7B49\u7EA7\u7F29\u653E\u540E\u7684\u8DDD\u79BB\n    v_line_data.a = lineOffsetWidth / linePixelSize; // \u7EBF\u56FE\u5C42\u8D34\u56FE\u90E8\u5206\u7684 v \u5750\u6807\u503C\n\n    v_iconMapUV = a_iconMapUV;\n  }\n\n  gl_Position = project_common_position_to_clipspace(vec4(curr.xy + offset, 0, 1.0));\n  setPickingColor(a_PickingColor);\n}\n\n';
   var lineStyleObj3 = {
@@ -36513,7 +36513,7 @@ layout(std140) uniform AttributeUniforms {
     }
   };
 
-  // node_modules/@antv/l7-layers/es/line/models/line.js
+  // ../../../node_modules/@antv/l7-layers/es/line/models/line.js
   var line_frag = '// #extension GL_OES_standard_derivatives : enable\n#define Animate 0.0\n#define LineTexture 1.0\n\nuniform sampler2D u_texture;\nlayout(std140) uniform commonUniorm {\n  vec4 u_animate: [ 1., 2., 1.0, 0.2 ];\n  vec4 u_dash_array;\n  vec4 u_blur;\n  vec4 u_sourceColor;\n  vec4 u_targetColor;\n  vec2 u_textSize;\n  float u_icon_step: 100;\n  float u_heightfixed: 0.0;\n  float u_vertexScale: 1.0;\n  float u_raisingHeight: 0.0;\n  float u_strokeWidth: 0.0;\n  float u_textureBlend;\n  float u_line_texture;\n  float u_linearDir: 1.0;\n  float u_linearColor: 0;\n  float u_time;\n};\n\nin vec4 v_color;\nin vec4 v_stroke;\n// dash\nin vec4 v_dash_array;\nin float v_d_distance_ratio;\nin vec2 v_iconMapUV;\nin vec4 v_texture_data;\n\nout vec4 outputColor;\n#pragma include "picking"\n\n// [animate, duration, interval, trailLength],\nvoid main() {\n  if(u_dash_array!=vec4(0.0)){\n    float dashLength = mod(v_d_distance_ratio, v_dash_array.x + v_dash_array.y + v_dash_array.z + v_dash_array.w);\n    if(!(dashLength < v_dash_array.x || (dashLength > (v_dash_array.x + v_dash_array.y) && dashLength <  v_dash_array.x + v_dash_array.y + v_dash_array.z))) {\n      // \u865A\u7EBF\u90E8\u5206\n      discard;\n    };\n  }\n  float animateSpeed = 0.0; // \u8FD0\u52A8\u901F\u5EA6\n  float d_distance_ratio = v_texture_data.r; // \u5F53\u524D\u70B9\u4F4D\u8DDD\u79BB\u5360\u7EBF\u603B\u957F\u7684\u6BD4\u4F8B\n  if(u_linearDir < 1.0) {\n    d_distance_ratio = v_texture_data.a;\n  }\n  if(u_linearColor == 1.0) { // \u4F7F\u7528\u6E10\u53D8\u989C\u8272\n    outputColor = mix(u_sourceColor, u_targetColor, d_distance_ratio);\n    outputColor.a *= v_color.a;\n  } else { // \u4F7F\u7528 color \u65B9\u6CD5\u4F20\u5165\u7684\u989C\u8272\n     outputColor = v_color;\n  }\n  // anti-alias\n  // float blur = 1.0 - smoothstep(u_blur, 1., length(v_normal.xy));\n  if(u_animate.x == Animate) {\n      animateSpeed = u_time / u_animate.y;\n       float alpha =1.0 - fract( mod(1.0- d_distance_ratio, u_animate.z)* (1.0/ u_animate.z) + animateSpeed);\n      alpha = (alpha + u_animate.w -1.0) / u_animate.w;\n      alpha = smoothstep(0., 1., alpha);\n      outputColor.a *= alpha;\n  }\n\n  if(u_line_texture == LineTexture) { // while load texture\n    float aDistance = v_texture_data.g;      // \u5F53\u524D\u9876\u70B9\u7684\u8DDD\u79BB\n    float d_texPixelLen = v_texture_data.b;  // \u8D34\u56FE\u7684\u50CF\u7D20\u957F\u5EA6\uFF0C\u6839\u636E\u5730\u56FE\u5C42\u7EA7\u7F29\u653E\n    float u = fract(mod(aDistance, d_texPixelLen)/d_texPixelLen - animateSpeed);\n    float v = v_texture_data.a;  // \u7EBF\u56FE\u5C42\u8D34\u56FE\u90E8\u5206\u7684 v \u5750\u6807\u503C\n\n    // v = max(smoothstep(0.95, 1.0, v), v);\n    vec2 uv= v_iconMapUV / u_textSize + vec2(u, v) / u_textSize * 64.;\n     vec4 pattern = texture(SAMPLER_2D(u_texture), uv);\n\n    if(u_textureBlend == 0.0) { // normal\n      pattern.a = 0.0;\n      outputColor += pattern;\n    } else { // replace\n        pattern.a *= v_color.a;\n        if(outputColor.a <= 0.0) {\n          pattern.a = 0.0;\n        }\n        outputColor = pattern;\n    }\n  } \n\n  float v = v_texture_data.a;\n  float strokeWidth = min(0.5, u_strokeWidth);\n  // \u7ED8\u5236 border\n  if(strokeWidth > 0.01) {\n    float borderOuterWidth = strokeWidth / 2.0;\n\n\n    if(v >= 1.0 - strokeWidth || v <= strokeWidth) {\n      if(v > strokeWidth) { // \u5916\u4FA7\n        float linear = smoothstep(0.0, 1.0, (v - (1.0 - strokeWidth))/strokeWidth);\n        //  float linear = step(0.0, (v - (1.0 - borderWidth))/borderWidth);\n        outputColor.rgb = mix(outputColor.rgb, v_stroke.rgb, linear);\n      } else if(v <= strokeWidth) {\n        float linear = smoothstep(0.0, 1.0, v/strokeWidth);\n        outputColor.rgb = mix(v_stroke.rgb, outputColor.rgb, linear);\n      }\n    }\n\n    if(v < borderOuterWidth) {\n      outputColor.a = mix(0.0, outputColor.a, v/borderOuterWidth);\n    } else if(v > 1.0 - borderOuterWidth) {\n      outputColor.a = mix(outputColor.a, 0.0, (v - (1.0 - borderOuterWidth))/borderOuterWidth);\n    }\n  }\n\n  // blur\n  float blurV = v_texture_data.a;\n  if(blurV < 0.5) {\n    outputColor.a *= mix(u_blur.r, u_blur.g, blurV/0.5);\n  } else {\n    outputColor.a *= mix(u_blur.g, u_blur.b, (blurV - 0.5)/0.5);\n  }\n  \n  outputColor = filterColor(outputColor);\n}\n';
   var line_vert = '#define Animate (0.0)\n\nlayout(location = ATTRIBUTE_LOCATION_POSITION) in vec3 a_Position;\nlayout(location = ATTRIBUTE_LOCATION_POSITION_64LOW) in vec2 a_Position64Low;\nlayout(location = ATTRIBUTE_LOCATION_COLOR) in vec4 a_Color;\nlayout(location = ATTRIBUTE_LOCATION_SIZE) in vec2 a_Size;\nlayout(location = ATTRIBUTE_LOCATION_DISTANCE_INDEX) in vec3 a_DistanceAndIndexAndMiter;\nlayout(location = ATTRIBUTE_LOCATION_NORMAL) in vec4 a_Normal_Total_Distance;\nlayout(location = ATTRIBUTE_LOCATION_UV) in vec2 a_iconMapUV;\n\nlayout(std140) uniform commonUniorm {\n  vec4 u_animate: [ 1., 2., 1.0, 0.2 ];\n  vec4 u_dash_array;\n  vec4 u_blur;\n  vec4 u_sourceColor;\n  vec4 u_targetColor;\n  vec2 u_textSize;\n  float u_icon_step: 100;\n  float u_heightfixed: 0.0;\n  float u_vertexScale: 1.0;\n  float u_raisingHeight: 0.0;\n  float u_strokeWidth: 0.0;\n  float u_textureBlend;\n  float u_line_texture;\n  float u_linearDir: 1.0;\n  float u_linearColor: 0;\n  float u_time;\n};\n\nout vec4 v_color;\nout vec4 v_stroke;\n//dash\nout vec4 v_dash_array;\nout float v_d_distance_ratio;\n// texV \u7EBF\u56FE\u5C42 - \u8D34\u56FE\u90E8\u5206\u7684 v \u5750\u6807\uFF08\u7EBF\u7684\u5BBD\u5EA6\u65B9\u5411\uFF09\nout vec2 v_iconMapUV;\nout vec4 v_texture_data;\n\n#pragma include "projection"\n#pragma include "picking"\n\nvoid main() {\n  vec2 a_DistanceAndIndex = a_DistanceAndIndexAndMiter.xy;\n  float a_Miter = a_DistanceAndIndexAndMiter.z;\n  vec3 a_Normal = a_Normal_Total_Distance.xyz;\n  float a_Total_Distance = a_Normal_Total_Distance.w;\n  //dash\u8F93\u51FA\n  v_dash_array = pow(2.0, 20.0 - u_Zoom) * u_dash_array / a_Total_Distance;\n  v_d_distance_ratio = a_DistanceAndIndex.x / a_Total_Distance;\n\n  // cal style mapping - \u6570\u636E\u7EB9\u7406\u6620\u5C04\u90E8\u5206\u7684\u8BA1\u7B97\n  float d_texPixelLen; // \u8D34\u56FE\u7684\u50CF\u7D20\u957F\u5EA6\uFF0C\u6839\u636E\u5730\u56FE\u5C42\u7EA7\u7F29\u653E\n  v_iconMapUV = a_iconMapUV;\n  d_texPixelLen = project_float_pixel(u_icon_step);\n\n  v_color = a_Color;\n  v_color.a *= opacity;\n  v_stroke = stroke;\n\n  vec3 size = a_Miter * setPickingSize(a_Size.x) * a_Normal;\n\n  vec2 offset = project_pixel(size.xy);\n\n  float lineDistance = a_DistanceAndIndex.x;\n  float currentLinePointRatio = lineDistance / a_Total_Distance;\n\n  float lineOffsetWidth = length(offset + offset * sign(a_Miter)); // \u7EBF\u6A2A\u5411\u504F\u79FB\u7684\u8DDD\u79BB\uFF08\u5411\u4E24\u4FA7\u504F\u79FB\u7684\u548C\uFF09\n  float linePixelSize = project_pixel(a_Size.x) * 2.0; // \u5B9A\u70B9\u4F4D\u7F6E\u504F\u79FB\uFF0C\u6309\u5730\u56FE\u7B49\u7EA7\u7F29\u653E\u540E\u7684\u8DDD\u79BB \u5355\u4FA7 * 2\n  float texV = lineOffsetWidth / linePixelSize; // \u7EBF\u56FE\u5C42\u8D34\u56FE\u90E8\u5206\u7684 v \u5750\u6807\u503C\n\n  v_texture_data = vec4(currentLinePointRatio, lineDistance, d_texPixelLen, texV);\n  // \u8BBE\u7F6E\u6570\u636E\u96C6\u7684\u53C2\u6570\n\n  vec4 project_pos = project_position(vec4(a_Position.xy, 0, 1.0), a_Position64Low);\n\n  // gl_Position = project_common_position_to_clipspace(vec4(project_pos.xy + offset, a_Size.y, 1.0));\n\n  float h = float(a_Position.z) * u_vertexScale; // \u7EBF\u9876\u70B9\u7684\u9AD8\u5EA6 - \u517C\u5BB9\u4E0D\u5B58\u5728\u7B2C\u4E09\u4E2A\u6570\u503C\u7684\u60C5\u51B5 vertex height\n  float lineHeight = a_Size.y; // size \u7B2C\u4E8C\u4E2A\u53C2\u6570\u4EE3\u8868\u7684\u9AD8\u5EA6 [linewidth, lineheight]\n\n  // \u517C\u5BB9 mapbox \u5728\u7EBF\u9AD8\u5EA6\u4E0A\u7684\u6548\u679C\u8868\u73B0\u57FA\u672C\u4E00\u81F4\n  if (\n    u_CoordinateSystem == COORDINATE_SYSTEM_LNGLAT ||\n    u_CoordinateSystem == COORDINATE_SYSTEM_LNGLAT_OFFSET\n  ) {\n    // mapbox\n    // \u4FDD\u6301\u9AD8\u5EA6\u76F8\u5BF9\u4E0D\u53D8\n    float mapboxZoomScale = 4.0 / pow(2.0, 21.0 - u_Zoom);\n    h *= mapboxZoomScale;\n    h += u_raisingHeight * mapboxZoomScale;\n    if (u_heightfixed > 0.0) {\n      lineHeight *= mapboxZoomScale;\n    }\n  }\n\n  gl_Position = project_common_position_to_clipspace(\n    vec4(project_pos.xy + offset, lineHeight + h, 1.0)\n  );\n\n  setPickingColor(a_PickingColor);\n}\n';
   var LineModel = class extends BaseModel {
@@ -36774,7 +36774,7 @@ layout(std140) uniform AttributeUniforms {
     }
   };
 
-  // node_modules/@antv/l7-layers/es/line/models/simple_line.js
+  // ../../../node_modules/@antv/l7-layers/es/line/models/simple_line.js
   var simple_line_frag = "\nlayout(std140) uniform commonUniorm {\n  vec4 u_sourceColor;\n  vec4 u_targetColor;\n  vec4 u_dash_array;\n  float u_vertexScale: 1.0;\n  float u_linearColor: 0;\n};\nin float v_distanceScale;\nin vec4 v_color;\n//dash\nin vec4 v_dash_array;\n\nout vec4 outputColor;\nvoid main() {\n  if(u_dash_array!=vec4(0.0)){\n    float dashLength = mod(v_distanceScale, v_dash_array.x + v_dash_array.y + v_dash_array.z + v_dash_array.w);\n    if(!(dashLength < v_dash_array.x || (dashLength > (v_dash_array.x + v_dash_array.y) && dashLength <  v_dash_array.x + v_dash_array.y + v_dash_array.z))) {\n      // \u865A\u7EBF\u90E8\u5206\n      discard;\n    };\n  }\n  if(u_linearColor==1.0){\n    outputColor = mix(u_sourceColor, u_targetColor, v_distanceScale);\n    outputColor.a *= v_color.a; // \u5168\u5C40\u900F\u660E\u5EA6\n  }\n  else{\n    outputColor = v_color;\n  }\n}\n";
   var simple_line_vert = 'layout(location = ATTRIBUTE_LOCATION_POSITION) in vec3 a_Position;\nlayout(location = ATTRIBUTE_LOCATION_POSITION_64LOW) in vec2 a_Position64Low;\nlayout(location = ATTRIBUTE_LOCATION_COLOR) in vec4 a_Color;\nlayout(location = ATTRIBUTE_LOCATION_SIZE) in vec4 a_SizeDistanceAndTotalDistance;\n\nlayout(std140) uniform commonUniorm {\n  vec4 u_sourceColor;\n  vec4 u_targetColor;\n  vec4 u_dash_array;\n  float u_vertexScale: 1.0;\n  float u_linearColor: 0;\n};\n\n#pragma include "projection"\n#pragma include "picking"\n\nout vec4 v_color;\nout float v_distanceScale;\nout vec4 v_dash_array;\n\nvoid main() {\n  //dash\u8F93\u51FA\n  v_dash_array = pow(2.0, 20.0 - u_Zoom) * u_dash_array / a_SizeDistanceAndTotalDistance.a;\n\n  v_color = a_Color;\n  v_distanceScale = a_SizeDistanceAndTotalDistance.b / a_SizeDistanceAndTotalDistance.a;\n  v_color.a = v_color.a * opacity;\n  vec4 project_pos = project_position(vec4(a_Position.xy, 0, 1.0), a_Position64Low);\n\n  float h = float(a_Position.z) * u_vertexScale; // \u7EBF\u9876\u70B9\u7684\u9AD8\u5EA6 - \u517C\u5BB9\u4E0D\u5B58\u5728\u7B2C\u4E09\u4E2A\u6570\u503C\u7684\u60C5\u51B5\n\n  float lineHeight = a_SizeDistanceAndTotalDistance.y;\n  // \u517C\u5BB9 mapbox \u5728\u7EBF\u9AD8\u5EA6\u4E0A\u7684\u6548\u679C\u8868\u73B0\u57FA\u672C\u4E00\u81F4\n  if (\n    u_CoordinateSystem == COORDINATE_SYSTEM_LNGLAT ||\n    u_CoordinateSystem == COORDINATE_SYSTEM_LNGLAT_OFFSET\n  ) {\n    // \u4FDD\u6301\u9AD8\u5EA6\u76F8\u5BF9\u4E0D\u53D8\n    h *= 2.0 / pow(2.0, 20.0 - u_Zoom);\n  }\n\n  gl_Position = project_common_position_to_clipspace(vec4(project_pos.xy, lineHeight + h, 1.0));\n  gl_PointSize = 10.0;\n\n}\n';
   var SimpleLineModel = class extends BaseModel {
@@ -36883,7 +36883,7 @@ layout(std140) uniform AttributeUniforms {
     }
   };
 
-  // node_modules/@antv/l7-layers/es/line/models/wall.js
+  // ../../../node_modules/@antv/l7-layers/es/line/models/wall.js
   var line_frag2 = '#define Animate 0.0\n#define LineTexture 1.0\n\n// line texture\n\nuniform sampler2D u_texture;\nlayout(std140) uniform commonUniorm {\n  vec4 u_animate: [ 1., 2., 1.0, 0.2 ];\n  vec4 u_sourceColor;\n  vec4 u_targetColor;\n  vec2 u_textSize;\n  float u_icon_step: 100;\n  float u_heightfixed;\n  float u_linearColor: 0;\n  float u_line_texture;\n  float u_textureBlend;\n  float u_iconStepCount;\n  float u_time;\n};\n\n\nin vec2 v_iconMapUV;\nin vec4 v_color;\nin float v_blur;\nin vec4 v_dataset;\n\nout vec4 outputColor;\n\n#pragma include "picking"\n\nvoid main() {\n  float animateSpeed = 0.0; // \u8FD0\u52A8\u901F\u5EA6\n  float d_distance_ratio = v_dataset.r; // \u5F53\u524D\u70B9\u4F4D\u8DDD\u79BB\u5360\u7EBF\u603B\u957F\u7684\u6BD4\u4F8B\n  float v = v_dataset.a;\n\n  if(u_linearColor == 1.0) { // \u4F7F\u7528\u6E10\u53D8\u989C\u8272\n    outputColor = mix(u_sourceColor, u_targetColor, v);\n  } else { // \u4F7F\u7528 color \u65B9\u6CD5\u4F20\u5165\u7684\u989C\u8272\n     outputColor = v_color;\n  }\n\n  outputColor.a *= v_color.a; // \u5168\u5C40\u900F\u660E\u5EA6\n  if(u_animate.x == Animate) {\n      animateSpeed = u_time / u_animate.y;\n       float alpha =1.0 - fract( mod(1.0- d_distance_ratio, u_animate.z)* (1.0/ u_animate.z) + animateSpeed);\n      alpha = (alpha + u_animate.w -1.0) / u_animate.w;\n      alpha = smoothstep(0., 1., alpha);\n      outputColor.a *= alpha;\n  }\n\n  if(u_line_texture == LineTexture) { // while load texture\n    float aDistance = v_dataset.g;      // \u5F53\u524D\u9876\u70B9\u7684\u8DDD\u79BB\n    float d_texPixelLen = v_dataset.b;  // \u8D34\u56FE\u7684\u50CF\u7D20\u957F\u5EA6\uFF0C\u6839\u636E\u5730\u56FE\u5C42\u7EA7\u7F29\u653E\n    float u = fract(mod(aDistance, d_texPixelLen)/d_texPixelLen - animateSpeed);\n    float v = v_dataset.a;  // \u7EBF\u56FE\u5C42\u8D34\u56FE\u90E8\u5206\u7684 v \u5750\u6807\u503C\n\n    // \u8BA1\u7B97\u7EB9\u7406\u95F4\u9694 start\n    float flag = 0.0;\n    if(u > 1.0/u_iconStepCount) {\n      flag = 1.0;\n    }\n    u = fract(u*u_iconStepCount);\n    // \u8BA1\u7B97\u7EB9\u7406\u95F4\u9694 end\n\n    vec2 uv= v_iconMapUV / u_textSize + vec2(u, v) / u_textSize * 64.;\n    vec4 pattern = texture(SAMPLER_2D(u_texture), uv);\n\n    // Tip: \u5224\u65AD\u7EB9\u7406\u95F4\u9694\n    if(flag > 0.0) {\n      pattern = vec4(0.0);\n    }\n\n    if(u_textureBlend == 0.0) { // normal\n      pattern.a = 0.0;\n      outputColor = filterColor(outputColor + pattern);\n    } else { // replace\n        pattern.a *= v_color.a;\n        if(outputColor.a <= 0.0) {\n          pattern.a = 0.0;\n        }\n        outputColor = filterColor(pattern);\n    }\n  }\n\n\n  // blur - AA\n  if(v < v_blur) {\n    outputColor.a = mix(0.0, outputColor.a, v/v_blur);\n  } else if(v > 1.0 - v_blur) {\n    outputColor.a = mix(outputColor.a, 0.0, (v - (1.0 - v_blur))/v_blur);\n  }\n\n  outputColor = filterColor(outputColor);\n}\n';
   var line_vert2 = '#define Animate 0.0\nlayout(location = ATTRIBUTE_LOCATION_POSITION) in vec3 a_Position;\nlayout(location = ATTRIBUTE_LOCATION_POSITION_64LOW) in vec2 a_Position64Low;\nlayout(location = ATTRIBUTE_LOCATION_COLOR) in vec4 a_Color;\nlayout(location = ATTRIBUTE_LOCATION_SIZE) in vec2 a_Size;\nlayout(location = ATTRIBUTE_LOCATION_NORMAL) in vec3 a_Normal;\nlayout(location = ATTRIBUTE_LOCATION_UV) in vec2 a_iconMapUV;\nlayout(location = ATTRIBUTE_LOCATION_DISTANCE_MITER_TOTAL) in vec3 a_Distance_Total_Miter;\n\nlayout(std140) uniform commonUniorm {\n  vec4 u_animate: [ 1., 2., 1.0, 0.2 ];\n  vec4 u_sourceColor;\n  vec4 u_targetColor;\n  vec2 u_textSize;\n  float u_icon_step: 100;\n  float u_heightfixed;\n  float u_linearColor: 0;\n  float u_line_texture;\n  float u_textureBlend;\n  float u_iconStepCount;\n  float u_time;\n};\n\n// texV \u7EBF\u56FE\u5C42 - \u8D34\u56FE\u90E8\u5206\u7684 v \u5750\u6807\uFF08\u7EBF\u7684\u5BBD\u5EA6\u65B9\u5411\uFF09\nout vec2 v_iconMapUV;\nout vec4 v_color;\nout float v_blur;\nout vec4 v_dataset;\n\n#pragma include "projection"\n#pragma include "light"\n#pragma include "picking"\n\nvoid main() {\n  float a_Distance = a_Distance_Total_Miter.x;\n  float a_Miter = a_Distance_Total_Miter.y;\n  float a_Total_Distance = a_Distance_Total_Miter.z;\n\n  float d_distance_ratio; // \u5F53\u524D\u70B9\u4F4D\u8DDD\u79BB\u5360\u7EBF\u603B\u957F\u7684\u6BD4\u4F8B\n  float d_texPixelLen; // \u8D34\u56FE\u7684\u50CF\u7D20\u957F\u5EA6\uFF0C\u6839\u636E\u5730\u56FE\u5C42\u7EA7\u7F29\u653E\n\n  v_iconMapUV = a_iconMapUV;\n  if (u_heightfixed < 1.0) {\n    // \u9AD8\u5EA6\u968F zoom \u8C03\u6574\n    d_texPixelLen = project_pixel(u_icon_step);\n  } else {\n    d_texPixelLen = u_icon_step;\n  }\n\n  if (u_animate.x == Animate || u_linearColor == 1.0) {\n    d_distance_ratio = a_Distance / a_Total_Distance;\n  }\n\n  float miter = (a_Miter + 1.0) / 2.0;\n  // \u8BBE\u7F6E\u6570\u636E\u96C6\u7684\u53C2\u6570\n  v_dataset[0] = d_distance_ratio; // \u5F53\u524D\u70B9\u4F4D\u8DDD\u79BB\u5360\u7EBF\u603B\u957F\u7684\u6BD4\u4F8B\n  v_dataset[1] = a_Distance; // \u5F53\u524D\u9876\u70B9\u7684\u8DDD\u79BB\n  v_dataset[2] = d_texPixelLen; // \u8D34\u56FE\u7684\u50CF\u7D20\u957F\u5EA6\uFF0C\u6839\u636E\u5730\u56FE\u5C42\u7EA7\u7F29\u653E\n  v_dataset[3] = miter; // \u7EBF\u56FE\u5C42\u8D34\u56FE\u90E8\u5206\u7684 v \u5750\u6807\u503C 0 - 1\n\n  vec4 project_pos = project_position(vec4(a_Position.xy, 0, 1.0), a_Position64Low);\n\n  float originSize = a_Size.x; // \u56FA\u5B9A\u9AD8\u5EA6\n  if (u_heightfixed < 1.0) {\n    originSize = project_float_meter(a_Size.x); // \u9AD8\u5EA6\u968F zoom \u8C03\u6574\n  }\n\n  float wallHeight = originSize * miter;\n  float lightWeight = calc_lighting(vec4(project_pos.xy, wallHeight, 1.0));\n\n  v_blur = min(project_float_pixel(2.0) / originSize, 0.05);\n  v_color = vec4(a_Color.rgb * lightWeight, a_Color.w * opacity);\n\n  // \u517C\u5BB9 mapbox \u5728\u7EBF\u9AD8\u5EA6\u4E0A\u7684\u6548\u679C\u8868\u73B0\u57FA\u672C\u4E00\u81F4\n  if (\n    u_CoordinateSystem == COORDINATE_SYSTEM_LNGLAT ||\n    u_CoordinateSystem == COORDINATE_SYSTEM_LNGLAT_OFFSET\n  ) {\n    // mapbox\n    // \u4FDD\u6301\u9AD8\u5EA6\u76F8\u5BF9\u4E0D\u53D8\n    float mapboxZoomScale = 4.0 / pow(2.0, 21.0 - u_Zoom);\n    if (u_heightfixed > 0.0) {\n      wallHeight *= mapboxZoomScale;\n    }\n  }\n\n  gl_Position = project_common_position_to_clipspace(vec4(project_pos.xy, wallHeight, 1.0));\n\n  setPickingColor(a_PickingColor);\n}\n';
   var LineWallModel = class extends BaseModel {
@@ -37095,7 +37095,7 @@ layout(std140) uniform AttributeUniforms {
     }
   };
 
-  // node_modules/@antv/l7-layers/es/line/models/index.js
+  // ../../../node_modules/@antv/l7-layers/es/line/models/index.js
   var LineModels = {
     arc: ArcModel,
     arc3d: Arc3DModel,
@@ -37108,7 +37108,7 @@ layout(std140) uniform AttributeUniforms {
   };
   var models_default2 = LineModels;
 
-  // node_modules/@antv/l7-layers/es/line/index.js
+  // ../../../node_modules/@antv/l7-layers/es/line/index.js
   var LineLayer = class extends BaseLayer {
     constructor(...args) {
       super(...args);
@@ -37193,7 +37193,7 @@ layout(std140) uniform AttributeUniforms {
     }
   };
 
-  // node_modules/@antv/l7-layers/es/point/models/billboard_point.js
+  // ../../../node_modules/@antv/l7-layers/es/point/models/billboard_point.js
   var simplePointFrag = 'layout(std140) uniform commonUniorm {\n  vec4 u_stroke_color;\n  float u_additive;\n  float u_stroke_opacity;\n  float u_stroke_width;\n};\n\nin vec4 v_color;\nin float v_blur;\nin float v_innerRadius;\n\nout vec4 outputColor;\n\n#pragma include "picking"\nvoid main() {\n  vec2 center = vec2(0.5);\n\n  // Tip: \u7247\u5143\u5230\u4E2D\u5FC3\u70B9\u7684\u8DDD\u79BB 0 - 1\n  float fragmengTocenter = distance(center, gl_PointCoord) * 2.0;\n  // Tip: \u7247\u5143\u7684\u526A\u5207\u6210\u5706\u5F62\n  float circleClipOpacity = 1.0 - smoothstep(v_blur, 1.0, fragmengTocenter);\n\n  if (v_innerRadius < 0.99) {\n    // \u5F53\u5B58\u5728 stroke \u4E14 stroke > 0.01\n    float blurWidth = (1.0 - v_blur) / 2.0;\n    vec4 stroke = vec4(u_stroke_color.rgb, u_stroke_opacity);\n    if (fragmengTocenter > v_innerRadius + blurWidth) {\n      outputColor = stroke;\n    } else if (fragmengTocenter > v_innerRadius - blurWidth) {\n      float mixR = (fragmengTocenter - (v_innerRadius - blurWidth)) / (blurWidth * 2.0);\n      outputColor = mix(v_color, stroke, mixR);\n    } else {\n      outputColor = v_color;\n    }\n  } else {\n    // \u5F53\u4E0D\u5B58\u5728 stroke \u6216 stroke <= 0.01\n    outputColor = v_color;\n  }\n\n  outputColor = filterColor(outputColor);\n\n  if (u_additive > 0.0) {\n    outputColor *= circleClipOpacity;\n  } else {\n    outputColor.a *= circleClipOpacity;\n  }\n\n}\n';
   var simplePointVert = '\nlayout(location = ATTRIBUTE_LOCATION_POSITION) in vec3 a_Position;\nlayout(location = ATTRIBUTE_LOCATION_POSITION_64LOW) in vec2 a_Position64Low;\nlayout(location = ATTRIBUTE_LOCATION_COLOR) in vec4 a_Color;\nlayout(location = ATTRIBUTE_LOCATION_SIZE) in float a_Size;\n\nlayout(std140) uniform commonUniorm {\n  vec4 u_stroke_color;\n  float u_additive;\n  float u_stroke_opacity;\n  float u_stroke_width;\n};\n\nout vec4 v_color;\nout float v_blur;\nout float v_innerRadius;\n\n#pragma include "projection"\n#pragma include "picking"\n#pragma include "project"\nvoid main() {\n  v_color = vec4(a_Color.xyz, a_Color.w * opacity);\n  v_blur = 1.0 - max(2.0 / a_Size, 0.05);\n  v_innerRadius = max((a_Size - u_stroke_width) / a_Size, 0.0);\n\n  vec2 offset = project_pixel(u_offsets);\n\n  vec4 project_pos = project_position(vec4(a_Position, 1.0), a_Position64Low);\n  gl_Position = project_common_position_to_clipspace(vec4(vec2(project_pos.xy+offset),project_pos.z,project_pos.w));\n\n  gl_PointSize = a_Size * 2.0 * u_DevicePixelRatio;\n  setPickingColor(a_PickingColor);\n}\n';
   function PointTriangulation(feature2) {
@@ -37283,7 +37283,7 @@ layout(std140) uniform AttributeUniforms {
     }
   };
 
-  // node_modules/@antv/l7-layers/es/point/models/earthExtrude.js
+  // ../../../node_modules/@antv/l7-layers/es/point/models/earthExtrude.js
   var pointExtrudeFrag = 'precision highp float;\nin vec4 v_color;\n\n#pragma include "picking"\n\nlayout(std140) uniform commonUniform {\n  vec4 u_sourceColor;\n  vec4 u_targetColor;\n  float u_linearColor: 0;\n  float u_heightfixed: 0.0; // \u9ED8\u8BA4\u4E0D\u56FA\u5B9A\n  float u_globel;\n  float u_r;\n  float u_pickLight: 0.0;\n  float u_opacitylinear: 0.0;\n  float u_opacitylinear_dir: 1.0;\n  float u_lightEnable: 1.0;\n};\nin float v_lightWeight;\nin float v_barLinearZ;\nout vec4 outputColor;\nvoid main() {\n\n   outputColor = v_color;\n\n  // \u5F00\u542F\u900F\u660E\u5EA6\u6E10\u53D8\n  if(u_opacitylinear > 0.0) {\n    outputColor.a *= u_opacitylinear_dir > 0.0 ? (1.0 - v_barLinearZ): v_barLinearZ;\n  }\n\n  // picking\n  if(u_pickLight > 0.0) {\n    outputColor = filterColorAlpha(outputColor, v_lightWeight);\n  } else {\n    outputColor = filterColor(outputColor);\n  }\n}\n';
   var pointExtrudeVert = 'precision highp float;\n\n#define pi 3.1415926535\n#define ambientRatio 0.5\n#define diffuseRatio 0.3\n#define specularRatio 0.2\n\nlayout(location = ATTRIBUTE_LOCATION_POSITION) in vec3 a_Position;\nlayout(location = ATTRIBUTE_LOCATION_COLOR) in vec4 a_Color;\nlayout(location = ATTRIBUTE_LOCATION_SIZE) in vec3 a_Size;\nlayout(location = ATTRIBUTE_LOCATION_POS) in vec3 a_Pos;\nlayout(location = ATTRIBUTE_LOCATION_NORMAL) in vec3 a_Normal;\n\nlayout(std140) uniform commonUniform {\n  vec4 u_sourceColor;\n  vec4 u_targetColor;\n  float u_linearColor: 0;\n  float u_heightfixed: 0.0; // \u9ED8\u8BA4\u4E0D\u56FA\u5B9A\n  float u_globel;\n  float u_r;\n  float u_pickLight: 0.0;\n  float u_opacitylinear: 0.0;\n  float u_opacitylinear_dir: 1.0;\n  float u_lightEnable: 1.0;\n};\n\nout vec4 v_color;\nout float v_lightWeight;\nout float v_barLinearZ;\n// \u7528\u4E8E\u5C06\u5728\u9876\u70B9\u7740\u8272\u5668\u4E2D\u8BA1\u7B97\u597D\u7684\u6837\u5F0F\u503C\u4F20\u9012\u7ED9\u7247\u5143\n\n\n#pragma include "projection"\n#pragma include "light"\n#pragma include "picking"\n\nfloat getYRadian(float x, float z) {\n  if(x > 0.0 && z > 0.0) {\n    return atan(x/z);\n  } else if(x > 0.0 && z <= 0.0){\n    return atan(-z/x) + pi/2.0;\n  } else if(x <= 0.0 && z <= 0.0) {\n    return  pi + atan(x/z); //atan(x/z) +\n  } else {\n    return atan(z/-x) + pi*3.0/2.0;\n  }\n}\n\nfloat getXRadian(float y, float r) {\n  return atan(y/r);\n}\n\nvoid main() {\n\n  // cal style mapping - \u6570\u636E\u7EB9\u7406\u6620\u5C04\u90E8\u5206\u7684\u8BA1\u7B97\n  vec3 size = a_Size * a_Position;\n\n  // a_Position.z \u662F\u5728\u6784\u5EFA\u7F51\u683C\u7684\u65F6\u5019\u4F20\u5165\u7684\u6807\u51C6\u503C 0 - 1\uFF0C\u5728\u63D2\u503C\u5668\u63D2\u503C\u53EF\u4EE5\u83B7\u53D6 0\uFF5E1 \u7EBF\u6027\u6E10\u53D8\u7684\u503C\n  v_barLinearZ =  a_Position.z;\n\n  vec3 offset = size; // \u63A7\u5236\u5706\u67F1\u4F53\u7684\u5927\u5C0F - \u4ECE\u6807\u51C6\u5355\u4F4D\u5706\u67F1\u4F53\u8FDB\u884C\u504F\u79FB\n  if(u_heightfixed < 1.0) { // \u5706\u67F1\u4F53\u4E0D\u56FA\u5B9A\u9AD8\u5EA6\n    //\n  } else {// \u5706\u67F1\u4F53\u56FA\u5B9A\u9AD8\u5EA6 \uFF08 \u5904\u7406 mapbox \uFF09\n    if(u_CoordinateSystem == COORDINATE_SYSTEM_LNGLAT || u_CoordinateSystem == COORDINATE_SYSTEM_LNGLAT_OFFSET) {\n      offset *= 4.0/pow(2.0, 21.0 - u_Zoom);\n    }\n  }\n\n\n  vec4 project_pos = project_position(vec4(a_Pos.xy, 0., 1.0));\n\n  // u_r \u63A7\u5236\u5706\u67F1\u7684\u751F\u957F\n  vec4 pos = vec4(project_pos.xy + offset.xy, offset.z * u_r, 1.0);\n\n  // \u5706\u67F1\u5149\u7167\u6548\u679C\n  float lightWeight = 1.0;\n  if(u_lightEnable > 0.0) { // \u53D6\u6D88\u4E09\u5143\u8868\u8FBE\u5F0F\uFF0C\u589E\u5F3A\u5065\u58EE\u6027\n    lightWeight = calc_lighting(pos);\n  }\n  v_lightWeight = lightWeight;\n  // \u8BBE\u7F6E\u5706\u67F1\u7684\u5E95\u8272\n  if(u_linearColor == 1.0) { // \u4F7F\u7528\u6E10\u53D8\u989C\u8272\n    v_color = mix(u_sourceColor, u_targetColor, v_barLinearZ);\n    v_color.rgb *= lightWeight;\n  } else { // \u4F7F\u7528 color \u65B9\u6CD5\u4F20\u5165\u7684\u989C\u8272\n     v_color = a_Color;\n  }\n  v_color.a *= u_opacity;\n\n\n  // \u5728\u5730\u7403\u6A21\u5F0F\u4E0B\uFF0C\u5C06\u539F\u672C\u5782\u76F4\u4E8E xy \u5E73\u9762\u7684\u5706\u67F1\u8C03\u6574\u59FF\u6001\u5230\u9002\u5E94\u5706\u7684\u89D2\u5EA6\n  //\u65CB\u8F6C\u77E9\u9635mx\uFF0C\u521B\u5EFA\u7ED5x\u8F74\u65CB\u8F6C\u77E9\u9635\n  float r = sqrt(a_Pos.z*a_Pos.z + a_Pos.x*a_Pos.x);\n  float xRadian = getXRadian(a_Pos.y, r);\n  float xcos = cos(xRadian);//\u6C42\u89E3\u65CB\u8F6C\u89D2\u5EA6\u4F59\u5F26\u503C\n  float xsin = sin(xRadian);//\u6C42\u89E3\u65CB\u8F6C\u89D2\u5EA6\u6B63\u5F26\u503C\n  mat4 mx = mat4(\n    1,0,0,0,\n    0,xcos,-xsin,0,\n    0,xsin,xcos,0,\n    0,0,0,1);\n\n  //\u65CB\u8F6C\u77E9\u9635my\uFF0C\u521B\u5EFA\u7ED5y\u8F74\u65CB\u8F6C\u77E9\u9635\n  float yRadian = getYRadian(a_Pos.x, a_Pos.z);\n  float ycos = cos(yRadian);//\u6C42\u89E3\u65CB\u8F6C\u89D2\u5EA6\u4F59\u5F26\u503C\n  float ysin = sin(yRadian);//\u6C42\u89E3\u65CB\u8F6C\u89D2\u5EA6\u6B63\u5F26\u503C\n  mat4 my = mat4(\n    ycos,0,-ysin,0,\n    0,1,0,0,\n    ysin,0,ycos,0,\n    0,0,0,1);\n\n  gl_Position = u_ViewProjectionMatrix * vec4(( my * mx *  vec4(a_Position * a_Size, 1.0)).xyz + a_Pos, 1.0);\n\n\n  setPickingColor(a_PickingColor);\n}\n';
   var {
@@ -37471,7 +37471,7 @@ layout(std140) uniform AttributeUniforms {
     }
   };
 
-  // node_modules/@antv/l7-layers/es/point/models/earthFill.js
+  // ../../../node_modules/@antv/l7-layers/es/point/models/earthFill.js
   var pointFillFrag = `in vec4 v_data;
 in vec4 v_color;
 in float v_radius;
@@ -37698,7 +37698,7 @@ void main() {
     }
   };
 
-  // node_modules/@antv/l7-layers/es/point/models/extrude.js
+  // ../../../node_modules/@antv/l7-layers/es/point/models/extrude.js
   var pointExtrudeFrag2 = 'in vec4 v_color;\nin float v_lightWeight;\nout vec4 outputColor;\n\nlayout(std140) uniform commonUniforms {\n  float u_pickLight;\n  float u_heightfixed;\n  float u_r;\n  float u_linearColor;\n  vec4 u_sourceColor;\n  vec4 u_targetColor;\n  float u_opacitylinear;\n  float u_opacitylinear_dir;\n  float u_lightEnable;\n};\n\n#pragma include "scene_uniforms"\n#pragma include "picking"\n\nvoid main() {\n  outputColor = v_color;\n  // \u5F00\u542F\u900F\u660E\u5EA6\u6E10\u53D8\n  // picking\n  if (u_pickLight > 0.0) {\n    outputColor = filterColorAlpha(outputColor, v_lightWeight);\n  } else {\n    outputColor = filterColor(outputColor);\n  }\n}\n';
   var pointExtrudeVert2 = '#define pi (3.1415926535)\n\nlayout(location = ATTRIBUTE_LOCATION_POSITION) in vec3 a_Position;\nlayout(location = ATTRIBUTE_LOCATION_COLOR) in vec4 a_Color;\nlayout(location = ATTRIBUTE_LOCATION_SIZE) in vec3 a_Size;\nlayout(location = ATTRIBUTE_LOCATION_EXTRUDE) in vec4 a_Extrude;\nlayout(location = ATTRIBUTE_LOCATION_NORMAL) in vec3 a_Normal;\n\nlayout(std140) uniform commonUniforms {\n  float u_pickLight;\n  float u_heightfixed;\n  float u_r;\n  float u_linearColor;\n  vec4 u_sourceColor;\n  vec4 u_targetColor;\n  float u_opacitylinear;\n  float u_opacitylinear_dir;\n  float u_lightEnable;\n};\nout vec4 v_color;\nout float v_lightWeight;\n\n#pragma include "projection"\n#pragma include "light"\n#pragma include "picking"\n\nfloat getYRadian(float x, float z) {\n  if (x > 0.0 && z > 0.0) {\n    return atan(x / z);\n  } else if (x > 0.0 && z <= 0.0) {\n    return atan(-z / x) + pi / 2.0;\n  } else if (x <= 0.0 && z <= 0.0) {\n    return pi + atan(x / z); //atan(x/z) +\n  } else {\n    return atan(z / -x) + pi * 3.0 / 2.0;\n  }\n}\n\nfloat getXRadian(float y, float r) {\n  return atan(y / r);\n}\n\nvoid main() {\n  vec3 size = a_Size * a_Position;\n\n  vec3 offset = size; // \u63A7\u5236\u5706\u67F1\u4F53\u7684\u5927\u5C0F - \u4ECE\u6807\u51C6\u5355\u4F4D\u5706\u67F1\u4F53\u8FDB\u884C\u504F\u79FB\n\n  if (u_heightfixed < 1.0) {\n    // \u5706\u67F1\u4F53\u4E0D\u56FA\u5B9A\u9AD8\u5EA6\n  } else {\n    // \u5706\u67F1\u4F53\u56FA\u5B9A\u9AD8\u5EA6 \uFF08 \u5904\u7406 mapbox \uFF09\n    if (\n      u_CoordinateSystem == COORDINATE_SYSTEM_LNGLAT ||\n      u_CoordinateSystem == COORDINATE_SYSTEM_LNGLAT_OFFSET\n    ) {\n      offset *= 4.0 / pow(2.0, 21.0 - u_Zoom);\n    }\n  }\n\n  vec2 positions = a_Extrude.xy;\n  vec2 positions64Low = a_Extrude.zw;\n  vec4 project_pos = project_position(vec4(positions, 0.0, 1.0), positions64Low);\n\n  // u_r \u63A7\u5236\u5706\u67F1\u7684\u751F\u957F\n  vec4 pos = vec4(project_pos.xy + offset.xy, offset.z * u_r, 1.0);\n\n  // // \u5706\u67F1\u5149\u7167\u6548\u679C\n  float lightWeight = 1.0;\n\n  if (u_lightEnable > 0.0) {\n    // \u53D6\u6D88\u4E09\u5143\u8868\u8FBE\u5F0F\uFF0C\u589E\u5F3A\u5065\u58EE\u6027\n    lightWeight = calc_lighting(pos);\n  }\n\n  v_lightWeight = lightWeight;\n\n  v_color = a_Color;\n\n  // \u8BBE\u7F6E\u5706\u67F1\u7684\u5E95\u8272\n  if (u_linearColor == 1.0) {\n    // \u4F7F\u7528\u6E10\u53D8\u989C\u8272\n    v_color = mix(u_sourceColor, u_targetColor, a_Position.z);\n    v_color.a = v_color.a * opacity;\n  } else {\n    v_color = vec4(a_Color.rgb * lightWeight, a_Color.w * opacity);\n  }\n\n  if (u_opacitylinear > 0.0) {\n    v_color.a *= u_opacitylinear_dir > 0.0 ? 1.0 - a_Position.z : a_Position.z;\n  }\n\n  gl_Position = project_common_position_to_clipspace(pos);\n\n  setPickingColor(a_PickingColor);\n}\n';
   var ExtrudeModel2 = class extends BaseModel {
@@ -37882,7 +37882,7 @@ void main() {
     }
   };
 
-  // node_modules/@antv/l7-layers/es/point/models/fill.js
+  // ../../../node_modules/@antv/l7-layers/es/point/models/fill.js
   var pointFillFrag2 = `layout(std140) uniform commonUniforms {
   vec3 u_blur_height_fixed;
   float u_stroke_width;
@@ -38145,7 +38145,7 @@ void main() {
     }
   };
 
-  // node_modules/@antv/l7-layers/es/point/models/fillImage.js
+  // ../../../node_modules/@antv/l7-layers/es/point/models/fillImage.js
   var pointFillFrag3 = 'in vec2 v_uv;// \u672C\u8EAB\u7684 uv \u5750\u6807\nin vec2 v_Iconuv;\nin float v_opacity;\nout vec4 outputColor;\n\nuniform sampler2D u_texture;\nlayout(std140) uniform commonUniform {\n  vec2 u_textSize;\n  float u_heightfixed: 0.0;\n  float u_raisingHeight: 0.0;\n  float u_size_unit;\n};\n\n#pragma include "scene_uniforms"\n#pragma include "sdf_2d"\n#pragma include "picking"\n\nvoid main() {\n  vec2 pos = v_Iconuv / u_textSize + v_uv / u_textSize * 64.;\n  outputColor = texture(SAMPLER_2D(u_texture), pos);\n  outputColor.a *= v_opacity;\n  outputColor = filterColor(outputColor);\n}\n';
   var pointFillVert3 = 'layout(location = ATTRIBUTE_LOCATION_POSITION) in vec3 a_Position;\nlayout(location = ATTRIBUTE_LOCATION_POSITION_64LOW) in vec2 a_Position64Low;\nlayout(location = ATTRIBUTE_LOCATION_COLOR) in vec4 a_Color;\nlayout(location = ATTRIBUTE_LOCATION_SIZE) in float a_Size;\nlayout(location = ATTRIBUTE_LOCATION_EXTRUDE) in vec3 a_Extrude;\nlayout(location = ATTRIBUTE_LOCATION_UV) in vec2 a_Uv;\n\nlayout(std140) uniform commonUniform {\n  vec2 u_textSize;\n  float u_heightfixed;\n  float u_raisingHeight;\n  float u_size_unit;\n};\n\nout vec2 v_uv;\nout vec2 v_Iconuv;\nout float v_opacity;\n\n#pragma include "projection"\n#pragma include "picking"\n#pragma include "rotation_2d"\n\nvoid main() {\n  vec3 extrude = a_Extrude;\n  v_uv = (a_Extrude.xy + 1.0) / 2.0;\n  v_uv.x = 1.0 - v_uv.x;\n  v_uv.y = 1.0 - v_uv.y;\n  v_Iconuv = a_Uv;\n  v_opacity = opacity;\n  float newSize = a_Size;\n  if (u_size_unit == 1.0) {\n    newSize = newSize * u_PixelsPerMeter.z;\n  }\n\n  // vec2 offset = (u_RotateMatrix * extrude.xy * (a_Size) + textrueOffsets);\n  vec2 offset = extrude.xy * newSize + offsets;\n\n  offset = rotate_matrix(offset, rotation);\n\n  offset = project_pixel(offset);\n\n  vec4 project_pos = project_position(vec4(a_Position.xy, 0.0, 1.0), a_Position64Low);\n  gl_Position = project_common_position_to_clipspace(vec4(project_pos.xy + offset, 0.0, 1.0));\n\n  setPickingColor(a_PickingColor);\n}\n';
   var FillImageModel = class extends BaseModel {
@@ -38323,7 +38323,7 @@ void main() {
     }
   };
 
-  // node_modules/@antv/l7-layers/es/utils/grid-index.js
+  // ../../../node_modules/@antv/l7-layers/es/utils/grid-index.js
   var GridIndex = class {
     constructor(width, height, cellSize) {
       _defineProperty(this, "boxCells", []);
@@ -38447,7 +38447,7 @@ void main() {
   };
   var grid_index_default = GridIndex;
 
-  // node_modules/@antv/l7-layers/es/utils/collision-index.js
+  // ../../../node_modules/@antv/l7-layers/es/utils/collision-index.js
   var CollisionIndex = class {
     constructor(width, height) {
       _defineProperty(this, "width", void 0);
@@ -38517,7 +38517,7 @@ void main() {
     }
   };
 
-  // node_modules/@antv/l7-layers/es/point/models/image.js
+  // ../../../node_modules/@antv/l7-layers/es/point/models/image.js
   var pointImageFrag = 'layout(std140) uniform commonUniforms {\n  vec2 u_textSize;\n  float u_raisingHeight;\n  float u_heightfixed;\n};\n\nuniform sampler2D u_texture;\n\nin vec4 v_color;\nin vec2 v_uv;\nin float v_opacity;\n\n#pragma include "picking"\n\nout vec4 outputColor;\n\nvoid main() {\n  vec2 pos = v_uv / u_textSize + gl_PointCoord / u_textSize * 64.0;\n  vec4 textureColor;\n\n  // Y = 0.299R + 0.587G + 0.114B // \u4EAE\u5EA6\u63D0\u53D6\n\n  textureColor = texture(SAMPLER_2D(u_texture), pos);\n\n  // Tip: \u53BB\u9664\u8FB9\u7F18\u90E8\u5206 mipmap \u5BFC\u81F4\u7684\u6DF7\u5408\u53D8\u6697\n  float fragmengTocenter = distance(vec2(0.5), gl_PointCoord);\n  if (fragmengTocenter >= 0.5) {\n    float luma = 0.299 * textureColor.r + 0.587 * textureColor.g + 0.114 * textureColor.b;\n    textureColor.a *= luma;\n  }\n\n  if (\n    all(lessThan(v_color, vec4(1.0 + 0.00001))) && all(greaterThan(v_color, vec4(1.0 - 0.00001))) ||\n    v_color == vec4(1.0)\n  ) {\n    outputColor = textureColor;\n  } else {\n    outputColor = step(0.01, textureColor.z) * v_color;\n  }\n  outputColor.a *= v_opacity;\n  if (outputColor.a < 0.01) {\n    discard;\n  }\n  outputColor = filterColor(outputColor);\n}\n';
   var pointImageVert = 'layout(location = ATTRIBUTE_LOCATION_POSITION) in vec3 a_Position;\nlayout(location = ATTRIBUTE_LOCATION_POSITION_64LOW) in vec2 a_Position64Low;\nlayout(location = ATTRIBUTE_LOCATION_COLOR) in vec4 a_Color;\nlayout(location = ATTRIBUTE_LOCATION_SIZE) in float a_Size;\nlayout(location = ATTRIBUTE_LOCATION_UV) in vec2 a_Uv;\n\nlayout(std140) uniform commonUniforms {\n  vec2 u_textSize;\n  float u_raisingHeight;\n  float u_heightfixed;\n};\n\nout vec4 v_color;\nout vec2 v_uv;\nout float v_opacity;\n\n#pragma include "projection"\n#pragma include "picking"\n\nvoid main() {\n  // cal style mapping - \u6570\u636E\u7EB9\u7406\u6620\u5C04\u90E8\u5206\u7684\u8BA1\u7B97\n  v_color = a_Color;\n  v_opacity = opacity;\n  v_uv = a_Uv;\n  vec4 project_pos = project_position(vec4(a_Position, 1.0), a_Position64Low);\n\n  vec2 offset = project_pixel(offsets);\n\n  float raisingHeight = u_raisingHeight;\n  if (u_heightfixed < 1.0) {\n    // false\n    raisingHeight = project_pixel(u_raisingHeight);\n  } else {\n    if (\n      u_CoordinateSystem == COORDINATE_SYSTEM_LNGLAT ||\n      u_CoordinateSystem == COORDINATE_SYSTEM_LNGLAT_OFFSET\n    ) {\n      float mapboxZoomScale = 4.0 / pow(2.0, 21.0 - u_Zoom);\n      raisingHeight = u_raisingHeight * mapboxZoomScale;\n    }\n  }\n\n  gl_Position = project_common_position_to_clipspace(vec4(project_pos.xy + offset, raisingHeight, 1.0));\n\n  gl_PointSize = a_Size * 2.0 * u_DevicePixelRatio;\n  setPickingColor(a_PickingColor);\n}\n';
   var ImageModel2 = class extends BaseModel {
@@ -38784,7 +38784,7 @@ void main() {
     }
   };
 
-  // node_modules/@antv/l7-layers/es/point/models/normal.js
+  // ../../../node_modules/@antv/l7-layers/es/point/models/normal.js
   var normalFrag = "in vec4 v_color;\nout vec4 outputColor;\nvoid main() {\n  outputColor = v_color;\n}\n";
   var normalVert = 'layout(location = ATTRIBUTE_LOCATION_POSITION) in vec3 a_Position;\nlayout(location = ATTRIBUTE_LOCATION_POSITION_64LOW) in vec2 a_Position64Low;\nlayout(location = ATTRIBUTE_LOCATION_COLOR) in vec4 a_Color;\nlayout(location = ATTRIBUTE_LOCATION_SIZE) in float a_Size;\n\nlayout(std140) uniform u_Common {\n  float u_size_scale;\n};\n\nout vec4 v_color;\n\n#pragma include "projection"\n#pragma include "project"\n\nvoid main() {\n  v_color = vec4(a_Color.xyz, a_Color.w * opacity);\n\n  vec4 project_pos = project_position(vec4(a_Position, 1.0), a_Position64Low);\n  gl_Position = project_common_position_to_clipspace(project_pos);\n\n  gl_PointSize = a_Size * u_size_scale * 2.0 * u_DevicePixelRatio;\n}\n';
   function PointTriangulation2(feature2) {
@@ -38869,7 +38869,7 @@ void main() {
     }
   };
 
-  // node_modules/@antv/l7-layers/es/point/models/radar.js
+  // ../../../node_modules/@antv/l7-layers/es/point/models/radar.js
   var pointFillFrag4 = '\nlayout(std140) uniform commonUniorm{\n  float u_additive;\n  float u_size_unit;\n  float u_speed: 1.0;\n  float u_time;\n};\nin vec4 v_data;\nin vec4 v_color;\nin float v_radius;\nin vec2 v_extrude;\n#pragma include "sdf_2d"\n#pragma include "picking"\n\nout vec4 outputColor;\n\nvoid main() {\n\n  lowp float antialiasblur = v_data.z;\n  float r = v_radius / (v_radius);\n\n  float outer_df = sdCircle(v_data.xy, 1.0);\n  float inner_df = sdCircle(v_data.xy, r);\n\n  float opacity_t = smoothstep(0.0, antialiasblur, outer_df);\n\n  outputColor = vec4(v_color.rgb, v_color.a);\n\n  if(u_additive > 0.0) {\n    outputColor *= opacity_t;\n  } else {\n    outputColor.a *= opacity_t;\n  }\n\n  if(outputColor.a > 0.0) {\n    outputColor = filterColor(outputColor);\n  }\n\n  vec2 extrude =  v_extrude;\n  vec2 dir = normalize(extrude);\n  vec2 baseDir = vec2(1.0, 0.0);\n  float pi = 3.14159265359;\n  float flag = sign(dir.y);\n  float rades = dot(dir, baseDir);\n  float radar_v = (flag - 1.0) * -0.5 * acos(rades)/pi;\n  // simple AA\n  if(radar_v > 0.99) {\n    radar_v = 1.0 - (radar_v - 0.99)/0.01;\n  }\n\n  outputColor.a *= radar_v;\n}\n';
   var pointFillVert4 = 'layout(location = ATTRIBUTE_LOCATION_POSITION) in vec3 a_Position;\nlayout(location = ATTRIBUTE_LOCATION_POSITION_64LOW) in vec2 a_Position64Low;\nlayout(location = ATTRIBUTE_LOCATION_COLOR) in vec4 a_Color;\nlayout(location = ATTRIBUTE_LOCATION_SIZE) in float a_Size;\nlayout(location = ATTRIBUTE_LOCATION_EXTRUDE) in vec3 a_Extrude;\n\nlayout(std140) uniform commonUniorm {\n  float u_additive;\n  float u_size_unit;\n  float u_speed: 1.0;\n  float u_time;\n};\n\nout vec4 v_data;\nout vec4 v_color;\nout float v_radius;\nout vec2 v_extrude;\n\n#pragma include "projection"\n#pragma include "picking"\n\nvoid main() {\n  float newSize = setPickingSize(a_Size);\n\n  float time = u_time * u_speed;\n  mat2 rotateMatrix = mat2(\n    cos(time), sin(time),\n    -sin(time), cos(time)\n  );\n  v_extrude = rotateMatrix * a_Extrude.xy;\n\n  v_color = a_Color;\n  v_color.a *= opacity;\n\n  float blur = 0.0;\n  float antialiasblur = -max(2.0 / u_DevicePixelRatio / a_Size, blur);\n\n  if(u_size_unit == 1.) {\n    newSize = newSize  * u_PixelsPerMeter.z;\n  }\n  v_radius = newSize;\n\n  vec2 offset = (a_Extrude.xy * (newSize));\n\n  offset = project_pixel(offset);\n\n  v_data = vec4(a_Extrude.x, a_Extrude.y, antialiasblur, -1.0);\n\n  vec4 project_pos = project_position(vec4(a_Position.xy, 0.0, 1.0), a_Position64Low);\n  gl_Position = project_common_position_to_clipspace(vec4(project_pos.xy + offset, project_pixel(setPickingOrder(0.0)), 1.0));\n\n  setPickingColor(a_PickingColor);\n}\n';
   var RadarModel = class extends BaseModel {
@@ -38975,7 +38975,7 @@ void main() {
     }
   };
 
-  // node_modules/@antv/l7-layers/es/utils/symbol-layout.js
+  // ../../../node_modules/@antv/l7-layers/es/utils/symbol-layout.js
   function getAnchorAlignment(anchor) {
     let horizontalAlign = 0.5;
     let verticalAlign = 0.5;
@@ -39187,7 +39187,7 @@ void main() {
     return quads;
   }
 
-  // node_modules/@antv/l7-layers/es/point/models/text.js
+  // ../../../node_modules/@antv/l7-layers/es/point/models/text.js
   var textFrag = '#define SDF_PX 8.0\n#define EDGE_GAMMA 0.105\n#define FONT_SIZE 48.0\n\nuniform sampler2D u_sdf_map;\nlayout(std140) uniform commonUniforms {\n  vec4 u_stroke_color : [0.0, 0.0, 0.0, 0.0];\n  vec2 u_sdf_map_size;\n  float u_raisingHeight: 0.0;\n  float u_stroke_width : 2;\n  float u_gamma_scale : 0.5;\n  float u_halo_blur : 0.5;\n};\n\nin vec2 v_uv;\nin float v_gamma_scale;\nin vec4 v_color;\nin vec4 v_stroke_color;\nin float v_fontScale;\n\nout vec4 outputColor;\n\n#pragma include "picking"\nvoid main() {\n  // get style data mapping\n\n  // get sdf from atlas\n  float dist = texture(SAMPLER_2D(u_sdf_map), v_uv).a;\n\n  lowp float buff = (6.0 - u_stroke_width / v_fontScale) / SDF_PX;\n  highp float gamma = (u_halo_blur * 1.19 / SDF_PX + EDGE_GAMMA) / (v_fontScale * u_gamma_scale) / 1.0;\n\n  highp float gamma_scaled = gamma * v_gamma_scale;\n\n  highp float alpha = smoothstep(buff - gamma_scaled, buff + gamma_scaled, dist);\n\n  outputColor = mix(v_color, v_stroke_color, smoothstep(0., 0.5, 1.- dist));\n\n  outputColor.a *= alpha;\n   // \u4F5C\u4E3A mask \u6A21\u677F\u65F6\u9700\u8981\u4E22\u5F03\u900F\u660E\u7684\u50CF\u7D20\n  if (outputColor.a < 0.01) {\n    discard;\n  }\n  outputColor = filterColor(outputColor);\n}\n';
   var textVert = '#define SDF_PX 8.0\n#define EDGE_GAMMA 0.105\n#define FONT_SIZE 24.0\n\nlayout(location = ATTRIBUTE_LOCATION_POSITION) in vec3 a_Position;\nlayout(location = ATTRIBUTE_LOCATION_POSITION_64LOW) in vec2 a_Position64Low;\nlayout(location = ATTRIBUTE_LOCATION_COLOR) in vec4 a_Color;\nlayout(location = ATTRIBUTE_LOCATION_SIZE) in float a_Size;\nlayout(location = ATTRIBUTE_LOCATION_TEXT_OFFSETS) in vec2 a_textOffsets;\nlayout(location = ATTRIBUTE_LOCATION_UV) in vec2 a_tex;\n\nlayout(std140) uniform commonUniforms {\n  vec4 u_stroke_color : [0.0, 0.0, 0.0, 0.0];\n  vec2 u_sdf_map_size;\n  float u_raisingHeight: 0.0;\n  float u_stroke_width : 2;\n  float u_gamma_scale : 0.5;\n  float u_halo_blur : 0.5;\n};\n\nout vec2 v_uv;\nout float v_gamma_scale;\nout vec4 v_color;\nout vec4 v_stroke_color;\nout float v_fontScale;\n\n#pragma include "projection"\n#pragma include "picking"\n#pragma include "rotation_2d"\n\nvoid main() {\n  // cal style mapping - \u6570\u636E\u7EB9\u7406\u6620\u5C04\u90E8\u5206\u7684\u8BA1\u7B97\n\n  v_uv = a_tex / u_sdf_map_size;\n\n\n\n  v_color = vec4(a_Color.xyz, a_Color.w * opacity);\n  v_stroke_color = vec4(u_stroke_color.xyz, u_stroke_color.w * opacity);\n\n  // \u6587\u672C\u7F29\u653E\u6BD4\u4F8B\n  float fontScale = a_Size / FONT_SIZE;\n  v_fontScale = fontScale;\n\n  vec4 project_pos = project_position(vec4(a_Position, 1.0), a_Position64Low);\n  // vec4 projected_position  = project_common_position_to_clipspace(vec4(project_pos.xyz, 1.0));\n\n  vec2 offset = rotate_matrix(a_textOffsets,rotation);\n\n  // gl_Position = vec4(projected_position.xy / projected_position.w + rotation_matrix * a_textOffsets * fontScale / u_ViewportSize * 2.0 * u_DevicePixelRatio, 0.0, 1.0);\n\n  float raiseHeight = u_raisingHeight;\n  if(u_CoordinateSystem == COORDINATE_SYSTEM_LNGLAT || u_CoordinateSystem == COORDINATE_SYSTEM_LNGLAT_OFFSET) {\n    float mapboxZoomScale = 4.0/pow(2.0, 21.0 - u_Zoom);\n    raiseHeight = u_raisingHeight * mapboxZoomScale;\n  }\n\n  vec4 projected_position = project_common_position_to_clipspace(vec4(project_pos.xyz + vec3(0.0, 0.0, raiseHeight), 1.0));\n\n  gl_Position = vec4(\n    projected_position.xy / projected_position.w + offset * fontScale / u_ViewportSize * 2.0 * u_DevicePixelRatio, 0.0, 1.0);\n  v_gamma_scale = gl_Position.w;\n  setPickingColor(a_PickingColor);\n\n}\n';
   var {
@@ -39662,7 +39662,7 @@ void main() {
     }
   };
 
-  // node_modules/@antv/l7-layers/es/point/models/index.js
+  // ../../../node_modules/@antv/l7-layers/es/point/models/index.js
   var PointModels = {
     fillImage: FillImageModel,
     fill: FillModel2,
@@ -39677,7 +39677,7 @@ void main() {
   };
   var models_default3 = PointModels;
 
-  // node_modules/@antv/l7-layers/es/point/index.js
+  // ../../../node_modules/@antv/l7-layers/es/point/index.js
   var PointLayer = class extends BaseLayer {
     constructor(...args) {
       super(...args);
@@ -39822,7 +39822,7 @@ void main() {
     }
   };
 
-  // node_modules/@antv/l7-layers/es/utils/load-image.js
+  // ../../../node_modules/@antv/l7-layers/es/utils/load-image.js
   function loadImage(_x) {
     return _loadImage.apply(this, arguments);
   }
@@ -39844,7 +39844,7 @@ void main() {
     return _loadImage.apply(this, arguments);
   }
 
-  // node_modules/@antv/l7-layers/es/polygon/models/extrude.js
+  // ../../../node_modules/@antv/l7-layers/es/polygon/models/extrude.js
   var polygonExtrudeFrag = 'layout(std140) uniform commonUniforms {\n  vec4 u_sourceColor;\n  vec4 u_targetColor;\n  float u_linearColor;\n  float u_topsurface;\n  float u_sidesurface;\n  float u_heightfixed; // \u9ED8\u8BA4\u4E0D\u56FA\u5B9A\n  float u_raisingHeight;\n};\n\nin vec4 v_Color;\n#pragma include "scene_uniforms"\n#pragma include "picking"\nout vec4 outputColor;\nvoid main() {\n  // top face\n  if (u_topsurface < 1.0) {\n    discard;\n  }\n\n  outputColor = v_Color;\n\n  outputColor = filterColor(outputColor);\n}\n';
   var polygonExtrudePickLightFrag = 'layout(std140) uniform commonUniforms {\n  vec4 u_sourceColor;\n  vec4 u_targetColor;\n  float u_linearColor;\n  float u_topsurface;\n  float u_sidesurface;\n  float u_heightfixed; // \u9ED8\u8BA4\u4E0D\u56FA\u5B9A\n  float u_raisingHeight;\n};\n\nin vec4 v_Color;\nin vec3 v_uvs;\nin vec2 v_texture_data;\nout vec4 outputColor;\n\n#pragma include "scene_uniforms"\n#pragma include "picking"\n\nvoid main() {\n  float isSide = v_texture_data.x;\n  float sidey = v_uvs[2];\n  float lightWeight = v_texture_data.y;\n\n  // Tip: \u90E8\u5206\u673A\u578B GPU \u8BA1\u7B97\u7CBE\u5EA6\u517C\u5BB9\n  if (isSide < 0.999) {\n    // side face\n    if (u_sidesurface < 1.0) {\n      discard;\n    }\n\n    if (u_linearColor == 1.0) {\n      // side use linear\n      vec4 linearColor = mix(u_targetColor, u_sourceColor, sidey);\n      linearColor.rgb *= lightWeight;\n      outputColor = linearColor;\n    } else {\n      // side notuse linear\n      outputColor = v_Color;\n    }\n  } else {\n    // top face\n    if (u_topsurface < 1.0) {\n      discard;\n    }\n    outputColor = v_Color;\n  }\n\n  outputColor = filterColorAlpha(outputColor, lightWeight);\n}\n';
   var polygonExtrudePickLightVert = 'layout(location = ATTRIBUTE_LOCATION_POSITION) in vec3 a_Position;\nlayout(location = ATTRIBUTE_LOCATION_POSITION_64LOW) in vec2 a_Position64Low;\nlayout(location = ATTRIBUTE_LOCATION_COLOR) in vec4 a_Color;\nlayout(location = ATTRIBUTE_LOCATION_SIZE) in float a_Size;\nlayout(location = ATTRIBUTE_LOCATION_NORMAL) in vec3 a_Normal;\nlayout(location = ATTRIBUTE_LOCATION_UV) in vec3 a_uvs;\n\nlayout(std140) uniform commonUniforms {\n  vec4 u_sourceColor;\n  vec4 u_targetColor;\n  float u_linearColor;\n  float u_topsurface;\n  float u_sidesurface;\n  float u_heightfixed; // \u9ED8\u8BA4\u4E0D\u56FA\u5B9A\n  float u_raisingHeight;\n};\n\nout vec4 v_Color;\nout vec3 v_uvs;\nout vec2 v_texture_data;\n\n#pragma include "projection"\n#pragma include "light"\n#pragma include "picking"\n\nvoid main() {\n  v_uvs = a_uvs;\n  // cal style mapping - \u6570\u636E\u7EB9\u7406\u6620\u5C04\u90E8\u5206\u7684\u8BA1\u7B97\n  vec4 pos = vec4(a_Position.xy, a_Position.z * a_Size, 1.0);\n  vec4 project_pos = project_position(pos, a_Position64Low);\n\n  if (u_heightfixed > 0.0) {\n    // \u5224\u65AD\u51E0\u4F55\u4F53\u662F\u5426\u56FA\u5B9A\u9AD8\u5EA6\n    project_pos.z = a_Position.z * a_Size;\n    project_pos.z += u_raisingHeight;\n    if (\n      u_CoordinateSystem == COORDINATE_SYSTEM_LNGLAT ||\n      u_CoordinateSystem == COORDINATE_SYSTEM_LNGLAT_OFFSET\n    ) {\n      float mapboxZoomScale = 4.0 / pow(2.0, 21.0 - u_Zoom);\n      project_pos.z *= mapboxZoomScale;\n      project_pos.z += u_raisingHeight * mapboxZoomScale;\n    }\n  }\n\n  gl_Position = project_common_position_to_clipspace(vec4(project_pos.xyz, 1.0));\n  float lightWeight = calc_lighting(project_pos);\n  v_texture_data = vec2(a_Position.z, lightWeight);\n\n  v_Color = vec4(a_Color.rgb * lightWeight, a_Color.w * opacity);\n\n  setPickingColor(a_PickingColor);\n}\n';
@@ -40070,7 +40070,7 @@ void main() {
     }
   };
 
-  // node_modules/@antv/l7-layers/es/polygon/models/extrusion.js
+  // ../../../node_modules/@antv/l7-layers/es/polygon/models/extrusion.js
   var polygonExtrudeFrag2 = 'in vec4 v_Color;\n#pragma include "scene_uniforms"\n#pragma include "picking"\nout vec4 outputColor;\nvoid main() {\n  outputColor = v_Color;\n  outputColor = filterColor(outputColor);\n}\n';
   var polygonExtrudeVert2 = 'layout(location = ATTRIBUTE_LOCATION_POSITION) in vec3 a_Position;\nlayout(location = ATTRIBUTE_LOCATION_POSITION_64LOW) in vec2 a_Position64Low;\nlayout(location = ATTRIBUTE_LOCATION_COLOR) in vec4 a_Color;\nlayout(location = ATTRIBUTE_LOCATION_SIZE) in float a_Size;\nlayout(location = ATTRIBUTE_LOCATION_NORMAL) in vec3 a_Normal;\n\nout vec4 v_Color;\n\n#pragma include "projection"\n#pragma include "light"\n#pragma include "picking"\n\nvoid main() {\n  vec4 pos = vec4(a_Position.xy, a_Position.z * a_Size + (1.0 - a_Position.z) * extrusionBase, 1.0);\n\n  vec4 project_pos = project_position(pos, a_Position64Low);\n  float lightWeight = calc_lighting(project_pos);\n  v_Color = a_Color;\n  v_Color = vec4(v_Color.rgb * lightWeight, v_Color.w * opacity);\n\n  gl_Position = project_common_position_to_clipspace(vec4(project_pos.xyz, 1.0));\n\n  setPickingColor(a_PickingColor);\n}\n';
   var ExtrusionModel = class extends BaseModel {
@@ -40200,7 +40200,7 @@ void main() {
     }
   };
 
-  // node_modules/@antv/l7-layers/es/polygon/models/fill.js
+  // ../../../node_modules/@antv/l7-layers/es/polygon/models/fill.js
   var polygon_frag = 'in vec4 v_color;\n#pragma include "scene_uniforms"\n#pragma include "picking"\nout vec4 outputColor;\nvoid main() {\n  outputColor = v_color;\n  outputColor = filterColor(outputColor);\n}\n';
   var polygon_linear_frag = 'layout(std140) uniform commonUniforms {\n  float u_raisingHeight;\n  float u_opacitylinear;\n  float u_dir;\n};\n\nin vec4 v_color;\nin vec3 v_linear;\nin vec2 v_pos;\nout vec4 outputColor;\n#pragma include "scene_uniforms"\n#pragma include "picking"\n\nvoid main() {\n  outputColor = v_color;\n  if (u_opacitylinear > 0.0) {\n    outputColor.a *=\n      u_dir == 1.0\n        ? 1.0 - length(v_pos - v_linear.xy) / v_linear.z\n        : length(v_pos - v_linear.xy) / v_linear.z;\n  }\n  outputColor = filterColor(outputColor);\n}\n';
   var polygon_linear_vert = 'layout(location = ATTRIBUTE_LOCATION_POSITION) in vec3 a_Position;\nlayout(location = ATTRIBUTE_LOCATION_POSITION_64LOW) in vec2 a_Position64Low;\nlayout(location = ATTRIBUTE_LOCATION_COLOR) in vec4 a_Color;\nlayout(location = ATTRIBUTE_LOCATION_LINEAR) in vec3 a_linear;\n\nlayout(std140) uniform commonUniforms {\n  float u_raisingHeight;\n  float u_opacitylinear;\n  float u_dir;\n};\n\nout vec4 v_color;\nout vec3 v_linear;\nout vec2 v_pos;\n\n#pragma include "projection"\n#pragma include "picking"\n\nvoid main() {\n  if (u_opacitylinear > 0.0) {\n    v_linear = a_linear;\n    v_pos = a_Position.xy;\n  }\n  v_color = vec4(a_Color.xyz, a_Color.w * opacity);\n  vec4 project_pos = project_position(vec4(a_Position, 1.0), a_Position64Low);\n  project_pos.z += u_raisingHeight;\n\n  if (u_CoordinateSystem == COORDINATE_SYSTEM_LNGLAT || u_CoordinateSystem == COORDINATE_SYSTEM_LNGLAT_OFFSET) {\n    float mapboxZoomScale = 4.0/pow(2.0, 21.0 - u_Zoom);\n    project_pos.z *= mapboxZoomScale;\n    project_pos.z += u_raisingHeight * mapboxZoomScale;\n  }\n\n  gl_Position = project_common_position_to_clipspace(vec4(project_pos.xyz, 1.0));\n  setPickingColor(a_PickingColor);\n}\n';
@@ -40319,7 +40319,7 @@ void main() {
     }
   };
 
-  // node_modules/@antv/l7-layers/es/polygon/models/ocean.js
+  // ../../../node_modules/@antv/l7-layers/es/polygon/models/ocean.js
   var ocean_frag = `layout(std140) uniform commonUniforms {
   vec4 u_watercolor;
   vec4 u_watercolor2;
@@ -40755,7 +40755,7 @@ void main() {
     }
   };
 
-  // node_modules/@antv/l7-layers/es/polygon/models/water.js
+  // ../../../node_modules/@antv/l7-layers/es/polygon/models/water.js
   var water_frag = "uniform sampler2D u_texture;\nlayout(std140) uniform commonUniforms {\n  float u_speed;\n  float u_time;\n};\n\nout vec4 outputColor;\n\nin vec4 v_Color;\nin vec2 v_uv;\n\nfloat rand(vec2 n) {\n  return 0.5 + 0.5 * fract(sin(dot(n.xy, vec2(12.9898, 78.233))) * 43758.5453);\n}\n\nfloat water(vec3 p) {\n  float t = u_time * u_speed;\n  p.z += t * 2.0;\n  p.x += t * 2.0;\n  vec3 c1 = texture(SAMPLER_2D(u_texture), p.xz / 30.0).xyz;\n  p.z += t * 3.0;\n  p.x += t * 0.52;\n  vec3 c2 = texture(SAMPLER_2D(u_texture), p.xz / 30.0).xyz;\n  p.z += t * 4.0;\n  p.x += t * 0.8;\n  vec3 c3 = texture(SAMPLER_2D(u_texture), p.xz / 30.0).xyz;\n  c1 += c2 - c3;\n  float z = (c1.x + c1.y + c1.z) / 3.0;\n  return p.y + z / 4.0;\n}\n\nfloat map(vec3 p) {\n  float d = 100.0;\n  d = water(p);\n  return d;\n}\n\nfloat intersect(vec3 ro, vec3 rd) {\n  float d = 0.0;\n  for (int i = 0; i <= 100; i++) {\n    float h = map(ro + rd * d);\n    if (h < 0.1) return d;\n    d += h;\n  }\n  return 0.0;\n}\n\nvec3 norm(vec3 p) {\n  float eps = 0.1;\n  return normalize(\n    vec3(\n      map(p + vec3(eps, 0, 0)) - map(p + vec3(-eps, 0, 0)),\n      map(p + vec3(0, eps, 0)) - map(p + vec3(0, -eps, 0)),\n      map(p + vec3(0, 0, eps)) - map(p + vec3(0, 0, -eps))\n    )\n  );\n}\n\nfloat calSpc() {\n  vec3 l1 = normalize(vec3(1, 1, 1));\n  vec3 ro = vec3(-3, 20, -8);\n  vec3 rc = vec3(0, 0, 0);\n  vec3 ww = normalize(rc - ro);\n  vec3 uu = normalize(cross(vec3(0, 1, 0), ww));\n  vec3 vv = normalize(cross(rc - ro, uu));\n  vec3 rd = normalize(uu * v_uv.x + vv * v_uv.y + ww);\n  float d = intersect(ro, rd);\n  vec3 p = ro + rd * d;\n  vec3 n = norm(p);\n  float spc = pow(max(0.0, dot(reflect(l1, n), rd)), 30.0);\n  return spc;\n}\n\nvoid main() {\n  outputColor = v_Color;\n  float spc = calSpc();\n  outputColor += spc * 0.4;\n}\n";
   var water_vert = 'layout(location = ATTRIBUTE_LOCATION_POSITION) in vec3 a_Position;\nlayout(location = ATTRIBUTE_LOCATION_COLOR) in vec4 a_Color;\nlayout(location = ATTRIBUTE_LOCATION_UV) in vec2 a_uv;\n\nlayout(std140) uniform commonUniforms {\n  float u_speed;\n  float u_time;\n};\nout vec4 v_Color;\nout vec2 v_uv;\n\n#pragma include "projection"\n\nvoid main() {\n  v_uv = a_uv;\n  v_Color = a_Color;\n  v_Color.a *= opacity;\n  vec4 project_pos = project_position(vec4(a_Position, 1.0));\n\n  gl_Position = project_common_position_to_clipspace(vec4(project_pos.xyz, 1.0));\n}\n\n';
   var WaterModel = class extends BaseModel {
@@ -40894,7 +40894,7 @@ void main() {
     }
   };
 
-  // node_modules/@antv/l7-layers/es/polygon/models/index.js
+  // ../../../node_modules/@antv/l7-layers/es/polygon/models/index.js
   var PolygonModels = {
     fill: FillModel3,
     line: LineModel,
@@ -40911,7 +40911,7 @@ void main() {
   };
   var models_default4 = PolygonModels;
 
-  // node_modules/@antv/l7-layers/es/polygon/index.js
+  // ../../../node_modules/@antv/l7-layers/es/polygon/index.js
   var PolygonLayer = class extends BaseLayer {
     constructor(...args) {
       super(...args);
@@ -40983,7 +40983,7 @@ void main() {
     }
   };
 
-  // node_modules/@antv/l7-layers/es/raster/models/raster.js
+  // ../../../node_modules/@antv/l7-layers/es/raster/models/raster.js
   var rasterFrag = "layout(std140) uniform commonUniforms {\n  vec2 u_domain;\n  float u_opacity;\n  float u_noDataValue;\n  float u_clampLow;\n  float u_clampHigh;\n};\n\nuniform sampler2D u_rasterTexture;\nuniform sampler2D u_colorTexture;\n\nin vec2 v_texCoord;\n\nbool isnan_emu(float x) {\n  return x > 0.0 || x < 0.0\n    ? x != x\n    : x != 0.0;\n}\n\nout vec4 outputColor;\n\nvoid main() {\n  // Can use any component here since u_rasterTexture is under luminance format.\n  float value = texture(SAMPLER_2D(u_rasterTexture), vec2(v_texCoord.x, v_texCoord.y)).r;\n  if (value == u_noDataValue || isnan_emu(value)) {\n    discard;\n  } else if (u_clampLow < 0.5 && value < u_domain[0] || u_clampHigh < 0.5 && value > u_domain[1]) {\n    discard;\n  } else {\n    float normalisedValue = (value - u_domain[0]) / (u_domain[1] - u_domain[0]);\n    vec4 color = texture(SAMPLER_2D(u_colorTexture), vec2(normalisedValue, 0));\n\n    outputColor = color;\n    outputColor.a = outputColor.a * u_opacity;\n    if (outputColor.a < 0.01) discard;\n  }\n}\n";
   var rasterVert = 'layout(location = ATTRIBUTE_LOCATION_POSITION) in vec3 a_Position;\nlayout(location = ATTRIBUTE_LOCATION_POSITION_64LOW) in vec2 a_Position64Low;\nlayout(location = ATTRIBUTE_LOCATION_UV) in vec2 a_Uv;\n\nlayout(std140) uniform commonUniforms {\n  vec2 u_domain;\n  float u_opacity;\n  float u_noDataValue;\n  float u_clampLow;\n  float u_clampHigh;\n};\n\nout vec2 v_texCoord;\n\n#pragma include "projection"\n\nvoid main() {\n  v_texCoord = a_Uv;\n  vec4 project_pos = project_position(vec4(a_Position, 1.0), a_Position64Low);\n  gl_Position = project_common_position_to_clipspace(vec4(project_pos.xy, 0.0, 1.0));\n}\n';
   var RasterModel = class extends BaseModel {
@@ -41127,7 +41127,7 @@ void main() {
     }
   };
 
-  // node_modules/@antv/l7-layers/es/raster/models/rasterRgb.js
+  // ../../../node_modules/@antv/l7-layers/es/raster/models/rasterRgb.js
   var _excluded5 = ["data"];
   var _excluded23 = ["rasterData"];
   var rasterFrag2 = "uniform sampler2D u_texture;\nlayout(std140) uniform commonUniforms {\n  vec2 u_rminmax;\n  vec2 u_gminmax;\n  vec2 u_bminmax;\n  float u_opacity;\n  float u_noDataValue;\n};\n\nin vec2 v_texCoord;\n\nout vec4 outputColor;\n\nvoid main() {\n  vec3 rgb = texture(SAMPLER_2D(u_texture), vec2(v_texCoord.x, v_texCoord.y)).rgb;\n\n  if (rgb == vec3(u_noDataValue)) {\n    outputColor = vec4(0.0, 0, 0, 0.0);\n  } else {\n    outputColor = vec4(\n      rgb.r / (u_rminmax.y - u_rminmax.x),\n      rgb.g / (u_gminmax.y - u_gminmax.x),\n      rgb.b / (u_bminmax.y - u_bminmax.x),\n      u_opacity\n    );\n  }\n\n  if (outputColor.a < 0.01) discard;\n\n}\n";
@@ -41269,7 +41269,7 @@ void main() {
     }
   };
 
-  // node_modules/@antv/l7-layers/es/raster/models/rasterTerrainRgb.js
+  // ../../../node_modules/@antv/l7-layers/es/raster/models/rasterTerrainRgb.js
   var Raster_terrainFrag = "uniform sampler2D u_texture;\nuniform sampler2D u_colorTexture;\n\nlayout(std140) uniform commonUniforms {\n  vec4 u_unpack;\n  vec2 u_domain;\n  float u_opacity;\n  float u_noDataValue;\n  float u_clampLow;\n  float u_clampHigh;\n};\n\nin vec2 v_texCoord;\nout vec4 outputColor;\n\nfloat getElevation(vec2 coord, float bias) {\n  // Convert encoded elevation value to meters\n  vec4 data = texture(SAMPLER_2D(u_texture), coord, bias) * 255.0;\n  data.a = -1.0;\n  return dot(data, u_unpack);\n}\n\nvec4 getColor(float value) {\n  float normalisedValue = (value - u_domain[0]) / (u_domain[1] - u_domain[0]);\n  vec2 coord = vec2(normalisedValue, 0);\n  return texture(SAMPLER_2D(u_colorTexture), coord);\n}\n\nvoid main() {\n  float value = getElevation(v_texCoord, 0.0);\n  if (value == u_noDataValue) {\n    outputColor = vec4(0.0, 0, 0, 0.0);\n  } else if (u_clampLow < 0.5 && value < u_domain[0] || u_clampHigh < 0.5 && value > u_domain[1]) {\n    outputColor = vec4(0.0, 0, 0, 0.0);\n  } else {\n    outputColor = getColor(value);\n    outputColor.a = outputColor.a * u_opacity;\n    if (outputColor.a < 0.01) discard;\n  }\n}\n";
   var Raster_terrainVert = 'layout(location = ATTRIBUTE_LOCATION_POSITION) in vec3 a_Position;\nlayout(location = ATTRIBUTE_LOCATION_UV) in vec2 a_Uv;\n\nlayout(std140) uniform commonUniforms {\n  vec4 u_unpack;\n  vec2 u_domain;\n  float u_opacity;\n  float u_noDataValue;\n  float u_clampLow;\n  float u_clampHigh;\n};\nout vec2 v_texCoord;\n#pragma include "projection"\n\nvoid main() {\n  v_texCoord = a_Uv;\n  vec4 project_pos = project_position(vec4(a_Position, 1.0));\n  gl_Position = project_common_position_to_clipspace(vec4(project_pos.xy, 0.0, 1.0));\n}\n';
   var RasterTerrainRGB = class extends BaseModel {
@@ -41380,7 +41380,7 @@ void main() {
     }
   };
 
-  // node_modules/@antv/l7-layers/es/raster/models/index.js
+  // ../../../node_modules/@antv/l7-layers/es/raster/models/index.js
   var RasterModels = {
     raster: RasterModel,
     rasterRgb: RasterModel2,
@@ -41389,7 +41389,7 @@ void main() {
   };
   var models_default5 = RasterModels;
 
-  // node_modules/@antv/l7-layers/es/raster/index.js
+  // ../../../node_modules/@antv/l7-layers/es/raster/index.js
   var RasterLayer = class extends BaseLayer {
     constructor(...args) {
       super(...args);
@@ -41440,7 +41440,7 @@ void main() {
     }
   };
 
-  // node_modules/@antv/l7-layers/es/tile/service/TileLayerService.js
+  // ../../../node_modules/@antv/l7-layers/es/tile/service/TileLayerService.js
   var TileLayerService = class {
     constructor({
       rendererService,
@@ -41610,7 +41610,7 @@ void main() {
     }
   };
 
-  // node_modules/@turf/union/dist/es/index.js
+  // ../../../node_modules/@turf/union/dist/es/index.js
   var import_polygon_clipping = __toESM(require_polygon_clipping_umd(), 1);
   function union(poly1, poly2, options) {
     if (options === void 0) {
@@ -41628,7 +41628,7 @@ void main() {
   }
   var es_default2 = union;
 
-  // node_modules/@antv/l7-layers/es/tile/service/TileSourceService.js
+  // ../../../node_modules/@antv/l7-layers/es/tile/service/TileSourceService.js
   var TileSourceService = class {
     getCombineFeature(features) {
       let p = null;
@@ -41648,7 +41648,7 @@ void main() {
     }
   };
 
-  // node_modules/@antv/l7-layers/es/tile/service/TilePickService.js
+  // ../../../node_modules/@antv/l7-layers/es/tile/service/TilePickService.js
   var SELECT = "select";
   var ACTIVE = "active";
   var TilePickService = class {
@@ -41756,10 +41756,10 @@ void main() {
     }
   };
 
-  // node_modules/@antv/l7-layers/es/tile/tile/Tile.js
+  // ../../../node_modules/@antv/l7-layers/es/tile/tile/Tile.js
   var import_eventemitter312 = __toESM(require_eventemitter3());
 
-  // node_modules/@antv/l7-layers/es/tile/tile/util.js
+  // ../../../node_modules/@antv/l7-layers/es/tile/tile/util.js
   function getTileLayer(type) {
     if (type === "PolygonLayer") {
       return PolygonLayer;
@@ -41776,7 +41776,7 @@ void main() {
     return ["PolygonLayer", "LineLayer"].indexOf(type) !== -1;
   }
 
-  // node_modules/@antv/l7-layers/es/tile/tile/Tile.js
+  // ../../../node_modules/@antv/l7-layers/es/tile/tile/Tile.js
   var Tile = class extends import_eventemitter312.EventEmitter {
     constructor(sourceTile, parent) {
       super();
@@ -41932,7 +41932,7 @@ void main() {
     }
   };
 
-  // node_modules/@antv/l7-layers/es/tile/tile/DebugTile.js
+  // ../../../node_modules/@antv/l7-layers/es/tile/tile/DebugTile.js
   var DebugTile = class extends Tile {
     initTileLayer() {
       var _this = this;
@@ -41977,7 +41977,7 @@ void main() {
     }
   };
 
-  // node_modules/@antv/l7-layers/es/tile/tile/ImageTile.js
+  // ../../../node_modules/@antv/l7-layers/es/tile/tile/ImageTile.js
   var ImageTile = class extends Tile {
     initTileLayer() {
       var _this = this;
@@ -42010,7 +42010,7 @@ void main() {
     }
   };
 
-  // node_modules/@antv/l7-layers/es/mask/models/fill.js
+  // ../../../node_modules/@antv/l7-layers/es/mask/models/fill.js
   var mask_frag = "layout(std140) uniform commonUniorm {\n  vec4 u_color;\n  float u_opacity;\n};\n\nout vec4 outputColor;\n\nvoid main() {\n  outputColor = u_color;\n  outputColor.a *= u_opacity;\n}\n";
   var mask_vert = 'layout(location = ATTRIBUTE_LOCATION_POSITION) in vec3 a_Position;\n\nlayout(std140) uniform commonUniorm {\n  vec4 u_color;\n  float u_opacity;\n};\n\n#pragma include "projection"\n\nvoid main() {\n  vec4 project_pos = project_position(vec4(a_Position, 1.0));\n  gl_Position = project_common_position_to_clipspace(vec4(project_pos.xyz, 1.0));\n}\n\n';
   var MaskModel = class extends BaseModel {
@@ -42066,13 +42066,13 @@ void main() {
     }
   };
 
-  // node_modules/@antv/l7-layers/es/mask/models/index.js
+  // ../../../node_modules/@antv/l7-layers/es/mask/models/index.js
   var MaskModels = {
     fill: MaskModel
   };
   var models_default6 = MaskModels;
 
-  // node_modules/@antv/l7-layers/es/mask/index.js
+  // ../../../node_modules/@antv/l7-layers/es/mask/index.js
   var MaskLayer = class extends BaseLayer {
     constructor(...args) {
       super(...args);
@@ -42091,7 +42091,7 @@ void main() {
     }
   };
 
-  // node_modules/@antv/l7-layers/es/tile/tile/MaskTile.js
+  // ../../../node_modules/@antv/l7-layers/es/tile/tile/MaskTile.js
   var MaskTile = class extends Tile {
     initTileLayer() {
       var _this = this;
@@ -42139,7 +42139,7 @@ void main() {
     }
   };
 
-  // node_modules/@antv/l7-layers/es/tile/tile/RasterRGBTile.js
+  // ../../../node_modules/@antv/l7-layers/es/tile/tile/RasterRGBTile.js
   var _excluded6 = ["rasterData"];
   var RasterTile = class extends Tile {
     initTileLayer() {
@@ -42177,7 +42177,7 @@ void main() {
     }
   };
 
-  // node_modules/@antv/l7-layers/es/tile/tile/RasterTerrainRGBTile.js
+  // ../../../node_modules/@antv/l7-layers/es/tile/tile/RasterTerrainRGBTile.js
   var RasterTerrainRGBTile = class extends Tile {
     initTileLayer() {
       var _this = this;
@@ -42210,7 +42210,7 @@ void main() {
     }
   };
 
-  // node_modules/@antv/l7-layers/es/tile/tile/RasterTile.js
+  // ../../../node_modules/@antv/l7-layers/es/tile/tile/RasterTile.js
   var _excluded7 = ["rasterData"];
   var DEFAULT_COLOR_TEXTURE_OPTION = {
     positions: [0, 1],
@@ -42279,7 +42279,7 @@ void main() {
     }
   };
 
-  // node_modules/@antv/l7-layers/es/tile/tile/VectorTile.js
+  // ../../../node_modules/@antv/l7-layers/es/tile/tile/VectorTile.js
   var VectorTile2 = class extends Tile {
     initTileLayer() {
       var _this = this;
@@ -42357,7 +42357,7 @@ void main() {
     }
   };
 
-  // node_modules/@antv/l7-layers/es/tile/tile/index.js
+  // ../../../node_modules/@antv/l7-layers/es/tile/tile/index.js
   function getTileFactory(layer) {
     const tileType = layer.type;
     switch (tileType) {
@@ -42393,7 +42393,7 @@ void main() {
     }
   }
 
-  // node_modules/@antv/l7-layers/es/tile/utils/constants.js
+  // ../../../node_modules/@antv/l7-layers/es/tile/utils/constants.js
   var ProxyFuncs = [
     /**
      * 1. 需要作用到所属子图层才会生效的方法
@@ -42416,7 +42416,7 @@ void main() {
     "removeMask"
   ];
 
-  // node_modules/@antv/l7-layers/es/tile/core/BaseLayer.js
+  // ../../../node_modules/@antv/l7-layers/es/tile/core/BaseLayer.js
   var {
     debounce: debounce2
   } = lodashUtil;
@@ -42627,7 +42627,7 @@ void main() {
     }
   };
 
-  // node_modules/@antv/l7-maps/es/utils/BaseMapWrapper.js
+  // ../../../node_modules/@antv/l7-maps/es/utils/BaseMapWrapper.js
   var BaseMapWrapper = class {
     constructor(config) {
       _defineProperty(this, "configService", void 0);
@@ -42646,13 +42646,13 @@ void main() {
     }
   };
 
-  // node_modules/@antv/l7-maps/es/amap-next/map.js
+  // ../../../node_modules/@antv/l7-maps/es/amap-next/map.js
   var import_amap_jsapi_loader = __toESM(require_dist());
 
-  // node_modules/@antv/l7-maps/es/lib/base-map.js
+  // ../../../node_modules/@antv/l7-maps/es/lib/base-map.js
   var import_eventemitter313 = __toESM(require_eventemitter3());
 
-  // node_modules/@antv/l7-maps/es/utils/simpleMapCoord.js
+  // ../../../node_modules/@antv/l7-maps/es/utils/simpleMapCoord.js
   var SimpleMapCoord = class {
     constructor(size) {
       _defineProperty(this, "size", 1e4);
@@ -42702,7 +42702,7 @@ void main() {
     }
   };
 
-  // node_modules/@antv/l7-maps/es/lib/base-map.js
+  // ../../../node_modules/@antv/l7-maps/es/lib/base-map.js
   var LNGLAT_OFFSET_ZOOM_THRESHOLD = 12;
   var BaseMap = class {
     constructor(container) {
@@ -42790,12 +42790,12 @@ void main() {
     }
   };
 
-  // node_modules/@babel/runtime/helpers/esm/classCallCheck.js
+  // ../../../node_modules/@babel/runtime/helpers/esm/classCallCheck.js
   function _classCallCheck(a, n) {
     if (!(a instanceof n)) throw new TypeError("Cannot call a class as a function");
   }
 
-  // node_modules/@babel/runtime/helpers/esm/createClass.js
+  // ../../../node_modules/@babel/runtime/helpers/esm/createClass.js
   function _defineProperties(e, r) {
     for (var t = 0; t < r.length; t++) {
       var o = r[t];
@@ -42808,34 +42808,34 @@ void main() {
     }), e;
   }
 
-  // node_modules/@babel/runtime/helpers/esm/assertThisInitialized.js
+  // ../../../node_modules/@babel/runtime/helpers/esm/assertThisInitialized.js
   function _assertThisInitialized(e) {
     if (void 0 === e) throw new ReferenceError("this hasn't been initialised - super() hasn't been called");
     return e;
   }
 
-  // node_modules/@babel/runtime/helpers/esm/possibleConstructorReturn.js
+  // ../../../node_modules/@babel/runtime/helpers/esm/possibleConstructorReturn.js
   function _possibleConstructorReturn(t, e) {
     if (e && ("object" == _typeof(e) || "function" == typeof e)) return e;
     if (void 0 !== e) throw new TypeError("Derived constructors may only return object or undefined");
     return _assertThisInitialized(t);
   }
 
-  // node_modules/@babel/runtime/helpers/esm/getPrototypeOf.js
+  // ../../../node_modules/@babel/runtime/helpers/esm/getPrototypeOf.js
   function _getPrototypeOf(t) {
     return _getPrototypeOf = Object.setPrototypeOf ? Object.getPrototypeOf.bind() : function(t2) {
       return t2.__proto__ || Object.getPrototypeOf(t2);
     }, _getPrototypeOf(t);
   }
 
-  // node_modules/@babel/runtime/helpers/esm/setPrototypeOf.js
+  // ../../../node_modules/@babel/runtime/helpers/esm/setPrototypeOf.js
   function _setPrototypeOf(t, e) {
     return _setPrototypeOf = Object.setPrototypeOf ? Object.setPrototypeOf.bind() : function(t2, e2) {
       return t2.__proto__ = e2, t2;
     }, _setPrototypeOf(t, e);
   }
 
-  // node_modules/@babel/runtime/helpers/esm/inherits.js
+  // ../../../node_modules/@babel/runtime/helpers/esm/inherits.js
   function _inherits(t, e) {
     if ("function" != typeof e && null !== e) throw new TypeError("Super expression must either be null or a function");
     t.prototype = Object.create(e && e.prototype, {
@@ -42849,12 +42849,12 @@ void main() {
     }), e && _setPrototypeOf(t, e);
   }
 
-  // node_modules/@babel/runtime/helpers/esm/arrayWithHoles.js
+  // ../../../node_modules/@babel/runtime/helpers/esm/arrayWithHoles.js
   function _arrayWithHoles(r) {
     if (Array.isArray(r)) return r;
   }
 
-  // node_modules/@babel/runtime/helpers/esm/iterableToArrayLimit.js
+  // ../../../node_modules/@babel/runtime/helpers/esm/iterableToArrayLimit.js
   function _iterableToArrayLimit(r, l) {
     var t = null == r ? null : "undefined" != typeof Symbol && r[Symbol.iterator] || r["@@iterator"];
     if (null != t) {
@@ -42877,14 +42877,14 @@ void main() {
     }
   }
 
-  // node_modules/@babel/runtime/helpers/esm/arrayLikeToArray.js
+  // ../../../node_modules/@babel/runtime/helpers/esm/arrayLikeToArray.js
   function _arrayLikeToArray(r, a) {
     (null == a || a > r.length) && (a = r.length);
     for (var e = 0, n = Array(a); e < a; e++) n[e] = r[e];
     return n;
   }
 
-  // node_modules/@babel/runtime/helpers/esm/unsupportedIterableToArray.js
+  // ../../../node_modules/@babel/runtime/helpers/esm/unsupportedIterableToArray.js
   function _unsupportedIterableToArray(r, a) {
     if (r) {
       if ("string" == typeof r) return _arrayLikeToArray(r, a);
@@ -42893,17 +42893,17 @@ void main() {
     }
   }
 
-  // node_modules/@babel/runtime/helpers/esm/nonIterableRest.js
+  // ../../../node_modules/@babel/runtime/helpers/esm/nonIterableRest.js
   function _nonIterableRest() {
     throw new TypeError("Invalid attempt to destructure non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method.");
   }
 
-  // node_modules/@babel/runtime/helpers/esm/slicedToArray.js
+  // ../../../node_modules/@babel/runtime/helpers/esm/slicedToArray.js
   function _slicedToArray(r, e) {
     return _arrayWithHoles(r) || _iterableToArrayLimit(r, e) || _unsupportedIterableToArray(r, e) || _nonIterableRest();
   }
 
-  // node_modules/viewport-mercator-project/dist/esm/math-utils.js
+  // ../../../node_modules/viewport-mercator-project/dist/esm/math-utils.js
   function createMat4() {
     return [1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1];
   }
@@ -42913,14 +42913,14 @@ void main() {
     return result;
   }
 
-  // node_modules/viewport-mercator-project/dist/esm/assert.js
+  // ../../../node_modules/viewport-mercator-project/dist/esm/assert.js
   function assert(condition, message) {
     if (!condition) {
       throw new Error(message || "viewport-mercator-project: assertion failed.");
     }
   }
 
-  // node_modules/viewport-mercator-project/dist/esm/web-mercator-utils.js
+  // ../../../node_modules/viewport-mercator-project/dist/esm/web-mercator-utils.js
   var PI = Math.PI;
   var PI_4 = PI / 4;
   var DEGREES_TO_RADIANS2 = PI / 180;
@@ -43036,7 +43036,7 @@ void main() {
     return lerp3([], coord0, coord1, t);
   }
 
-  // node_modules/viewport-mercator-project/dist/esm/viewport.js
+  // ../../../node_modules/viewport-mercator-project/dist/esm/viewport.js
   var IDENTITY = createMat4();
   var Viewport = (function() {
     function Viewport3() {
@@ -43132,7 +43132,7 @@ void main() {
     return Viewport3;
   })();
 
-  // node_modules/viewport-mercator-project/dist/esm/fit-bounds.js
+  // ../../../node_modules/viewport-mercator-project/dist/esm/fit-bounds.js
   function fitBounds(_ref) {
     var width = _ref.width, height = _ref.height, bounds = _ref.bounds, _ref$minExtent = _ref.minExtent, minExtent = _ref$minExtent === void 0 ? 0 : _ref$minExtent, _ref$maxZoom = _ref.maxZoom, maxZoom = _ref$maxZoom === void 0 ? 24 : _ref$maxZoom, _ref$padding = _ref.padding, padding = _ref$padding === void 0 ? 0 : _ref$padding, _ref$offset = _ref.offset, offset = _ref$offset === void 0 ? [0, 0] : _ref$offset;
     var _bounds = _slicedToArray(bounds, 2), _bounds$ = _slicedToArray(_bounds[0], 2), west = _bounds$[0], south = _bounds$[1], _bounds$2 = _slicedToArray(_bounds[1], 2), east = _bounds$2[0], north = _bounds$2[1];
@@ -43173,7 +43173,7 @@ void main() {
     };
   }
 
-  // node_modules/viewport-mercator-project/dist/esm/web-mercator-viewport.js
+  // ../../../node_modules/viewport-mercator-project/dist/esm/web-mercator-viewport.js
   var WebMercatorViewport = (function(_Viewport) {
     _inherits(WebMercatorViewport2, _Viewport);
     function WebMercatorViewport2() {
@@ -43274,7 +43274,7 @@ void main() {
     return WebMercatorViewport2;
   })(Viewport);
 
-  // node_modules/@antv/l7-maps/es/lib/web-mercator-viewport.js
+  // ../../../node_modules/@antv/l7-maps/es/lib/web-mercator-viewport.js
   var Viewport2 = class {
     constructor() {
       _defineProperty(this, "viewport", new WebMercatorViewport());
@@ -43342,7 +43342,7 @@ void main() {
     }
   };
 
-  // node_modules/@antv/l7-maps/es/types.js
+  // ../../../node_modules/@antv/l7-maps/es/types.js
   var MapType = /* @__PURE__ */ (function(MapType2) {
     MapType2["GAODE"] = "GAODE";
     MapType2["MAPBOX"] = "MAPBOX";
@@ -43352,7 +43352,7 @@ void main() {
     return MapType2;
   })({});
 
-  // node_modules/@antv/l7-maps/es/utils/utils.js
+  // ../../../node_modules/@antv/l7-maps/es/utils/utils.js
   function toPaddingOptions(padding = {}) {
     const defaultPadding = {
       top: 0,
@@ -43389,7 +43389,7 @@ void main() {
     return _objectSpread2(_objectSpread2({}, defaultPadding), padding);
   }
 
-  // node_modules/@antv/l7-maps/es/amap-next/theme.js
+  // ../../../node_modules/@antv/l7-maps/es/amap-next/theme.js
   var MapTheme = {
     normal: "amap://styles/normal",
     light: "amap://styles/light",
@@ -43403,7 +43403,7 @@ void main() {
     wine: "amap://styles/wine"
   };
 
-  // node_modules/@antv/l7-maps/es/amap-next/map.js
+  // ../../../node_modules/@antv/l7-maps/es/amap-next/map.js
   var _excluded8 = ["id", "style", "minZoom", "maxZoom", "token", "mapInstance", "plugin"];
   function loadStyles(css, doc) {
     var isMiniAli = typeof my !== "undefined" && !!my && typeof my.showToast === "function" && my.isFRM !== true;
@@ -43797,22 +43797,22 @@ void main() {
     };
   }
 
-  // node_modules/@antv/l7-maps/es/amap-next/index.js
+  // ../../../node_modules/@antv/l7-maps/es/amap-next/index.js
   var AMap2Wrapper = class extends BaseMapWrapper {
     getServiceConstructor() {
       return BMapService;
     }
   };
 
-  // node_modules/@antv/l7-maps/es/index.js
+  // ../../../node_modules/@antv/l7-maps/es/index.js
   var GaodeMap = AMap2Wrapper;
 
-  // node_modules/@antv/util/esm/lodash/is-nil.js
+  // ../../../node_modules/@antv/util/esm/lodash/is-nil.js
   function isNil8(value) {
     return value === null || value === void 0;
   }
 
-  // node_modules/@antv/util/esm/lodash/clamp.js
+  // ../../../node_modules/@antv/util/esm/lodash/clamp.js
   var clamp3 = function(a, min6, max6) {
     if (a < min6) {
       return min6;
@@ -43823,12 +43823,12 @@ void main() {
   };
   var clamp_default = clamp3;
 
-  // node_modules/@antv/util/esm/lodash/is-number.js
+  // ../../../node_modules/@antv/util/esm/lodash/is-number.js
   function isNumber7(value) {
     return typeof value === "number";
   }
 
-  // node_modules/tslib/tslib.es6.mjs
+  // ../../../node_modules/tslib/tslib.es6.mjs
   var extendStatics = function(d, b) {
     extendStatics = Object.setPrototypeOf || { __proto__: [] } instanceof Array && function(d2, b2) {
       d2.__proto__ = b2;
@@ -44001,11 +44001,11 @@ void main() {
     return to.concat(ar || Array.prototype.slice.call(from));
   }
 
-  // node_modules/@antv/g-device-api/node_modules/eventemitter3/index.mjs
+  // ../../../node_modules/@antv/g-device-api/node_modules/eventemitter3/index.mjs
   var import_index = __toESM(require_eventemitter32(), 1);
   var eventemitter3_default = import_index.default;
 
-  // node_modules/@antv/g-device-api/es/index.js
+  // ../../../node_modules/@antv/g-device-api/es/index.js
   var GL;
   (function(GL2) {
     GL2[GL2["DEPTH_BUFFER_BIT"] = 256] = "DEPTH_BUFFER_BIT";
@@ -51146,7 +51146,7 @@ void main() {
     })()
   );
 
-  // node_modules/@antv/l7-renderer/es/device/DeviceAttribute.js
+  // ../../../node_modules/@antv/l7-renderer/es/device/DeviceAttribute.js
   var DeviceAttribute = class {
     constructor(device, options) {
       const { buffer, offset, stride, normalized, size, divisor, shaderLocation } = options;
@@ -51174,7 +51174,7 @@ void main() {
     }
   };
 
-  // node_modules/@antv/l7-renderer/es/device/constants.js
+  // ../../../node_modules/@antv/l7-renderer/es/device/constants.js
   var typedArrayCtorMap = {
     [gl.FLOAT]: Float32Array,
     [gl.UNSIGNED_BYTE]: Uint8Array,
@@ -51267,7 +51267,7 @@ void main() {
     [gl.NOTEQUAL]: CompareFunction.NOTEQUAL
   };
 
-  // node_modules/@antv/l7-renderer/es/device/utils/typedarray.js
+  // ../../../node_modules/@antv/l7-renderer/es/device/utils/typedarray.js
   var dtypes2 = {
     "[object Int8Array]": 5120,
     "[object Int16Array]": 5122,
@@ -51297,7 +51297,7 @@ void main() {
     return newArray;
   }
 
-  // node_modules/@antv/l7-renderer/es/device/DeviceBuffer.js
+  // ../../../node_modules/@antv/l7-renderer/es/device/DeviceBuffer.js
   var DeviceBuffer = class {
     constructor(device, options) {
       this.isDestroyed = false;
@@ -51342,7 +51342,7 @@ void main() {
     }
   };
 
-  // node_modules/@antv/l7-renderer/es/device/utils/HashMap.js
+  // ../../../node_modules/@antv/l7-renderer/es/device/utils/HashMap.js
   function hashCodeNumberUpdate(hash, v = 0) {
     hash += v;
     hash += hash << 10;
@@ -51423,7 +51423,7 @@ void main() {
     }
   };
 
-  // node_modules/@antv/l7-renderer/es/device/DeviceCache.js
+  // ../../../node_modules/@antv/l7-renderer/es/device/DeviceCache.js
   function blendStateHash(hash, a) {
     hash = hashCodeNumberUpdate(hash, a.blendMode);
     hash = hashCodeNumberUpdate(hash, a.blendSrcFactor);
@@ -51609,7 +51609,7 @@ void main() {
     }
   };
 
-  // node_modules/@antv/l7-renderer/es/device/DeviceElements.js
+  // ../../../node_modules/@antv/l7-renderer/es/device/DeviceElements.js
   var DeviceElements = class {
     constructor(device, options) {
       const { data, type, count: count2 = 0 } = options;
@@ -51645,7 +51645,7 @@ void main() {
     }
   };
 
-  // node_modules/@antv/l7-renderer/es/device/DeviceTexture2D.js
+  // ../../../node_modules/@antv/l7-renderer/es/device/DeviceTexture2D.js
   function isTexture2D(t) {
     return !!(t && t["texture"]);
   }
@@ -51765,7 +51765,7 @@ void main() {
     }
   };
 
-  // node_modules/@antv/l7-renderer/es/device/DeviceFramebuffer.js
+  // ../../../node_modules/@antv/l7-renderer/es/device/DeviceFramebuffer.js
   var DeviceFramebuffer = class {
     constructor(device, options) {
       this.device = device;
@@ -51842,7 +51842,7 @@ void main() {
     }
   };
 
-  // node_modules/@antv/l7-renderer/es/device/DeviceModel.js
+  // ../../../node_modules/@antv/l7-renderer/es/device/DeviceModel.js
   var __defProp25 = Object.defineProperty;
   var __defProps21 = Object.defineProperties;
   var __getOwnPropDescs21 = Object.getOwnPropertyDescriptors;
@@ -52300,7 +52300,7 @@ void main() {
     }
   };
 
-  // node_modules/@antv/l7-renderer/es/device/utils/webgl.js
+  // ../../../node_modules/@antv/l7-renderer/es/device/utils/webgl.js
   function isWebGL22(gl2) {
     if (typeof WebGL2RenderingContext !== "undefined" && gl2 instanceof WebGL2RenderingContext) {
       return true;
@@ -52308,7 +52308,7 @@ void main() {
     return Boolean(gl2 && gl2._version === 2);
   }
 
-  // node_modules/@antv/l7-renderer/es/device/index.js
+  // ../../../node_modules/@antv/l7-renderer/es/device/index.js
   var __async11 = (__this, __arguments, generator) => {
     return new Promise((resolve, reject) => {
       var fulfilled = (value) => {
@@ -52598,10 +52598,10 @@ void main() {
     }
   };
 
-  // node_modules/@antv/l7-renderer/es/regl/index.js
+  // ../../../node_modules/@antv/l7-renderer/es/regl/index.js
   var import_regl = __toESM(require_regl());
 
-  // node_modules/@antv/l7-renderer/es/regl/ReglAttribute.js
+  // ../../../node_modules/@antv/l7-renderer/es/regl/ReglAttribute.js
   var ReglAttribute = class {
     constructor(gl2, options) {
       const { buffer, offset, stride, normalized, size, divisor } = options;
@@ -52628,7 +52628,7 @@ void main() {
     }
   };
 
-  // node_modules/@antv/l7-renderer/es/regl/constants.js
+  // ../../../node_modules/@antv/l7-renderer/es/regl/constants.js
   var primitiveMap2 = {
     [gl.POINTS]: "points",
     [gl.LINES]: "lines",
@@ -52745,7 +52745,7 @@ void main() {
     [gl.BACK]: "back"
   };
 
-  // node_modules/@antv/l7-renderer/es/regl/ReglBuffer.js
+  // ../../../node_modules/@antv/l7-renderer/es/regl/ReglBuffer.js
   var ReglBuffer = class {
     constructor(reGl, options) {
       this.isDestroyed = false;
@@ -52774,7 +52774,7 @@ void main() {
     }
   };
 
-  // node_modules/@antv/l7-renderer/es/regl/ReglElements.js
+  // ../../../node_modules/@antv/l7-renderer/es/regl/ReglElements.js
   var ReglElements = class {
     constructor(reGl, options) {
       const { data, usage, type, count: count2 } = options;
@@ -52797,7 +52797,7 @@ void main() {
     }
   };
 
-  // node_modules/@antv/l7-renderer/es/regl/ReglFramebuffer.js
+  // ../../../node_modules/@antv/l7-renderer/es/regl/ReglFramebuffer.js
   var ReglFramebuffer = class {
     constructor(reGl, options) {
       const { width, height, color, colors } = options;
@@ -52826,7 +52826,7 @@ void main() {
     }
   };
 
-  // node_modules/@antv/l7-renderer/es/regl/ReglModel.js
+  // ../../../node_modules/@antv/l7-renderer/es/regl/ReglModel.js
   var __defProp26 = Object.defineProperty;
   var __defProps22 = Object.defineProperties;
   var __getOwnPropDescs22 = Object.getOwnPropertyDescriptors;
@@ -53113,7 +53113,7 @@ void main() {
     }
   };
 
-  // node_modules/@antv/l7-renderer/es/regl/ReglTexture2D.js
+  // ../../../node_modules/@antv/l7-renderer/es/regl/ReglTexture2D.js
   var ReglTexture2D = class {
     constructor(reGl, options) {
       this.isDestroy = false;
@@ -53196,7 +53196,7 @@ void main() {
     }
   };
 
-  // node_modules/@antv/l7-renderer/es/regl/index.js
+  // ../../../node_modules/@antv/l7-renderer/es/regl/index.js
   var __async12 = (__this, __arguments, generator) => {
     return new Promise((resolve, reject) => {
       var fulfilled = (value) => {
@@ -53413,7 +53413,7 @@ void main() {
     }
   };
 
-  // node_modules/@antv/l7-scene/es/boxSelect.js
+  // ../../../node_modules/@antv/l7-scene/es/boxSelect.js
   var import_eventemitter315 = __toESM(require_eventemitter3());
   var BoxSelectEventList = ["selectstart", "selecting", "selectend"];
   var BoxSelect = class extends import_eventemitter315.EventEmitter {
@@ -53513,7 +53513,7 @@ void main() {
     }
   };
 
-  // node_modules/@antv/l7-scene/es/index.js
+  // ../../../node_modules/@antv/l7-scene/es/index.js
   var __defProp27 = Object.defineProperty;
   var __defProps23 = Object.defineProperties;
   var __getOwnPropDescs23 = Object.getOwnPropertyDescriptors;
@@ -54371,8 +54371,8 @@ void main() {
           showLabel: false,
           center: [104, 35],
           pitch: 0,
-          zoom: 2,
-          minZoom: 2,
+          zoom: 1,
+          minZoom: 1,
           maxZoom: 8
         })
       });
