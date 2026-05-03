@@ -8,6 +8,7 @@ hero_subtitle: "Jilin University | Micro/Nano Fabrication"
 lang: en
 fullwidth: true
 body_class: about-fonts
+lang_alt_url: /
 redirect_from: 
   - /about/
   - /about.html

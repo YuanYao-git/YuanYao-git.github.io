@@ -8,6 +8,7 @@ hero_title: "姚远"
 hero_subtitle: "吉林大学 · 微纳制造"
 fullwidth: true
 body_class: about-fonts
+lang_alt_url: /en/
 redirect_from: 
   - /about/zh/
   - /about/zh
