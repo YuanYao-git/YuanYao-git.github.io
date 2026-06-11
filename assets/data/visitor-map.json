@@ -1,60 +1,56 @@
 {
   "embed_url": "https://api.yaoyuan.org/embed",
   "description": "Showing the last 7 days of Cloudflare unique visitor geography.",
-  "generated_at": "2026-06-10T02:00:29.111Z",
+  "generated_at": "2026-06-11T02:00:29.255Z",
   "range_days": 7,
-  "total_uniques": 1239,
-  "total_requests": 4750,
+  "total_uniques": 1255,
+  "total_requests": 9165,
   "countries": [
     {
       "name": "United States",
-      "requests": 1997,
-      "share": 42
-    },
-    {
-      "name": "Brazil",
-      "requests": 780,
-      "share": 16.4
+      "requests": 6482,
+      "share": 70.7
     },
     {
       "name": "China",
       "requests": 543,
-      "share": 11.4
+      "share": 5.9
     },
     {
       "name": "Singapore",
-      "requests": 487,
-      "share": 10.3
+      "requests": 497,
+      "share": 5.4
     },
     {
       "name": "Japan",
-      "requests": 365,
-      "share": 7.7
-    },
-    {
-      "name": "Germany",
-      "requests": 215,
+      "requests": 414,
       "share": 4.5
     },
     {
-      "name": "India",
-      "requests": 187,
-      "share": 3.9
+      "name": "Brazil",
+      "requests": 373,
+      "share": 4.1
+    },
+    {
+      "name": "Poland",
+      "requests": 365,
+      "share": 4
+    },
+    {
+      "name": "Germany",
+      "requests": 246,
+      "share": 2.7
     },
     {
       "name": "France",
-      "requests": 176,
-      "share": 3.7
+      "requests": 245,
+      "share": 2.7
     }
   ],
   "map_countries": [
     {
       "name": "United States",
-      "requests": 1997
-    },
-    {
-      "name": "Brazil",
-      "requests": 780
+      "requests": 6482
     },
     {
       "name": "China",
@@ -62,63 +58,63 @@
     },
     {
       "name": "Singapore",
-      "requests": 487
+      "requests": 497
     },
     {
       "name": "Japan",
+      "requests": 414
+    },
+    {
+      "name": "Brazil",
+      "requests": 373
+    },
+    {
+      "name": "Poland",
       "requests": 365
     },
     {
       "name": "Germany",
-      "requests": 215
-    },
-    {
-      "name": "India",
-      "requests": 187
+      "requests": 246
     },
     {
       "name": "France",
-      "requests": 176
+      "requests": 245
+    },
+    {
+      "name": "India",
+      "requests": 232
     },
     {
       "name": "Netherlands",
-      "requests": 147
+      "requests": 187
     },
     {
       "name": "United Kingdom",
-      "requests": 123
+      "requests": 120
     },
     {
       "name": "Russia",
-      "requests": 63
-    },
-    {
-      "name": "Indonesia",
-      "requests": 46
-    },
-    {
-      "name": "Sweden",
-      "requests": 39
+      "requests": 77
     },
     {
       "name": "Canada",
-      "requests": 37
+      "requests": 41
     },
     {
       "name": "Norway",
       "requests": 36
     },
     {
-      "name": "Poland",
-      "requests": 28
+      "name": "Indonesia",
+      "requests": 27
     },
     {
       "name": "South Korea",
-      "requests": 21
+      "requests": 26
     },
     {
       "name": "Belgium",
-      "requests": 19
+      "requests": 18
     },
     {
       "name": "Finland",
@@ -126,7 +122,11 @@
     },
     {
       "name": "Vietnam",
-      "requests": 10
+      "requests": 12
+    },
+    {
+      "name": "Sweden",
+      "requests": 9
     },
     {
       "name": "Portugal",
@@ -138,7 +138,7 @@
     },
     {
       "name": "Philippines",
-      "requests": 4
+      "requests": 5
     },
     {
       "name": "Mexico",
@@ -153,19 +153,15 @@
       "requests": 3
     },
     {
+      "name": "Spain",
+      "requests": 2
+    },
+    {
       "name": "Italy",
-      "requests": 3
+      "requests": 2
     },
     {
       "name": "Malaysia",
-      "requests": 2
-    },
-    {
-      "name": "Thailand",
-      "requests": 2
-    },
-    {
-      "name": "Spain",
       "requests": 2
     },
     {
@@ -181,6 +177,10 @@
       "requests": 1
     },
     {
+      "name": "Thailand",
+      "requests": 1
+    },
+    {
       "name": "Denmark",
       "requests": 1
     },
@@ -190,10 +190,6 @@
     },
     {
       "name": "Saudi Arabia",
-      "requests": 1
-    },
-    {
-      "name": "United Arab Emirates",
       "requests": 1
     }
   ]
