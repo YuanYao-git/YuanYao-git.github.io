@@ -39,10 +39,13 @@
     --font-body: "Source Serif 4", "Georgia", serif;
     --font-heading: "Cormorant Garamond", "Georgia", serif;
     --font-ui: "Source Serif 4", "Georgia", serif;
-    /* 中文字体：正文仿宋，标题宋体，引用书法体 */
-    --font-body-zh: "STFangsong", "FangSong", "仿宋", serif;
-    --font-heading-zh: "Songti SC", "STSong", "SimSun", "宋体", serif;
-    --font-ui-zh: "STFangsong", "FangSong", "仿宋", serif;
+    /*
+     * 中文页面优先使用已加载的英文字体来渲染拉丁字符；汉字会自动回退到
+     * 后面的中文字体。这样英文及其 700 字重不会落入没有真粗体的仿宋字体。
+     */
+    --font-body-zh: "Source Serif 4", "Georgia", "STFangsong", "FangSong", "仿宋", serif;
+    --font-heading-zh: "Cormorant Garamond", "Georgia", "Songti SC", "STSong", "SimSun", "宋体", serif;
+    --font-ui-zh: "Cormorant Garamond", "Georgia", "STFangsong", "FangSong", "仿宋", serif;
     --font-calligraphy-zh: "Zhi Mang Xing", "STFangsong", "FangSong", "仿宋", serif;
 }
 
@@ -143,7 +146,35 @@ html[lang^="zh"] .achievement-card h3,
 html[lang^="zh"] .blog-card h3,
 html[lang^="zh"] .edu-stop-name {
     font-family: var(--font-heading-zh);
-    font-weight: 400;
+}
+
+/* 正文中的英文强调与英文页正文保持一致。 */
+html[lang^="zh"] strong,
+html[lang^="zh"] b {
+    font-family: var(--font-body-zh);
+    font-weight: 700;
+}
+
+/*
+ * 文献引用的英文内容在两个页面必须使用完全相同的字体栈，而不是仅使用
+ * 相同的首选字体；否则网络字体未加载时会分别回退到 Georgia 与中文宋体。
+ */
+html[lang^="zh"] .citation,
+html[lang^="zh"] .citation strong,
+html[lang^="zh"] .citation b,
+html[lang^="zh"] .citation em,
+html[lang^="zh"] .citation a {
+    font-family: var(--font-heading) !important;
+}
+
+/* 标注为英语的期刊徽标直接复用英文页的字体栈。 */
+html[lang^="zh"] .badge[lang="en"] {
+    font-family: var(--font-heading);
+}
+
+/* 英文页的年份/时间信息使用正文 UI 字体，中文页也保持相同的拉丁字形。 */
+html[lang^="zh"] .edu-stop-year {
+    font-family: var(--font-ui);
 }
 
 html[lang^="zh"] .hero-subtitle,
@@ -816,6 +847,52 @@ body.has-panels .panel.is-active .site-footer-main {
     background: transparent;
     color: var(--accent-color);
     border: 1px solid var(--accent-color);
+}
+
+/* Flip the contact label to reveal the email address on hover or keyboard focus. */
+.contact-flip {
+    min-width: 10.75rem;
+    height: 48px;
+    padding: 0;
+    overflow: hidden;
+    perspective: 700px;
+}
+
+.contact-flip-inner {
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 100%;
+    transform-style: preserve-3d;
+    transition: transform 520ms var(--ease-standard);
+}
+
+.contact-flip-face {
+    position: absolute;
+    inset: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 18px;
+    backface-visibility: hidden;
+    white-space: nowrap;
+}
+
+.contact-flip-back {
+    background: var(--accent-color);
+    color: #fff;
+    transform: rotateX(-180deg);
+}
+
+.contact-flip:hover .contact-flip-inner,
+.contact-flip:focus-visible .contact-flip-inner {
+    transform: rotateX(180deg);
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .contact-flip-inner {
+        transition-duration: 1ms;
+    }
 }
 
 .achievement-grid,

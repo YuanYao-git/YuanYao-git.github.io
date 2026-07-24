@@ -68,3 +68,17 @@
   description: "在光波导与微纳加工方向进行调研、学习与科研方法的思考。"
   image: "https://pub-435f283cdbe44123bb9e69b79358e329.r2.dev/images/%E8%A5%BF%E6%B9%96%E5%A4%A7%E5%AD%A6%E7%85%A7%E7%89%87/IMG_3627%202.jpg"
   link: "/posts/2025/10/post/5"
+- lang: en
+  badge: Before My Ph.D.
+  title: "Some Thoughts Before Starting My Ph.D."
+  date: 2026-07-20
+  description: "Reviewed undergraduate research experiences in laser processing and reflected on scientific exploration before beginning doctoral study."
+  image: "https://pub-435f283cdbe44123bb9e69b79358e329.r2.dev/images/1580.JPG"
+  link: "/posts/2026/07/post/666"
+- lang: zh
+  badge: 读博前随想
+  title: "读博前的一些杂想"
+  date: 2026-07-20
+  description: "回顾本科阶段的激光加工研究经历，并在开启博士学习前记录科研探索中的思考。"
+  image: "https://pub-435f283cdbe44123bb9e69b79358e329.r2.dev/images/1580.JPG"
+  link: "/posts/2026/07/post/6"

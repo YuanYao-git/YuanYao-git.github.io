@@ -40,7 +40,7 @@
     <!-- Favicon -->
     <link rel="icon" type="image/x-icon" href="{{ '/images/favicon.ico' | relative_url }}">
 
-    <link rel="stylesheet" href="{{ "/assets/css/modern.css" | relative_url }}">
+    <link rel="stylesheet" href="{{ "/assets/css/modern.css" | relative_url }}?v={{ site.time | date: '%s' }}">
     <!-- Fonts: loli.net mirror (China-accessible); loaded async so page renders immediately with system fonts -->
     <link rel="preconnect" href="https://fonts.loli.net">
     <link rel="preconnect" href="https://gstatic.loli.net" crossorigin>
@@ -121,13 +121,11 @@
       <div class="footer-quote-block">
         <span class="quote-mark">&#10077;</span>
         {% if page_lang contains 'zh' %}
-        <span class="quote-text">任何足够先进的技术，初看都与魔法无异。</span>
+        <span class="quote-text">我们必须学着与自身的愚笨相处，并且从中发现事物的关联。</span>
         <span class="quote-mark quote-mark--close">&#10078;</span>
-        <span class="quote-author">&mdash; 亚瑟·克拉克</span>
         {% else %}
-        <span class="quote-text">Any sufficiently advanced technology is indistinguishable from magic.</span>
+        <span class="quote-text">We must learn to live with our own ignorance and discover the connections hidden within it.</span>
         <span class="quote-mark quote-mark--close">&#10078;</span>
-        <span class="quote-author">&mdash; Arthur C. Clarke</span>
         {% endif %}
       </div>
       <span class="footer-copyright">&copy; 2026 Yuan Yao. Crafted with &#10024; Vibe Coding.</span>

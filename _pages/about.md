@@ -4,7 +4,7 @@ title: "About me"
 author_profile: true
 layout: modern_home
 hero_title: "Yuan Yao"
-hero_subtitle: "Jilin University | Micro/Nano Fabrication"
+hero_subtitle: " "
 lang: en
 fullwidth: true
 body_class: about-fonts
@@ -14,7 +14,7 @@ redirect_from:
   - /about.html
 ---
 
-{% assign blog_cards = site.data.blog_cards | where: "lang", page.lang | reverse | slice: 0, 5 %}
+{% assign blog_cards = site.data.blog_cards | where: "lang", page.lang | reverse %}
 {% assign blog_cta = "Read ↗" %}
 
 <div class="panel-container">
@@ -23,8 +23,7 @@ redirect_from:
     <div class="panel-inner">
       <p class="eyebrow">About</p>
       <h2>Combining micro-nano manufacturing with engineering practice.</h2>
-      <p>I study Mechanical Engineering at Jilin University and focus on microfabrication and laser fabrication. I keep close ties with <a href="http://teachers.jlu.edu.cn/HuangLab">Hu Huang’s lab</a> and the <a href="http://www.mems.mech.tohoku.ac.jp">Shuji Tanaka MEMS Lab</a> at Tohoku University.</p>
-      <p>In 2026 I will join <a href="http://mvdl.pku.edu.cn/en/">Prof. Xianlong Wei’s group</a> at Peking University for Ph.D. studies, continuing the same interests with a stronger experimental toolkit.</p>
+      <p>I am a Ph.D. student at the School of Electronic Engineering, Peking University, with my main research directions being micro-nano manufacturing and laser processing. Previously, I obtained a bachelor's degree in mechanical engineering from Jilin University and spent one academic year as an exchange student at Tohoku University.</p>
       <div class="edu-journey">
         <div class="edu-stop">
           <a href="https://www.jlu.edu.cn/" target="_blank" rel="noopener noreferrer">
@@ -50,7 +49,12 @@ redirect_from:
       </div>
 
       <div class="cta-group">
-        <a class="button secondary" href="mailto:me@yaoyuan.org">Email me</a>
+        <a class="button secondary contact-flip" href="mailto:me@yaoyuan.org" aria-label="Email me at me@yaoyuan.org">
+          <span class="contact-flip-inner" aria-hidden="true">
+            <span class="contact-flip-face contact-flip-front">Email me</span>
+            <span class="contact-flip-face contact-flip-back">me@yaoyuan.org</span>
+          </span>
+        </a>
       </div>
     </div>
   </section>
@@ -60,23 +64,48 @@ redirect_from:
       <h2>Academic Achievements</h2>
       <div class="achievement-grid">
         <article class="achievement-card">
+          <img src="https://pub-435f283cdbe44123bb9e69b79358e329.r2.dev/images/PE-GA.jpg" alt="Laser transmission welding graphic">
+          <div class="achievement-body">
+            <p class="badge">Precision Engineering</p>
+            <h3>Laser transmission welding of fused silica and CFRP</h3>
+            <p>Demonstrates ethanol-mediated laser joining of fused silica and CFRP, achieving a maximum shear strength exceeding 5 MPa.</p>
+            <a class="text-link" href="https://pub-435f283cdbe44123bb9e69b79358e329.r2.dev/files/Acceptedmanuscript--PE.pdf">Accepted manuscript ↗</a>
+            <p class="citation">
+<strong>Yao, Y.</strong>, Dong, Y., An, H., Yang, Z., Qian, Y., & Huang, H. (2026). 
+Non-optical-contact and clamp-free laser transmission welding of CFRP to fused silica via ethanol-assisted interfacial modification. 
+<em>Precision Engineering</em>, 102, 442–454. 
+<a href="https://doi.org/10.1016/j.precisioneng.2026.07.007">https://doi.org/10.1016/j.precisioneng.2026.07.007</a>. 
+© Elsevier.
+</p>
+          </div>
+        </article>
+        <article class="achievement-card">
           <img src="https://pub-435f283cdbe44123bb9e69b79358e329.r2.dev/images/fig1.png" alt="Laser separation graphic">
           <div class="achievement-body">
             <p class="badge">IEEJ TEEE</p>
             <h3>Laser-enabled silicon layer separation</h3>
-            <p>Optimises the laser stealth-cut path to achieve layer separation without a sacrificial layer, remaining compatible with high-temperature semiconductor processes.</p>
+            <p>Optimizes the laser stealth-cut path to achieve layer separation without a sacrificial layer, maintaining compatibility with conventional high-temperature semiconductor processes.</p>
             <a class="text-link" href="https://pub-435f283cdbe44123bb9e69b79358e329.r2.dev/files/IEEJ%20Transactions%20Elec%20Engng%20-%202025%20-%20Yao%20-%20Feasibility%20Study%20of%20Layer%20Separation%20Using%202D%20Patterned%20Internal%20Laser%20Damage.pdf">Paper ↗</a>
-            <p class="citation">Citation: Yao, Y., Vergara, A., Tang, Z., Tanaka, S. “Feasibility Study of Layer Separation using 2D Patterned Internal Laser Damage in Silicon.” <em>IEEJ Transactions on Electrical and Electronic Engineering</em>. <a href="https://doi.org/10.1002/tee.70136">https://doi.org/10.1002/tee.70136</a>. © Open-access article</p>
+            <p class="citation">
+<strong>Yao, Y.</strong>, Vergara, A., Tang, Z., & Tanaka, S. (2026). 
+Feasibility Study of Layer Separation using 2D Patterned Internal Laser Damage in Silicon. 
+<em>IEEJ Transactions on Electrical and Electronic Engineering</em>, 21(1), 143–148. 
+<a href="https://doi.org/10.1002/tee.70136">https://doi.org/10.1002/tee.70136</a>. 
+© Open-access article.
+</p>
           </div>
         </article>
         <article class="achievement-card">
           <img src="https://pub-435f283cdbe44123bb9e69b79358e329.r2.dev/images/fig2.png" alt="Conference slide">
           <div class="achievement-body">
             <p class="badge">MNC2024</p>
-            <h3>International Microprocesses & Nanotechnology Conference — Oral Presentation</h3>
-            <p>Presented microfabrication solutions and experimental results at MNC 2024 in Kyoto (session 15D-2-3).</p>
+            <h3>International Microprocesses and Nanotechnology Conference — Oral Presentation</h3>
+            <p>Presented microfabrication approaches and experimental results at MNC 2024 in Kyoto, Japan (session 15D-2-3).</p>
             <a class="text-link" href="https://pub-435f283cdbe44123bb9e69b79358e329.r2.dev/files/MNC_slides.pdf">Slides ↗</a>
-            <p class="citation">Citation: 37th International Microprocesses and Nanotechnology Conference (MNC 2024) oral presentation, Kyoto, The Japan Society of Applied Physics, 15 Nov 2024, session 15D-2-3. © Slides distributed lawfully by the author under the conference agreement.</p>
+            <p class="citation">
+37th International Microprocesses and Nanotechnology Conference (MNC 2024), Oral Presentation, Kyoto, Japan, 15 November 2024, Session 15D-2-3. 
+© Presentation slides distributed by the author according to conference policy.
+</p>
           </div>
         </article>
         <article class="achievement-card">
@@ -86,22 +115,34 @@ redirect_from:
             <h3>Ultrasonic vibration scratch tester</h3>
             <p>Proposes a thread–V-groove composite structure with a modal-matching strategy to achieve stable ultrasonic amplitude transmission.</p>
             <a class="text-link" href="https://pub-435f283cdbe44123bb9e69b79358e329.r2.dev/files/acatuators.pdf">Paper ↗</a>
-            <p class="citation">Citation: Huang, Y.; Wu, H.; Yao, Y.; Zhao, H.; Huang, H. “An Ultrasonic Vibration Scratch Tester for Studying the Scratch Characteristics of Materials under Ultrasonic Vibration Contact Status.” <em>Actuators</em>. <a href="https://doi.org/10.3390/act13070262">https://doi.org/10.3390/act13070262</a>. © Open-access article</p>
+            <p class="citation">
+Huang, Y., Wu, H., <strong>Yao, Y.</strong>, Zhao, H., & Huang, H. (2024). 
+An Ultrasonic Vibration Scratch Tester for Studying the Scratch Characteristics of Materials under Ultrasonic Vibration Contact Status. 
+<em>Actuators</em>, 13(7), 262. 
+<a href="https://doi.org/10.3390/act13070262">https://doi.org/10.3390/act13070262</a>. 
+© Open-access article.
+</p>
           </div>
         </article>
         <article class="achievement-card">
           <img src="https://pub-435f283cdbe44123bb9e69b79358e329.r2.dev/images/fig3.png" alt="Ultrasonic device patent">
           <div class="achievement-body">
-            <p class="badge">Utility patent</p>
+            <p class="badge">Utility Patent</p>
             <h3>Ultrasonic vibration device for vibration-assisted scratch testing</h3>
             <p>Features stable amplitude and easy adjustment, providing a reliable vibration source for vibration-assisted scratch experiments.</p>
             <a class="text-link" href="https://pub-435f283cdbe44123bb9e69b79358e329.r2.dev/files/patent.pdf">Patent ↗</a>
-            <p class="citation">Citation: Hu Huang; Yuan Yao; Yaming Huang; Haoxiang Wu. “Ultrasonic Vibration Device for Vibration-Assisted Scratch Testing.” Utility Patent CN 220649966U, China, 22 Mar 2024. © Public record released by CNIPA.</p>
+            <p class="citation">
+Huang, H.; <strong>Yao, Y.</strong>; Huang, Y.; Wu, H. 
+Ultrasonic Vibration Device for Vibration-Assisted Scratch Testing. 
+Chinese Utility Model Patent, CN 220649966U, granted 22 March 2024. 
+© Public record released by CNIPA.
+</p>
           </div>
         </article>
+
       </div>
     </div>
-  </section>
+</section>
 
   <section id="blog" class="panel snap-section panel-blog" data-section-anchor="blog">
     <div class="panel-inner">
