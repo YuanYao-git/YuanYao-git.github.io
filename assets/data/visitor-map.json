@@ -1,143 +1,147 @@
 {
   "embed_url": "https://api.yaoyuan.org/embed",
   "description": "Showing the last 7 days of Cloudflare unique visitor geography.",
-  "generated_at": "2026-11-08T02:00:55.235Z",
+  "generated_at": "2026-11-09T02:00:55.213Z",
   "range_days": 7,
-  "total_uniques": 1862,
-  "total_requests": 14307,
+  "total_uniques": 1960,
+  "total_requests": 14031,
   "countries": [
     {
       "name": "United Arab Emirates",
-      "requests": 3305,
-      "share": 23.1
-    },
-    {
-      "name": "United States",
-      "requests": 3274,
-      "share": 22.9
+      "requests": 3072,
+      "share": 21.9
     },
     {
       "name": "Netherlands",
-      "requests": 2829,
-      "share": 19.8
+      "requests": 2537,
+      "share": 18.1
+    },
+    {
+      "name": "United States",
+      "requests": 2525,
+      "share": 18
     },
     {
       "name": "Mexico",
       "requests": 1469,
-      "share": 10.3
+      "share": 10.5
+    },
+    {
+      "name": "South Africa",
+      "requests": 1338,
+      "share": 9.5
+    },
+    {
+      "name": "France",
+      "requests": 1228,
+      "share": 8.8
     },
     {
       "name": "China",
-      "requests": 943,
-      "share": 6.6
+      "requests": 945,
+      "share": 6.7
     },
     {
       "name": "Germany",
-      "requests": 897,
-      "share": 6.3
-    },
-    {
-      "name": "Israel",
-      "requests": 891,
-      "share": 6.2
-    },
-    {
-      "name": "Poland",
-      "requests": 699,
-      "share": 4.9
+      "requests": 917,
+      "share": 6.5
     }
   ],
   "map_countries": [
     {
       "name": "United Arab Emirates",
-      "requests": 3305
-    },
-    {
-      "name": "United States",
-      "requests": 3274
+      "requests": 3072
     },
     {
       "name": "Netherlands",
-      "requests": 2829
+      "requests": 2537
+    },
+    {
+      "name": "United States",
+      "requests": 2525
     },
     {
       "name": "Mexico",
       "requests": 1469
     },
     {
-      "name": "China",
-      "requests": 943
-    },
-    {
-      "name": "Germany",
-      "requests": 897
-    },
-    {
-      "name": "Israel",
-      "requests": 891
-    },
-    {
-      "name": "Poland",
-      "requests": 699
-    },
-    {
-      "name": "Belgium",
-      "requests": 642
-    },
-    {
       "name": "South Africa",
-      "requests": 603
-    },
-    {
-      "name": "Canada",
-      "requests": 416
-    },
-    {
-      "name": "Australia",
-      "requests": 379
-    },
-    {
-      "name": "South Korea",
-      "requests": 348
-    },
-    {
-      "name": "Singapore",
-      "requests": 161
+      "requests": 1338
     },
     {
       "name": "France",
-      "requests": 159
+      "requests": 1228
     },
     {
-      "name": "India",
-      "requests": 142
+      "name": "China",
+      "requests": 945
     },
     {
-      "name": "United Kingdom",
-      "requests": 113
+      "name": "Germany",
+      "requests": 917
+    },
+    {
+      "name": "Belgium",
+      "requests": 889
+    },
+    {
+      "name": "Poland",
+      "requests": 715
+    },
+    {
+      "name": "Israel",
+      "requests": 706
+    },
+    {
+      "name": "Australia",
+      "requests": 335
+    },
+    {
+      "name": "South Korea",
+      "requests": 257
     },
     {
       "name": "Brazil",
-      "requests": 106
-    },
-    {
-      "name": "Indonesia",
-      "requests": 100
+      "requests": 147
     },
     {
       "name": "Romania",
-      "requests": 83
+      "requests": 140
     },
     {
-      "name": "Russia",
-      "requests": 41
+      "name": "Singapore",
+      "requests": 138
+    },
+    {
+      "name": "India",
+      "requests": 136
+    },
+    {
+      "name": "United Kingdom",
+      "requests": 104
+    },
+    {
+      "name": "Indonesia",
+      "requests": 96
     },
     {
       "name": "Argentina",
-      "requests": 33
+      "requests": 36
+    },
+    {
+      "name": "Russia",
+      "requests": 32
+    },
+    {
+      "name": "Finland",
+      "requests": 31
     },
     {
       "name": "Colombia",
+      "requests": 28
+    },
+    {
+      "name": "Bangladesh",
       "requests": 26
     },
     {
@@ -145,24 +149,16 @@
       "requests": 26
     },
     {
-      "name": "Finland",
-      "requests": 22
-    },
-    {
-      "name": "Bangladesh",
-      "requests": 21
-    },
-    {
       "name": "Japan",
-      "requests": 21
+      "requests": 23
+    },
+    {
+      "name": "Pakistan",
+      "requests": 22
     },
     {
       "name": "Czech Republic",
       "requests": 19
-    },
-    {
-      "name": "Pakistan",
-      "requests": 18
     },
     {
       "name": "Sweden",
@@ -170,58 +166,62 @@
     },
     {
       "name": "Vietnam",
-      "requests": 15
+      "requests": 14
+    },
+    {
+      "name": "Philippines",
+      "requests": 9
     },
     {
       "name": "Thailand",
-      "requests": 8
+      "requests": 9
     },
     {
       "name": "Chile",
+      "requests": 9
+    },
+    {
+      "name": "Canada",
       "requests": 8
+    },
+    {
+      "name": "Turkey",
+      "requests": 6
     },
     {
       "name": "Malaysia",
       "requests": 6
     },
     {
-      "name": "Ukraine",
-      "requests": 5
-    },
-    {
       "name": "Egypt",
       "requests": 4
     },
     {
-      "name": "Turkey",
+      "name": "Nigeria",
       "requests": 3
     },
     {
-      "name": "Saudi Arabia",
+      "name": "Ukraine",
       "requests": 3
+    },
+    {
+      "name": "Kenya",
+      "requests": 2
+    },
+    {
+      "name": "Ireland",
+      "requests": 2
     },
     {
       "name": "Italy",
       "requests": 2
     },
     {
-      "name": "Philippines",
-      "requests": 2
-    },
-    {
-      "name": "Nigeria",
-      "requests": 2
-    },
-    {
-      "name": "Kenya",
+      "name": "Austria",
       "requests": 1
     },
     {
       "name": "Portugal",
-      "requests": 1
-    },
-    {
-      "name": "Ireland",
       "requests": 1
     }
   ]
